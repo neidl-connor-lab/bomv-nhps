@@ -1,0 +1,22 @@
+##fileformat=VCFv4.0
+##fileDate=20240117
+##source=lofreq call --call-indels --min-cov 10 --ref pipeline/genomes/bomv-MF319186.1.fa --no-default-filter -r MF319186.1:1-1190 -o /scratch/3798775.1.w-long/lofreq2_call_parallelq_ger_6z/0.vcf.gz data/snvs/sample16.bam 
+##reference=pipeline/genomes/bomv-MF319186.1.fa
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_snvqual_37,Description="Minimum SNV Quality (Phred) 37">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_52,Description="Minimum SNV Quality (Phred) 52">
+##FILTER=<ID=min_indelqual_26,Description="Minimum Indel Quality (Phred) 26">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+MF319186.1	842	.	G	T	52	PASS	DP=15;AF=0.266667;SB=6;DP4=5,6,0,4
+MF319186.1	1886	.	G	A	54	PASS	DP=19;AF=0.157895;SB=6;DP4=8,8,0,3
+MF319186.1	2311	.	T	G	53	PASS	DP=11;AF=0.272727;SB=14;DP4=1,6,3,0
+MF319186.1	4786	.	CT	C	28	PASS	DP=12;AF=0.083333;SB=0;DP4=5,6,0,1;INDEL;HRUN=3

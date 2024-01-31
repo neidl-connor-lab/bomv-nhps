@@ -1,0 +1,13 @@
+Status	data/star-rhesus/sample02.bam	data/star-rhesus/sample03.bam	data/star-rhesus/sample04.bam	data/star-rhesus/sample05.bam	data/star-rhesus/sample06.bam	data/star-rhesus/sample07.bam	data/star-rhesus/sample08.bam	data/star-rhesus/sample09.bam	data/star-rhesus/sample14.bam	data/star-rhesus/sample15.bam	data/star-rhesus/sample16.bam	data/star-rhesus/sample17.bam	data/star-rhesus/sample18.bam	data/star-rhesus/sample19.bam	data/star-rhesus/sample20.bam	data/star-rhesus/sample21.bam	data/star-rhesus/sample26.bam	data/star-rhesus/sample27.bam	data/star-rhesus/sample28.bam	data/star-rhesus/sample29.bam	data/star-rhesus/sample30.bam	data/star-rhesus/sample31.bam	data/star-rhesus/sample32.bam	data/star-rhesus/sample33.bam	data/star-rhesus/sample34.bam	data/star-rhesus/sample35.bam	data/star-rhesus/sample36.bam	data/star-rhesus/sample37.bam
+Assigned	47234538	42210477	57544289	41237639	54535452	49589811	48967019	55561195	63139508	50051270	44244484	52432045	43007313	53188419	48160502	56870010	64132833	82148969	35304290	65831474	65018848	57509303	50813258	52429758	58000559	43682689	52119321	46085959
+Unassigned_Unmapped	4135078	3912028	4868521	2633713	4718697	3718937	4282048	3682399	5746109	3633884	4974394	3727506	3341141	4287984	4131372	3412095	3300483	3709247	2162074	3748458	3101083	4027792	3288956	3192810	6331716	3628081	7777905	9428054
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Nonjunction	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	3022839	3747409	3279158	1827039	3114467	3529757	3445184	2316913	3494365	2887092	3314524	2689118	2403606	3608845	3758470	2196397	2718051	3136994	2452923	3086284	2643283	3783913	4600459	2305069	3388696	4002115	4308337	3175450
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

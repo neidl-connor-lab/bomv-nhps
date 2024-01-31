@@ -1,0 +1,13 @@
+Status	data/star-cyno/sample02.bam	data/star-cyno/sample03.bam	data/star-cyno/sample04.bam	data/star-cyno/sample05.bam	data/star-cyno/sample06.bam	data/star-cyno/sample07.bam	data/star-cyno/sample08.bam	data/star-cyno/sample09.bam	data/star-cyno/sample14.bam	data/star-cyno/sample15.bam	data/star-cyno/sample16.bam	data/star-cyno/sample17.bam	data/star-cyno/sample18.bam	data/star-cyno/sample19.bam	data/star-cyno/sample20.bam	data/star-cyno/sample21.bam	data/star-cyno/sample26.bam	data/star-cyno/sample27.bam	data/star-cyno/sample28.bam	data/star-cyno/sample29.bam	data/star-cyno/sample30.bam	data/star-cyno/sample31.bam	data/star-cyno/sample32.bam	data/star-cyno/sample33.bam	data/star-cyno/sample34.bam	data/star-cyno/sample35.bam	data/star-cyno/sample36.bam	data/star-cyno/sample37.bam
+Assigned	44006301	39199831	53187936	39252471	50985659	46457095	45494534	52643674	58890946	47022080	41209312	49263342	40320514	49745641	45242791	54127853	61612033	78864031	33206439	63092787	62080882	53999759	46938087	49676394	54866636	40533078	47693337	42866904
+Unassigned_Unmapped	4478697	4191064	5333859	2883422	5187898	4030309	4722121	4082720	6216221	3922505	5222926	4130844	3592262	4553725	4342658	3744883	3582117	4111041	2359664	4022685	3541433	4373457	3553608	3579886	6751886	3837708	8368674	9732198
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Nonjunction	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	5199843	5804267	6046192	2918971	5458022	5553646	5717027	4024560	6286392	4836551	5422263	4588711	4303598	6032915	5825004	3698128	3986782	4863161	3760474	4644901	4157479	6100906	7637771	3997908	5244496	6342407	7377579	5433049
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
