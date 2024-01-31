@@ -1,0 +1,302 @@
+==========================================================
+Start date : Wed Jan 17 18:35:27 EST 2024
+Job name : featurecounts-cyno
+Job ID : 3798603
+==========================================================
+
+[MSG] Valid GTF file: pipeline/annotations/cyno-bomv.gtf
+[MSG] Valid output directory: data/featurecounts
+[MSG] Using feature: transcript
+[MSG] Using meta-feature: gene_name
+[MSG] Valid BAM files: data/star-cyno/sample02.bam data/star-cyno/sample03.bam data/star-cyno/sample04.bam data/star-cyno/sample05.bam data/star-cyno/sample06.bam data/star-cyno/sample07.bam data/star-cyno/sample08.bam data/star-cyno/sample09.bam data/star-cyno/sample14.bam data/star-cyno/sample15.bam data/star-cyno/sample16.bam data/star-cyno/sample17.bam data/star-cyno/sample18.bam data/star-cyno/sample19.bam data/star-cyno/sample20.bam data/star-cyno/sample21.bam data/star-cyno/sample26.bam data/star-cyno/sample27.bam data/star-cyno/sample28.bam data/star-cyno/sample29.bam data/star-cyno/sample30.bam data/star-cyno/sample31.bam data/star-cyno/sample32.bam data/star-cyno/sample33.bam data/star-cyno/sample34.bam data/star-cyno/sample35.bam data/star-cyno/sample36.bam data/star-cyno/sample37.bam
+[MSG] Done checking inputs.
+
+[MSG] Loading featureCounts
+[MSG] Running featureCounts
+[MSG] CMD: featureCounts -T 8 -O -M -p -a 'pipeline/annotations/cyno-bomv.gtf' -o 'data/featurecounts/cyno.tsv' -t transcript -g gene_name data/star-cyno/sample02.bam data/star-cyno/sample03.bam data/star-cyno/sample04.bam data/star-cyno/sample05.bam data/star-cyno/sample06.bam data/star-cyno/sample07.bam data/star-cyno/sample08.bam data/star-cyno/sample09.bam data/star-cyno/sample14.bam data/star-cyno/sample15.bam data/star-cyno/sample16.bam data/star-cyno/sample17.bam data/star-cyno/sample18.bam data/star-cyno/sample19.bam data/star-cyno/sample20.bam data/star-cyno/sample21.bam data/star-cyno/sample26.bam data/star-cyno/sample27.bam data/star-cyno/sample28.bam data/star-cyno/sample29.bam data/star-cyno/sample30.bam data/star-cyno/sample31.bam data/star-cyno/sample32.bam data/star-cyno/sample33.bam data/star-cyno/sample34.bam data/star-cyno/sample35.bam data/star-cyno/sample36.bam data/star-cyno/sample37.bam
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.2
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 28 BAM files                                     ||
+||                           P sample02.bam                                   ||
+||                           P sample03.bam                                   ||
+||                           P sample04.bam                                   ||
+||                           P sample05.bam                                   ||
+||                           P sample06.bam                                   ||
+||                           P sample07.bam                                   ||
+||                           P sample08.bam                                   ||
+||                           P sample09.bam                                   ||
+||                           P sample14.bam                                   ||
+||                           P sample15.bam                                   ||
+||                           P sample16.bam                                   ||
+||                           P sample17.bam                                   ||
+||                           P sample18.bam                                   ||
+||                           P sample19.bam                                   ||
+||                           P sample20.bam                                   ||
+||                           P sample21.bam                                   ||
+||                           P sample26.bam                                   ||
+||                           P sample27.bam                                   ||
+||                           P sample28.bam                                   ||
+||                           P sample29.bam                                   ||
+||                           P sample30.bam                                   ||
+||                           P sample31.bam                                   ||
+||                           P sample32.bam                                   ||
+||                           P sample33.bam                                   ||
+||                           P sample34.bam                                   ||
+||                           P sample35.bam                                   ||
+||                           P sample36.bam                                   ||
+||                           P sample37.bam                                   ||
+||                                                                            ||
+||             Output file : cyno.tsv                                         ||
+||                 Summary : cyno.tsv.summary                                 ||
+||              Annotation : cyno-bomv.gtf (GTF)                              ||
+||      Dir for temp files : data/featurecounts                               ||
+||                                                                            ||
+||                 Threads : 8                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : yes                                              ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : counted                                          ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+||          Chimeric reads : counted                                          ||
+||        Both ends mapped : not required                                     ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file cyno-bomv.gtf ...                                     ||
+
+Warning: failed to find the gene identifier attribute in the 9th column of the provided GTF file.
+The specified gene identifier attribute is 'gene_name' 
+The attributes included in your GTF annotation are 'gene_id "ENSMFAG00000005691"; gene_version "1"; transcript_id "ENSMFAT00000038755"; transcript_version "1"; gene_source "ensembl"; gene_biotype "miRNA"; transcript_source "ensembl"; transcript_biotype "miRNA";' 
+
+||    Features : 54375                                                        ||
+||    Meta-features : 16466                                                   ||
+||    Chromosomes/contigs : 409                                               ||
+||                                                                            ||
+|| Process BAM file sample02.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 53684841                                              ||
+||    Successfully assigned fragments : 44006301 (82.0%)                      ||
+||    Running time : 0.31 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample03.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 49195162                                              ||
+||    Successfully assigned fragments : 39199831 (79.7%)                      ||
+||    Running time : 0.29 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample04.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 64567987                                              ||
+||    Successfully assigned fragments : 53187936 (82.4%)                      ||
+||    Running time : 0.36 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample05.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 45054864                                              ||
+||    Successfully assigned fragments : 39252471 (87.1%)                      ||
+||    Running time : 0.25 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample06.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 61631579                                              ||
+||    Successfully assigned fragments : 50985659 (82.7%)                      ||
+||    Running time : 0.35 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample07.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 56041050                                              ||
+||    Successfully assigned fragments : 46457095 (82.9%)                      ||
+||    Running time : 0.32 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample08.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 55933682                                              ||
+||    Successfully assigned fragments : 45494534 (81.3%)                      ||
+||    Running time : 0.32 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample09.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 60750954                                              ||
+||    Successfully assigned fragments : 52643674 (86.7%)                      ||
+||    Running time : 0.33 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample14.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 71393559                                              ||
+||    Successfully assigned fragments : 58890946 (82.5%)                      ||
+||    Running time : 0.40 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample15.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 55781136                                              ||
+||    Successfully assigned fragments : 47022080 (84.3%)                      ||
+||    Running time : 0.31 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample16.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 51854501                                              ||
+||    Successfully assigned fragments : 41209312 (79.5%)                      ||
+||    Running time : 0.30 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample17.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 57982897                                              ||
+||    Successfully assigned fragments : 49263342 (85.0%)                      ||
+||    Running time : 0.32 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample18.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 48216374                                              ||
+||    Successfully assigned fragments : 40320514 (83.6%)                      ||
+||    Running time : 0.27 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample19.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 60332281                                              ||
+||    Successfully assigned fragments : 49745641 (82.5%)                      ||
+||    Running time : 0.34 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample20.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 55410453                                              ||
+||    Successfully assigned fragments : 45242791 (81.7%)                      ||
+||    Running time : 0.32 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample21.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 61570864                                              ||
+||    Successfully assigned fragments : 54127853 (87.9%)                      ||
+||    Running time : 0.32 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample26.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 69180932                                              ||
+||    Successfully assigned fragments : 61612033 (89.1%)                      ||
+||    Running time : 0.37 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample27.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 87838233                                              ||
+||    Successfully assigned fragments : 78864031 (89.8%)                      ||
+||    Running time : 0.45 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample28.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 39326577                                              ||
+||    Successfully assigned fragments : 33206439 (84.4%)                      ||
+||    Running time : 0.22 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample29.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 71760373                                              ||
+||    Successfully assigned fragments : 63092787 (87.9%)                      ||
+||    Running time : 0.38 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample30.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 69779794                                              ||
+||    Successfully assigned fragments : 62080882 (89.0%)                      ||
+||    Running time : 0.36 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample31.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 64474122                                              ||
+||    Successfully assigned fragments : 53999759 (83.8%)                      ||
+||    Running time : 0.36 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample32.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 58129466                                              ||
+||    Successfully assigned fragments : 46938087 (80.7%)                      ||
+||    Running time : 0.34 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample33.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 57254188                                              ||
+||    Successfully assigned fragments : 49676394 (86.8%)                      ||
+||    Running time : 0.30 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample34.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 66863018                                              ||
+||    Successfully assigned fragments : 54866636 (82.1%)                      ||
+||    Running time : 0.36 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample35.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 50713193                                              ||
+||    Successfully assigned fragments : 40533078 (79.9%)                      ||
+||    Running time : 0.29 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample36.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 63439590                                              ||
+||    Successfully assigned fragments : 47693337 (75.2%)                      ||
+||    Running time : 0.36 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample37.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||    Total fragments : 58032151                                              ||
+||    Successfully assigned fragments : 42866904 (73.9%)                      ||
+||    Running time : 0.32 minutes                                             ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+|| Summary of counting results can be found in file "data/featurecounts/cyno  ||
+|| .tsv.summary"                                                              ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+[MSG] featureCounts succeeded
+
+[MSG] Counting complete!
+
+Currently Loaded Modules:
+  1) gcc/12.2.0   2) git/2.18.0   3) R/4.0.2   4) subread/1.6.2
+
+ 
+
+
+featureCounts v1.6.2
+
+

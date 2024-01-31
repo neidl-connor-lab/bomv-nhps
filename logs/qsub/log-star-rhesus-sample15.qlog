@@ -1,0 +1,33 @@
+==========================================================
+Start date: Wed Jan 17 17:57:20 EST 2024
+Running on node: scc-to1
+Current directory: /restricted/projectnb/lasvchal/Jacquelyn/bomv-nhps
+Job name: star-rhesus-sample15
+Job ID: 3798275
+==========================================================
+
+[MSG] Valid index directory: pipeline/indices/rhesus-bomv
+[MSG] Using sample ID: sample15
+[MSG] Valid forward FASTQ: data/fastq/sample15-r1.fq.gz
+[MSG] Valid reverse FASTQ: data/fastq/sample15-r2.fq.gz
+[MSG] Valid output directory: data/star-rhesus
+[MSG] Done checking inputs.
+
+[MSG] Loading STAR
+[MSG] Running STAR alignment
+[MSG] CMD: STAR --runThreadN 8 --runMode alignReads --readFilesCommand zcat --outSAMtype BAM Unsorted --outSAMunmapped Within --genomeDir 'pipeline/indices/rhesus-bomv' --readFilesIn 'data/fastq/sample15-r1.fq.gz' 'data/fastq/sample15-r2.fq.gz' --outFileNamePrefix 'data/star-rhesus/sample15-'
+Jan 17 17:57:21 ..... started STAR run
+Jan 17 17:57:21 ..... loading genome
+Jan 17 18:01:08 ..... started mapping
+Jan 17 18:12:07 ..... finished mapping
+Jan 17 18:12:09 ..... finished successfully
+[MSG] STAR alignment succeeded
+
+
+Currently Loaded Modules:
+  1) gcc/12.2.0   2) git/2.18.0   3) R/4.0.2   4) star/2.7.1a
+
+ 
+
+STAR 2.7.1a
+

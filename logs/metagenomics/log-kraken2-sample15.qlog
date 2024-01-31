@@ -1,0 +1,32 @@
+==========================================================
+Start date: Wed Jan 17 20:23:50 EST 2024
+Running on node: scc-c03
+Current directory: /restricted/projectnb/lasvchal/Jacquelyn/bomv-nhps
+Job name: kraken2-sample15
+Job ID: 3799750
+==========================================================
+
+[MSG] Using Kraken2 DB: pipeline/kraken2db
+[MSG] Working with sample15
+[MSG] Forward FASTQ: data/fastq/sample15-r1.fq.gz
+[MSG] Reverse FASTQ: data/fastq/sample15-r2.fq.gz
+[MSG] Valid output directory: data/metagenomics
+[MSG] Done checking inputs.
+
+[MSG] Running Kraken2 on sample15
+[MSG] CMD: kraken2 --threads 8 --output - --use-names --gzip-compressed --db 'pipeline/kraken2db' --paired --report 'data/metagenomics/sample15.tsv' 'data/fastq/sample15-r1.fq.gz' 'data/fastq/sample15-r2.fq.gz'
+Loading database information... done.
+44369693 sequences (6655.45 Mbp) processed in 169.550s (15701.4 Kseq/m, 2355.21 Mbp/m).
+  38539912 sequences classified (86.86%)
+  5829781 sequences unclassified (13.14%)
+[MSG] Kraken2 succeeded
+
+
+Currently Loaded Modules:
+  1) gcc/12.2.0   2) git/2.18.0   3) R/4.0.2
+
+ 
+
+Kraken version 2.1.2
+Copyright 2013-2021, Derrick Wood (dwood@cs.jhu.edu)
+
