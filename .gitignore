@@ -1,4 +1,4 @@
-*.bam
+*.bam*
 data/fastq/
 data/star-*
 pipeline/annotations/cyno*
