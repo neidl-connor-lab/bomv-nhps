@@ -1,0 +1,37 @@
+========================JOB INFO=========================
+Job ID: 766796
+Job name: star-rhesus-sample27
+Start date: Mon Jul 22 17:41:07 CDT 2024
+Current directory: /scratch/09961/jaturcin/work/projects/cyno-bomv
+=========================================================
+
+[MSG] STEP 1 OF 2: CHECKING INPUTS
+[MSG] Valid genome index: ../../resources/indices-star/mmul-bomv-transcript
+[MSG] Valid output directory: data/star-rhesus
+[MSG] Valid R1 FASTQ file: data/fastq/sample27-r1.fq.gz
+[MSG] Valid R2 FASTQ file: data/fastq/sample27-r2.fq.gz
+[MSG] Using sample ID: sample27
+[MSG] Done checking inputs!
+
+[MSG] STEP 2 OF 2: RUN STAR ALIGNMENT
+[MSG] CMD: STAR --runThreadN 8 --readFilesCommand zcat --outSAMtype BAM Unsorted --outSAMunmapped Within --genomeDir '../../resources/indices-star/mmul-bomv-transcript' --outFileNamePrefix 'data/star-rhesus/sample27-' --readFilesIn 'data/fastq/sample27-r1.fq.gz' 'data/fastq/sample27-r2.fq.gz'
+	/usr/local/bin/STAR-avx2 --runThreadN 8 --readFilesCommand zcat --outSAMtype BAM Unsorted --outSAMunmapped Within --genomeDir ../../resources/indices-star/mmul-bomv-transcript --outFileNamePrefix data/star-rhesus/sample27- --readFilesIn data/fastq/sample27-r1.fq.gz data/fastq/sample27-r2.fq.gz
+	STAR version: 2.7.11b   compiled: 2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
+Jul 22 17:41:16 ..... started STAR run
+Jul 22 17:41:16 ..... loading genome
+Jul 22 17:41:38 ..... started mapping
+Jul 22 17:52:40 ..... finished mapping
+Jul 22 17:52:40 ..... finished successfully
+[MSG] STAR alignment succeeded
+
+[MSG] Cleaning up intermediate files...
+
+Currently Loaded Modules:
+  1) intel/24.0      4) cmake/3.28.1   7) tacc-apptainer/1.2.5
+  2) impi/21.11      5) xalt/3.0.1     8) biocontainers/0.1.0
+  3) autotools/1.4   6) TACC           9) star/ctr-2.7.11b--h43eeafb_1
+
+ 
+
+[MSG] JOB COMPLETE!
+

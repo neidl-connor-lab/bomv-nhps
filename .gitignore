@@ -1,4 +1,5 @@
 *.bam*
+*.fq*
 data/fastq/
 data/star-*
 pipeline/annotations/cyno*
