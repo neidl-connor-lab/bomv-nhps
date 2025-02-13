@@ -1,0 +1,4 @@
+"Segment","NT.position","NT.ref","NT.alt","Frequency","Type","InDel","Gene.ID","Gene.name","Protein.ID","Product","AA.pos","AA.ref","AA.alt"
+"OK633884.1",4488,"A","C",0.230769,"Synonymous",FALSE,"VP40","VP40","UKB36427.1","matrix protein",,,
+"OK633884.1",6908,"T","TA",0.057143,"Nonsynonymous",TRUE,"GP","GP","UKB36429.1","structural glycoprotein",292,"N","K"
+"OK633884.1",6908,"T","TA",0.057143,"Nonsynonymous",TRUE,"GP","GP","UKB36428.1","secreted glycoprotein",292,"T","N"

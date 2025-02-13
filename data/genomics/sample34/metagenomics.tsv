@@ -1,0 +1,149 @@
+ 25.37	2334955	2334955	U	0	unclassified
+ 74.63	6868125	88137	R	1	root
+ 70.39	6478466	14447	R1	131567	  cellular organisms
+ 69.42	6388626	0	D	2759	    Eukaryota
+ 69.42	6388626	0	D1	33154	      Opisthokonta
+ 69.42	6388626	0	K	33208	        Metazoa
+ 69.42	6388626	0	K1	6072	          Eumetazoa
+ 69.42	6388626	0	K2	33213	            Bilateria
+ 69.42	6388626	0	K3	33511	              Deuterostomia
+ 69.42	6388626	0	P	7711	                Chordata
+ 69.42	6388626	0	P1	89593	                  Craniata
+ 69.42	6388626	0	P2	7742	                    Vertebrata
+ 69.42	6388626	0	P3	7776	                      Gnathostomata
+ 69.42	6388626	0	P4	117570	                        Teleostomi
+ 69.42	6388626	0	P5	117571	                          Euteleostomi
+ 69.42	6388626	0	P6	8287	                            Sarcopterygii
+ 69.42	6388626	0	P7	1338369	                              Dipnotetrapodomorpha
+ 69.42	6388626	0	P8	32523	                                Tetrapoda
+ 69.42	6388626	0	P9	32524	                                  Amniota
+ 69.42	6388626	0	C	40674	                                    Mammalia
+ 69.42	6388626	0	C1	32525	                                      Theria
+ 69.42	6388626	0	C2	9347	                                        Eutheria
+ 69.42	6388626	0	C3	1437010	                                          Boreoeutheria
+ 69.42	6388626	0	C4	314146	                                            Euarchontoglires
+ 69.42	6388626	0	O	9443	                                              Primates
+ 69.42	6388626	0	O1	376913	                                                Haplorrhini
+ 69.42	6388626	0	O2	314293	                                                  Simiiformes
+ 69.42	6388626	0	O3	9526	                                                    Catarrhini
+ 69.42	6388626	0	O4	314295	                                                      Hominoidea
+ 69.42	6388626	0	F	9604	                                                        Hominidae
+ 69.42	6388626	0	F1	207598	                                                          Homininae
+ 69.42	6388626	0	G	9605	                                                            Homo
+ 69.42	6388626	6388626	S	9606	                                                              Homo sapiens
+  0.81	74705	8974	D	2	    Bacteria
+  0.46	42518	1869	D1	1783272	      Terrabacteria group
+  0.29	26997	11	P	201174	        Actinobacteria
+  0.29	26735	424	C	1760	          Actinomycetia
+  0.18	16384	35	O	85007	            Corynebacteriales
+  0.17	15243	40	F	1762	              Mycobacteriaceae
+  0.16	14940	26	G	1763	                Mycobacterium
+  0.16	14560	0	G1	77643	                  Mycobacterium tuberculosis complex
+  0.16	14560	14559	S	78331	                    Mycobacterium canettii
+  0.01	623	0	F	1653	              Corynebacteriaceae
+  0.01	623	102	G	1716	                Corynebacterium
+  0.04	3511	0	O	85011	            Streptomycetales
+  0.04	3511	9	F	2062	              Streptomycetaceae
+  0.04	3314	493	G	1883	                Streptomyces
+  0.01	1019	101	G1	2593676	                  unclassified Streptomyces
+  0.03	2523	59	O	85006	            Micrococcales
+  0.01	1173	57	F	1268	              Micrococcaceae
+  0.01	662	21	F	85023	              Microbacteriaceae
+  0.02	1899	10	O	85009	            Propionibacteriales
+  0.02	1476	27	F	31957	              Propionibacteriaceae
+  0.01	1182	76	G	1912216	                Cutibacterium
+  0.01	1064	1051	S	1747	                  Cutibacterium acnes
+  0.01	603	0	O	85008	            Micromonosporales
+  0.01	603	5	F	28056	              Micromonosporaceae
+  0.01	512	0	O	85010	            Pseudonocardiales
+  0.01	512	5	F	2070	              Pseudonocardiaceae
+  0.12	10897	45	P	1239	        Firmicutes
+  0.10	9062	81	C	91061	          Bacilli
+  0.08	7471	40	O	1385	            Bacillales
+  0.06	5233	22	F	186817	              Bacillaceae
+  0.05	4176	8	G	2800373	                Priestia
+  0.05	4143	4142	S	1404	                  Priestia megaterium
+  0.01	490	97	G	1386	                Bacillus
+  0.01	1339	10	F	90964	              Staphylococcaceae
+  0.01	1245	91	G	1279	                Staphylococcus
+  0.01	655	655	S	29382	                  Staphylococcus cohnii
+  0.01	608	2	F	186822	              Paenibacillaceae
+  0.02	1510	35	O	186826	            Lactobacillales
+  0.01	766	12	F	1300	              Streptococcaceae
+  0.01	679	279	G	1301	                Streptococcus
+  0.02	1551	5	C	186801	          Clostridia
+  0.02	1381	9	O	186802	            Eubacteriales
+  0.01	765	1	F	31979	              Clostridiaceae
+  0.01	680	84	G	1485	                Clostridium
+  0.02	1606	254	P	544448	        Tenericutes
+  0.01	1246	1	C	31969	          Mollicutes
+  0.01	1145	0	O	2085	            Mycoplasmatales
+  0.01	1145	23	F	2092	              Mycoplasmataceae
+  0.01	1010	893	G	2093	                Mycoplasma
+  0.01	847	0	D2	1798711	        Cyanobacteria/Melainabacteria group
+  0.01	847	109	P	1117	          Cyanobacteria
+  0.21	18997	309	P	1224	      Proteobacteria
+  0.10	9550	198	C	1236	        Gammaproteobacteria
+  0.03	2745	4	O	72274	          Pseudomonadales
+  0.03	2709	59	F	135621	            Pseudomonadaceae
+  0.03	2454	535	G	286	              Pseudomonas
+  0.01	1134	2	G1	136843	                Pseudomonas fluorescens group
+  0.01	877	877	S	47878	                  Pseudomonas azotoformans
+  0.02	2137	240	O	91347	          Enterobacterales
+  0.01	1198	71	F	543	            Enterobacteriaceae
+  0.01	548	4	G	561	              Escherichia
+  0.01	521	514	S	562	                Escherichia coli
+  0.01	1297	4	O	135614	          Xanthomonadales
+  0.01	1228	12	F	32033	            Xanthomonadaceae
+  0.01	693	0	G	2709666	              Pseudolysobacter
+  0.01	693	693	S	2511995	                Pseudolysobacter antarcticus
+  0.01	921	0	O	2887326	          Moraxellales
+  0.01	921	27	F	468	            Moraxellaceae
+  0.01	745	313	G	469	              Acinetobacter
+  0.05	4327	175	C	28211	        Alphaproteobacteria
+  0.02	1880	81	O	356	          Hyphomicrobiales
+  0.01	465	82	F	119045	            Methylobacteriaceae
+  0.01	762	18	O	204457	          Sphingomonadales
+  0.01	588	48	F	41297	            Sphingomonadaceae
+  0.01	755	40	O	204455	          Rhodobacterales
+  0.04	3454	54	C	28216	        Betaproteobacteria
+  0.03	3002	108	O	80840	          Burkholderiales
+  0.01	1358	66	F	80864	            Comamonadaceae
+  0.01	730	18	F	119060	            Burkholderiaceae
+  0.01	1239	0	P1	68525	        delta/epsilon subdivisions
+  0.01	623	0	C	29547	          Epsilonproteobacteria
+  0.01	604	1	O	213849	            Campylobacterales
+  0.01	616	4	C	28221	          Deltaproteobacteria
+  0.03	2910	0	D1	1783270	      FCB group
+  0.03	2882	0	D2	68336	        Bacteroidetes/Chlorobi group
+  0.03	2861	10	P	976	          Bacteroidota
+  0.02	1611	0	C	117743	            Flavobacteriia
+  0.02	1611	10	O	200644	              Flavobacteriales
+  0.01	1112	21	F	49546	                Flavobacteriaceae
+  0.01	493	0	C	768503	            Cytophagia
+  0.01	493	0	O	768507	              Cytophagales
+  0.01	688	0	D	2157	    Archaea
+  0.01	519	1	P	28890	      Euryarchaeota
+  3.25	299478	0	R1	2787854	  other entries
+  3.25	299478	299478	R2	28384	    other sequences
+  0.02	2044	0	D	10239	  Viruses
+  0.01	989	0	D1	2731341	    Duplodnaviria
+  0.01	989	0	K	2731360	      Heunggongvirae
+  0.01	976	0	P	2731618	        Uroviricota
+  0.01	976	2	C	2731619	          Caudoviricetes
+  0.01	767	0	F	2946167	            Peduoviridae
+  0.01	767	0	G	2948942	              Valbvirus
+  0.01	767	0	S	2956629	                Valbvirus ValB1MD2
+  0.01	767	767	S1	2759177	                  Vibrio phage ValB1MD-2
+  0.01	973	0	D1	2559587	    Riboviria
+  0.01	609	0	K	2732396	      Orthornavirae
+  0.01	570	0	P	2732408	        Pisuviricota
+  0.01	570	0	C	2732506	          Pisoniviricetes
+  0.01	567	0	O	76804	            Nidovirales
+  0.01	565	0	O1	2499399	              Cornidovirineae
+  0.01	565	0	F	11118	                Coronaviridae
+  0.01	565	0	F1	2501931	                  Orthocoronavirinae
+  0.01	565	0	G	694002	                    Betacoronavirus
+  0.01	560	1	G1	2509511	                      Sarbecovirus
+  0.01	559	2	S	694009	                        Severe acute respiratory syndrome-related coronavirus
+  0.01	557	557	S1	2697049	                          Severe acute respiratory syndrome coronavirus 2

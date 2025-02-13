@@ -1,0 +1,213 @@
+========================JOB INFO=========================
+Job ID: 1407055
+Job name: bowtie2-bomv-OK633884.1
+Start date: Thu Jan  2 11:48:41 CST 2025
+Current directory: /scratch/09961/jaturcin/bomv-nhps
+=========================================================
+
+[MSG] STEP 1 OF 2: CHECKING INPUTS
+[MSG] Valid genome FASTA file: pipeline/genomes/bomv-OK633884.1.fa
+[MSG] Valid output index basename: pipeline/indices/bomv-OK633884.1/bomv-OK633884.1
+[MSG] Done checking inputs!
+
+[MSG] STEP 2 OF 2: BUILD BOWTIE2 INDEX
+[MSG] CMD: bowtie2-build 'pipeline/genomes/bomv-OK633884.1.fa' 'pipeline/indices/bomv-OK633884.1/bomv-OK633884.1'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+Settings:
+  Output files: "pipeline/indices/bomv-OK633884.1/bomv-OK633884.1.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  pipeline/genomes/bomv-OK633884.1.fa
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 4760
+Using parameters --bmax 3570 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 3570 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 19041 (target: 3569)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 19041 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 19042 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 5515
+fchr[G]: 10105
+fchr[T]: 14172
+fchr[$]: 19041
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4200921 bytes to primary EBWT file: pipeline/indices/bomv-OK633884.1/bomv-OK633884.1.1.bt2
+Wrote 4768 bytes to secondary EBWT file: pipeline/indices/bomv-OK633884.1/bomv-OK633884.1.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 19041
+    bwtLen: 19042
+    sz: 4761
+    bwtSz: 4761
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 1191
+    offsSz: 4764
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 100
+    numLines: 100
+    ebwtTotLen: 6400
+    ebwtTotSz: 6400
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:00
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 4760
+Using parameters --bmax 3570 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 3570 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 19041 (target: 3569)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 19041 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:00
+Returning block of 19042 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 5515
+fchr[G]: 10105
+fchr[T]: 14172
+fchr[$]: 19041
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 4200921 bytes to primary EBWT file: pipeline/indices/bomv-OK633884.1/bomv-OK633884.1.rev.1.bt2
+Wrote 4768 bytes to secondary EBWT file: pipeline/indices/bomv-OK633884.1/bomv-OK633884.1.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 19041
+    bwtLen: 19042
+    sz: 4761
+    bwtSz: 4761
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 1191
+    offsSz: 4764
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 100
+    numLines: 100
+    ebwtTotLen: 6400
+    ebwtTotSz: 6400
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:00
+[MSG] Building bowtie2 index succeeded
+
+
+Currently Loaded Modules:
+  1) intel/24.0      5) TACC
+  2) impi/21.11      6) tacc-apptainer/1.3.3
+  3) autotools/1.4   7) biocontainers/0.1.0
+  4) cmake/3.28.1    8) bowtie2/ctr-2.3.4.3--py37he860b03_1
+
+ 
+
+[MSG] JOB COMPLETE!
+

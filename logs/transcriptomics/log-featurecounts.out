@@ -1,0 +1,357 @@
+========================JOB INFO=========================
+Job ID: 1426276
+Job name: featurecounts
+Start date: Thu Jan  9 16:43:54 CST 2025
+Current directory: /scratch/09961/jaturcin/bomv-nhps
+=========================================================
+
+[MSG] STEP 1 OF 2: CHECKING INPUTS
+[MSG] Valid annotation GTF: pipeline/annotations/mfascicularis-bomv.gtf
+[MSG] Valid output directory: data/transcriptomics
+[MSG] Using feature: transcript
+[MSG] Using meta-feature: gene_name
+[MSG] Running as paired-end libraries
+[MSG] Valid BAM file(s): data/transcriptomics/sample01.bam data/transcriptomics/sample02.bam data/transcriptomics/sample03.bam data/transcriptomics/sample04.bam data/transcriptomics/sample05.bam data/transcriptomics/sample06.bam data/transcriptomics/sample07.bam data/transcriptomics/sample08.bam data/transcriptomics/sample09.bam data/transcriptomics/sample10.bam data/transcriptomics/sample11.bam data/transcriptomics/sample12.bam data/transcriptomics/sample13.bam data/transcriptomics/sample14.bam data/transcriptomics/sample15.bam data/transcriptomics/sample16.bam data/transcriptomics/sample17.bam data/transcriptomics/sample18.bam data/transcriptomics/sample19.bam data/transcriptomics/sample20.bam data/transcriptomics/sample21.bam data/transcriptomics/sample22.bam data/transcriptomics/sample23.bam data/transcriptomics/sample24.bam data/transcriptomics/sample25.bam data/transcriptomics/sample26.bam data/transcriptomics/sample27.bam data/transcriptomics/sample28.bam data/transcriptomics/sample29.bam data/transcriptomics/sample30.bam data/transcriptomics/sample31.bam data/transcriptomics/sample32.bam data/transcriptomics/sample33.bam data/transcriptomics/sample34.bam data/transcriptomics/sample35.bam data/transcriptomics/sample36.bam
+[MSG] Done checking inputs!
+
+[MSG] STEP 2 OF 2: RUN FEATURECOUNTS QUANTIFICATION
+[MSG] CMD: Rscript pipeline/featurecounts.r -f transcript -m gene_name -p -a 'pipeline/annotations/mfascicularis-bomv.gtf' -o 'data/transcriptomics/counts.tsv' data/transcriptomics/sample01.bam data/transcriptomics/sample02.bam data/transcriptomics/sample03.bam data/transcriptomics/sample04.bam data/transcriptomics/sample05.bam data/transcriptomics/sample06.bam data/transcriptomics/sample07.bam data/transcriptomics/sample08.bam data/transcriptomics/sample09.bam data/transcriptomics/sample10.bam data/transcriptomics/sample11.bam data/transcriptomics/sample12.bam data/transcriptomics/sample13.bam data/transcriptomics/sample14.bam data/transcriptomics/sample15.bam data/transcriptomics/sample16.bam data/transcriptomics/sample17.bam data/transcriptomics/sample18.bam data/transcriptomics/sample19.bam data/transcriptomics/sample20.bam data/transcriptomics/sample21.bam data/transcriptomics/sample22.bam data/transcriptomics/sample23.bam data/transcriptomics/sample24.bam data/transcriptomics/sample25.bam data/transcriptomics/sample26.bam data/transcriptomics/sample27.bam data/transcriptomics/sample28.bam data/transcriptomics/sample29.bam data/transcriptomics/sample30.bam data/transcriptomics/sample31.bam data/transcriptomics/sample32.bam data/transcriptomics/sample33.bam data/transcriptomics/sample34.bam data/transcriptomics/sample35.bam data/transcriptomics/sample36.bam
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+       Rsubread 2.20.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 36 BAM files                                     ||
+||                                                                            ||
+||                           sample01.bam                                     ||
+||                           sample02.bam                                     ||
+||                           sample03.bam                                     ||
+||                           sample04.bam                                     ||
+||                           sample05.bam                                     ||
+||                           sample06.bam                                     ||
+||                           sample07.bam                                     ||
+||                           sample08.bam                                     ||
+||                           sample09.bam                                     ||
+||                           sample10.bam                                     ||
+||                           sample11.bam                                     ||
+||                           sample12.bam                                     ||
+||                           sample13.bam                                     ||
+||                           sample14.bam                                     ||
+||                           sample15.bam                                     ||
+||                           sample16.bam                                     ||
+||                           sample17.bam                                     ||
+||                           sample18.bam                                     ||
+||                           sample19.bam                                     ||
+||                           sample20.bam                                     ||
+||                           sample21.bam                                     ||
+||                           sample22.bam                                     ||
+||                           sample23.bam                                     ||
+||                           sample24.bam                                     ||
+||                           sample25.bam                                     ||
+||                           sample26.bam                                     ||
+||                           sample27.bam                                     ||
+||                           sample28.bam                                     ||
+||                           sample29.bam                                     ||
+||                           sample30.bam                                     ||
+||                           sample31.bam                                     ||
+||                           sample32.bam                                     ||
+||                           sample33.bam                                     ||
+||                           sample34.bam                                     ||
+||                           sample35.bam                                     ||
+||                           sample36.bam                                     ||
+||                                                                            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : mfascicularis-bomv.gtf (GTF)                     ||
+||      Dir for temp files : .                                                ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : counted                                          ||
+||   Min overlapping bases : 1                                                ||
+||        Duplicated Reads : ignored                                          ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file mfascicularis-bomv.gtf ...                            ||
+||    Features : 54375                                                        ||
+||    Meta-features : 29331                                                   ||
+||    Chromosomes/contigs : 409                                               ||
+||                                                                            ||
+|| Process BAM file sample01.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 53684841                                             ||
+||    Successfully assigned alignments : 15181322 (28.3%)                     ||
+||    Running time : 4.83 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample02.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 49195162                                             ||
+||    Successfully assigned alignments : 13683504 (27.8%)                     ||
+||    Running time : 3.68 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample03.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 64567987                                             ||
+||    Successfully assigned alignments : 22542364 (34.9%)                     ||
+||    Running time : 6.75 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample04.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 45054864                                             ||
+||    Successfully assigned alignments : 20726098 (46.0%)                     ||
+||    Running time : 4.90 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample05.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 61631579                                             ||
+||    Successfully assigned alignments : 23896496 (38.8%)                     ||
+||    Running time : 6.13 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample06.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 56041050                                             ||
+||    Successfully assigned alignments : 28103541 (50.1%)                     ||
+||    Running time : 5.00 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample07.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 55933682                                             ||
+||    Successfully assigned alignments : 26099540 (46.7%)                     ||
+||    Running time : 5.16 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample08.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 60750954                                             ||
+||    Successfully assigned alignments : 28821676 (47.4%)                     ||
+||    Running time : 6.84 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample09.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 42536023                                             ||
+||    Successfully assigned alignments : 11408978 (26.8%)                     ||
+||    Running time : 2.69 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample10.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 68668035                                             ||
+||    Successfully assigned alignments : 33935530 (49.4%)                     ||
+||    Running time : 8.26 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample11.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 28923379                                             ||
+||    Successfully assigned alignments : 9447202 (32.7%)                      ||
+||    Running time : 1.78 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample12.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 51279244                                             ||
+||    Successfully assigned alignments : 12999200 (25.3%)                     ||
+||    Running time : 3.65 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample13.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 71393559                                             ||
+||    Successfully assigned alignments : 23762930 (33.3%)                     ||
+||    Running time : 6.81 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample14.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 55781136                                             ||
+||    Successfully assigned alignments : 28956803 (51.9%)                     ||
+||    Running time : 5.47 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample15.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 51854501                                             ||
+||    Successfully assigned alignments : 27242968 (52.5%)                     ||
+||    Running time : 4.42 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample16.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 57982897                                             ||
+||    Successfully assigned alignments : 26535212 (45.8%)                     ||
+||    Running time : 5.92 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample17.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 48216375                                             ||
+||    Successfully assigned alignments : 21779682 (45.2%)                     ||
+||    Running time : 4.54 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample18.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 60332281                                             ||
+||    Successfully assigned alignments : 33247675 (55.1%)                     ||
+||    Running time : 5.50 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample19.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 55410452                                             ||
+||    Successfully assigned alignments : 31274683 (56.4%)                     ||
+||    Running time : 5.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample20.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 61570863                                             ||
+||    Successfully assigned alignments : 32754239 (53.2%)                     ||
+||    Running time : 7.41 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample21.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 37836150                                             ||
+||    Successfully assigned alignments : 12540174 (33.1%)                     ||
+||    Running time : 2.91 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample22.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 47857474                                             ||
+||    Successfully assigned alignments : 11590948 (24.2%)                     ||
+||    Running time : 2.96 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample23.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 45593712                                             ||
+||    Successfully assigned alignments : 17216111 (37.8%)                     ||
+||    Running time : 3.00 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample24.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 55139410                                             ||
+||    Successfully assigned alignments : 11912133 (21.6%)                     ||
+||    Running time : 3.64 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample25.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 69180932                                             ||
+||    Successfully assigned alignments : 40975882 (59.2%)                     ||
+||    Running time : 8.63 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample26.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 87838233                                             ||
+||    Successfully assigned alignments : 50208085 (57.2%)                     ||
+||    Running time : 12.50 minutes                                            ||
+||                                                                            ||
+|| Process BAM file sample27.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 39326577                                             ||
+||    Successfully assigned alignments : 25475497 (64.8%)                     ||
+||    Running time : 4.21 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample28.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 71760373                                             ||
+||    Successfully assigned alignments : 42482254 (59.2%)                     ||
+||    Running time : 9.23 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample29.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 69779794                                             ||
+||    Successfully assigned alignments : 40475377 (58.0%)                     ||
+||    Running time : 9.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample30.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 64474122                                             ||
+||    Successfully assigned alignments : 39492619 (61.3%)                     ||
+||    Running time : 6.95 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample31.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 58129466                                             ||
+||    Successfully assigned alignments : 37535753 (64.6%)                     ||
+||    Running time : 5.23 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample32.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 57254188                                             ||
+||    Successfully assigned alignments : 31862593 (55.7%)                     ||
+||    Running time : 7.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample33.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 66863018                                             ||
+||    Successfully assigned alignments : 35504381 (53.1%)                     ||
+||    Running time : 7.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample34.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 50713193                                             ||
+||    Successfully assigned alignments : 33085389 (65.2%)                     ||
+||    Running time : 4.36 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample35.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 63439590                                             ||
+||    Successfully assigned alignments : 30251653 (47.7%)                     ||
+||    Running time : 5.64 minutes                                             ||
+||                                                                            ||
+|| Process BAM file sample36.bam...                                           ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 58032151                                             ||
+||    Successfully assigned alignments : 26169123 (45.1%)                     ||
+||    Running time : 5.48 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+\\============================================================================//
+
+R Under development (unstable) (2023-08-05 r84874)
+Platform: x86_64-pc-linux-gnu
+Running under: Ubuntu 22.04.2 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: Etc/UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] Rsubread_2.20.0 argparse_2.2.4  lubridate_1.9.2 forcats_1.0.0  
+ [5] stringr_1.5.0   dplyr_1.1.2     purrr_1.0.1     readr_2.1.4    
+ [9] tidyr_1.3.0     tibble_3.2.1    ggplot2_3.4.2   tidyverse_2.0.0
+
+loaded via a namespace (and not attached):
+ [1] Matrix_1.6-0     jsonlite_1.8.7   gtable_0.3.3     compiler_4.4.0  
+ [5] tidyselect_1.2.0 scales_1.2.1     lattice_0.21-8   R6_2.5.1        
+ [9] generics_0.1.3   munsell_0.5.0    findpython_1.0.9 pillar_1.9.0    
+[13] tzdb_0.4.0       rlang_1.1.1      utf8_1.2.3       stringi_1.7.12  
+[17] timechange_0.2.0 cli_3.6.1        withr_2.5.0      magrittr_2.0.3  
+[21] grid_4.4.0       hms_1.1.3        lifecycle_1.0.3  vctrs_0.6.3     
+[25] glue_1.6.2       fansi_1.0.4      colorspace_2.1-0 tools_4.4.0     
+[29] pkgconfig_2.0.3 
+[MSG] featureCounts quantification succeeded
+
+
+Currently Loaded Modules:
+  1) intel/24.0   3) autotools/1.4   5) xalt/3.1.1   7) tacc-apptainer/1.3.3
+  2) impi/21.11   4) cmake/3.28.1    6) TACC         8) Rstats/4.1.3
+
+ 
+
+[MSG] JOB COMPLETE!
+

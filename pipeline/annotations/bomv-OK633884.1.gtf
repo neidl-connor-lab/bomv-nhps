@@ -1,0 +1,33 @@
+#gtf-version 2.2
+#!genome-build-accession custom:OK633884.1
+OK633884.1	Genbank	gene	463	2682	.	+	.	gene_id "NP"; gene_name "NP"; gbkey "Gene"; gene_biotype "protein_coding"; 
+OK633884.1	Genbank	transcript	463	2682	.	+	.	gene_id "NP"; gene_name "NP"; transcript_id "NP"; gbkey "mRNA"; transcript_biotype "mRNA"; product "nucleoprotein"; 
+OK633884.1	Genbank	exon	463	2682	.	+	.	gene_id "NP"; gene_name "NP"; transcript_id "NP"; transcript_biotype "mRNA"; product "nucleoprotein"; exon_number "1"; 
+OK633884.1	Genbank	CDS	463	2682	.	+	0	gene_id "NP"; gene_name "NP"; transcript_id "NP"; gbkey "CDS"; product "nucleoprotein"; protein_id "UKB36425.1"; exon_number "1"; 
+OK633884.1	Genbank	gene	3113	4138	.	+	.	gene_id "VP35"; gene_name "VP35"; gbkey "Gene"; gene_biotype "protein_coding"; 
+OK633884.1	Genbank	transcript	3113	4138	.	+	.	gene_id "VP35"; gene_name "VP35"; transcript_id "VP35"; gbkey "mRNA"; transcript_biotype "mRNA"; product "polymerase complex protein"; 
+OK633884.1	Genbank	exon	3113	4138	.	+	.	gene_id "VP35"; gene_name "VP35"; transcript_id "VP35"; transcript_biotype "mRNA"; product "polymerase complex protein"; exon_number "1";
+OK633884.1	Genbank	CDS	3113	4138	.	+	0	gene_id "VP35"; gene_name "VP35"; transcript_id "VP35"; gbkey"CDS"; product "polymerase complex protein"; exon_number "1"; protein_id "UKB36426.1";
+OK633884.1	Genbank	gene	4465	5445	.	+	.	gene_id "VP40"; gene_name "VP40"; gbkey "Gene"; gene_biotype "protein_coding"; 
+OK633884.1	Genbank	transcript	4465	5445	.	+	.	gene_id "VP40"; gene_name "VP40"; transcript_id "VP40"; gbkey "mRNA"; transcript_biotype "mRNA"; product "matrix protein"; 
+OK633884.1	Genbank	exon	4465	5445	.	+	.	gene_id "VP40"; gene_name "VP40"; transcript_id "VP40"; transcript_biotype "mRNA"; product "matrix protein"; exon_number "1";
+OK633884.1	Genbank	CDS	4465	5445	.	+	0	gene_id "VP40"; gene_name "VP40"; transcript_id "VP40"; gbkey"CDS"; product "matrix protein"; exon_number "1"; protein_id "UKB36427.1";
+OK633884.1	Genbank	gene	6042	8059	.	+	.	gene_id "GP"; gene_name "GP"; gbkey "Gene"; gene_biotype "protein_coding"; 
+OK633884.1	Genbank	transcript	6042	8059	.	+	.	gene_id "GP"; gene_name "GP"; transcript_id "GP"; gbkey "mRNA"; transcript_biotype "mRNA"; product "structural and secreted glycoproteins"; note "unedited mRNA"; 
+OK633884.1	Genbank	exon	6042	8059	.	+	.	gene_id "GP"; gene_name "GP"; transcript_id "GP"; transcript_biotype "mRNA"; product "structural and secreted glycoproteins"; note "unedited mRNA"; exon_number "1"; 
+OK633884.1	Genbank	CDS	6042	6914	.	+	0	gene_id "GP"; gene_name "GP"; transcript_id "GP"; gbkey"CDS"; product "structural glycoprotein"; exon_number "1"; protein_id "UKB36429.1"; exception "RNA editing"; 
+OK633884.1	Genbank	CDS	6914	8059	.	+	0	gene_id "GP"; gene_name "GP"; transcript_id "GP"; gbkey"CDS"; product "structural glycoprotein"; exon_number "1"; protein_id "UKB36429.1"; exception "RNA editing"; 
+OK633884.1	Genbank	CDS	6042	7139	.	+	0	gene_id "GP"; gene_name "GP"; transcript_id "GP"; gbkey"CDS"; product "secreted glycoprotein"; exon_number "1"; protein_id "UKB36428.1"; 
+OK633884.1	Genbank	gene	8483	9382	.	+	.	gene_id "VP30"; gene_name "VP30"; gbkey "Gene"; gene_biotype "protein_coding"; 
+OK633884.1	Genbank	transcript	8483	9382	.	+	.	gene_id "VP30"; gene_name "VP30"; transcript_id "VP30"; gbkey "mRNA"; transcript_biotype "mRNA"; product "minor nucleoprotein and polymerase complex protein"; 
+OK633884.1	Genbank	exon	8483	9382	.	+	.	gene_id "VP30"; gene_name "VP30"; transcript_id "VP30"; transcript_biotype "mRNA"; product "minor nucleoprotein and polymerase complex protein"; exon_number "1"; 
+OK633884.1	Genbank	CDS	8483	9382	.	+	0	gene_id "VP30"; gene_name "VP30"; transcript_id "VP30"; gbkey"CDS"; product "minor nucleoprotein and polymerase complex protein"; exon_number "1"; protein_id "UKB36430.1"; 
+OK633884.1	Genbank	gene	10398	11153	.	+	.	gene_id "VP24"; gene_name "VP24"; gbkey "Gene"; gene_biotype "protein_coding"; 
+OK633884.1	Genbank	transcript	10398	11153	.	+	.	gene_id "VP24"; gene_name "VP24"; transcript_id "VP24"; gbkey "mRNA"; transcript_biotype "mRNA"; product "membrane-associated protein"; 
+OK633884.1	Genbank	exon	10398	11153	.	+	.	gene_id "VP24"; gene_name "VP24"; transcript_id "VP24"; transcript_biotype "mRNA"; product "membrane-associated protein"; exon_number "1"; 
+OK633884.1	Genbank	CDS	10398	11153	.	+	0	gene_id "VP24"; gene_name "VP24"; transcript_id "VP24"; gbkey"CDS"; product "membrane-associated protein"; exon_number "1"; protein_id "UKB36431.1"; 
+OK633884.1	Genbank	gene	11665	18297	.	+	.	gene_id "L"; gene_name "L"; gbkey "Gene"; gene_biotype "protein_coding";
+OK633884.1	Genbank	transcript	11665	18297	.	+	.	gene_id "L"; gene_name "L"; transcript_id "L"; gbkey "mRNA"; transcript_biotype "mRNA"; product "polymerase and synthesis of viral RNAs and transcriptional RNA editing"; 
+OK633884.1	Genbank	exon	11665	18297	.	+	.	gene_id "L"; gene_name "L"; transcript_id "L"; transcript_biotype "mRNA"; product "polymerase and synthesis of viral RNAs and transcriptional RNA editing"; exon_number "1"; 
+OK633884.1	Genbank	CDS	11665	18297	.	+	0	gene_id "L"; gene_name "L"; transcript_id "L"; gbkey"CDS"; product "polymerase and synthesis of viral RNAs and transcriptional RNA editing"; exon_number "1"; protein_id "UKB36432.1"; 
+###

@@ -1,11 +1,8 @@
 *.bam*
 *.fq*
 data/fastq/
-data/star-*
-pipeline/annotations/cyno*
-pipeline/annotations/rhesus*
-pipeline/genomes/cyno*
-pipeline/genomes/rhesus*
+pipeline/annotations/mfascicularis*
+pipeline/genomes/mfascicularis*
 pipeline/indices/
 pipeline/kraken2db/
 

@@ -1,0 +1,119 @@
+========================JOB INFO=========================
+Job ID: 1585637
+Job name: sample35
+Start date: Thu Feb 13 09:55:17 CST 2025
+Current directory: /scratch/09961/jaturcin/bomv-nhps
+=========================================================
+
+[MSG] STEP 0: CHECKING INPUTS
+[MSG] Host index: pipeline/indices/mfascicularis-v5.0/mfascicularis-v5.0
+[MSG] Viral index: pipeline/indices/bomv-OK633884.1/bomv-OK633884.1
+[MSG] Reference FASTA: pipeline/genomes/bomv-OK633884.1.fa
+[MSG] Reference annotation: pipeline/annotations/bomv-OK633884.1.gtf
+[MSG] First FASTQ file: data/fastq/sample35-r1.fq.gz
+[MSG] Second FASTQ file: data/fastq/sample35-r2.fq.gz
+[MSG] Valid output directory: data/genomics
+[MSG] Working with sample: sample35
+[MSG] Done checking inputs!
+
+[MSG] STEP 1: DISCARD HOST READS
+[MSG] CMD: bowtie2 --threads 8 --very-sensitive -x 'pipeline/indices/mfascicularis-v5.0/mfascicularis-v5.0' --un-conc-gz 'data/genomics/sample35/filtered-r%.fq.gz' -1 'data/fastq/sample35-r1.fq.gz' -2 'data/fastq/sample35-r2.fq.gz' > /dev/null
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+54972048 reads; of these:
+  54972048 (100.00%) were paired; of these:
+    14899915 (27.10%) aligned concordantly 0 times
+    29010831 (52.77%) aligned concordantly exactly 1 time
+    11061302 (20.12%) aligned concordantly >1 times
+    ----
+    14899915 pairs aligned concordantly 0 times; of these:
+      2083404 (13.98%) aligned discordantly 1 time
+    ----
+    12816511 pairs aligned 0 times concordantly or discordantly; of these:
+      25633022 mates make up the pairs; of these:
+        18375728 (71.69%) aligned 0 times
+        5313335 (20.73%) aligned exactly 1 time
+        1943959 (7.58%) aligned >1 times
+83.29% overall alignment rate
+[MSG] Host alignment succeeded
+
+[MSG] STEP 2: METAGENOMIC CLASSIFICATION
+[MSG] CMD: kraken2 --threads 8 --db 'pipeline/kraken2db' --output - --report 'data/genomics/sample35/metagenomics-raw.tsv' --use-names --gzip-compressed --paired 'data/genomics/sample35/filtered-r1.fq.gz' 'data/genomics/sample35/filtered-r2.fq.gz'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+Loading database information... done.
+14899915 sequences (2234.99 Mbp) processed in 49.936s (17902.8 Kseq/m, 2685.41 Mbp/m).
+  11428604 sequences classified (76.70%)
+  3471311 sequences unclassified (23.30%)
+[MSG] Metagenomic classification succeeded
+
+[MSG] STEP 3: ALIGN TO VIRUS
+[MSG] CMD: bowtie2 --threads 8 -x 'pipeline/indices/bomv-OK633884.1/bomv-OK633884.1' -1 'data/genomics/sample35/filtered-r1.fq.gz' -2 'data/genomics/sample35/filtered-r2.fq.gz' > 'data/genomics/sample35/alignment.sam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+14899915 reads; of these:
+  14899915 (100.00%) were paired; of these:
+    14899915 (100.00%) aligned concordantly 0 times
+    0 (0.00%) aligned concordantly exactly 1 time
+    0 (0.00%) aligned concordantly >1 times
+    ----
+    14899915 pairs aligned concordantly 0 times; of these:
+      0 (0.00%) aligned discordantly 1 time
+    ----
+    14899915 pairs aligned 0 times concordantly or discordantly; of these:
+      29799830 mates make up the pairs; of these:
+        29799830 (100.00%) aligned 0 times
+        0 (0.00%) aligned exactly 1 time
+        0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+[MSG] Viral alignment succeeded
+
+[MSG] STEP 4: PROCESS ALIGNMENT
+[MSG] CMD: samtools view --threads 8 -b -h 'data/genomics/sample35/alignment.sam' > 'data/genomics/sample35/alignment-raw.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Compression succeeded
+[MSG] CMD: samtools fixmate --threads 8 -m 'data/genomics/sample35/alignment-raw.bam' 'data/genomics/sample35/alignment-fixmate.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Filling in coordinates succeeded
+[MSG] CMD: samtools sort --threads 8 'data/genomics/sample35/alignment-fixmate.bam' > 'data/genomics/sample35/alignment-sorted.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[bam_sort_core] merging from 1 files and 8 in-memory blocks...
+[MSG] Sorting succeeded
+[MSG] CMD: samtools markdup --threads 8 'data/genomics/sample35/alignment-sorted.bam' 'data/genomics/sample35/alignment-dupmark.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Marking duplicates succeeded
+[MSG] CMD: lofreq indelqual --dindel --ref 'pipeline/genomes/bomv-OK633884.1.fa' 'data/genomics/sample35/alignment-dupmark.bam' > 'data/genomics/sample35/alignment.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Indelqual succeeded
+[MSG] CMD: samtools index 'data/genomics/sample35/alignment.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Indexing succeeded
+
+[MSG] STEP 5: CALCULATE COVERAGE
+[MSG] CMD: samtools depth --threads 8 --excl-flags DUP -a -H 'data/genomics/sample35/alignment.bam' > 'data/genomics/sample35/coverage.tsv'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Coverage succeeded
+
+[MSG] STEP 6: ASSEMBLE CONSENSUS
+[MSG] CMD: samtools consensus --threads 8 -a --excl-flags DUP --use-qual --min-depth 10 --call-fract 0.5 --mode simple  --output 'data/genomics/sample35/consensus.fa' 'data/genomics/sample35/alignment.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Consensus succeeded
+
+[MSG] STEP 7: QUANTIFY SNVs
+[MSG] CMD: samtools view --threads 8 --bam --excl-flags DUP 'data/genomics/sample35/alignment.bam' > 'data/genomics/sample35/alignment-dedup.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Read deduplication succeeded
+[MSG] CMD: samtools index 'data/genomics/sample35/alignment-dedup.bam'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Indexing deduplicated BAM succeeded
+[MSG] No reads mapped to the viral genome; exiting...
+
+Currently Loaded Modules:
+  1) intel/24.0            7) bowtie2/ctr-2.3.4.3--py37he860b03_1
+  2) impi/21.11            8) samtools/ctr-1.20--h50ea8bc_0
+  3) autotools/1.4         9) kraken2/ctr-2.0.7_beta--pl526h2d50403_0
+  4) cmake/3.28.1         10) lofreq/ctr-2.1.3.1--py36_0
+  5) TACC                 11) tacc-apptainer/1.3.3
+  6) biocontainers/0.1.0  12) Rstats/4.1.3
+
+ 
+
+[MSG] JOB COMPLETE!
+

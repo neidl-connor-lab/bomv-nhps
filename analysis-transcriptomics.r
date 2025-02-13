@@ -18,21 +18,31 @@ cols.reg <- c(Down="#377eb8", None="lightgrey", Up="#e41a1c")
 vgenes <- c("NP", "VP35", "VP40", "GP", "VP30", "VP24", "L")
 
 # helper functions
-read.counts <- function(counts.matrix) {
-  read.delim(counts.matrix) %>%
-    # collapse genes by name where possible
-    reshape2::melt(id.vars="Gene",
-                   variable.name="Sample",
-                   value.name="Counts") %>%
-    group_by(Gene, Sample) %>%
-    summarise(Counts=sum(Counts),
-              .groups="drop") %>%
-    reshape2::dcast(Gene ~ Sample, value.var="Counts") %>%
-    # remove any rRNA since it should have been depleted
-    filter(!str_detect(Gene, "rRNA")) %>%
-    # format as matrix
-    column_to_rownames("Gene") %>%
-    as.matrix()
+read.counts <- function(counts.matrix, 
+                        viral=vgenes) {
+  counts.matrix <- read.delim(counts.matrix) %>%
+                   # collapse genes by name where possible
+                   reshape2::melt(id.vars="Gene",
+                                  variable.name="Sample",
+                                  value.name="Counts") %>%
+                   group_by(Gene, Sample) %>%
+                   summarise(Counts=sum(Counts),
+                             .groups="drop") %>%
+                   reshape2::dcast(Gene ~ Sample, value.var="Counts") %>%
+                   # remove any rRNA since it should have been depleted
+                   filter(!str_detect(Gene, "rRNA")) %>%
+                   # format as matrix
+                   column_to_rownames("Gene") %>%
+                   as.matrix()
+  # pull out viral counts and sum per sample; format as matrix
+  vcounts <- colSums(counts.matrix[viral, ])
+  vcounts <- matrix(vcounts,
+                    nrow=1,
+                    dimnames=list("BOMV", names(vcounts)))
+  # remove viral counts from the original matrix
+  counts.matrix <- counts.matrix[!(rownames(counts.matrix) %in% viral), ]
+  # add back in viral counts under "BOMV" and return
+  rbind(counts.matrix, vcounts)
 }
 filter.lowcounts <- function(counts.matrix, threshold=10) {
   # calculate total gene counts
@@ -86,50 +96,48 @@ run.results <- function(dds, name, label, sig.p=0.05, sig.lfc=2) {
   select(r, Gene, Condition, log2FC, padj, Significant, Regulation)
 }
 
-
-## cyno or rhesus annotation? --------------------------------------------------
-cyno <- read.delim("analysis/quantification-cyno.tsv") %>%
-        reshape2::melt(id.vars="Status",
-                       variable.name="ID",
-                       value.name="Reads") %>%
-        mutate(Species="Cyno")
-rhesus <- read.delim("analysis/quantification-rhesus.tsv") %>%
-          reshape2::melt(id.vars="Status", 
-                         variable.name="ID",
-                         value.name="Reads") %>%
-          mutate(Species="Rhesus")
-
-# compare quantification
-cyno %>%
-  full_join(rhesus, by=colnames(cyno)) %>%
-      reshape2::dcast(ID + Species ~ Status, value.var="Reads") %>%
-      mutate(TotalReads=Assigned+Unassigned_Unmapped+Unassigned_NoFeatures,
-             Percent=100*Assigned/TotalReads) %>%
-      select(ID, Species, Assigned, Percent) %>%
-  ggplot(aes(Species, Percent)) +
-  geom_hline(yintercept=75, col="red", linetype=2) +
-  geom_violin(fill="darkgrey", alpha=0.8) +
-  geom_jitter(height=0, width=0.1) +
-  ggpubr::stat_compare_means(comparisons=list(c("Cyno", "Rhesus")), 
-                             paired=TRUE, label="p.signif") +
-  ylim(0, 100) +
-  labs(x=element_blank(),
-       y="Read quantification (%)")
-ggsave("analysis/quantification.png",
-       units="cm", width=10, height=10)
-rm(cyno, rhesus)
-
-## inputs ----------------------------------------------------------------------
-# metadata
-meta <- read.csv("analysis/samplesheet.csv") %>%
-        filter(ID != "sample01") %>%
+## metadata --------------------------------------------------------------------
+meta <- read.csv("samplesheet.csv") %>%
         mutate(DPI=as.integer(DPI),
                Group=factor(Group, levels=unique(Group)),
                Condition=factor(DPI, levels=unique(DPI)))
 rownames(meta) <- meta$ID
 
-# counts 
-cmat <- read.counts("data/featurecounts/cyno.tsv") 
+## quantification QC -----------------------------------------------------------
+read.delim("data/transcriptomics/counts.tsv.summary") %>%
+  reshape2::melt(id.vars="Status",
+                 variable.name="ID",
+                 value.name="Reads") %>%
+  filter(Reads!=0) %>%
+  left_join(meta, by="ID") %>%
+  mutate(Status=factor(Status, 
+                       levels=c("Unassigned_Unmapped",
+                                "Unassigned_NoFeatures", 
+                                "Unassigned_Duplicate",
+                                "Assigned"),
+                       labels=c("Unmapped (unassigned)",
+                                "No features (unassigned)",
+                                "Duplicated (unassigned)",
+                                "Assigned"))) %>%
+  ggplot(aes(Reads, NHP)) +
+  geom_col(aes(fill=Status), col="black") +
+  geom_vline(xintercept=1e7, linetype=2, col="lightgrey") +
+  scale_fill_manual(values=c("Unmapped (unassigned)"="white",
+                             "No features (unassigned)"="lightgrey",
+                             "Duplicated (unassigned)"="darkgrey",
+                             "Assigned"="black")) +
+  facet_wrap(~DPI) +
+  scale_x_continuous(limits=c(0, 1e8),
+                     breaks=c(0, 1e7, 5e7, 1e8),
+                     labels=c("0", "1e7", "5e7", "1e8")) +
+  labs(x="# reads",
+       y="Sample",
+       fill=element_blank())
+ggsave("analysis/quantification.png",
+       units="cm", width=20, height=10)
+
+## counts ----------------------------------------------------------------------
+cmat <- read.counts("data/transcriptomics/counts.tsv") 
 mode(cmat) <- "integer"
 
 # align samples
@@ -263,7 +271,8 @@ r <- rmat %>%
                              levels=paste(unique(Condition), "DPI")))
 r[r$padj < 1e-10, "padj"] <- 1e-10
 topgenes <- r %>%
-            filter(Significant) %>%
+            filter(Significant,
+                   !str_detect(Gene, "^ENS")) %>%
             group_by(Condition) %>%
             top_n(n=10, wt=abs(log2FC)) %>%
             ungroup()
@@ -311,10 +320,9 @@ ggsave("analysis/degenes-dpi.png",
 
 # define up-regulated gene modules
 # get list of all up-regulated genes
-gene.mod <- rmat[rmat$Regulation=="Up", "Gene"]
+gene.mod <- rmat$Gene[rmat$Regulation=="Up"]
 gene.mod <- rmat %>%
-            filter(Gene %in% gene.mod,
-                   !(Gene %in% vgenes)) %>%
+            filter(Gene %in% gene.mod) %>%
             # format DPI
             mutate(DPI=paste0(Condition, ".DPI")) %>%
             # expand to matrix with DPI as columns and lfc as values
@@ -359,7 +367,7 @@ x <- gene.mod %>%
                .groups="drop")
 anchor.genes <- c("Early"="IFI44",
                   "Late"="LCN2",
-                  "Both"="OAS1")
+                  "Prolonged"="OAS1")
 gene.mod <- gene.mod %>%
             filter(Gene %in% anchor.genes) %>%
             group_by(Cluster, Gene) %>%
@@ -393,6 +401,8 @@ gene.mod %>%
   geom_line(data=gene.examp, aes(y=log2FC, col=Gene)) +
   scale_color_brewer(palette="Paired") +
   facet_wrap(~Label, ncol=1) +
+  scale_x_continuous(limits=c(-8, 30),
+                     breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
   labs(x="Days postinfection",
        y="Fold change (log2)")
 ggsave("analysis/modules-dpi.png", 
@@ -400,74 +410,3 @@ ggsave("analysis/modules-dpi.png",
 
 # clean up
 rm(x, gene.mod, gene.examp, anchor.genes, rmat, desq)
-
-## DE analysis: symptoms -------------------------------------------------------
-# run DESeq and calculate results
-desq <- cmat %>%
-        filter.lowcounts() %>%
-        DESeqDataSetFromMatrix(meta, ~Group) %>%
-        DESeq(quiet=TRUE)
-rmat <- list(run.results(desq, "Group_Asymptomatic_vs_Baseline", "Asymptomatic"),
-             run.results(desq, "Group_Symptomatic_vs_Baseline", "Symptomatic"),
-             run.results(desq, "Group_Recovered_vs_Baseline", "Recovered")) %>%
-        do.call(rbind, .) %>%
-        mutate(Condition=factor(Condition, levels=levels(meta$Group)))
-
-# save results, plus make IPA input matrix
-write.csv(rmat, "analysis/results-symptoms.csv", na="", row.names=FALSE)
-rmat %>%
-  reshape2::melt(id.vars=c("Gene", "Condition"),
-                 measure.vars=c("log2FC", "padj")) %>%
-  mutate(Condition=paste0("dpi", Condition, ".", variable)) %>%
-  reshape2::dcast(Gene ~ Condition, value.var="value") %>%
-  write.csv("analysis/ipa-input-symptoms.csv", na="", row.names=FALSE)
-
-# "squashed" volcano plot
-r <- na.omit(rmat)
-r[r$padj < 1e-10, "padj"] <- 1e-10
-topgenes <- r %>%
-            filter(Significant) %>%
-            group_by(Condition) %>%
-            top_n(n=15, wt=abs(log2FC)) %>%
-            ungroup()
-r %>%
-  ggplot(aes(log2FC, -log10(padj), size=Regulation, col=Regulation)) +
-  geom_point(alpha=0.8) +
-  ggrepel::geom_text_repel(data=topgenes, aes(label=Gene), 
-                           col="black", size=2, max.overlaps=100) +
-  scale_size_manual(values=c(Down=1, None=0.5, Up=1)) +
-  scale_color_manual(values=cols.reg) +
-  scale_y_continuous(limits=c(NA, 11),
-                     breaks=c(1, 5, 10),
-                     labels=c("1", "1e-5", "<1e-10")) +
-  scale_x_continuous(limits=c(-10, 20),
-                     breaks=c(-10, 0, 10, 20)) +
-  facet_wrap(~Condition, nrow=1) +
-  labs(x="Fold change (log2)",
-       y="FDR-adjusted p-value (-log10)")
-ggsave("analysis/volcano-symptoms.png",
-       units="cm", width=20, height=10)
-rm(r, topgenes)
-
-# total degenes
-rmat %>%
-  filter(Significant) %>%
-  group_by(Regulation, Condition) %>%
-  summarise(Genes=n(),
-            .groups="drop") %>%
-  # add in any missing values
-  right_join(expand.grid(Condition=levels(meta$Group),
-                         Regulation=c("Down", "Up")),
-             by=c("Regulation", "Condition")) %>%
-  replace_na(list(Genes=0)) %>%
-  # plot it
-  ggplot(aes(Condition, Genes, group=Regulation, fill=Regulation)) +
-  geom_line(aes(linetype=Regulation)) +
-  geom_point(pch=21, size=3) +
-  scale_fill_manual(values=cols.reg) +
-  labs(x=element_blank(),
-       y="Significantly DE genes") +
-  theme(legend.box.background=element_rect(color="black"),
-        legend.position=c(0.2, 0.8))
-ggsave("analysis/degenes-symptoms.png",
-       units="cm", width=10, height=8)

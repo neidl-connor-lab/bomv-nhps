@@ -1,0 +1,10 @@
+"Segment","NT.position","NT.ref","NT.alt","Frequency","Type","InDel","Gene.ID","Gene.name","Protein.ID","Product","AA.pos","AA.ref","AA.alt"
+"OK633884.1",2171,"A","AC",0.054475,"Nonsynonymous",TRUE,"NP","NP","UKB36425.1","nucleoprotein",572,"A","C"
+"OK633884.1",3846,"A","G",0.093168,"Nonsynonymous",FALSE,"VP35","VP35","UKB36426.1","polymerase complex protein",245,"Q","R"
+"OK633884.1",4328,"T","TC",0.032491,"Noncoding",TRUE,,,,,,,
+"OK633884.1",7347,"G","T",0.07109,"Nonsynonymous",FALSE,"GP","GP","UKB36429.1","structural glycoprotein",436,"R","I"
+"OK633884.1",12086,"T","TA",0.014035,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",143,"N","K"
+"OK633884.1",14144,"A","G",0.053097,"Nonsynonymous",FALSE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",827,"D","G"
+"OK633884.1",15389,"C","CT",0.023529,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1244,"L","F"
+"OK633884.1",16213,"G","A",0.241379,"Nonsynonymous",FALSE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1517,"A","T"
+"OK633884.1",16949,"C","CT",0.059701,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1765,"A","C"

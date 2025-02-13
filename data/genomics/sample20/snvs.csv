@@ -1,0 +1,4 @@
+"Segment","NT.position","NT.ref","NT.alt","Frequency","Type","InDel","Gene.ID","Gene.name","Protein.ID","Product","AA.pos","AA.ref","AA.alt"
+"OK633884.1",14375,"CTG","C",0.166667,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",905,"V","G"
+"OK633884.1",16213,"G","A",0.1875,"Nonsynonymous",FALSE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1517,"A","T"
+"OK633884.1",16949,"C","CT",0.12,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1765,"A","C"

@@ -1,10 +1,11 @@
 #!/bin/bash
 # sbatch options
+#SBATCH -A MIP24002
 #SBATCH -p skx
 #SBATCH -N 8
 #SBATCH -n 8
 #SBATCH -o log-%x.out
-#SBATCH -t 08:00:00
+#SBATCH -t 12:00:00
 
 ## setup -----------------------------------------------------------------------
 # functions
@@ -19,16 +20,21 @@ checkcmd () {
   fi
 }
 
-# help message
 # pre-set variables
+VISUALIZATION="pipeline/visualization.r"
+ANNOTATION="pipeline/mutationannotation.r"
 K2DB="pipeline/kraken2db"
 THRESHOLD="100"
+
+# help message
 HELP="usage: sbatch -J JOBNAME $(basename "$0") OPTIONS
+VISUALIZATION AND ANNOTATION SCRIPTS MUST BE IN pipeline DIRECTORY
 
 options (REQUIRED):
   -n NHP/host genome bowtie2 index
   -v viral genome bowtie2 index
   -f viral genome FASTA
+  -g viral genome annotation GTF
   -o output directory
   -s sample ID
   -x forward FASTQ file
@@ -38,7 +44,7 @@ options (REQUIRED):
   -h show this message and exit
 "
 # parsing arguments
-while getopts ":hn:v:f:o:s:x:y:t:k:" opt
+while getopts ":hn:v:f:g:o:s:x:y:t:k:" opt
 do
   case ${opt} in
     n ) HOST="${OPTARG}"
@@ -46,6 +52,8 @@ do
     v ) VIRAL="${OPTARG}"
       ;;
     f ) REFSEQ="${OPTARG}"
+      ;;
+    g ) GTF="${OPTARG}"
       ;;
     o ) ODIR="${OPTARG}"
       ;;
@@ -90,6 +98,18 @@ module load bowtie2
 module load samtools
 module load kraken2
 module load lofreq
+module use /work/projects/singularity/rstudio/lua
+module load Rstats/4.1.3
+
+# double check that the visualization and annotations scripts exist
+if [ ! -f "$VISUALIZATION" ]
+then
+  err "Visualization script not found: $VISUALIZATION"
+fi
+if [ ! -f "$ANNOTATION" ]
+then
+  err "SNV annotation script not found: $ANNOTATION"
+fi
 
 # double-check that kraken2 database exists
 if [ -z "$K2DB" ]
@@ -112,23 +132,34 @@ else
 fi
 if [ -z "$VIRAL" ]
 then
-  err "No host index provided"
+  err "No viral index provided"
 elif [ "$(ls -1 ${VIRAL}.* 2> /dev/null | wc -l)" -eq 6 ]
 then
-  mesg "Host index: $VIRAL"
+  mesg "Viral index: $VIRAL"
 else
-  err "Invalid host index: $VIRAL"
+  err "Invalid viral index: $VIRAL"
 fi
 
 # reference sequence
 if [ -z "$REFSEQ" ]
 then
-  err "No reference FASTA provided"
+  err "No viral reference FASTA provided"
 elif [ -f "$REFSEQ" ]
 then
   mesg "Reference FASTA: $REFSEQ"
 else
   err "Invalid reference FASTA: $REFSEQ"
+fi
+
+# annotation GTF
+if [ -z "$GTF" ]
+then
+  err "No viral annotation GTF provided"
+elif [ -f "$GTF" ]
+then
+  mesg "Reference annotation: $GTF"
+else
+  err "Invalid viral annotation GTF: $GTF"
 fi
 
 # R1/R0 FASTQ file
@@ -186,15 +217,16 @@ mesg "STEP 1: DISCARD HOST READS"
 # build command based on whether has paired reads
 if [ -z "$R2" ] # unpaired
 then
-  CMD="bowtie2 --threads 8 --quiet -x '$HOST' --un-conc-gz '$ODIR/filtered.fq.gz' -U '$R1' > /dev/null"
+  CMD="bowtie2 --threads 8 --very-sensitive -x '$HOST' --un-conc-gz '$ODIR/filtered.fq.gz' -U '$R1' > /dev/null"
 else
-  CMD="bowtie2 --threads 8 --quiet -x '$HOST' --un-conc-gz '$ODIR/filtered-r%.fq.gz' -1 '$R1' -2 '$R2' > /dev/null"
+  CMD="bowtie2 --threads 8 --very-sensitive -x '$HOST' --un-conc-gz '$ODIR/filtered-r%.fq.gz' -1 '$R1' -2 '$R2' > /dev/null"
 fi
 
 # run alignment filter
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Host alignment" 
+echo ""
 
 # update R1 and R2
 if [ -z "$R2" ] # unpaired
@@ -209,7 +241,7 @@ fi
 mesg "STEP 2: METAGENOMIC CLASSIFICATION"
 
 # build command on whether has paired reads
-CMD="kraken2 --threads 8 --db '$K2DB' --output - --report '$ODIR/metagenomics.tsv' --use-names --gzip-compressed"
+CMD="kraken2 --threads 8 --db '$K2DB' --output - --report '$ODIR/metagenomics-raw.tsv' --use-names --gzip-compressed"
 if [ -z "$R2" ] # unpaired
 then
   CMD="$CMD '$R1'"
@@ -222,6 +254,10 @@ mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Metagenomic classification"
 echo ""
+
+# only keep entries with % > 0.00
+cat "$ODIR/metagenomics-raw.tsv" | awk '($1!=0.00) { print }' > "$ODIR/metagenomics.tsv"
+rm "$ODIR/metagenomics-raw.tsv"
 
 ## alignment to virus --------------------------------------------------------
 mesg "STEP 3: ALIGN TO VIRUS"
@@ -238,48 +274,45 @@ fi
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Viral alignment"
+echo ""
 
-# check that at least 1 read aligned; if no reads aligned to the viral genome, abort
-# step 1: run idxstats
-# step 2: extract 3rd column (# of aligned reads per segment)
-# step 3: collapse into a single string with '+' between numbers
-# step 4: evaluate mathematical expression
-ALIGNED="$(samtools idxstats "$ODIR/alignment.sam" | awk '{ print $3 }' | paste -s -d+ | bc)"
-if [ $ALIGNED -eq 0 ]
-then
-  mesg "WARNING! No viral reads aligned. Aborting..."
-  rm "$ODIR/alignment.sam"
-  module list
-  mesg "JOB COMPLETE!"
-  echo ""
-  exit 0
-fi
+## process BAM -----------------------------------------------------------------
+mesg "STEP 4: PROCESS ALIGNMENT"
 
-# if we're still here, at least 1 read aligned to the viral genome
 # compress SAM to BAM
 CMD="samtools view --threads 8 -b -h '$ODIR/alignment.sam' > '$ODIR/alignment-raw.bam'"
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Compression"
 rm "$ODIR/alignment.sam"
-echo ""
 
-## process BAM -----------------------------------------------------------------
-mesg "STEP 4: PROCESS ALIGNMENT"
+# fill in coordinates
+CMD="samtools fixmate --threads 8 -m '$ODIR/alignment-raw.bam' '$ODIR/alignment-fixmate.bam'"
+mesg "CMD: $CMD"
+eval "$CMD"
+checkcmd "Filling in coordinates"
+rm "$ODIR/alignment-raw.bam"
 
-# sort BAM
-CMD="samtools sort --threads 8 '$ODIR/alignment-raw.bam' > '$ODIR/alignment-sorted.bam'"
+# sort by coordinate
+CMD="samtools sort --threads 8 '$ODIR/alignment-fixmate.bam' > '$ODIR/alignment-sorted.bam'"
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Sorting"
-rm "$ODIR/alignment-raw.bam"
+rm "$ODIR/alignment-fixmate.bam"
+
+# mark duplicates
+CMD="samtools markdup --threads 8 '$ODIR/alignment-sorted.bam' '$ODIR/alignment-dupmark.bam'"
+mesg "CMD: $CMD"
+eval "$CMD"
+checkcmd "Marking duplicates"
+rm "$ODIR/alignment-sorted.bam"
 
 # score indels to get final BAM
-CMD="lofreq indelqual --dindel --ref '$REFSEQ' '$ODIR/alignment-sorted.bam' > '$ODIR/alignment.bam'"
+CMD="lofreq indelqual --dindel --ref '$REFSEQ' '$ODIR/alignment-dupmark.bam' > '$ODIR/alignment.bam'"
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Indelqual"
-rm "$ODIR/alignment-sorted.bam"
+rm "$ODIR/alignment-dupmark.bam"
 
 # index final BAM
 CMD="samtools index '$ODIR/alignment.bam'"
@@ -292,7 +325,7 @@ echo ""
 mesg "STEP 5: CALCULATE COVERAGE"
 
 # coverage with samtools depth
-CMD="samtools depth --threads 8 -a -H '$ODIR/alignment.bam' > '$ODIR/coverage.tsv'"
+CMD="samtools depth --threads 8 --excl-flags DUP -a -H '$ODIR/alignment.bam' > '$ODIR/coverage.tsv'"
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Coverage"
@@ -302,27 +335,65 @@ echo ""
 mesg "STEP 6: ASSEMBLE CONSENSUS"
 
 # consensus with samtools
-CMD="samtools consensus --threads 8 -a --use-qual --min-depth $THRESHOLD --call-fract 0.5 --mode simple  --output '$ODIR/consensus-tmp.fa' '$ODIR/alignment.bam'"
+CMD="samtools consensus --threads 8 -a --excl-flags DUP --use-qual --min-depth $THRESHOLD --call-fract 0.5 --mode simple  --output '$ODIR/consensus.fa' '$ODIR/alignment.bam'"
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "Consensus"
-
-# update consensus header
-mesg "Updating consensus header"
-echo ">$SAMPLE" > "$ODIR/consensus.fa"
-cat "$ODIR/consensus-tmp.fa" | grep "^[^>]" >> "$ODIR/consensus.fa"
-rm "$ODIR/consensus-tmp.fa"
 echo ""
 
 ## quantify SNVs ---------------------------------------------------------------
 mesg "STEP 7: QUANTIFY SNVs"
 
+# lofreq doesn't have a DUP filter, so make a tmp BAM with DUPs removed
+CMD="samtools view --threads 8 --bam --excl-flags DUP '$ODIR/alignment.bam' > '$ODIR/alignment-dedup.bam'"
+mesg "CMD: $CMD"
+eval "$CMD"
+checkcmd "Read deduplication"
+
+# index tmp BAM
+CMD="samtools index '$ODIR/alignment-dedup.bam'"
+mesg "CMD: $CMD"
+eval "$CMD"
+checkcmd "Indexing deduplicated BAM"
+
+# last check: there should be >0 mapped reads in the BAM
+if [ $(samtools view -c -F 260 "$ODIR/alignment-dedup.bam" 2> /dev/null) -eq 0 ]
+then
+  mesg "No reads mapped to the viral genome; exiting..."
+
+  # remove deduplicated BAM and BAI
+  rm "$ODIR/alignment-dedup.bam"
+  rm "$ODIR/alignment-dedup.bam.bai"
+
+  # print modules and exit
+  module list
+  mesg "JOB COMPLETE!"
+  echo ""
+  exit 0
+fi
+
 # run lofreq
 # keeping mapping quality parameters same between samtools and LoFreq
-CMD="lofreq call-parallel --pp-threads 8 --call-indels --min-cov $THRESHOLD --ref '$REFSEQ' '$ODIR/alignment.bam' > '$ODIR/snvs.vcf'"
+CMD="lofreq call-parallel --pp-threads 8 --call-indels --min-cov $THRESHOLD --ref '$REFSEQ' '$ODIR/alignment-dedup.bam' > '$ODIR/snvs.vcf'"
 mesg "CMD: $CMD"
 eval "$CMD"
 checkcmd "LoFreq"
+
+# clean up deduplicated BAM and BAI
+rm "$ODIR/alignment-dedup.bam"
+rm "$ODIR/alignment-dedup.bam.bai"
+
+# visualize coverage and SNV profiles
+CMD="Rscript $VISUALIZATION --dir '$ODIR' --annotation '$GTF' --threshold $THRESHOLD"
+mesg "CMD: $CMD"
+eval "$CMD"
+checkcmd "Visualization"
+
+# run mutation annotation script
+CMD="Rscript $ANNOTATION --dir '$ODIR' --annotation '$GTF' --genome '$REFSEQ'"
+mesg "CMD: $CMD"
+eval "$CMD"
+checkcmd "SNV annotation"
 echo ""
 
 ## package version -------------------------------------------------------------
@@ -330,3 +401,4 @@ mesg "Pipeline complete! Printing package versions..."
 module list
 mesg "JOB COMPLETE!"
 echo ""
+
