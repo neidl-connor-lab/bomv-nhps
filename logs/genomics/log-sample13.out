@@ -1,7 +1,7 @@
 ========================JOB INFO=========================
-Job ID: 1428309
+Job ID: 1586386
 Job name: sample13
-Start date: Fri Jan 10 17:10:35 CST 2025
+Start date: Thu Feb 13 15:00:22 CST 2025
 Current directory: /scratch/09961/jaturcin/bomv-nhps
 =========================================================
 
@@ -40,7 +40,7 @@ INFO:    gocryptfs not found, will not be able to use gocryptfs
 [MSG] CMD: kraken2 --threads 8 --db 'pipeline/kraken2db' --output - --report 'data/genomics/sample13/metagenomics-raw.tsv' --use-names --gzip-compressed --paired 'data/genomics/sample13/filtered-r1.fq.gz' 'data/genomics/sample13/filtered-r2.fq.gz'
 INFO:    gocryptfs not found, will not be able to use gocryptfs
 Loading database information... done.
-14911623 sequences (2236.74 Mbp) processed in 51.065s (17520.8 Kseq/m, 2628.12 Mbp/m).
+14911623 sequences (2236.74 Mbp) processed in 51.091s (17511.9 Kseq/m, 2626.78 Mbp/m).
   10501725 sequences classified (70.43%)
   4409898 sequences unclassified (29.57%)
 [MSG] Metagenomic classification succeeded
@@ -92,7 +92,7 @@ INFO:    gocryptfs not found, will not be able to use gocryptfs
 [MSG] Coverage succeeded
 
 [MSG] STEP 6: ASSEMBLE CONSENSUS
-[MSG] CMD: samtools consensus --threads 8 -a --excl-flags DUP --use-qual --min-depth 100 --call-fract 0.5 --mode simple  --output 'data/genomics/sample13/consensus.fa' 'data/genomics/sample13/alignment.bam'
+[MSG] CMD: samtools consensus --threads 8 -a --excl-flags DUP --use-qual --min-depth 10 --call-fract 0.5 --mode simple  --output 'data/genomics/sample13/consensus.fa' 'data/genomics/sample13/alignment.bam'
 INFO:    gocryptfs not found, will not be able to use gocryptfs
 [MSG] Consensus succeeded
 
@@ -103,7 +103,32 @@ INFO:    gocryptfs not found, will not be able to use gocryptfs
 [MSG] CMD: samtools index 'data/genomics/sample13/alignment-dedup.bam'
 INFO:    gocryptfs not found, will not be able to use gocryptfs
 [MSG] Indexing deduplicated BAM succeeded
-[MSG] No reads mapped to the viral genome; exiting...
+[MSG] CMD: lofreq call-parallel --pp-threads 8 --call-indels --min-cov 10 --ref 'pipeline/genomes/bomv-OK633884.1.fa' 'data/genomics/sample13/alignment-dedup.bam' > 'data/genomics/sample13/snvs.vcf'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO [2025-02-13 16:51:05,743]: Using 8 threads with following basic args: lofreq call --call-indels --min-cov 10 --ref pipeline/genomes/bomv-OK633884.1.fa data/genomics/sample13/alignment-dedup.bam
+
+INFO [2025-02-13 16:51:05,751]: Adding 17 commands to mp-pool
+Number of substitution tests performed: 0
+Number of indel tests performed: 0
+INFO [2025-02-13 16:51:05,881]: Executing lofreq filter -i /tmp/lofreq2_call_parallelu31eayay/concat.vcf.gz -o - --snvqual-thresh 20 --indelqual-thresh 20
+
+[MSG] LoFreq succeeded
+[MSG] CMD: Rscript pipeline/visualization.r --dir 'data/genomics/sample13' --annotation 'pipeline/annotations/bomv-OK633884.1.gtf' --threshold 10
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+[MSG] Visualization succeeded
+[MSG] CMD: Rscript pipeline/mutationannotation.r --dir 'data/genomics/sample13' --annotation 'pipeline/annotations/bomv-OK633884.1.gtf' --genome 'pipeline/genomes/bomv-OK633884.1.fa'
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+Warning messages:
+1: package 'S4Vectors' was built under R version 4.4.1 
+2: multiple methods tables found for 'sort' 
+3: package 'IRanges' was built under R version 4.4.1 
+4: multiple methods tables found for 'sort' 
+Warning message:
+multiple methods tables found for 'sort' 
+[1] "[MSG] SNV VCF is empty. Exiting..."
+[MSG] SNV annotation succeeded
+
+[MSG] Pipeline complete! Printing package versions...
 
 Currently Loaded Modules:
   1) intel/24.0            7) bowtie2/ctr-2.3.4.3--py37he860b03_1
@@ -115,5 +140,5 @@ Currently Loaded Modules:
 
  
 
-[MSG] JOB COMPELTE!
+[MSG] JOB COMPLETE!
 

@@ -1,6 +1,6 @@
 ##fileformat=VCFv4.0
 ##fileDate=20250213
-##source=lofreq call --call-indels --min-cov 10 --ref pipeline/genomes/bomv-OK633884.1.fa --no-default-filter -r OK633884.1:1-1190 -o /tmp/lofreq2_call_parallelb764vkcg/0.vcf.gz data/genomics/sample36/alignment-dedup.bam 
+##source=lofreq call --call-indels --min-cov 10 --ref pipeline/genomes/bomv-OK633884.1.fa --no-default-filter -r OK633884.1:1-1190 -o /tmp/lofreq2_call_parallelbv6ukf33/0.vcf.gz data/genomics/sample36/alignment-dedup.bam 
 ##reference=pipeline/genomes/bomv-OK633884.1.fa
 ##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
 ##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">

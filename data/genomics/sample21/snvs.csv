@@ -1,0 +1,8 @@
+"Segment","NT.position","NT.ref","NT.alt","Frequency","Type","InDel","Gene.ID","Gene.name","Protein.ID","Product","AA.pos","AA.ref","AA.alt"
+"OK633884.1",2030,"A","C",0.023739,"Nonsynonymous",FALSE,"NP","NP","UKB36425.1","nucleoprotein",523,"Q","P"
+"OK633884.1",2147,"T","C",0.031609,"Nonsynonymous",FALSE,"NP","NP","UKB36425.1","nucleoprotein",562,"L","P"
+"OK633884.1",4488,"A","C",0.205882,"Synonymous",FALSE,"VP40","VP40","UKB36427.1","matrix protein",,,
+"OK633884.1",7353,"A","C",0.111111,"Nonsynonymous",FALSE,"GP","GP","UKB36429.1","structural glycoprotein",438,"Q","P"
+"OK633884.1",15881,"TA","T",0.054054,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1407,"N","T"
+"OK633884.1",16213,"G","A",0.157895,"Nonsynonymous",FALSE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1517,"A","T"
+"OK633884.1",16949,"C","CT",0.125,"Nonsynonymous",TRUE,"L","L","UKB36432.1","polymerase and synthesis of viral RNAs and transcriptional RNA editing",1765,"A","C"
