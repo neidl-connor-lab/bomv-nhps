@@ -1,0 +1,1710 @@
+Upstream Regulators	dpi01	dpi03	dpi05	dpi07	dpi10	dpi15	dpi21	dpi28
+SET	N/A	N/A	-2	N/A	N/A	N/A	-2	-2.236
+carbon tetrachloride	N/A	N/A	-1.177	N/A	N/A	N/A	-1.471	-1.97
+GNAQ	N/A	N/A	N/A	N/A	N/A	N/A	-1.99	-2.226
+GNA13	N/A	N/A	N/A	N/A	N/A	N/A	-1.99	-1.99
+EPHB1	N/A	N/A	N/A	N/A	N/A	N/A	-1.987	-1.987
+MAC	N/A	N/A	N/A	N/A	N/A	N/A	-1.98	-1.98
+GRP	N/A	N/A	N/A	N/A	N/A	N/A	-1.958	-1.958
+quinolinic acid	N/A	N/A	N/A	N/A	N/A	N/A	-1.956	-1.956
+phenylephrine	N/A	N/A	N/A	N/A	N/A	N/A	-1.955	-1.955
+GDNF	N/A	N/A	N/A	N/A	N/A	N/A	-1.937	-1.937
+N-acetylsphingosine	N/A	N/A	N/A	N/A	N/A	N/A	-1.931	-1.931
+MEF2D	N/A	N/A	-1.732	N/A	N/A	N/A	-1.964	N/A
+CGA	N/A	N/A	N/A	N/A	N/A	N/A	-1.109	-1.109
+aplidine	N/A	N/A	N/A	N/A	N/A	N/A	-1.103	-1.103
+15(S)-HETE	N/A	N/A	N/A	N/A	N/A	N/A	-1.086	-1.086
+advanced glycation end-products	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-2
+F13B	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-2
+ADRB3	N/A	N/A	N/A	N/A	N/A	N/A	-1.977	N/A
+pCPT-cAMP	N/A	N/A	N/A	N/A	N/A	N/A	-1.955	N/A
+TIA1	N/A	N/A	N/A	N/A	-0.762	N/A	-0.277	-0.762
+propranolol	N/A	N/A	N/A	N/A	N/A	N/A	1.702	N/A
+CX3CR1	N/A	N/A	-0.447	N/A	N/A	N/A	0	-1
+ATF2	N/A	N/A	N/A	N/A	N/A	N/A	-1.262	N/A
+GHRL	N/A	N/A	N/A	N/A	N/A	N/A	-1.148	N/A
+niacinamide	N/A	N/A	N/A	N/A	N/A	N/A	-1	N/A
+let-7 (includes others)	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.988
+CYP19A1	N/A	N/A	N/A	N/A	N/A	N/A	-0.927	N/A
+conjugated linoleic acid	N/A	N/A	N/A	N/A	N/A	N/A	0.849	N/A
+NOTCH3	N/A	N/A	N/A	N/A	N/A	N/A	-0.849	N/A
+cobalt chloride	N/A	N/A	N/A	N/A	-0.656	N/A	N/A	N/A
+SP2509	N/A	N/A	0.651	N/A	N/A	N/A	N/A	N/A
+collagen type i (family)	N/A	N/A	-0.106	N/A	N/A	N/A	N/A	N/A
+E2F1	N/A	-0.655	-0.509	N/A	-0.156	N/A	-1.089	-2.164
+IFNAR1	N/A	N/A	3.525	6.251	2.207	N/A	N/A	N/A
+IFNL1	N/A	N/A	3.541	6.093	0.732	N/A	N/A	N/A
+pyridostatin	N/A	N/A	3.302	6.04	N/A	N/A	N/A	N/A
+IFNAR	N/A	N/A	3.25	5.283	N/A	N/A	N/A	N/A
+"1,1-diarylethylene-diammonium derivative"	N/A	N/A	2.646	5	N/A	N/A	N/A	N/A
+TNIK	N/A	N/A	3.44	4.957	N/A	N/A	N/A	N/A
+IFNA1/IFNA13	N/A	N/A	3.052	4.751	2.155	N/A	N/A	N/A
+ZBTB10	N/A	N/A	2.333	4.6	0	N/A	N/A	N/A
+RNY3	N/A	N/A	3.464	4.583	2.236	N/A	N/A	N/A
+IFN alpha/beta	N/A	N/A	1.998	4.477	N/A	N/A	N/A	N/A
+3p-hpRNA	N/A	N/A	3.138	4.313	2	N/A	N/A	N/A
+TLR7	N/A	N/A	2.159	4.288	1.025	N/A	N/A	N/A
+IRF5	N/A	N/A	2.586	4.244	N/A	N/A	N/A	N/A
+IFN type 1	N/A	N/A	2.38	4.142	N/A	N/A	N/A	N/A
+SASH1	N/A	N/A	2.646	4.123	N/A	N/A	N/A	N/A
+IFNA4	N/A	N/A	2.552	3.884	N/A	N/A	N/A	N/A
+SENP3	N/A	N/A	2.449	3.873	N/A	N/A	N/A	N/A
+mir-183	N/A	N/A	2.8	3.764	N/A	N/A	N/A	N/A
+oblimersen	N/A	N/A	2.121	3.638	N/A	N/A	N/A	N/A
+IFN gamma	N/A	N/A	1.26	3.586	N/A	N/A	N/A	N/A
+DOCK8	N/A	N/A	2.449	3.576	N/A	N/A	N/A	N/A
+CGAS	N/A	N/A	2.464	3.575	N/A	N/A	N/A	N/A
+PML	N/A	N/A	2.138	3.54	N/A	N/A	N/A	N/A
+mir-96	N/A	N/A	2.621	3.5	N/A	N/A	N/A	N/A
+EIF2AK2	N/A	N/A	1.569	3.434	N/A	N/A	-1.966	N/A
+IFNE	N/A	N/A	2.2	3.426	N/A	N/A	N/A	N/A
+ribavirin	N/A	N/A	2.813	3.341	N/A	N/A	N/A	N/A
+IFNL4	N/A	N/A	2.421	3.294	N/A	N/A	N/A	N/A
+2'3'-cyclic guanosine monophosphate-adenosine monophosphate	N/A	N/A	3.098	3.25	N/A	N/A	N/A	N/A
+STAT4	N/A	N/A	1.408	3.222	0.849	N/A	N/A	N/A
+N-ethyl-N-nitrosourea	N/A	N/A	2.236	3.162	N/A	N/A	N/A	N/A
+PAF1	N/A	N/A	2.236	3.162	N/A	N/A	N/A	N/A
+ISGF3	N/A	N/A	2.408	3.105	N/A	N/A	N/A	N/A
+IL12 (family)	N/A	N/A	N/A	3.018	N/A	N/A	N/A	N/A
+JAK	N/A	N/A	2.236	3	N/A	N/A	N/A	N/A
+IL12 (complex)	N/A	N/A	N/A	2.995	0.986	N/A	N/A	N/A
+pembrolizumab	N/A	N/A	N/A	2.985	1.067	N/A	N/A	N/A
+SLC15A4	N/A	N/A	1.201	2.882	-0.447	N/A	-1.982	-2.219
+UBR5	N/A	N/A	2.177	2.881	N/A	N/A	N/A	N/A
+FBN1	N/A	N/A	2	2.828	N/A	N/A	N/A	N/A
+IFNK	N/A	N/A	N/A	2.828	N/A	N/A	N/A	N/A
+JAK1/2	N/A	N/A	2	2.813	N/A	N/A	N/A	N/A
+IFNA8	N/A	N/A	N/A	2.778	N/A	N/A	N/A	N/A
+IFNA7	N/A	N/A	N/A	2.771	N/A	N/A	N/A	N/A
+IFNA6	N/A	N/A	N/A	2.771	N/A	N/A	N/A	N/A
+IFNA10	N/A	N/A	N/A	2.771	N/A	N/A	N/A	N/A
+IFNA5	N/A	N/A	N/A	2.771	N/A	N/A	N/A	N/A
+IFNA14	N/A	N/A	N/A	2.771	N/A	N/A	N/A	N/A
+IFNA16	N/A	N/A	N/A	2.771	N/A	N/A	N/A	N/A
+IFNA21	N/A	N/A	N/A	2.764	N/A	N/A	N/A	N/A
+MSB0011359C	N/A	N/A	2.646	2.714	N/A	N/A	2	2
+STAT2	N/A	N/A	2.145	2.709	0.686	N/A	N/A	N/A
+emactuzumab	N/A	N/A	N/A	2.646	N/A	N/A	N/A	N/A
+ITPR2	N/A	N/A	N/A	2.646	N/A	N/A	N/A	N/A
+ARHGAP21	N/A	N/A	N/A	2.646	N/A	N/A	N/A	N/A
+UBE2M	N/A	N/A	N/A	2.63	N/A	N/A	N/A	N/A
+Ifnl2/Ifnl3	N/A	N/A	2.232	2.623	N/A	N/A	N/A	N/A
+PARP9	N/A	N/A	1.982	2.621	N/A	N/A	N/A	N/A
+IL7	N/A	N/A	1.091	2.617	N/A	N/A	N/A	N/A
+aldesleukin	N/A	N/A	N/A	2.613	N/A	N/A	N/A	N/A
+pristane	N/A	N/A	1.965	2.608	N/A	N/A	N/A	N/A
+HDAC4	N/A	N/A	1.308	2.607	N/A	N/A	N/A	N/A
+IFIH1	N/A	N/A	1.316	2.597	N/A	N/A	N/A	N/A
+C1QA	N/A	N/A	2.193	2.594	N/A	N/A	N/A	N/A
+YTHDC2	N/A	N/A	2.121	2.53	N/A	N/A	N/A	N/A
+TASL	N/A	N/A	1.633	2.53	N/A	N/A	N/A	N/A
+LINC02574	N/A	N/A	2	2.449	N/A	N/A	N/A	N/A
+inosine	N/A	N/A	N/A	2.449	N/A	N/A	N/A	N/A
+VGLL3	N/A	N/A	N/A	2.447	N/A	N/A	N/A	N/A
+IFNA17	N/A	N/A	N/A	2.433	N/A	N/A	N/A	N/A
+TLR	N/A	N/A	0.958	2.427	0.061	N/A	N/A	N/A
+N6AMT1	N/A	N/A	N/A	2.425	N/A	N/A	N/A	N/A
+niraparib	N/A	N/A	N/A	2.425	N/A	N/A	N/A	N/A
+STAT1 Dimer	N/A	N/A	N/A	2.414	N/A	N/A	N/A	N/A
+arimoclomol	N/A	N/A	2	2.333	N/A	N/A	N/A	N/A
+MSC	N/A	N/A	N/A	2.333	N/A	N/A	N/A	N/A
+MAP2K3	N/A	N/A	N/A	2.288	N/A	N/A	N/A	N/A
+VCAN	N/A	N/A	1.32	2.243	N/A	N/A	N/A	N/A
+gebasaxturev	N/A	N/A	N/A	2.236	N/A	N/A	N/A	N/A
+TNK1	N/A	N/A	N/A	2.236	N/A	N/A	N/A	N/A
+MAFB	N/A	N/A	N/A	2.236	N/A	N/A	N/A	N/A
+XRCC5	N/A	N/A	N/A	2.236	N/A	N/A	N/A	N/A
+PRKCSH	N/A	N/A	N/A	2.236	N/A	N/A	N/A	N/A
+CD38	N/A	N/A	N/A	2.224	N/A	N/A	N/A	N/A
+KLRK1	N/A	N/A	N/A	2.224	N/A	N/A	N/A	N/A
+CLEC12A	N/A	N/A	2.219	2.219	N/A	N/A	N/A	N/A
+TNFRSF1B	N/A	N/A	N/A	2.219	N/A	N/A	N/A	N/A
+LOC124902114	N/A	N/A	N/A	2.219	N/A	N/A	N/A	N/A
+fenamic acid	N/A	N/A	N/A	2.219	N/A	N/A	N/A	N/A
+aphidicolin	N/A	N/A	N/A	2.219	N/A	N/A	N/A	N/A
+RNASE1	N/A	N/A	N/A	2.216	N/A	N/A	N/A	N/A
+CpG ODN 1826	N/A	N/A	2.2	2.212	N/A	N/A	N/A	N/A
+tranylcypromine	N/A	N/A	1.964	2.2	N/A	N/A	N/A	N/A
+POU2AF1	N/A	N/A	N/A	2.19	N/A	N/A	N/A	N/A
+CL097	N/A	N/A	N/A	2.166	N/A	N/A	N/A	N/A
+MAP2K6	N/A	N/A	N/A	2.129	N/A	N/A	N/A	N/A
+poly dA-dT	N/A	N/A	1.366	2.128	N/A	N/A	N/A	N/A
+KLF4	N/A	N/A	0.514	2.126	0.548	N/A	N/A	N/A
+IFNAR2	N/A	N/A	2	2.121	N/A	N/A	N/A	N/A
+ZFTA-RELA	N/A	N/A	N/A	2.121	N/A	N/A	N/A	N/A
+HMGXB4	N/A	N/A	N/A	2.121	N/A	N/A	N/A	N/A
+RNASE2	N/A	N/A	N/A	2.081	N/A	N/A	N/A	N/A
+CCR2	N/A	N/A	N/A	2.067	N/A	N/A	N/A	N/A
+MEF2A	N/A	N/A	2.236	2.03	N/A	N/A	N/A	N/A
+CD40	N/A	N/A	-0.066	2.022	N/A	N/A	-1.956	-1.956
+prazosin	N/A	N/A	2	2	N/A	N/A	2.236	2
+pegintron	N/A	N/A	2	2	N/A	N/A	N/A	N/A
+Ifna1/Ifna1l1	N/A	N/A	2	2	N/A	N/A	N/A	N/A
+Fcgr2b	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+MED1	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+PLA2R1	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+IFITM1	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+FGFR4	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+CDC73	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+gentamicin C	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+IFNL2	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+BAY1436032	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+FZD8	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+H3B-8800	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+docetaxel	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+PD173074	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+KDM8	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+oxalic acid	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+IFNW1	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+FASN	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+everolimus	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+lomustine	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+PHB2	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+TSPO	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+CRKL	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+MAPKAP1	N/A	N/A	N/A	2	N/A	N/A	N/A	N/A
+selumetinib	N/A	N/A	1.996	1.996	N/A	N/A	0.762	N/A
+poly(dG-dC)	N/A	N/A	N/A	1.993	N/A	N/A	N/A	N/A
+SELENOK	N/A	N/A	N/A	1.992	N/A	N/A	N/A	N/A
+phenacetin	N/A	N/A	N/A	1.987	N/A	N/A	N/A	N/A
+CDH1	N/A	N/A	N/A	1.987	N/A	N/A	N/A	N/A
+PG3-Oc	N/A	N/A	N/A	1.982	N/A	N/A	N/A	N/A
+HEY2	N/A	N/A	N/A	1.982	N/A	N/A	N/A	N/A
+GSK3	N/A	N/A	N/A	1.982	N/A	N/A	N/A	N/A
+ZNFX1	N/A	N/A	N/A	1.982	N/A	N/A	N/A	N/A
+BLK	N/A	N/A	N/A	1.982	N/A	N/A	N/A	N/A
+2-bromoethylamine	N/A	N/A	N/A	1.982	N/A	N/A	N/A	N/A
+STAT1/STAT2	N/A	N/A	N/A	1.98	N/A	N/A	N/A	N/A
+CpG ODN 2216	N/A	N/A	N/A	1.98	N/A	N/A	N/A	N/A
+"1,1-bis(3'-indolyl)-1-(4-trifluoromethyl-phenyl)methane"	N/A	N/A	N/A	1.98	N/A	N/A	N/A	N/A
+EGOT	N/A	N/A	1.48	1.97	N/A	N/A	N/A	N/A
+PLAAT4	N/A	N/A	N/A	1.969	N/A	N/A	N/A	N/A
+vadimezan	N/A	N/A	N/A	1.951	N/A	N/A	N/A	N/A
+CpG ODN 1585	N/A	N/A	N/A	1.951	N/A	N/A	N/A	N/A
+CD3 (family)	N/A	N/A	N/A	1.951	N/A	N/A	N/A	N/A
+IFNL3	N/A	N/A	N/A	1.951	N/A	N/A	N/A	N/A
+CpG ODN 1668	N/A	N/A	0.747	1.946	N/A	N/A	N/A	N/A
+bexarotene	N/A	N/A	N/A	1.937	N/A	N/A	1.938	1.938
+triamterene	N/A	N/A	N/A	1.937	N/A	N/A	N/A	N/A
+IFNGR1	N/A	N/A	N/A	1.929	N/A	N/A	N/A	N/A
+ORMDL3	N/A	N/A	1.342	1.912	N/A	N/A	N/A	N/A
+hydroxyurea	N/A	N/A	1	1.897	N/A	N/A	N/A	N/A
+NFIC	N/A	N/A	1	1.89	N/A	N/A	N/A	N/A
+FCGR2A	N/A	N/A	1.3	1.852	N/A	N/A	N/A	N/A
+TMEM120A	N/A	N/A	1.524	1.809	N/A	N/A	N/A	N/A
+methylnitronitrosoguanidine	N/A	N/A	N/A	1.803	N/A	N/A	N/A	N/A
+entinostat	N/A	N/A	N/A	1.8	N/A	N/A	N/A	N/A
+SPARC	N/A	N/A	1.969	1.798	N/A	N/A	N/A	N/A
+ocifisertib	N/A	N/A	N/A	1.783	N/A	N/A	N/A	N/A
+lipid A	N/A	-1	-0.447	1.762	-0.447	N/A	N/A	N/A
+SOX4	N/A	N/A	-0.132	1.709	N/A	N/A	N/A	N/A
+JAK1	N/A	N/A	0.762	1.673	N/A	N/A	N/A	N/A
+DHX9	N/A	N/A	1	1.67	N/A	N/A	N/A	N/A
+EBI3	N/A	N/A	1.131	1.667	N/A	N/A	N/A	N/A
+SIM1	N/A	N/A	0	1.667	1	N/A	N/A	N/A
+aflatoxin B1	N/A	N/A	N/A	1.667	N/A	N/A	N/A	N/A
+phenylbutazone	N/A	N/A	N/A	1.664	N/A	N/A	N/A	N/A
+RICTOR	N/A	N/A	1.969	1.66	N/A	N/A	N/A	N/A
+THBS1	N/A	N/A	N/A	1.66	N/A	N/A	N/A	N/A
+3M-011	N/A	N/A	1	1.633	N/A	N/A	N/A	N/A
+CDK5R1	N/A	N/A	1	1.633	N/A	N/A	N/A	N/A
+CYLD-AS1	N/A	N/A	N/A	1.633	N/A	N/A	N/A	N/A
+puromycin aminonucleoside	N/A	N/A	N/A	1.633	N/A	N/A	N/A	N/A
+FcER1	N/A	N/A	-0.382	1.608	N/A	N/A	N/A	N/A
+TYK2	N/A	N/A	1.069	1.606	N/A	N/A	N/A	N/A
+temozolomide	N/A	N/A	N/A	1.6	N/A	N/A	N/A	N/A
+PTX3	N/A	N/A	1.987	1.581	N/A	N/A	1.987	1.987
+IL2RG	N/A	N/A	0.243	1.567	N/A	N/A	N/A	N/A
+GIP	N/A	N/A	0.762	1.564	N/A	N/A	N/A	N/A
+sudemycin D6	N/A	N/A	0.927	1.546	N/A	N/A	N/A	N/A
+DDIT3	N/A	N/A	N/A	1.543	N/A	N/A	N/A	N/A
+CCL11	N/A	N/A	N/A	1.536	N/A	N/A	N/A	N/A
+ERN1	N/A	N/A	N/A	1.528	N/A	N/A	N/A	N/A
+SGPL1	N/A	N/A	2.19	1.524	N/A	N/A	N/A	N/A
+17-alpha-ethinylestradiol	N/A	N/A	N/A	1.505	N/A	N/A	N/A	N/A
+cyclophosphamide	N/A	N/A	N/A	1.49	N/A	N/A	N/A	N/A
+HTT	N/A	N/A	N/A	1.481	N/A	N/A	N/A	N/A
+tributyrin	N/A	N/A	0.447	1.463	-1.067	N/A	-1.982	-2.219
+PDCD1	N/A	N/A	N/A	1.455	N/A	N/A	N/A	N/A
+EBF1	N/A	N/A	N/A	1.455	N/A	N/A	N/A	N/A
+LPL	N/A	N/A	1.131	1.454	N/A	N/A	N/A	N/A
+MDK	N/A	N/A	N/A	1.452	N/A	N/A	N/A	N/A
+SMPD1	N/A	N/A	N/A	1.437	N/A	N/A	N/A	N/A
+mycophenolic acid	N/A	N/A	0.447	1.414	-1	N/A	-2	-2
+ARNT2	N/A	N/A	0	1.414	1	N/A	N/A	N/A
+dimethyl n-oxalyl-glycine	N/A	N/A	N/A	1.414	N/A	N/A	N/A	N/A
+CNR1	N/A	N/A	N/A	1.41	N/A	N/A	N/A	N/A
+PF-4878691	N/A	N/A	0.762	1.408	N/A	N/A	N/A	N/A
+IL17RA	N/A	N/A	N/A	1.406	N/A	N/A	N/A	N/A
+abemaciclib	N/A	N/A	1.067	1.387	N/A	N/A	N/A	N/A
+POU4F2	N/A	N/A	N/A	1.387	N/A	N/A	N/A	N/A
+HLX	N/A	N/A	N/A	1.387	N/A	N/A	N/A	N/A
+MEOX2	N/A	N/A	N/A	1.342	N/A	N/A	2	2
+bisindolylmaleimide iv	N/A	N/A	2	1.342	N/A	N/A	2	N/A
+LPA	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+garcinol	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+PLK2	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+ShK-223	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+PLK4	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+TFAM	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+BTG2	N/A	N/A	N/A	1.308	N/A	N/A	1.981	N/A
+lactic acid	N/A	N/A	0.312	1.279	N/A	N/A	N/A	N/A
+TRAF3	N/A	N/A	N/A	1.274	N/A	N/A	N/A	N/A
+mir-15 (includes others)	N/A	N/A	1.987	1.264	N/A	N/A	N/A	N/A
+ARNT	N/A	N/A	N/A	1.264	N/A	N/A	N/A	N/A
+SYVN1	N/A	N/A	N/A	1.255	N/A	N/A	N/A	N/A
+carboplatin	N/A	N/A	N/A	1.253	N/A	N/A	N/A	N/A
+NFKBIZ	N/A	N/A	N/A	1.202	N/A	N/A	N/A	N/A
+Go 6976	N/A	N/A	N/A	1.191	N/A	N/A	N/A	N/A
+ALB	N/A	N/A	N/A	1.179	N/A	N/A	N/A	N/A
+calphostin C	N/A	N/A	N/A	1.172	1.966	N/A	2.204	2.404
+MAP2K7	N/A	N/A	N/A	1.165	N/A	N/A	N/A	N/A
+ilomastat	N/A	N/A	N/A	1.165	N/A	N/A	N/A	N/A
+OGA	N/A	N/A	2	1.155	N/A	N/A	N/A	N/A
+NOD2	N/A	N/A	N/A	1.154	0.66	N/A	N/A	N/A
+TWF1	N/A	N/A	2	1.134	N/A	N/A	2.236	2
+MYO6	N/A	N/A	N/A	1.134	N/A	N/A	N/A	N/A
+NR1D1	N/A	N/A	N/A	1.131	N/A	N/A	N/A	1.131
+cytarabine	N/A	N/A	N/A	1.131	N/A	N/A	N/A	N/A
+CARD9	N/A	N/A	N/A	1.121	N/A	N/A	N/A	N/A
+MGP	N/A	N/A	N/A	1.119	N/A	N/A	N/A	N/A
+D-galactosamine	N/A	N/A	N/A	1.117	N/A	N/A	N/A	N/A
+IFN lambda	N/A	N/A	2	1.109	N/A	N/A	N/A	N/A
+NfkB-RelA	N/A	N/A	N/A	1.109	N/A	N/A	N/A	N/A
+P2RX7	N/A	N/A	N/A	1.109	N/A	N/A	N/A	N/A
+acetaminophen	N/A	N/A	N/A	1.107	N/A	N/A	N/A	N/A
+nickel chloride	N/A	N/A	N/A	1.103	N/A	N/A	N/A	N/A
+MAPKAPK2	N/A	N/A	N/A	1.097	N/A	N/A	N/A	N/A
+"3,3'-diindolylmethane"	N/A	N/A	N/A	1.091	N/A	N/A	N/A	N/A
+CD74	N/A	N/A	N/A	1.076	N/A	N/A	N/A	N/A
+PP1	N/A	N/A	N/A	1.067	N/A	N/A	1.982	N/A
+PIAS1	N/A	N/A	N/A	1.067	N/A	N/A	N/A	N/A
+ZC3HAV1	N/A	N/A	N/A	1.067	N/A	N/A	N/A	N/A
+IL23	N/A	N/A	N/A	1.067	N/A	N/A	N/A	N/A
+SPHK1	N/A	N/A	0.277	1.047	-1.179	N/A	N/A	N/A
+STAT	N/A	N/A	N/A	1.046	N/A	N/A	N/A	N/A
+IL12B	N/A	N/A	N/A	1.044	N/A	N/A	N/A	N/A
+CD14	N/A	N/A	-0.453	1.03	-0.883	N/A	N/A	-1.967
+IL12A	N/A	N/A	N/A	1.026	N/A	N/A	N/A	N/A
+trastuzumab	N/A	N/A	N/A	1.026	N/A	N/A	N/A	N/A
+TLR6	N/A	N/A	N/A	1.007	N/A	N/A	N/A	N/A
+SALL4	N/A	N/A	1.342	1	N/A	N/A	N/A	N/A
+PDE	N/A	N/A	1	1	N/A	N/A	N/A	N/A
+IL4I1	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+STAR	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+RETNLB	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+ARL3	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+PTPRE	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+BTC	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+Clec4a2	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+TIFA	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+TRPS1	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+trovafloxacin	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+deferasirox	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+5Z-7-oxo-zeaenol	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+GNAI3	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+EFNA1	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+ARL13B	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+CBX7	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+ESRRG	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+ANXA7	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+CCL20	N/A	N/A	N/A	1	N/A	N/A	N/A	N/A
+IL24	N/A	N/A	N/A	0.987	-0.604	N/A	N/A	N/A
+6-hydroxydopamine	N/A	N/A	N/A	0.975	N/A	N/A	N/A	N/A
+EIF2AK4	N/A	N/A	N/A	0.958	N/A	N/A	N/A	N/A
+EIF4E	N/A	N/A	1	0.956	N/A	N/A	N/A	N/A
+PDX1	N/A	N/A	-0.218	0.943	N/A	N/A	N/A	N/A
+PRMT5	N/A	N/A	N/A	0.943	N/A	N/A	N/A	N/A
+valproic acid	N/A	N/A	N/A	0.933	N/A	N/A	0.581	N/A
+DACH1	N/A	N/A	N/A	0.927	N/A	N/A	1.98	1.98
+HSPA5	N/A	N/A	N/A	0.914	N/A	N/A	N/A	N/A
+TMPRSS2-ERG	N/A	N/A	N/A	0.905	N/A	N/A	N/A	N/A
+KN 93	N/A	N/A	1.982	0.896	N/A	N/A	N/A	N/A
+ketamine	N/A	N/A	0.459	0.896	-0.152	N/A	-0.785	N/A
+pimagedine	N/A	N/A	N/A	0.896	N/A	N/A	N/A	N/A
+MERTK	N/A	N/A	N/A	0.896	N/A	N/A	N/A	N/A
+PIK3R1	N/A	N/A	0.489	0.888	N/A	N/A	N/A	N/A
+CCL3	N/A	N/A	N/A	0.883	N/A	N/A	N/A	N/A
+N-nitro-L-arginine methyl ester	N/A	N/A	N/A	0.876	N/A	N/A	N/A	N/A
+daidzein	N/A	N/A	N/A	0.87	0.655	N/A	N/A	N/A
+TSC22D3	N/A	N/A	1.954	0.864	1.188	N/A	0.468	0.468
+TFEB	N/A	N/A	N/A	0.863	N/A	N/A	-1	N/A
+INHBA	N/A	N/A	N/A	0.863	N/A	N/A	N/A	N/A
+MFN2	N/A	N/A	N/A	0.849	N/A	N/A	N/A	N/A
+zinc	N/A	N/A	N/A	0.849	N/A	N/A	N/A	N/A
+PTPN6	N/A	N/A	N/A	0.833	N/A	N/A	N/A	N/A
+W7	N/A	N/A	N/A	0.832	N/A	N/A	N/A	N/A
+MLN120B	N/A	N/A	N/A	0.831	N/A	N/A	1.98	1.98
+LGALS3	N/A	N/A	N/A	0.831	N/A	N/A	N/A	N/A
+mono-(2-ethylhexyl)phthalate	N/A	N/A	N/A	0.822	N/A	N/A	N/A	N/A
+VE-821	N/A	N/A	N/A	0.816	N/A	N/A	N/A	N/A
+MAP4K1	N/A	N/A	N/A	0.816	N/A	N/A	N/A	N/A
+nitrofurantoin	N/A	N/A	N/A	0.816	N/A	N/A	N/A	N/A
+lysophosphatidylinositol	N/A	N/A	N/A	0.816	N/A	N/A	N/A	N/A
+MVP	N/A	N/A	N/A	0.79	N/A	N/A	N/A	N/A
+WRN	N/A	N/A	N/A	0.776	N/A	N/A	N/A	N/A
+FBXO42	N/A	N/A	N/A	0.762	N/A	N/A	N/A	N/A
+FFAR3	N/A	N/A	N/A	0.762	N/A	N/A	N/A	N/A
+GSK2816126	N/A	N/A	N/A	0.751	N/A	N/A	N/A	N/A
+MAK683	N/A	N/A	N/A	0.743	N/A	N/A	N/A	N/A
+SAA	N/A	N/A	N/A	0.741	N/A	N/A	N/A	N/A
+baicalein	N/A	N/A	N/A	0.73	N/A	N/A	1.98	1.98
+ECSIT	N/A	N/A	0.277	0.728	N/A	N/A	N/A	N/A
+PLX5622	N/A	N/A	1.091	0.726	N/A	N/A	N/A	N/A
+ANXA1	N/A	N/A	N/A	0.692	N/A	N/A	N/A	N/A
+NR4A2	N/A	N/A	N/A	0.692	N/A	N/A	N/A	N/A
+TRAF2	N/A	N/A	N/A	0.691	N/A	N/A	N/A	N/A
+hemoglobin	N/A	N/A	N/A	0.689	N/A	N/A	N/A	N/A
+hemozoin	N/A	N/A	N/A	0.689	N/A	N/A	N/A	N/A
+IL17C	N/A	N/A	N/A	0.686	N/A	N/A	N/A	N/A
+ZBP1	N/A	N/A	-0.057	0.671	N/A	N/A	N/A	N/A
+Sch-23390	N/A	N/A	N/A	0.661	N/A	N/A	N/A	N/A
+BAPTA	N/A	N/A	1.732	0.655	N/A	N/A	2	2
+ginsenoside Rb1	N/A	N/A	N/A	0.655	N/A	N/A	0.762	N/A
+corticosteroid	N/A	N/A	1.067	0.647	N/A	N/A	N/A	N/A
+ADAM17	N/A	N/A	N/A	0.647	N/A	N/A	N/A	N/A
+romidepsin	N/A	N/A	N/A	0.64	N/A	N/A	N/A	N/A
+HNF1A	N/A	N/A	N/A	0.64	N/A	N/A	N/A	N/A
+TNFSF13B	N/A	N/A	-1.342	0.632	0	N/A	N/A	N/A
+IGF2BP1	N/A	N/A	N/A	0.632	N/A	N/A	N/A	N/A
+HAVCR1	N/A	N/A	N/A	0.625	N/A	N/A	N/A	N/A
+TLR8	N/A	N/A	N/A	0.622	N/A	N/A	N/A	N/A
+cholecalciferol	N/A	N/A	0.16	0.611	N/A	N/A	N/A	N/A
+TRADD	N/A	N/A	N/A	0.6	N/A	N/A	N/A	N/A
+TFPI2	N/A	N/A	N/A	0.581	N/A	N/A	N/A	N/A
+EIF2AK3	N/A	N/A	N/A	0.558	N/A	N/A	N/A	N/A
+RRM1	N/A	N/A	1.067	0.555	N/A	N/A	N/A	N/A
+TSLP	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+mitoxantrone	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+HFE	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+KCNJ2	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+FGF7	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+Casp4	N/A	N/A	N/A	0.528	N/A	N/A	N/A	N/A
+BICD2	N/A	N/A	1.732	0.512	N/A	N/A	N/A	N/A
+herbimycin	N/A	N/A	N/A	0.492	N/A	N/A	2.186	2.186
+CSF1R	N/A	N/A	N/A	0.492	N/A	N/A	N/A	N/A
+MMP2	N/A	N/A	N/A	0.492	N/A	N/A	N/A	N/A
+IKBKE	N/A	N/A	1.161	0.485	-0.627	N/A	N/A	N/A
+RET	N/A	N/A	N/A	0.475	N/A	N/A	0.072	N/A
+zymosan	N/A	N/A	N/A	0.467	N/A	N/A	-1.268	N/A
+Pam3-Cys	N/A	N/A	N/A	0.463	N/A	N/A	N/A	N/A
+LRP6	N/A	N/A	N/A	0.457	N/A	N/A	N/A	N/A
+docosahexaenoic acid	N/A	N/A	N/A	0.447	N/A	N/A	N/A	1.226
+COL12A1	N/A	N/A	N/A	0.447	N/A	N/A	N/A	N/A
+ROCK2	N/A	N/A	N/A	0.447	N/A	N/A	N/A	N/A
+MUC16	N/A	N/A	N/A	0.447	N/A	N/A	N/A	N/A
+N-acetylmuramyl-L-alanyl-D-isoglutamine	N/A	N/A	N/A	0.413	N/A	N/A	-1.929	N/A
+STAT3/STAT3	N/A	N/A	N/A	0.412	N/A	N/A	N/A	N/A
+STAT5A	N/A	N/A	0.283	0.4	N/A	N/A	N/A	N/A
+lipoteichoic acid	N/A	N/A	-1.213	0.394	-1.949	N/A	-1.949	N/A
+clofibrate	N/A	N/A	N/A	0.392	N/A	N/A	N/A	N/A
+Ro31-8220	N/A	N/A	N/A	0.391	1.948	N/A	2.189	2.189
+stearic acid	N/A	N/A	N/A	0.391	N/A	N/A	-1	N/A
+VX 702	N/A	N/A	N/A	0.391	N/A	N/A	N/A	N/A
+PH-797804	N/A	N/A	N/A	0.391	N/A	N/A	N/A	N/A
+IRF6	N/A	N/A	-1.131	0.379	-1.131	N/A	N/A	N/A
+CD200R1	N/A	N/A	N/A	0.378	N/A	N/A	N/A	N/A
+NTRK2	N/A	N/A	N/A	0.378	N/A	N/A	N/A	N/A
+15-epi-lipoxin A4	N/A	N/A	N/A	0.374	N/A	N/A	N/A	N/A
+nocodazole	N/A	N/A	N/A	0.372	N/A	N/A	N/A	N/A
+lipoxin A4	N/A	N/A	N/A	0.371	N/A	N/A	N/A	N/A
+PDLIM2	N/A	N/A	0	0.333	N/A	N/A	N/A	N/A
+HSP27	N/A	N/A	N/A	0.322	N/A	N/A	N/A	N/A
+NAMPT	N/A	N/A	-0.897	0.317	N/A	N/A	-1.628	-1.958
+RFX1	N/A	N/A	N/A	0.314	N/A	N/A	N/A	N/A
+TNC	N/A	N/A	N/A	0.313	N/A	N/A	N/A	N/A
+TSH	N/A	N/A	-0.208	0.303	N/A	N/A	N/A	N/A
+Ni2+	N/A	N/A	N/A	0.297	N/A	N/A	N/A	N/A
+mibolerone	N/A	N/A	-0.277	0.294	N/A	N/A	N/A	N/A
+ISL1	N/A	N/A	N/A	0.277	N/A	N/A	N/A	N/A
+THRA	N/A	N/A	N/A	0.256	N/A	N/A	N/A	N/A
+SOX2	N/A	N/A	-0.713	0.246	-0.155	N/A	N/A	N/A
+CTLA4	N/A	N/A	N/A	0.244	N/A	N/A	N/A	N/A
+SHC1	N/A	N/A	N/A	0.243	N/A	N/A	N/A	N/A
+DPP4	N/A	N/A	N/A	0.221	N/A	N/A	N/A	N/A
+hydrochloric acid	N/A	N/A	N/A	0.218	N/A	N/A	N/A	N/A
+JINK1/2	N/A	N/A	N/A	0.218	N/A	N/A	N/A	N/A
+MAPK11	N/A	N/A	N/A	0.218	N/A	N/A	N/A	N/A
+CLEC4E	N/A	N/A	N/A	0.218	N/A	N/A	N/A	N/A
+triamcinolone acetonide	N/A	N/A	1	0.213	N/A	N/A	1.067	1.709
+REL	N/A	N/A	-0.6	0.211	N/A	N/A	N/A	N/A
+SPIB	N/A	N/A	N/A	0.2	N/A	N/A	N/A	N/A
+PPARD	-1	-1.342	-2.121	0.199	-1.4	N/A	-1.915	-1.4
+RHOA	N/A	N/A	N/A	0.197	N/A	N/A	N/A	N/A
+TNFRSF8	N/A	N/A	N/A	0.186	N/A	N/A	N/A	N/A
+vismodegib	N/A	N/A	N/A	0.174	N/A	N/A	N/A	N/A
+EML4-ALK	N/A	N/A	-0.527	0.168	-0.527	N/A	-1.387	-1.982
+PTPN22	N/A	N/A	0.283	0.162	N/A	N/A	N/A	N/A
+IRAK4	N/A	N/A	N/A	0.156	N/A	N/A	N/A	N/A
+IL1RAP	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+OLR1	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+methoxetamine	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+diphtheria toxin	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+entolimod	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+tripterine	N/A	N/A	N/A	0.132	N/A	N/A	N/A	N/A
+IL1RL1	N/A	N/A	N/A	0.106	N/A	N/A	N/A	N/A
+vitamin D	N/A	N/A	N/A	0.105	N/A	N/A	N/A	N/A
+TAFAZZIN	N/A	N/A	N/A	0.103	N/A	N/A	-0.343	-0.343
+YAP/TAZ	N/A	N/A	N/A	0.092	N/A	N/A	N/A	N/A
+NPY	N/A	N/A	N/A	0.088	N/A	N/A	N/A	N/A
+resatorvid	N/A	N/A	N/A	0.083	N/A	N/A	N/A	N/A
+FOXP1	N/A	N/A	N/A	0.083	N/A	N/A	N/A	N/A
+CHI3L1	N/A	N/A	N/A	0.074	N/A	N/A	N/A	N/A
+IgA	N/A	N/A	N/A	0.068	N/A	N/A	N/A	N/A
+IRS2	N/A	N/A	N/A	0.068	N/A	N/A	N/A	N/A
+EPRS1	N/A	N/A	N/A	0.067	N/A	N/A	N/A	N/A
+PSMB11	N/A	N/A	N/A	0.067	N/A	N/A	N/A	N/A
+ZEB1	N/A	N/A	N/A	0.061	N/A	N/A	N/A	N/A
+RNF152	N/A	N/A	N/A	0.058	N/A	N/A	N/A	N/A
+ethylene glycol tetraacetic acid	N/A	N/A	1.109	0.055	N/A	N/A	N/A	N/A
+mir-506 (includes others)	N/A	N/A	N/A	0.038	N/A	N/A	N/A	N/A
+TNFSF9	N/A	N/A	N/A	0.038	N/A	N/A	N/A	N/A
+TLR5	N/A	N/A	N/A	0.037	N/A	N/A	N/A	N/A
+LRP5	N/A	N/A	N/A	0.021	N/A	N/A	N/A	N/A
+CRTC1	N/A	N/A	0	0	0	N/A	-0.6	N/A
+PTGER1	N/A	N/A	N/A	0	N/A	N/A	-0.105	-0.105
+GUCY1B1	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+"1-chloro-2,4-dinitrobenzene"	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+mir-8 (includes others)	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+JUND	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+ST8SIA1	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+napabucasin	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+NRP1	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+BMI1	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+dasatinib	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+brusatol	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+KCNIP3	N/A	N/A	0	0	N/A	N/A	N/A	N/A
+levofloxacin	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+GRIN1	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+atovaquone	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+hymecromone	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+HDAC2	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+MYRF	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+TBX5	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+NPC2	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+biochanin A	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+IGF2	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+GRB2	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+BTNL2	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+lamivudine	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+eflornithine	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+CDC42	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+SU6656	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+TNFAIP8L1	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+CH25H	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+silibinin	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+PAEP	N/A	N/A	N/A	0	N/A	N/A	N/A	N/A
+IL36B	N/A	N/A	N/A	-0.006	N/A	N/A	N/A	N/A
+CCL5	N/A	N/A	N/A	-0.024	N/A	N/A	N/A	-2.2
+BMP7	N/A	N/A	N/A	-0.038	N/A	N/A	N/A	N/A
+glucosamine	N/A	N/A	N/A	-0.042	N/A	N/A	N/A	N/A
+cyclopiazonic acid	N/A	N/A	N/A	-0.064	N/A	N/A	N/A	N/A
+fluvastatin	N/A	N/A	N/A	-0.068	N/A	N/A	N/A	N/A
+SAA1	N/A	N/A	N/A	-0.095	N/A	N/A	N/A	N/A
+GRN	N/A	N/A	N/A	-0.1	N/A	N/A	N/A	N/A
+naloxone	N/A	N/A	N/A	-0.113	N/A	N/A	N/A	N/A
+ATG5	N/A	N/A	N/A	-0.115	N/A	N/A	N/A	N/A
+PRKCB	N/A	N/A	N/A	-0.124	N/A	N/A	-1.253	N/A
+letrozole	N/A	N/A	N/A	-0.132	N/A	N/A	N/A	N/A
+MAPT	N/A	N/A	N/A	-0.141	N/A	N/A	N/A	N/A
+exenatide	N/A	N/A	N/A	-0.147	N/A	N/A	N/A	N/A
+thymoquinone	N/A	N/A	N/A	-0.152	N/A	N/A	N/A	N/A
+GAB2	N/A	N/A	N/A	-0.152	N/A	N/A	N/A	N/A
+mir-182	N/A	N/A	N/A	-0.156	N/A	N/A	N/A	N/A
+ADIPOR1	N/A	N/A	N/A	-0.156	N/A	N/A	N/A	N/A
+TRIM38	N/A	N/A	N/A	-0.199	N/A	N/A	N/A	N/A
+SERPINE1	N/A	N/A	N/A	-0.218	N/A	N/A	-1.732	-1.732
+ATF3	N/A	N/A	-1	-0.224	N/A	N/A	N/A	N/A
+JAG2	N/A	N/A	N/A	-0.239	N/A	N/A	N/A	N/A
+FOSB	N/A	N/A	N/A	-0.243	N/A	N/A	N/A	N/A
+tranilast	N/A	N/A	N/A	-0.254	N/A	N/A	N/A	N/A
+HCAR1	N/A	N/A	N/A	-0.254	N/A	N/A	N/A	N/A
+nicotinamide-beta-riboside	N/A	N/A	N/A	-0.254	N/A	N/A	N/A	N/A
+FN1	N/A	N/A	-1.729	-0.257	N/A	N/A	-1.729	-1.729
+BCL2	N/A	N/A	N/A	-0.261	N/A	N/A	N/A	N/A
+SIRT6	N/A	N/A	N/A	-0.262	N/A	N/A	-1.702	N/A
+IL27RA	N/A	N/A	N/A	-0.263	N/A	N/A	N/A	N/A
+MAPK7	N/A	N/A	N/A	-0.271	N/A	N/A	-2.219	N/A
+fucoidin	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+cordycepin	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+IL18R1	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+SUMO2	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+Lymphotoxin	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+zVAD-FMK	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+N-(3-oxododecanoyl)-homoserine lactone	N/A	N/A	N/A	-0.278	N/A	N/A	N/A	N/A
+RIPK1	N/A	N/A	N/A	-0.281	N/A	N/A	N/A	N/A
+BIRC3	N/A	N/A	N/A	-0.281	N/A	N/A	N/A	N/A
+USP21	N/A	N/A	N/A	-0.283	N/A	N/A	N/A	N/A
+cadmium chloride	N/A	N/A	N/A	-0.293	N/A	N/A	N/A	N/A
+MLX	N/A	N/A	N/A	-0.293	N/A	N/A	N/A	N/A
+thalidomide	N/A	N/A	N/A	-0.298	N/A	N/A	N/A	N/A
+NR1H	N/A	N/A	N/A	-0.299	N/A	N/A	1.937	N/A
+MAP2K5	N/A	N/A	-0.332	-0.332	-0.958	N/A	-1.253	-0.849
+CXCR4	N/A	N/A	N/A	-0.332	N/A	N/A	N/A	N/A
+LDB1	N/A	N/A	N/A	-0.333	N/A	N/A	N/A	N/A
+LMO2	N/A	N/A	N/A	-0.333	N/A	N/A	N/A	N/A
+FASLG	N/A	N/A	-0.513	-0.336	N/A	N/A	-0.513	-0.513
+FCER1G	N/A	N/A	-1.461	-0.339	N/A	N/A	N/A	N/A
+TRAF6	N/A	N/A	-0.772	-0.344	N/A	N/A	N/A	N/A
+salvin	N/A	N/A	N/A	-0.371	N/A	N/A	N/A	N/A
+2-(4-acetoxyphenyl)-2-chloro-N-methylethylamine	N/A	N/A	-0.173	-0.377	N/A	N/A	1.004	N/A
+zeaxanthin dipalmitate	N/A	N/A	N/A	-0.378	N/A	N/A	N/A	N/A
+FTO	N/A	N/A	N/A	-0.378	N/A	N/A	N/A	N/A
+DMP1	N/A	N/A	N/A	-0.391	N/A	N/A	N/A	N/A
+AXL	N/A	N/A	N/A	-0.391	N/A	N/A	N/A	N/A
+CDKN1A	N/A	N/A	N/A	-0.392	N/A	N/A	N/A	N/A
+DICER1	N/A	N/A	0.14	-0.396	N/A	N/A	-0.225	-0.225
+"phorbol 12,13-dibutyrate"	N/A	N/A	N/A	-0.421	N/A	N/A	-1.972	N/A
+CCK	N/A	N/A	N/A	-0.428	N/A	N/A	N/A	N/A
+RIPK3	N/A	N/A	N/A	-0.436	N/A	N/A	-1.982	N/A
+C5AR1	N/A	N/A	N/A	-0.44	N/A	N/A	N/A	N/A
+GDF11	N/A	N/A	N/A	-0.44	N/A	N/A	N/A	N/A
+mir-17 (includes others)	N/A	N/A	N/A	-0.444	N/A	N/A	N/A	N/A
+MFGE8	N/A	N/A	-1	-0.447	N/A	N/A	-2	-2
+PTPN1	N/A	N/A	-1	-0.447	N/A	N/A	1	N/A
+heme	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+SENP1	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+NB73	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+HIBCH	N/A	N/A	0	-0.447	N/A	N/A	N/A	N/A
+adenosine	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+zoledronic acid	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+COPA	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+PPIF	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+HDAC11	N/A	N/A	N/A	-0.45	N/A	N/A	N/A	N/A
+LCN2	N/A	N/A	N/A	-0.454	N/A	N/A	N/A	N/A
+ABL1	N/A	N/A	N/A	-0.455	N/A	N/A	N/A	N/A
+CD300LF	N/A	N/A	N/A	-0.459	N/A	N/A	N/A	N/A
+fatty acid	N/A	N/A	-2	-0.478	-1.992	N/A	-2.228	N/A
+CFLAR	N/A	N/A	-0.484	-0.484	N/A	N/A	N/A	N/A
+"S-(2,3-bispalmitoyloxypropyl)-cysteine-GDPKHPKSF"	N/A	N/A	N/A	-0.484	N/A	N/A	N/A	N/A
+NR1H2	N/A	N/A	N/A	-0.485	N/A	N/A	N/A	N/A
+mir-142 (includes others)	N/A	N/A	N/A	-0.505	N/A	N/A	N/A	N/A
+capsaicin	N/A	N/A	N/A	-0.505	N/A	N/A	N/A	N/A
+CLDN7	N/A	N/A	-0.849	-0.518	N/A	N/A	N/A	N/A
+NLRP12	N/A	N/A	N/A	-0.518	N/A	N/A	N/A	N/A
+LEPR	N/A	N/A	N/A	-0.526	N/A	N/A	N/A	N/A
+cerivastatin	N/A	N/A	N/A	-0.532	N/A	N/A	N/A	N/A
+PRKD1	N/A	N/A	N/A	-0.536	N/A	N/A	N/A	N/A
+ITK	N/A	N/A	N/A	-0.555	N/A	N/A	N/A	N/A
+STAT1/3/5 dimer	N/A	N/A	N/A	-0.555	N/A	N/A	N/A	N/A
+OPA1	N/A	N/A	N/A	-0.555	N/A	N/A	N/A	N/A
+GALP	N/A	N/A	N/A	-0.556	N/A	N/A	N/A	N/A
+RORA	N/A	N/A	N/A	-0.577	N/A	N/A	N/A	N/A
+TUG1	N/A	N/A	N/A	-0.577	N/A	N/A	N/A	N/A
+emodin	N/A	N/A	N/A	-0.577	N/A	N/A	N/A	N/A
+formoterol	N/A	N/A	N/A	-0.577	N/A	N/A	N/A	N/A
+HNRNPU	N/A	N/A	N/A	-0.582	N/A	N/A	N/A	N/A
+KL	N/A	N/A	-0.218	-0.6	N/A	N/A	N/A	N/A
+ZMPSTE24	N/A	N/A	N/A	-0.6	N/A	N/A	N/A	N/A
+IPMK	N/A	N/A	N/A	-0.6	N/A	N/A	N/A	N/A
+ATG7	N/A	N/A	N/A	-0.607	N/A	N/A	N/A	N/A
+AVP	N/A	N/A	N/A	-0.609	N/A	N/A	N/A	N/A
+CCN1	N/A	N/A	N/A	-0.63	-1.924	N/A	-2.167	N/A
+CDK5	N/A	N/A	-0.762	-0.64	N/A	N/A	N/A	N/A
+estriol	N/A	N/A	N/A	-0.64	N/A	N/A	N/A	N/A
+RARB	N/A	N/A	0	-0.647	N/A	N/A	0.313	N/A
+TNFAIP3	N/A	N/A	N/A	-0.647	N/A	N/A	N/A	N/A
+PGF	N/A	N/A	N/A	-0.663	N/A	N/A	N/A	N/A
+MAPK10	N/A	N/A	N/A	-0.666	N/A	N/A	-1.964	-1.964
+NR5A2	N/A	N/A	-0.026	-0.674	N/A	N/A	N/A	N/A
+FGF21	N/A	N/A	N/A	-0.676	N/A	N/A	N/A	N/A
+S-nitroso-N-acetyl-DL-penicillamine	N/A	N/A	N/A	-0.686	N/A	N/A	N/A	N/A
+IgM	N/A	N/A	N/A	-0.686	N/A	N/A	N/A	N/A
+YTHDF2	N/A	N/A	N/A	-0.689	N/A	N/A	N/A	N/A
+SRC (family)	N/A	N/A	N/A	-0.692	N/A	N/A	N/A	N/A
+OSCAR	N/A	N/A	-1	-0.707	N/A	N/A	-2	N/A
+1-palmitoyl-2-arachidonyl-sn-glycero-3-phosphorylcholine	N/A	N/A	N/A	-0.713	N/A	N/A	N/A	N/A
+IRAK3	N/A	N/A	0.055	-0.714	0.448	N/A	N/A	N/A
+HSP70	N/A	N/A	N/A	-0.723	N/A	N/A	N/A	N/A
+epinephrine	N/A	N/A	N/A	-0.746	N/A	N/A	-1.154	N/A
+TCIM	N/A	N/A	N/A	-0.747	N/A	N/A	-1.982	N/A
+bafilomycin A1	N/A	N/A	N/A	-0.747	N/A	N/A	N/A	N/A
+HOTAIR	N/A	N/A	N/A	-0.756	N/A	N/A	N/A	N/A
+collagenase	N/A	N/A	N/A	-0.762	N/A	N/A	-2	N/A
+CXCR3	N/A	N/A	N/A	-0.762	N/A	N/A	N/A	N/A
+3-deazaneplanocin	N/A	N/A	N/A	-0.767	N/A	N/A	N/A	N/A
+"1,25-dihydroxyvitamin D"	N/A	N/A	N/A	-0.788	-0.152	N/A	N/A	N/A
+stattic	N/A	N/A	N/A	-0.801	N/A	N/A	N/A	N/A
+NEDD9	N/A	N/A	N/A	-0.816	N/A	N/A	N/A	N/A
+MACROH2A1	N/A	N/A	N/A	-0.816	N/A	N/A	N/A	N/A
+LILRB4	N/A	N/A	N/A	-0.826	N/A	N/A	N/A	N/A
+AIM2	N/A	N/A	N/A	-0.83	N/A	N/A	N/A	N/A
+fasudil	N/A	N/A	N/A	-0.849	N/A	N/A	N/A	N/A
+B4GALNT1	N/A	N/A	N/A	-0.849	N/A	N/A	N/A	N/A
+SERPINE2	N/A	N/A	N/A	-0.849	N/A	N/A	N/A	N/A
+GPR15LG	N/A	N/A	-1	-0.853	N/A	N/A	N/A	N/A
+"8-bromoguanosine 3',5'-cyclic monophosphate"	N/A	N/A	N/A	-0.882	N/A	N/A	N/A	N/A
+7(R)-maresin 1	N/A	N/A	N/A	-0.9	N/A	N/A	N/A	N/A
+ATP-gamma-S	N/A	N/A	N/A	-0.903	N/A	N/A	N/A	N/A
+PDGF-AB	N/A	N/A	N/A	-0.908	N/A	N/A	N/A	N/A
+fluoxetine	N/A	N/A	-1.218	-0.911	N/A	N/A	-1.491	N/A
+TANK	N/A	N/A	N/A	-0.92	N/A	N/A	N/A	N/A
+WTAP	N/A	N/A	N/A	-0.927	N/A	N/A	N/A	N/A
+SLC40A1	N/A	N/A	N/A	-0.928	N/A	N/A	N/A	N/A
+1-palmitoyl-2-(5-oxovaleroyl)-sn-glycero-3-phosphorylcholine	N/A	N/A	N/A	-0.956	N/A	N/A	N/A	N/A
+32-134D	N/A	N/A	N/A	-0.958	N/A	N/A	N/A	N/A
+bicuculline	N/A	N/A	-2.393	-0.969	-1.941	N/A	-2.588	-2.393
+MMP14	N/A	N/A	N/A	-0.97	N/A	N/A	N/A	N/A
+PRKCI	N/A	N/A	N/A	-0.973	N/A	N/A	N/A	N/A
+HDL	N/A	N/A	N/A	-0.975	N/A	N/A	N/A	N/A
+fingolimod	N/A	N/A	0	-0.978	N/A	N/A	N/A	N/A
+imatinib	N/A	N/A	N/A	-0.981	N/A	N/A	N/A	N/A
+caffeic acid phenethyl ester	N/A	N/A	0.218	-0.99	0.78	N/A	N/A	N/A
+SQSTM1	N/A	N/A	-0.97	-0.99	N/A	N/A	N/A	N/A
+MEF2C	N/A	N/A	-1.406	-1	-1.406	N/A	-2.17	-1.951
+PDHA1	N/A	N/A	N/A	-1	N/A	N/A	-2	N/A
+PTGFR	N/A	N/A	N/A	-1	N/A	N/A	-1.934	N/A
+NFATC3	N/A	N/A	N/A	-1	N/A	N/A	-1.925	N/A
+TPCA-1	N/A	N/A	-0.655	-1	N/A	N/A	N/A	N/A
+cucurbitacin I	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+AKT inhibitor VIII	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+ML290	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+ACVRL1	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+CHD1	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+GPX1	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+FBF1	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+ODC1	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+triclosan	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+6-aminopyrazolopyrimidine derivative compound II	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+RTCB	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+HLCS	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Mir122a/b	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+EMD	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+LAPTM5	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+RNF138	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+xanthohumol	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+methylprednisolone	N/A	N/A	-1.664	-1.001	N/A	N/A	-0.608	N/A
+SREBF2	N/A	N/A	-1.732	-1.021	-0.471	N/A	N/A	N/A
+mir-30 (includes others)	N/A	N/A	N/A	-1.029	N/A	N/A	N/A	N/A
+IL37	N/A	N/A	N/A	-1.03	N/A	N/A	N/A	N/A
+miR-17-5p (and other miRNAs w/seed AAAGUGC)	N/A	N/A	N/A	-1.061	N/A	N/A	N/A	N/A
+vitamin K3	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+S100A7	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+STEAP3	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+TIMP3	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+plicamycin	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+molibresib	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+PBRM1	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+KN-62	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+KDM1A	N/A	N/A	N/A	-1.078	N/A	N/A	N/A	N/A
+HOXD10	N/A	N/A	N/A	-1.091	N/A	N/A	N/A	N/A
+TRAIP	N/A	N/A	N/A	-1.103	N/A	N/A	N/A	N/A
+SRT1720	N/A	N/A	N/A	-1.103	N/A	N/A	N/A	N/A
+sodium bisulfide	N/A	N/A	N/A	-1.114	N/A	N/A	N/A	N/A
+TREM2	N/A	N/A	N/A	-1.114	N/A	N/A	N/A	N/A
+phosphoenolpyruvate	N/A	N/A	N/A	-1.123	N/A	N/A	N/A	N/A
+ASCC3	N/A	N/A	-1.131	-1.131	N/A	N/A	N/A	N/A
+MST1	N/A	N/A	N/A	-1.131	N/A	N/A	N/A	N/A
+BIRC2	N/A	N/A	N/A	-1.131	N/A	N/A	N/A	N/A
+"N-[(2Z)-3-(4,5-dihydro-1,3-thiazol-2-yl)-1,3-thiazolidin-2-yl idene]-5H dibenzo[a,d][7]annulen-5-amine"	N/A	N/A	N/A	-1.131	N/A	N/A	N/A	N/A
+FCGR2B	N/A	N/A	N/A	-1.131	N/A	N/A	N/A	N/A
+SERPINC1	N/A	N/A	N/A	-1.131	N/A	N/A	N/A	N/A
+dalfampridine	N/A	N/A	-2.449	-1.134	-2	N/A	-2.646	-2.449
+TET3	N/A	N/A	N/A	-1.134	N/A	N/A	N/A	N/A
+Collagen type II	N/A	N/A	N/A	-1.151	N/A	N/A	N/A	N/A
+alefacept	N/A	N/A	N/A	-1.153	N/A	N/A	N/A	N/A
+GSK583	N/A	N/A	N/A	-1.154	N/A	N/A	N/A	N/A
+NOG	N/A	N/A	N/A	-1.154	N/A	N/A	N/A	N/A
+TGFB3	N/A	N/A	N/A	-1.158	N/A	N/A	-1.941	N/A
+ODN-A151	N/A	N/A	N/A	-1.165	N/A	N/A	N/A	N/A
+MMP1	N/A	N/A	N/A	-1.172	N/A	N/A	-1.961	-1.961
+methylphenidate	N/A	N/A	N/A	-1.177	N/A	N/A	N/A	N/A
+TET1	N/A	N/A	N/A	-1.188	N/A	N/A	N/A	N/A
+CBL	N/A	N/A	N/A	-1.192	N/A	N/A	N/A	N/A
+SIGIRR	N/A	N/A	N/A	-1.192	N/A	N/A	N/A	N/A
+sodium arsenite	N/A	N/A	-1.387	-1.195	-1.067	N/A	-1.067	-1.067
+GCG	N/A	N/A	-2.156	-1.2	-1.067	N/A	-2.362	N/A
+CASP8	N/A	N/A	N/A	-1.2	N/A	N/A	N/A	N/A
+HDAC3	N/A	N/A	N/A	-1.206	N/A	N/A	N/A	N/A
+NOS1	N/A	N/A	N/A	-1.206	N/A	N/A	N/A	N/A
+KDM4A	N/A	N/A	N/A	-1.214	N/A	N/A	N/A	N/A
+IRAK1	N/A	N/A	N/A	-1.214	N/A	N/A	N/A	N/A
+BACH2	N/A	N/A	N/A	-1.223	N/A	N/A	N/A	N/A
+ELF4	N/A	N/A	N/A	-1.235	N/A	N/A	N/A	N/A
+LILRB1	N/A	N/A	N/A	-1.236	N/A	N/A	N/A	N/A
+sorafenib	N/A	N/A	-0.64	-1.238	-0.277	N/A	N/A	N/A
+hemin	N/A	N/A	N/A	-1.243	N/A	N/A	N/A	N/A
+SMARCA5	N/A	N/A	N/A	-1.265	N/A	N/A	N/A	N/A
+SB 216763	N/A	N/A	-2.219	-1.269	-2.232	N/A	-2.232	-1.997
+6-mercaptopurine	N/A	N/A	N/A	-1.342	N/A	N/A	N/A	N/A
+RARG	N/A	N/A	N/A	-1.342	N/A	N/A	0	0
+metronidazole	N/A	N/A	N/A	-1.342	N/A	N/A	N/A	N/A
+HBB	N/A	N/A	N/A	-1.342	N/A	N/A	N/A	N/A
+NEUROG1	N/A	N/A	N/A	-1.342	N/A	N/A	N/A	N/A
+tanespimycin	N/A	N/A	N/A	-1.359	N/A	N/A	N/A	N/A
+JAK inhibitor I	N/A	N/A	N/A	-1.387	N/A	N/A	N/A	N/A
+TAP1	N/A	N/A	N/A	-1.389	N/A	N/A	N/A	N/A
+TSC1	N/A	N/A	N/A	-1.4	N/A	N/A	N/A	N/A
+CLU	N/A	N/A	N/A	-1.412	N/A	N/A	N/A	N/A
+UCP1	N/A	N/A	N/A	-1.414	N/A	N/A	N/A	N/A
+prednisolone	N/A	N/A	N/A	-1.414	N/A	N/A	N/A	N/A
+ETS2	N/A	N/A	N/A	-1.432	N/A	N/A	N/A	N/A
+TXN	N/A	N/A	N/A	-1.445	N/A	N/A	N/A	N/A
+EIF4EBP2	N/A	N/A	N/A	-1.452	N/A	N/A	N/A	N/A
+EIF4EBP1	N/A	N/A	N/A	-1.452	N/A	N/A	N/A	N/A
+PLCG2	N/A	N/A	N/A	-1.453	N/A	N/A	N/A	N/A
+SETDB1	N/A	N/A	N/A	-1.474	N/A	N/A	N/A	N/A
+ACOD1	N/A	N/A	N/A	-1.488	N/A	N/A	N/A	N/A
+miR-291a-3p (and other miRNAs w/seed AAGUGCU)	N/A	N/A	N/A	-1.491	N/A	N/A	N/A	N/A
+C1Q (family)	N/A	N/A	N/A	-1.498	N/A	N/A	N/A	N/A
+miR-146a-5p (and other miRNAs w/seed GAGAACU)	N/A	N/A	N/A	-1.498	N/A	N/A	N/A	N/A
+PRMT7	N/A	N/A	N/A	-1.521	N/A	N/A	N/A	N/A
+miR-155-5p (miRNAs w/seed UAAUGCU)	N/A	N/A	-0.389	-1.543	-0.389	N/A	1.98	1.98
+Bay 11-7082	N/A	N/A	N/A	-1.563	N/A	N/A	N/A	1.921
+etanercept	N/A	N/A	N/A	-1.572	0	N/A	N/A	N/A
+2-aminopurine	N/A	N/A	-1.131	-1.61	-0.277	N/A	N/A	N/A
+TFRC	N/A	N/A	N/A	-1.633	N/A	N/A	N/A	N/A
+INSIG1	N/A	N/A	N/A	-1.633	N/A	N/A	N/A	N/A
+NR0B2	N/A	N/A	-0.747	-1.65	N/A	N/A	N/A	N/A
+C4a/C4b	N/A	N/A	-2.433	-1.664	-1.982	N/A	-2.433	-2.219
+EPHA2	N/A	N/A	-2.219	-1.664	-1.982	N/A	-2.236	-2
+DDB1	N/A	N/A	-1.633	-1.664	N/A	N/A	-2.236	-2.236
+Clec10a/Mgl2	N/A	N/A	N/A	-1.664	N/A	N/A	N/A	N/A
+SAFB	N/A	N/A	0	-1.667	N/A	N/A	N/A	N/A
+XIAP	N/A	N/A	N/A	-1.671	N/A	N/A	N/A	N/A
+pentylenetetrazol	N/A	N/A	-2.373	-1.68	-2	N/A	-2.373	-2.159
+GSTO1	N/A	N/A	0	-1.706	N/A	N/A	N/A	N/A
+CRH	N/A	N/A	-1.313	-1.707	N/A	N/A	-1.93	N/A
+CUL3	N/A	N/A	N/A	-1.709	N/A	N/A	N/A	N/A
+mir-155	N/A	N/A	-1.324	-1.725	-0.95	N/A	N/A	N/A
+PELI2	N/A	N/A	-1.992	-1.729	N/A	N/A	N/A	N/A
+HOXA5	N/A	N/A	N/A	-1.729	N/A	N/A	0.943	0.943
+SAMHD1	N/A	N/A	N/A	-1.732	N/A	N/A	N/A	N/A
+ID3	N/A	N/A	-1.432	-1.746	N/A	N/A	-1.432	-1.131
+ISG15	N/A	N/A	-2.077	-1.76	N/A	N/A	N/A	N/A
+potassium chloride	N/A	N/A	-2.018	-1.768	N/A	N/A	-2.215	-1.978
+PIK3CG	N/A	N/A	N/A	-1.802	N/A	N/A	N/A	N/A
+raclopride	N/A	N/A	-1.87	-1.87	N/A	N/A	N/A	N/A
+TGFBR1	N/A	N/A	N/A	-1.89	N/A	N/A	N/A	N/A
+isoprenaline	N/A	N/A	-1.915	-1.915	N/A	N/A	-1.964	N/A
+fluphenazine	N/A	N/A	-1.94	-1.94	N/A	N/A	N/A	N/A
+chloropromazine	N/A	N/A	-1.94	-1.94	N/A	N/A	N/A	N/A
+GW3965	N/A	N/A	N/A	-1.941	-0.094	N/A	N/A	1.179
+GFI1	N/A	N/A	N/A	-1.942	N/A	N/A	N/A	N/A
+USP22	N/A	N/A	-1.109	-1.943	N/A	N/A	N/A	N/A
+SIRT3	N/A	N/A	N/A	-1.944	N/A	N/A	N/A	N/A
+ELK4	N/A	N/A	-2.19	-1.949	N/A	N/A	-2.19	-1.969
+ZC3H12C	N/A	N/A	N/A	-1.949	N/A	N/A	N/A	N/A
+green tea polyphenol	N/A	N/A	N/A	-1.964	N/A	N/A	N/A	N/A
+NGF	N/A	N/A	-1.967	-1.967	N/A	N/A	-2.185	N/A
+BCL2L1	N/A	N/A	N/A	-1.967	N/A	N/A	N/A	N/A
+TRIM21	N/A	N/A	N/A	-1.969	N/A	N/A	N/A	N/A
+IL17RD	N/A	N/A	N/A	-1.969	N/A	N/A	N/A	N/A
+leucine	N/A	N/A	N/A	-1.969	N/A	N/A	N/A	N/A
+propofol	N/A	N/A	N/A	-1.98	N/A	N/A	N/A	N/A
+methyl-beta-cyclodextrin	N/A	N/A	N/A	-1.98	N/A	N/A	N/A	N/A
+PRKAR2B	N/A	N/A	-1.982	-1.982	N/A	N/A	-1.715	N/A
+ID2	N/A	N/A	N/A	-1.982	N/A	N/A	N/A	N/A
+SMAD7	N/A	N/A	N/A	-1.982	N/A	N/A	N/A	N/A
+OGG1	N/A	N/A	N/A	-1.982	N/A	N/A	N/A	N/A
+sulfamethoxazole/trimethoprim	N/A	N/A	N/A	-1.982	N/A	N/A	N/A	N/A
+CNOT7	N/A	N/A	N/A	-1.982	N/A	N/A	N/A	N/A
+ADAMTS12	N/A	N/A	N/A	-1.987	N/A	N/A	N/A	N/A
+dimethyl itaconate	N/A	N/A	-2	-1.989	N/A	N/A	N/A	N/A
+MC1R	N/A	N/A	-1.951	-2	N/A	N/A	N/A	N/A
+CTCF	N/A	N/A	N/A	-2	-1	N/A	N/A	N/A
+TNIP1	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+SIX2	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+24-hydroxycholesterol	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+CDK8	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+TNFRSF4	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+meloxicam	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+ZRANB1	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+DEPTOR	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+ciprofloxacin	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+NANOG	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+bee venom	N/A	N/A	-1.974	-2.085	-2.211	N/A	-2.219	-2.219
+HIVEP1	N/A	N/A	N/A	-2.121	N/A	N/A	N/A	N/A
+AIRE	N/A	N/A	N/A	-2.121	N/A	N/A	N/A	N/A
+DAXX	N/A	N/A	N/A	-2.138	N/A	N/A	N/A	N/A
+ETV5	N/A	N/A	N/A	-2.138	N/A	N/A	N/A	N/A
+KMT2D	N/A	N/A	-2.828	-2.144	-1.067	N/A	N/A	N/A
+CLOCK	N/A	N/A	N/A	-2.159	N/A	N/A	N/A	N/A
+ZBED2	N/A	N/A	-1.94	-2.176	N/A	N/A	N/A	N/A
+ATAD3A	N/A	N/A	N/A	-2.189	N/A	N/A	N/A	N/A
+K+	N/A	N/A	-1.974	-2.2	N/A	N/A	N/A	N/A
+miR-21-5p (and other miRNAs w/seed AGCUUAU)	N/A	N/A	N/A	-2.205	N/A	N/A	N/A	N/A
+ANKIB1	N/A	N/A	N/A	-2.213	N/A	N/A	N/A	N/A
+CSNK1G3	N/A	N/A	N/A	-2.213	N/A	N/A	N/A	N/A
+NPR1	N/A	N/A	N/A	-2.219	N/A	N/A	N/A	N/A
+olitigaltin	N/A	N/A	N/A	-2.219	N/A	N/A	N/A	N/A
+baricitinib	N/A	N/A	-2	-2.236	N/A	N/A	N/A	N/A
+tipiracil	N/A	N/A	N/A	-2.236	N/A	N/A	N/A	N/A
+ZNF598	N/A	N/A	N/A	-2.236	N/A	N/A	N/A	N/A
+QKI	N/A	N/A	-1.633	-2.324	N/A	N/A	N/A	N/A
+pyridoxine	N/A	N/A	-1	-2.333	0	N/A	N/A	N/A
+fontolizumab	N/A	N/A	-0.447	-2.333	N/A	N/A	N/A	N/A
+NCOR1	N/A	N/A	-2.219	-2.345	N/A	N/A	N/A	N/A
+SOX11	N/A	N/A	N/A	-2.359	N/A	N/A	N/A	N/A
+POMC	N/A	N/A	-1.361	-2.366	N/A	N/A	-1.711	-1.154
+FBXW7	N/A	N/A	N/A	-2.37	N/A	N/A	N/A	N/A
+risperidone	N/A	N/A	-2.178	-2.376	N/A	N/A	-1.964	N/A
+IRF4	N/A	N/A	-1.561	-2.38	N/A	N/A	N/A	N/A
+LINC00624	N/A	N/A	-1.949	-2.387	N/A	N/A	N/A	N/A
+CLPP	N/A	N/A	-2.194	-2.4	N/A	N/A	N/A	N/A
+ETV7	N/A	N/A	-1.342	-2.4	N/A	N/A	N/A	N/A
+GATA6	N/A	N/A	N/A	-2.408	N/A	N/A	N/A	N/A
+PRDM16	N/A	N/A	N/A	-2.423	N/A	N/A	N/A	N/A
+NMN	N/A	N/A	N/A	-2.433	N/A	N/A	N/A	N/A
+LRP1B	N/A	N/A	N/A	-2.433	N/A	N/A	N/A	N/A
+MDM4	N/A	N/A	N/A	-2.449	N/A	N/A	N/A	N/A
+cenicriviroc	N/A	N/A	-2.975	-2.529	N/A	N/A	N/A	N/A
+NGLY1	N/A	N/A	-2.169	-2.573	N/A	N/A	N/A	N/A
+DNASE2	N/A	N/A	N/A	-2.599	N/A	N/A	N/A	N/A
+H-151	N/A	N/A	-1.98	-2.608	N/A	N/A	N/A	N/A
+DUSP11	N/A	N/A	-2.449	-2.646	N/A	N/A	N/A	N/A
+CBX5	N/A	N/A	N/A	-2.646	N/A	N/A	N/A	N/A
+RACK1	N/A	N/A	-2.19	-2.778	N/A	N/A	N/A	N/A
+GAPDH	N/A	N/A	-2.219	-2.789	N/A	N/A	N/A	N/A
+FOXA1	N/A	N/A	-1.387	-2.789	N/A	N/A	N/A	N/A
+IKZF3	N/A	N/A	N/A	-2.813	N/A	N/A	N/A	N/A
+FBXO44	N/A	N/A	-2.236	-2.828	N/A	N/A	N/A	N/A
+TEK	N/A	N/A	-3	-2.866	-1	N/A	N/A	N/A
+miR-145-5p (and other miRNAs w/seed UCCAGUU)	N/A	N/A	-2.371	-3.03	N/A	N/A	N/A	N/A
+mir-21 (includes others)	N/A	N/A	-1.664	-3.2	-1.982	N/A	N/A	N/A
+ADAR	N/A	N/A	-2.396	-3.274	N/A	N/A	N/A	N/A
+tofacitinib	N/A	N/A	-2.449	-3.286	N/A	N/A	N/A	N/A
+TAB1	N/A	N/A	-2.639	-3.295	-0.698	N/A	N/A	N/A
+USP18	N/A	N/A	-2.203	-3.375	-2	N/A	N/A	N/A
+PPP2CA	N/A	N/A	-2.534	-3.586	N/A	N/A	N/A	N/A
+ziritaxestat	N/A	N/A	-3	-3.606	N/A	N/A	N/A	N/A
+ACKR2	N/A	N/A	-2.646	-3.742	N/A	N/A	N/A	N/A
+Scd2	N/A	N/A	-3.162	-3.873	N/A	N/A	N/A	N/A
+miR-182-5p (and other miRNAs w/seed UUGGCAA)	N/A	N/A	-2.813	-3.898	N/A	N/A	N/A	N/A
+USP8	N/A	N/A	-2.621	-3.96	N/A	N/A	N/A	N/A
+PNPT1	N/A	N/A	-2.967	-4.041	N/A	N/A	N/A	N/A
+RC3H1	N/A	N/A	-2.333	-4.146	N/A	N/A	N/A	N/A
+UBAP1	N/A	N/A	-3.302	-4.347	N/A	N/A	N/A	N/A
+ETV6-RUNX1	N/A	N/A	-2.415	-4.463	N/A	N/A	N/A	N/A
+Irgm1	N/A	N/A	-3.249	-4.664	N/A	N/A	N/A	N/A
+ZNF750	N/A	N/A	-3.359	-4.82	0.13	N/A	N/A	N/A
+TTC39A-AS1	N/A	N/A	-2.915	-4.852	N/A	N/A	N/A	N/A
+TRIM24	N/A	N/A	-3.148	-4.933	N/A	N/A	N/A	N/A
+SN-011	N/A	N/A	-3.162	-5.364	N/A	N/A	N/A	N/A
+ETV3	N/A	N/A	-3.189	-5.37	N/A	N/A	N/A	N/A
+BANF1	N/A	N/A	-3.396	-5.569	N/A	N/A	N/A	N/A
+TREX1	N/A	N/A	-3.643	-5.575	-1.4	N/A	N/A	N/A
+STAG2	N/A	N/A	-3.59	-5.644	-1.981	N/A	N/A	N/A
+ETV6	N/A	N/A	-3.815	-5.785	N/A	N/A	N/A	N/A
+RB1	N/A	1.633	1.149	0.323	0.734	2.76	2.54	2.335
+U0126	2.395	2.946	3.083	0.732	2.276	2.689	4.02	3.994
+genistein	N/A	1.953	0.251	0.546	1.831	2.665	1.741	2.113
+GATA1	N/A	N/A	N/A	N/A	N/A	2.487	N/A	N/A
+NC410	N/A	2	3.317	1.886	2	2.449	2.646	2.646
+TET2	N/A	N/A	0.186	-0.534	N/A	2.449	N/A	N/A
+2-amino-5-phosphonovaleric acid	N/A	N/A	2.559	2.559	2.607	2.401	3.102	2.941
+TAL1	N/A	N/A	N/A	N/A	N/A	2.373	N/A	N/A
+losartan potassium	N/A	N/A	1.93	0.939	1.81	2.241	0.755	1.205
+BCL3	N/A	N/A	2.075	1.547	1.836	2.236	2.138	1.606
+NONO	N/A	1.982	4.756	7.268	2.425	2.219	N/A	N/A
+harpagoside	N/A	N/A	1.664	0.478	N/A	2.219	2.219	2.219
+STK11	N/A	N/A	1.546	1.921	2.197	2.213	2.213	1.85
+lapatinib	N/A	1.964	2.408	2.408	1.982	2.191	2.408	2.408
+curcumin	N/A	1.957	2.774	2.368	2.378	2.178	2.354	2.956
+H89	1.951	1.722	1.993	0.877	1.449	2.175	2.377	1.993
+STAT1	N/A	1.442	4.048	6.884	2.953	2.174	0.311	-0.474
+IRF3	N/A	1.197	3.787	5.881	1.679	2.173	N/A	N/A
+CEBPE	N/A	N/A	N/A	N/A	N/A	2.169	N/A	N/A
+IFNA2	N/A	N/A	4.598	7.374	2.372	2.151	N/A	N/A
+HDAC	N/A	1.852	1.82	0.357	2.195	2.098	2.279	1.863
+tyrphostin AG 1478	2.386	2.386	2.397	0.44	1.786	2.085	2.751	2.751
+CEBPA	N/A	-1.067	1.073	1.626	1.242	2.007	-2.401	-2.6
+ADAM10	N/A	N/A	N/A	N/A	N/A	2	N/A	N/A
+lenalidomide	N/A	N/A	N/A	2.529	N/A	2	N/A	N/A
+cardiotoxin	N/A	N/A	N/A	2.449	N/A	2	N/A	N/A
+WBP2	N/A	N/A	N/A	1.414	N/A	2	2	2
+raloxifene	N/A	N/A	1	0.378	1	2	2	2
+PD184352	N/A	N/A	2.216	1.732	1.98	1.987	2.216	1.987
+lisinopril	N/A	N/A	N/A	N/A	N/A	1.982	N/A	N/A
+carbon monoxide	N/A	N/A	N/A	N/A	N/A	1.98	N/A	N/A
+TICAM2	N/A	N/A	N/A	1.982	N/A	1.98	N/A	N/A
+ZBTB16	N/A	N/A	N/A	0.923	N/A	1.98	0.762	N/A
+CHROMR	N/A	N/A	3.99	6.889	2.892	1.969	N/A	N/A
+PP2/AG1879 tyrosine kinase inhibitor	N/A	N/A	N/A	-0.229	N/A	1.967	1.519	1.519
+TCL1A	N/A	N/A	N/A	1.964	N/A	1.964	N/A	N/A
+IRF9	N/A	N/A	2.854	4.073	0.708	1.951	N/A	N/A
+nifedipine	N/A	N/A	N/A	1.539	N/A	1.951	1.954	N/A
+CDX2	N/A	N/A	N/A	-0.115	N/A	1.951	N/A	N/A
+SP3	N/A	N/A	N/A	N/A	N/A	1.94	N/A	N/A
+laquinimod	N/A	N/A	N/A	2.213	N/A	1.937	N/A	N/A
+isotretinoin	N/A	N/A	N/A	2.111	N/A	1.929	N/A	N/A
+LY294002	2.729	2.457	2.142	-0.289	1.906	1.917	3.986	3.744
+PPARGC1A	N/A	N/A	N/A	-1.2	N/A	1.89	1.363	N/A
+PD98059	2.571	3.226	3.797	1.392	3.191	1.885	4.107	4.09
+MITF	N/A	N/A	N/A	N/A	N/A	1.854	-0.689	N/A
+medroxyprogesterone acetate	N/A	1	1.134	2.5	1.633	1.732	1	N/A
+pyrrolidine dithiocarbamate	N/A	N/A	-0.595	-0.309	0.309	1.72	1.514	1.497
+IRF7	N/A	1.953	4.469	6.946	2.588	1.709	N/A	N/A
+BMP4	N/A	N/A	N/A	1.816	N/A	1.709	N/A	N/A
+RUNX1	N/A	N/A	0.254	-0.04	N/A	1.706	N/A	1
+SIRT1	N/A	N/A	-2.132	-2.284	N/A	1.698	N/A	N/A
+YY1	N/A	N/A	1.988	1.775	N/A	1.683	1.204	N/A
+PAX3-FOXO1	N/A	N/A	2	N/A	N/A	1.633	2	N/A
+vidutolimod	N/A	1	4.491	7.204	2.449	1.633	N/A	N/A
+RARA	N/A	N/A	0	-1	N/A	1.633	0.816	0.447
+bisindolylmaleimide I	N/A	N/A	2.425	1.164	2.207	1.588	2.415	2.2
+GATA2	N/A	N/A	-0.239	0.574	N/A	1.584	N/A	N/A
+TP53	-1.472	-1.45	0.52	2.981	-0.637	1.553	-0.767	-1.904
+CITED2	N/A	1.188	-1.793	-3.313	-0.487	1.522	2.198	2.195
+IFN beta	-0.376	1.07	4.146	6.264	1.927	1.516	0.435	-0.661
+topotecan	N/A	N/A	-1.195	-0.929	-1.664	1.51	-0.128	-0.555
+SP600125	2.177	1.868	1.596	0.281	1.564	1.509	3.662	3.381
+MAPK9	N/A	N/A	-0.865	1.289	N/A	1.501	-1.71	-1.71
+paraquat	N/A	N/A	0.132	1.153	N/A	1.491	N/A	N/A
+wortmannin	1.964	1.715	1.511	0.339	1.578	1.491	2.755	2.58
+fulvestrant	N/A	1.067	1.387	1.773	1.214	1.49	1.71	1.71
+simvastatin	N/A	N/A	N/A	N/A	N/A	1.458	1.474	1.941
+ARID1A	N/A	-0.447	0.251	1.13	-0.399	1.424	0.788	0.816
+sirolimus	1.964	1.964	0.788	0.182	1.872	1.422	2.055	2.58
+EGLN1	N/A	N/A	N/A	1.732	0	1.414	-0.577	N/A
+IFN	N/A	N/A	2.663	5.061	N/A	1.41	N/A	N/A
+NR1H3	N/A	N/A	0.218	-0.708	N/A	1.4	N/A	N/A
+PPARG	N/A	N/A	-0.447	1.17	-0.265	1.384	-1.448	-0.602
+AGN194204	N/A	N/A	N/A	N/A	N/A	1.342	N/A	N/A
+SFTPA1	N/A	N/A	0.816	1	0.447	1.342	2.236	2.236
+HNF1B	N/A	N/A	N/A	0	N/A	1.342	N/A	N/A
+SSTR2	N/A	N/A	0.13	-0.854	0.762	1.342	2	N/A
+KLF3	N/A	N/A	N/A	-1.929	N/A	1.342	N/A	N/A
+NR4A1	N/A	N/A	0.44	-0.284	0.882	1.325	N/A	N/A
+CSF3	N/A	0	-0.329	1.353	0.67	1.304	-1.741	-1.741
+actinomycin D	N/A	0.208	0.747	-1.205	0.242	1.3	1.609	1.182
+DUSP1	N/A	1.572	-1.208	-1.841	0.357	1.266	0.424	1.045
+trametinib	N/A	N/A	N/A	2.148	N/A	1.228	N/A	N/A
+SPI1	N/A	N/A	2.227	4.43	0.798	1.224	-0.346	-0.346
+trichostatin A	-0.597	0.069	-1.416	-0.355	-0.604	1.206	0.184	0.284
+STING1	N/A	0.483	3.421	5.309	1.727	1.196	-2.183	-1.96
+ALOX5	N/A	N/A	0.44	1.308	1.019	1.195	1.154	0.692
+diphenyleneiodonium	N/A	N/A	N/A	0.053	N/A	1.188	1.97	1.97
+NFE2L2	-0.9	-0.9	-1.595	0.473	-0.092	1.187	-0.199	-0.106
+EWSR1-FLI1	N/A	N/A	N/A	-0.197	N/A	1.181	N/A	N/A
+IL10	0.471	0.019	1.543	1.375	1.842	1.173	0.28	0.108
+NLRP3	N/A	N/A	N/A	1.687	1.003	1.172	N/A	N/A
+SYK	N/A	0.21	0.638	0.372	-0.111	1.159	N/A	N/A
+BTK	N/A	N/A	1.334	2.581	0.849	1.154	N/A	N/A
+Sb202190	N/A	N/A	2.074	0.032	1.731	1.145	2.185	2.05
+IL1RN	N/A	N/A	-1.224	-3.628	1.227	1.145	2.196	1.955
+NOS2	N/A	N/A	1.109	1.589	N/A	1.133	-1.154	N/A
+triptolide	N/A	N/A	2.219	0.664	1.459	1.131	2.569	2.569
+NR1I2	N/A	N/A	N/A	0.445	N/A	1.131	N/A	N/A
+indomethacin	N/A	N/A	N/A	1.583	-0.172	1.127	0.91	0.425
+H-7	N/A	N/A	0.642	0.333	N/A	1.125	N/A	N/A
+"N-[N-(3,5-difluorophenacetyl-L-Ala)]-S-phenylglycine t-butyl ester"	N/A	N/A	N/A	N/A	N/A	1.109	1.982	N/A
+LTA	N/A	N/A	N/A	1.98	N/A	1.103	N/A	N/A
+STAT5A/B	N/A	N/A	N/A	N/A	N/A	1.091	0	-1.387
+fisetin	N/A	N/A	N/A	N/A	N/A	1.091	N/A	N/A
+FYN	N/A	N/A	N/A	N/A	N/A	1.091	N/A	N/A
+glutamine	N/A	N/A	0.266	-0.147	0.618	1.091	0.825	0.905
+decitabine	-2	-0.431	0.545	2.584	-0.343	1.09	-2.375	-2.158
+morphine	N/A	N/A	0.457	0.24	-0.927	1.068	0.007	-0.176
+SRGN	N/A	N/A	N/A	N/A	N/A	1.067	N/A	N/A
+GDF2	N/A	N/A	N/A	0.481	N/A	1.067	N/A	N/A
+erismodegib	N/A	N/A	N/A	0.152	N/A	1.067	N/A	N/A
+COL18A1	N/A	N/A	N/A	-0.391	N/A	1.067	N/A	N/A
+GPS2	N/A	N/A	0	-0.547	0	1.067	N/A	N/A
+AS1842856	N/A	N/A	0.447	-0.788	1.067	1.067	1.982	1.982
+RPSA	N/A	N/A	-2.433	-3.352	N/A	1.067	N/A	N/A
+SB203580	2.342	1.541	-0.016	-2.624	0.524	1.04	3.514	3.068
+dihydrotestosterone	N/A	1.091	1.424	2.382	1.947	1.031	1.715	1.091
+BMP2	N/A	N/A	N/A	-0.009	N/A	1.004	0.305	0.305
+IRF2	N/A	N/A	-1.849	-0.114	-0.689	1.004	N/A	N/A
+26S proteasome	N/A	N/A	0.324	-0.619	1.148	1.003	1.148	1.148
+enalapril	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+IHH	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+kaempferol	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+PITX2	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+FOXC1	N/A	N/A	3.207	4.487	N/A	1	N/A	N/A
+stallimycin	N/A	N/A	1.756	3.07	N/A	1	N/A	N/A
+bromodeoxyuridine	N/A	N/A	1.756	3.07	N/A	1	N/A	N/A
+CX3CL1	N/A	N/A	2.219	2.63	N/A	1	N/A	N/A
+BRD4	N/A	N/A	N/A	1.607	N/A	1	N/A	N/A
+CDK6	N/A	N/A	1	1.342	N/A	1	N/A	N/A
+IFI16	N/A	N/A	0.555	0.788	0	1	N/A	N/A
+CGS 21680	N/A	N/A	N/A	0.762	N/A	1	1.109	2
+androgen	N/A	N/A	0.447	0.447	N/A	1	N/A	N/A
+TGFB2-AS1	N/A	N/A	N/A	0	N/A	1	N/A	N/A
+telmisartan	N/A	N/A	N/A	-0.669	N/A	1	N/A	N/A
+UM101	N/A	N/A	1	-0.707	N/A	1	2	N/A
+epigallocatechin-gallate	N/A	0.845	0.456	-1.063	0.454	0.994	1.25	1.192
+GSK3B	N/A	N/A	1.387	0.728	N/A	0.975	0.686	0.686
+phytohemagglutinin	N/A	N/A	-0.063	1.9	N/A	0.974	N/A	N/A
+streptozocin	N/A	N/A	1.387	2.175	N/A	0.973	0.239	0
+lactacystin	N/A	N/A	N/A	0	N/A	0.97	0.492	0.132
+SHH	N/A	N/A	N/A	N/A	N/A	0.956	N/A	N/A
+dexamethasone	2.11	0.774	-2.469	-2.389	0.115	0.949	1.639	1.833
+luteolin	N/A	N/A	N/A	-0.764	0.246	0.943	N/A	N/A
+E. coli B4 lipopolysaccharide	N/A	N/A	1.582	2.826	0.165	0.92	-2.153	-1.912
+NFAT5	N/A	N/A	-0.83	-0.967	N/A	0.9	N/A	N/A
+PTGER4	N/A	N/A	-3.118	-3.347	N/A	0.9	N/A	N/A
+alpha catenin	N/A	N/A	N/A	-2.043	-0.594	0.898	N/A	N/A
+E2F3	N/A	N/A	N/A	N/A	N/A	0.896	N/A	N/A
+ESRRA	N/A	N/A	N/A	1.897	N/A	0.896	N/A	N/A
+HMOX1	N/A	N/A	1.949	0.964	1.452	0.896	2.19	2.19
+BAPTA-AM	N/A	N/A	1.979	0.642	1.32	0.896	2.395	2.19
+infliximab	N/A	N/A	N/A	0.64	1.982	0.896	2.219	2.219
+SATB1	N/A	N/A	-0.842	-0.766	-0.106	0.883	N/A	N/A
+Il22/Il22b	N/A	N/A	N/A	0.946	1.103	0.882	N/A	N/A
+NR3C1	N/A	N/A	-0.397	-0.016	0.558	0.881	0.762	0.146
+RXRA	N/A	N/A	1.432	0.159	N/A	0.86	1.458	N/A
+SUMO3	N/A	N/A	N/A	-1.091	N/A	0.849	N/A	N/A
+dextran sulfate	N/A	N/A	-0.655	1.479	0.359	0.842	N/A	N/A
+cyclosporin A	N/A	-0.022	0.142	-0.167	0.316	0.839	1.954	1.431
+SCH 58261	N/A	N/A	1.225	N/A	N/A	0.837	1.225	0.837
+lovastatin	N/A	N/A	N/A	1.98	N/A	0.831	N/A	N/A
+geldanamycin	N/A	N/A	-0.447	N/A	N/A	0.816	1	2
+LDL	-1.88	-0.966	0.223	1.902	-0.897	0.812	-2.66	-2.878
+TRAF3IP2	N/A	N/A	1.067	1.312	N/A	0.811	N/A	N/A
+metribolone	N/A	N/A	1.104	1.772	1	0.789	0.326	0.789
+IL10RA	N/A	N/A	-1.633	-3.787	-1.342	0.784	N/A	N/A
+olaparib	N/A	0.132	0.808	2.105	0.325	0.776	-0.228	-0.715
+IFNB1	N/A	1.158	4.219	6.357	2.734	0.765	1.307	1.039
+EPCAM	N/A	N/A	N/A	1.195	N/A	0.762	N/A	N/A
+LDLR	N/A	N/A	N/A	0.762	N/A	0.762	N/A	N/A
+mifepristone	0.975	0.861	0.68	-0.59	-0.556	0.75	2.457	2.068
+S1PR1	N/A	N/A	N/A	N/A	N/A	0.747	N/A	N/A
+glucocorticoid	N/A	N/A	1.502	1.039	1.243	0.745	0.74	1.259
+IL15	N/A	N/A	0.311	2.335	0	0.744	-1.109	N/A
+eicosapentaenoic acid	N/A	N/A	N/A	0.431	N/A	0.744	N/A	N/A
+alitretinoin	N/A	N/A	1.387	1.095	N/A	0.73	-0.027	1.205
+gefitinib	N/A	N/A	-0.9	-0.415	0.339	0.728	0.373	0.373
+RASSF1	N/A	N/A	0.485	0.862	0.485	0.718	0.485	0.798
+CAV1	N/A	N/A	N/A	0.212	N/A	0.717	N/A	N/A
+TGM2	N/A	0	1.897	4.427	0.447	0.707	N/A	N/A
+SORL1	N/A	N/A	N/A	0.707	1	0.707	N/A	N/A
+TLR4	N/A	-0.775	1.522	3.364	0.573	0.706	-0.983	-1.538
+testosterone	N/A	N/A	N/A	0.921	0.369	0.706	-0.169	-0.169
+CNTF	N/A	N/A	0.051	1.803	0.651	0.702	-0.266	-0.905
+PLAU	N/A	N/A	0.528	1.769	0.625	0.692	N/A	N/A
+sodium chloride	N/A	N/A	N/A	N/A	N/A	0.687	-0.494	-0.494
+BMPR1A	N/A	N/A	N/A	N/A	N/A	0.686	N/A	N/A
+AHR	-1.067	0	0.383	1.648	0.2	0.685	-1.319	-1.319
+ESR2	-0.375	-0.862	-2.847	-2.076	0.01	0.681	-1.58	-1.58
+C5	N/A	-0.817	-1.298	0.101	-0.394	0.669	-1.947	-2.36
+L-triiodothyronine	N/A	-0.144	1.45	0.383	0.585	0.658	0.227	0.437
+staurosporine	N/A	N/A	-0.229	-0.045	1.3	0.655	1.011	0.629
+FABP3	N/A	-0.762	-0.277	-0.239	-0.13	0.651	0.651	0.651
+PRDM1	N/A	N/A	-0.508	-1.615	-0.816	0.647	1.982	1.067
+8-bromo-cAMP	N/A	N/A	0.235	0.993	0	0.64	-1.962	-1.935
+EGR2	N/A	N/A	0.166	-0.226	N/A	0.64	-0.796	N/A
+N-acetyl-L-cysteine	N/A	1.58	1.483	-0.236	0.541	0.618	2.911	2.737
+CAMK4	N/A	N/A	N/A	0.212	N/A	0.605	N/A	N/A
+DRD2	N/A	N/A	N/A	0.278	N/A	0.604	N/A	N/A
+SB-431542	N/A	N/A	N/A	N/A	N/A	0.6	N/A	N/A
+CpG ODN 2006	N/A	-1	2.488	4.954	0.243	0.6	N/A	-1.067
+VAV2	N/A	N/A	N/A	1.067	N/A	0.577	N/A	N/A
+IgG	N/A	-1.172	-0.367	0.552	-0.335	0.564	-1.77	-1.068
+THRB	N/A	N/A	1.664	1.754	1	0.563	0.64	1.342
+FABP5	N/A	N/A	1.561	1.849	1.314	0.555	0.747	0.747
+MSTN	N/A	N/A	N/A	0.692	N/A	0.555	0	N/A
+PIM1	N/A	N/A	N/A	0.277	N/A	0.555	N/A	N/A
+CEBPB	-1.209	-1.479	-0.797	-0.039	-0.713	0.52	-1.617	-1.681
+CALCA	N/A	N/A	N/A	-1.576	N/A	0.508	N/A	N/A
+APLN	N/A	N/A	N/A	N/A	N/A	0.506	0.266	N/A
+IRF1	N/A	N/A	3.898	6.321	1.647	0.501	N/A	N/A
+POU5F1	N/A	N/A	0.352	0.179	-0.103	0.491	N/A	-0.952
+IKZF1	N/A	N/A	N/A	-3.421	N/A	0.478	N/A	N/A
+lipopolysaccharide	-3.233	-2.451	1.878	7.56	1.266	0.462	-3.911	-4.735
+CD3 (complex)	N/A	-1.934	-1.032	2.835	-1.199	0.45	-2.431	-2.742
+PIWIL4	N/A	N/A	N/A	N/A	N/A	0.447	-2	N/A
+CD44	N/A	N/A	N/A	2.424	N/A	0.447	N/A	N/A
+meds433	N/A	N/A	N/A	2.333	N/A	0.447	N/A	N/A
+allopurinol	N/A	N/A	N/A	1.633	N/A	0.447	N/A	N/A
+vancomycin	N/A	N/A	N/A	0.971	N/A	0.447	N/A	N/A
+trans-hydroxytamoxifen	N/A	1	1	0.905	0.816	0.447	1.342	0.816
+KLF11	N/A	N/A	N/A	-0.577	N/A	0.447	N/A	N/A
+HIPK2	N/A	N/A	N/A	-0.936	N/A	0.447	N/A	N/A
+molybdenum disulfide	N/A	N/A	N/A	-1	N/A	0.447	N/A	N/A
+FGFR2	N/A	N/A	-0.649	-1.194	1.387	0.447	N/A	N/A
+interferon alpha	-1.221	0.956	4.026	7.868	2.15	0.445	-1.041	-0.583
+IL1A	N/A	-0.601	0.59	1.93	0.394	0.437	-2.443	-2.458
+SMAD4	N/A	1.091	0.371	1.649	0.132	0.429	0.088	-0.256
+LEF1	N/A	N/A	N/A	1.36	0.447	0.427	N/A	0
+CISH	N/A	N/A	N/A	-0.707	0	0.426	1.982	N/A
+corticosterone	N/A	N/A	N/A	N/A	N/A	0.404	0.261	N/A
+imiquimod	N/A	N/A	2.107	3.061	0.635	0.391	N/A	N/A
+NFkB (family)	N/A	N/A	-0.045	1.821	-0.201	0.389	N/A	N/A
+Calcineurin (complex)	N/A	0.887	0.681	0.339	-0.585	0.385	-0.418	0.321
+adavosertib	N/A	0.38	2.286	4.087	0.94	0.38	N/A	N/A
+gentamicin	N/A	N/A	N/A	-0.29	N/A	0.378	N/A	N/A
+Scd1	N/A	N/A	0.816	-0.632	0	0.378	1.65	2
+GATA4	N/A	N/A	N/A	-0.707	N/A	0.378	N/A	N/A
+TCF4	N/A	N/A	N/A	-2.5	N/A	0.378	N/A	N/A
+DDX5	N/A	N/A	0.067	-1.043	N/A	0.363	1.72	1.473
+cisplatin	N/A	-0.744	0.019	2.486	-0.296	0.362	-2.326	-2.531
+4-hydroxytamoxifen	N/A	N/A	-1.899	-1.263	N/A	0.356	-2.131	-1.899
+ethanol	N/A	-0.81	-0.252	0.484	-0.387	0.339	-1.193	-0.777
+IL36A	N/A	N/A	N/A	0.303	N/A	0.332	N/A	N/A
+TRIM28	N/A	-0.747	0	-0.619	-0.314	0.323	0	0
+FOXM1	N/A	N/A	N/A	N/A	N/A	0.322	N/A	N/A
+PPARA	N/A	N/A	N/A	N/A	N/A	0.319	N/A	N/A
+INHA	N/A	N/A	N/A	N/A	N/A	0.314	N/A	N/A
+MAVS	N/A	0.778	3.225	4.965	1.667	0.305	N/A	N/A
+IL18	N/A	N/A	-0.187	2.476	-0.007	0.292	-1.983	N/A
+HIC1	N/A	N/A	N/A	N/A	N/A	0.277	N/A	N/A
+RIPK2	N/A	N/A	3.638	5.442	2.152	0.277	N/A	N/A
+FADD	N/A	N/A	1.948	3.019	1	0.277	N/A	N/A
+rebemadlin	N/A	N/A	N/A	1.23	N/A	0.277	N/A	N/A
+PLAT	N/A	N/A	-0.152	0.485	N/A	0.277	N/A	N/A
+CFTR	N/A	N/A	N/A	-0.647	0.068	0.277	1.091	N/A
+IL1B	-2.603	-2.059	1.467	4.398	0.175	0.271	-3.366	-3.982
+TGFB2	N/A	N/A	N/A	-0.213	N/A	0.263	N/A	N/A
+vincristine	N/A	N/A	N/A	N/A	N/A	0.254	N/A	N/A
+tanshinone II	N/A	N/A	1.718	0.705	1.091	0.254	1.954	1.954
+SPP1	N/A	N/A	-0.684	1.072	N/A	0.248	-0.813	-1.142
+ETS1	N/A	N/A	N/A	-0.014	N/A	0.24	N/A	N/A
+budesonide	N/A	N/A	0.113	-1.765	1.664	0.239	1.387	1.664
+Immunoglobulin	-0.372	0.303	2.205	3.976	-0.151	0.237	-1.034	-0.665
+NOTCH1	N/A	1.474	2.159	2.54	1.32	0.235	1.988	1.781
+etoposide	N/A	-0.343	1.656	3.107	0.122	0.23	-2.387	-1.746
+TERT	N/A	N/A	2.602	3.816	0	0.229	-0.333	-0.333
+GATA3	N/A	N/A	N/A	N/A	N/A	0.225	N/A	N/A
+E. coli lipopolysaccharide	N/A	N/A	-0.048	1.601	0.022	0.225	N/A	N/A
+NFKBIA	N/A	0.277	0.96	1.31	0.008	0.22	-1.268	-0.618
+honokiol	N/A	N/A	N/A	N/A	N/A	0.218	N/A	N/A
+TBK1	N/A	N/A	0.816	1.809	-0.49	0.218	N/A	N/A
+PDPK1	N/A	N/A	N/A	-0.453	N/A	0.218	N/A	N/A
+dexmedetomidine	N/A	N/A	-0.6	-0.961	0.365	0.218	0	0.6
+STAT5B	N/A	N/A	1.067	1.268	1.982	0.213	-0.555	-1.067
+CD28	N/A	N/A	-1.592	1.067	-1.178	0.213	-2.607	-2.599
+NS-398	N/A	N/A	N/A	-0.692	0.26	0.21	1.267	1.633
+filgrastim	1.982	0.808	-1.769	-2.182	1.412	0.208	2.8	2.621
+SNCA	N/A	N/A	2.137	1.764	N/A	0.2	-0.218	0.2
+thioacetamide	N/A	N/A	N/A	1.46	N/A	0.2	N/A	N/A
+TCR (complex)	N/A	N/A	-1.911	-0.167	-1.374	0.177	-2.204	-1.967
+salicylic acid	N/A	N/A	N/A	-0.277	N/A	0.176	N/A	N/A
+PTEN	N/A	N/A	-0.698	-0.919	-0.449	0.168	0.832	0.175
+BRCA1	N/A	N/A	0.547	1.117	N/A	0.157	N/A	N/A
+TLR3	-1.932	-0.946	1.982	3.55	0.227	0.153	-2.569	-2.167
+arginine	N/A	N/A	N/A	N/A	0.555	0.152	N/A	N/A
+TLR9	N/A	N/A	2.482	4.027	0.997	0.152	-1.77	-0.815
+enterotoxin B	N/A	N/A	N/A	1.114	N/A	0.152	N/A	N/A
+oleic acid	N/A	N/A	0	0.053	-0.083	0.152	0.033	0.58
+pemetrexed	N/A	N/A	N/A	0	1	0.152	N/A	N/A
+CAT	N/A	N/A	N/A	-0.277	0.152	0.152	N/A	1.067
+DNMT3A	N/A	N/A	N/A	-0.277	N/A	0.152	N/A	N/A
+Y 27632	N/A	N/A	N/A	-0.924	N/A	0.152	N/A	N/A
+WWTR1	N/A	N/A	-1.054	-0.995	N/A	0.152	N/A	N/A
+tetrachlorodibenzodioxin	N/A	N/A	N/A	-1.24	-1.222	0.146	-0.967	-0.967
+diclofenac	N/A	N/A	N/A	0.384	N/A	0.142	N/A	N/A
+arsenite	N/A	N/A	-0.927	-0.832	-0.735	0.137	-1.628	-1.628
+bleomycin	N/A	N/A	-1.942	-0.531	-1.387	0.134	-1.838	-2.2
+mir-146 (includes others)	N/A	N/A	-1.315	-2.347	-0.269	0.13	0.765	0.765
+CDKN2A	N/A	0	0.152	-1.391	0	0.128	1.387	1.664
+TSC2	N/A	N/A	0.218	-2.516	-1.732	0.128	N/A	N/A
+IL22	N/A	N/A	N/A	-0.214	N/A	0.116	N/A	N/A
+RIGI	N/A	1.122	2.811	5.081	1.195	0.103	-1.698	N/A
+(+)-MK-801	N/A	N/A	N/A	0.621	N/A	0.093	0.621	0.621
+PI3K (complex)	N/A	-0.277	-0.254	0.516	-0.64	0.093	-1.763	-1.98
+WNT5A	N/A	0.259	-0.23	-0.046	-0.169	0.092	-0.581	-0.953
+PSEN1	N/A	N/A	0.254	-1.291	N/A	0.088	0.014	-1.04
+miR-204-5p (and other miRNAs w/seed UCCCUUU)	N/A	N/A	N/A	N/A	N/A	0.085	N/A	N/A
+INPP5D	N/A	N/A	N/A	-0.68	N/A	0.083	N/A	N/A
+MYD88	N/A	-0.732	1.613	3.142	0.802	0.069	-2.739	-2.374
+NFAT (family)	N/A	N/A	-0.651	-0.128	N/A	0.054	-1.974	-1.974
+TAC1	N/A	N/A	-0.414	0.113	-0.227	0.052	-2.176	-1.949
+cholesterol	-1.664	-1.664	-0.971	-0.096	-0.539	0.048	-2.061	-1.297
+MYCN	N/A	N/A	N/A	N/A	N/A	0.047	N/A	0.283
+PRKCQ	N/A	N/A	N/A	N/A	N/A	0.03	N/A	N/A
+miR-199a-5p (and other miRNAs w/seed CCAGUGU)	N/A	N/A	-1.463	-1.929	N/A	0.025	N/A	N/A
+tacrolimus	N/A	0.068	0.053	-0.563	-0.104	0.01	0.794	0.875
+APOE	N/A	1.96	1.452	-0.087	1.31	0.005	1.383	1.57
+"15-deoxy-delta-12,14 -PGJ 2"	N/A	-0.316	-0.964	-1.379	0.449	0.001	0.852	0.509
+spironolactone	N/A	N/A	N/A	N/A	N/A	0	0.447	0.447
+Samsn1	N/A	N/A	1.89	3.9	0	0	N/A	N/A
+Mrgpra2a (includes others)	N/A	N/A	N/A	2.53	2	0	N/A	N/A
+TNFSF12	N/A	-0.534	N/A	0.728	0.267	0	-0.456	N/A
+NCOA1	N/A	N/A	N/A	0.218	N/A	0	N/A	N/A
+TRG	N/A	N/A	N/A	0	N/A	0	N/A	N/A
+IL17F dimer	N/A	N/A	N/A	0	N/A	0	N/A	N/A
+pidnarulex	N/A	N/A	N/A	0	N/A	0	N/A	N/A
+vitamin E	N/A	N/A	N/A	0	N/A	0	N/A	N/A
+minocycline	N/A	N/A	N/A	-0.144	N/A	0	0.927	N/A
+MMP9	N/A	N/A	-1.951	-0.264	N/A	0	N/A	N/A
+1810019D21Rik	N/A	N/A	N/A	-0.816	N/A	0	N/A	N/A
+NTRK1	N/A	N/A	-1	-1.134	-0.577	0	-1	-0.577
+TGFBR2	N/A	N/A	0.128	-1.281	-0.956	0	0.478	-0.277
+PLC	N/A	N/A	-1.387	-1.387	-0.555	0	-1.387	-1
+IMMT	N/A	N/A	-1.554	-1.811	N/A	0	N/A	N/A
+SPRY2	N/A	N/A	N/A	-2.01	-0.447	0	N/A	N/A
+Ifitm3	N/A	N/A	-1	-2.121	N/A	0	N/A	N/A
+SP110	N/A	0	-1.342	-3.5	N/A	0	N/A	N/A
+spermine	N/A	-1	-1.748	-3.68	-1.115	0	N/A	N/A
+IL33	-1.125	0.052	0.223	2.114	0.286	-0.003	-1.117	-1.395
+FOXA2	N/A	N/A	N/A	0.332	N/A	-0.009	N/A	N/A
+VIP	N/A	N/A	0.571	0.046	1.542	-0.011	0.485	1.124
+ZFP36	N/A	N/A	N/A	-0.069	0.225	-0.033	1.992	N/A
+NFATC1	N/A	N/A	N/A	1.664	N/A	-0.038	N/A	N/A
+mitomycin C	N/A	N/A	N/A	-0.532	N/A	-0.038	N/A	N/A
+BCL6	N/A	N/A	-1.103	-1.433	N/A	-0.038	N/A	N/A
+semaxinib	N/A	-0.762	0.128	2.354	-0.047	-0.039	-1.332	-1.332
+IL27	N/A	0.045	2.599	6.237	1.209	-0.054	-1.71	-1.71
+LYN	N/A	N/A	-1.131	-1.928	0	-0.064	N/A	N/A
+concanavalin a	N/A	N/A	-0.594	1.985	-1.982	-0.067	-1.982	-1.982
+JQ1	N/A	N/A	-1.292	-2.605	0.029	-0.068	N/A	N/A
+IgE	N/A	-1.633	-1.026	0.667	-0.447	-0.089	-2.985	-3
+IL2	N/A	-1.798	0.201	2.797	0.291	-0.107	-2.382	-2.735
+EHF	N/A	N/A	N/A	0.896	N/A	-0.115	N/A	N/A
+SOCS3	N/A	N/A	-1.269	-1.503	-1.131	-0.115	N/A	N/A
+troglitazone	-0.105	-0.994	-0.697	-0.456	-1.028	-0.117	-0.856	-0.196
+FOSL1	N/A	-0.615	0.807	-0.542	0.747	-0.118	0.804	0.804
+AGT	-1.091	-1.273	-0.256	2.199	-0.196	-0.12	-2.199	-2.403
+ciglitazone	N/A	N/A	N/A	1	-0.566	-0.126	N/A	N/A
+IRF8	N/A	-1.067	-1.718	0.627	-0.555	-0.128	-1.067	-1.067
+hydrocortisone	N/A	N/A	N/A	0.509	N/A	-0.128	N/A	N/A
+carbonyl cyanide m-chlorophenyl hydrazone	N/A	N/A	0.277	-0.57	-0.555	-0.128	-0.57	-0.478
+NR4A3	N/A	N/A	N/A	-0.645	N/A	-0.128	0.277	N/A
+fluticasone propionate	N/A	N/A	-1.811	-1.845	0.504	-0.128	-0.573	-0.956
+CD276	N/A	N/A	-3	-3.207	-0.478	-0.128	N/A	N/A
+HDAC1	N/A	N/A	N/A	0.447	N/A	-0.138	1	N/A
+AKT	N/A	-0.537	-0.113	1.266	0	-0.139	-1.879	-1.666
+ELAVL1	N/A	N/A	2.2	2.206	N/A	-0.147	N/A	N/A
+LGR4	N/A	N/A	N/A	N/A	N/A	-0.152	N/A	N/A
+C/EBP	N/A	N/A	N/A	N/A	N/A	-0.152	N/A	N/A
+IKBKG	N/A	N/A	1.486	1.568	0.831	-0.152	-1.981	N/A
+clodronic acid	N/A	N/A	N/A	0.508	N/A	-0.152	N/A	N/A
+KDM5B	N/A	N/A	N/A	-1.039	N/A	-0.152	N/A	N/A
+RNASEH2B	N/A	N/A	-3.773	-5.632	-0.152	-0.152	N/A	N/A
+IRGM	N/A	N/A	-3.948	-5.89	N/A	-0.152	N/A	N/A
+beta-estradiol	-2.378	-1.949	-2.427	1.455	-0.501	-0.159	-2.305	-2.495
+progesterone	0.343	-0.136	0.198	1.562	1.068	-0.161	0.357	-0.021
+methotrexate	N/A	N/A	N/A	-1.33	N/A	-0.175	N/A	N/A
+PTPN11	N/A	N/A	-2.243	-2.301	-0.882	-0.19	-1.544	-1.544
+MIF	N/A	N/A	-2.538	-1.826	N/A	-0.191	-1.624	-1.624
+torkinib	N/A	-1.412	-0.168	0.235	-1.71	-0.192	-1.154	-1.154
+IL11	N/A	N/A	N/A	0.257	N/A	-0.194	1.372	N/A
+ionomycin	N/A	-1.216	-1.336	-0.377	-1.218	-0.207	-2.575	-2.575
+FAS	N/A	-0.203	0.192	0.946	0.156	-0.212	-1.115	-1.175
+HOXA10	N/A	N/A	N/A	N/A	N/A	-0.213	N/A	N/A
+IFNG	-2.233	-0.436	3.863	8.361	2.209	-0.213	-3.587	-3.268
+metformin	N/A	-0.277	-1.379	-1.445	-0.115	-0.216	-0.813	0.2
+HBEGF	N/A	N/A	N/A	N/A	N/A	-0.218	-0.218	N/A
+ceruletide	N/A	N/A	N/A	N/A	N/A	-0.218	N/A	N/A
+OSM	N/A	-1.233	-0.337	1.934	-0.151	-0.219	-2.885	-3.052
+PRL	N/A	0.106	2.423	5.096	-0.764	-0.226	N/A	N/A
+FOXO3	N/A	N/A	-1.193	0.157	-0.884	-0.238	-2.374	-2.4
+olanzapine	N/A	N/A	-1.977	-1.352	N/A	-0.247	N/A	N/A
+3'-O-(4-benzoyl)benzoyladenosine 5'-triphosphate	N/A	N/A	N/A	1.912	N/A	-0.254	N/A	N/A
+IL17A dimer	N/A	N/A	N/A	-0.625	N/A	-0.254	N/A	N/A
+vorinostat	N/A	N/A	-1.667	0.13	-0.547	-0.26	-0.556	-1.132
+hydrogen peroxide	-2.209	-2.591	-2.623	-0.157	-1.555	-0.266	-3.454	-3.011
+apigenin	N/A	N/A	0	0.115	1.131	-0.277	1.131	1.131
+PRKCE	N/A	N/A	-1.067	0.579	-0.624	-0.278	-1.928	-1.928
+IGF1	N/A	-0.82	-2.342	-1.881	-1.703	-0.281	-3.192	-2.297
+pirinixic acid	N/A	N/A	N/A	N/A	N/A	-0.282	-1.134	N/A
+TIMP1	N/A	N/A	N/A	-0.025	N/A	-0.283	N/A	N/A
+NFATC2	N/A	N/A	2.339	2.128	N/A	-0.286	N/A	N/A
+5-N-ethylcarboxamido adenosine	N/A	N/A	-1.516	-1.33	-1.306	-0.293	-0.93	-0.453
+caffeine	N/A	N/A	0.034	0.034	1.263	-0.308	0.044	0.267
+ATF4	N/A	N/A	N/A	1.576	N/A	-0.314	-1.929	-1.929
+Sn50 peptide	N/A	N/A	N/A	-1.44	N/A	-0.314	N/A	N/A
+prostaglandin D2	N/A	N/A	N/A	-0.345	N/A	-0.319	N/A	N/A
+MYC	N/A	-2	-1.28	-2.579	-0.646	-0.327	-1.245	-1.686
+deoxycholate	N/A	N/A	-0.937	-0.96	-2.153	-0.328	-1.317	N/A
+rosiglitazone	N/A	-0.873	1.148	1.382	1.249	-0.332	-1.667	-1.336
+AR	N/A	-0.698	0.551	-0.327	1.013	-0.338	0.671	0.323
+FGFR1	N/A	N/A	N/A	N/A	N/A	-0.342	N/A	N/A
+2-methoxyestradiol	N/A	N/A	N/A	0.088	N/A	-0.371	N/A	N/A
+VDR	N/A	N/A	1.091	0.573	0.728	-0.373	N/A	N/A
+TWIST1	N/A	N/A	2.204	3.323	N/A	-0.378	N/A	N/A
+E. coli B5 lipopolysaccharide	N/A	N/A	0.625	2.412	0.584	-0.378	-1.72	-1.412
+3M-002	N/A	N/A	0.152	1.062	0.391	-0.391	N/A	N/A
+MAP2K4	N/A	N/A	-0.849	0.586	-0.927	-0.391	-1.98	-1.98
+SERPINB7	N/A	N/A	0.152	-0.342	N/A	-0.391	N/A	N/A
+MCC950	N/A	N/A	-1.176	-0.967	-1.457	-0.391	N/A	N/A
+INS	N/A	N/A	-1.58	-0.855	-1.235	-0.397	-1.709	-1.804
+poly rI:rC-RNA	-2.663	-0.232	3.492	7.388	2.026	-0.402	-3.225	-3.09
+CREB1	N/A	N/A	-2.49	-0.546	-2.416	-0.412	-2.927	-2.756
+DETA-NONOate	N/A	N/A	N/A	-0.728	-0.506	-0.414	-1.959	-1.959
+IL1RL2	N/A	N/A	0	0.359	N/A	-0.415	N/A	N/A
+NFKB2	N/A	N/A	N/A	-1.432	N/A	-0.415	N/A	N/A
+SP1	N/A	-1.067	-0.592	1.259	-0.326	-0.42	-2.2	-2.2
+CD40LG	N/A	-0.788	-0.959	1.598	-0.786	-0.422	-2.739	-2.745
+TLR2	N/A	-1.936	0.055	0.661	-1.178	-0.428	-1.782	-1.496
+TGF beta	N/A	N/A	-0.621	-0.068	-0.308	-0.43	-0.933	-0.457
+TNF (family)	N/A	N/A	0.492	2.682	0.346	-0.435	-2.202	-1.962
+benzo(a)pyrene	N/A	N/A	N/A	N/A	N/A	-0.447	N/A	N/A
+IL21	N/A	-1	1.508	3.309	0.128	-0.447	N/A	N/A
+PTPRJ	N/A	N/A	N/A	0.816	N/A	-0.447	-1.732	N/A
+activin (family)	N/A	N/A	-1	0.302	0	-0.447	N/A	N/A
+OGT	N/A	N/A	-0.956	-0.035	-0.762	-0.447	-1.633	-1.342
+MKNK1	N/A	N/A	-0.816	-0.426	N/A	-0.447	-2	-2
+thyroid hormone	N/A	N/A	N/A	-0.447	N/A	-0.447	N/A	N/A
+CDK19	N/A	N/A	-0.447	-1.667	N/A	-0.447	0	0
+CIP2A	N/A	N/A	-2	-1.715	N/A	-0.447	-2	-2.236
+NKX2-3	N/A	N/A	-3.606	-5.183	-1.342	-0.447	N/A	N/A
+arsenic trioxide	N/A	N/A	N/A	1.053	-0.068	-0.468	N/A	-1.954
+MAPK14	-1.82	N/A	-2.077	0.434	-1.388	-0.47	-2.663	-2.487
+WNT3A	N/A	N/A	N/A	-0.441	N/A	-0.473	N/A	N/A
+N-formyl-Met-Leu-Phe	N/A	N/A	0.12	0.427	-1.048	-0.475	N/A	N/A
+PRKCA	N/A	N/A	N/A	1.431	-0.479	-0.479	N/A	N/A
+METTL3	N/A	N/A	-1.457	-0.775	-0.246	-0.479	0.218	N/A
+CD274	N/A	N/A	0.448	1.014	N/A	-0.482	N/A	N/A
+MUC1	N/A	N/A	1.959	3.67	N/A	-0.485	N/A	N/A
+tyrphostin AG490	N/A	N/A	1.067	-1.258	0.254	-0.487	1.518	1.518
+IL17F	N/A	-0.254	-0.794	0.85	-1.406	-0.518	-1.075	-1.48
+IKBKB	N/A	-1.95	0.066	0.528	-0.893	-0.523	-2.773	-2.603
+IL6	-1.264	-0.918	-0.192	2.947	-0.1	-0.524	-1.906	-2.525
+IL17R	N/A	N/A	-1.977	-0.343	N/A	-0.537	-1.977	-1.977
+IL17A	-2.183	-1.496	-0.584	1.373	-0.372	-0.539	-2.174	-2.367
+G protein alpha i	N/A	-0.152	1.117	1.796	1	-0.555	N/A	N/A
+reactive oxygen species	N/A	N/A	N/A	-0.264	-1.98	-0.564	-1.98	-1.98
+quercetin	N/A	-0.692	-2.019	-2.769	-0.976	-0.574	-1.048	-0.789
+doxorubicin	N/A	-2.211	0.284	3.527	-1.269	-0.577	-1.654	-2.051
+linoleic acid	N/A	N/A	N/A	1	0.577	-0.577	N/A	N/A
+isobutylmethylxanthine	N/A	N/A	N/A	0	N/A	-0.577	-1.982	N/A
+TICAM1	N/A	N/A	2.185	3.76	0.415	-0.594	-1.982	N/A
+hyaluronic acid	N/A	N/A	0.106	0.678	-0.271	-0.594	-0.271	-0.689
+bisphenol A	N/A	-0.391	-1.19	-0.217	-0.813	-0.597	-1.82	-1.524
+5-azacytidine	N/A	-1.154	-0.294	1.601	-0.692	-0.61	-2.2	-2.2
+resiquimod	N/A	-0.017	0.788	2.556	-0.213	-0.621	-1.764	-1.764
+Ca2+	N/A	-2.17	-1.708	0.112	-1.299	-0.621	-3.074	-2.747
+pioglitazone	N/A	-1.154	-1.276	-1.532	-0.125	-0.621	-0.84	-0.018
+EREG	N/A	N/A	N/A	0.45	-1.029	-0.626	N/A	N/A
+nitroprusside	N/A	N/A	N/A	-0.061	N/A	-0.626	-1.981	N/A
+MAP3K7	N/A	N/A	-0.116	1.045	-1.401	-0.629	-1.991	-1.991
+aldosterone	N/A	0.379	-0.326	-0.139	-1.251	-0.63	-0.798	-0.563
+S100A9	-1.969	-0.926	-0.519	0.353	-0.201	-0.633	-1.941	-1.941
+IL3	N/A	-1.595	-1.213	-0.24	-0.7	-0.636	-2.014	-2.014
+5-fluorouracil	N/A	N/A	N/A	-0.198	N/A	-0.637	-1.949	N/A
+WT1	N/A	-1.585	-1.08	0.518	N/A	-0.651	N/A	N/A
+KITLG	N/A	N/A	-0.48	0.01	-1.289	-0.653	-2.394	-2.199
+PGR	N/A	-1.953	-3.683	-3.458	-0.501	-0.656	-0.65	-0.65
+TNF	-2.635	-1.704	2.224	6.141	0.961	-0.666	-3.403	-3.653
+MYB	N/A	N/A	N/A	0.585	N/A	-0.677	N/A	N/A
+SCGB1A1	N/A	N/A	N/A	N/A	N/A	-0.68	N/A	N/A
+BHLHE40	N/A	N/A	1	4.807	0.781	-0.684	-1.4	-1.4
+lithium	N/A	N/A	-1.89	-1.943	-1.332	-0.687	-0.235	N/A
+CCL2	N/A	N/A	-1.408	-0.954	-1.109	-0.688	-2.177	-1.941
+BCR-ABL1	N/A	N/A	N/A	N/A	N/A	-0.689	N/A	N/A
+FOXO1	N/A	-0.721	-1.831	0.633	-1.885	-0.689	-2.771	-3.098
+ANGPT2	N/A	N/A	N/A	1.765	N/A	-0.692	N/A	N/A
+CHUK	N/A	-0.587	2.352	3.741	1.438	-0.693	-2.574	-2.574
+trinitrobenzenesulfonic acid	N/A	N/A	N/A	0.396	N/A	-0.705	-1.944	N/A
+E. coli serotype 0127B8 lipopolysaccharide	N/A	N/A	0	2.845	N/A	-0.707	N/A	N/A
+FSH	N/A	N/A	-0.963	-0.618	-1.176	-0.709	-1.373	-1.124
+D-glucose	-2.221	-2.421	-2.723	-0.729	-2.175	-0.71	-2.489	-2.667
+sulforafan	N/A	N/A	-1.406	-1.552	-0.518	-0.715	1.207	1.207
+SMARCA4	N/A	-2	-0.509	2.559	N/A	-0.717	-1.237	-1.237
+aspirin	N/A	N/A	0.277	-1.197	0.602	-0.733	1.651	1.333
+miR-124-3p (and other miRNAs w/seed AAGGCAC)	N/A	N/A	N/A	N/A	-0.283	-0.739	N/A	N/A
+MAP3K8	N/A	-1.969	-0.756	0.49	-1.513	-0.744	-2.555	-2.786
+PRMT1	N/A	N/A	N/A	-0.593	N/A	-0.744	N/A	N/A
+TP73	N/A	-1.15	0.576	1.431	-0.42	-0.747	-0.371	0.025
+melatonin	N/A	N/A	N/A	-1.326	N/A	-0.747	N/A	N/A
+EGR1	N/A	-1.916	-1.224	-0.962	-1.789	-0.748	-1.945	-1.728
+JUNB	N/A	N/A	N/A	0.62	N/A	-0.75	N/A	-1.951
+PRKAA2	N/A	N/A	N/A	N/A	N/A	-0.762	N/A	N/A
+cinnamaldehyde	N/A	N/A	N/A	-0.762	0.283	-0.762	0.283	0.283
+ruxolitinib	N/A	N/A	-1.41	-3.098	-0.147	-0.762	N/A	N/A
+butyric acid	N/A	N/A	-1.678	-0.905	N/A	-0.764	-1.222	-0.828
+AMPK	N/A	N/A	N/A	-1.573	N/A	-0.768	-1.214	N/A
+APP	N/A	-1.8	0.22	1.929	-1.293	-0.77	-2.48	-2.673
+estrogen	N/A	N/A	N/A	-0.976	N/A	-0.773	-1.069	-0.662
+IL32	N/A	N/A	-0.491	0.873	0.02	-0.775	-1.209	-0.877
+INSR	N/A	N/A	N/A	-0.513	N/A	-0.775	-1.715	N/A
+calcimycin	N/A	-1.918	-2.092	-0.218	-1.911	-0.784	-2.737	-2.549
+IL6R	N/A	N/A	N/A	1.128	N/A	-0.785	N/A	-1.96
+isoproterenol	N/A	N/A	-1.941	0.493	N/A	-0.785	-1.944	-1.206
+IL36G	N/A	N/A	1.148	2.164	N/A	-0.805	N/A	N/A
+bucladesine	N/A	-1.387	-2.139	-0.742	-1.254	-0.805	-3.075	-2.897
+ADORA2A	N/A	N/A	-1.516	-1.516	-1.869	-0.805	-0.979	-0.456
+C3	N/A	N/A	N/A	0.238	N/A	-0.808	N/A	N/A
+NFkB (complex)	-2.161	-1.247	0.106	3.745	0.03	-0.81	-3.347	-3.356
+RRAS2	N/A	-2.236	-1.134	2.524	-1	-0.816	-2.236	-2.449
+PRDM2	N/A	N/A	N/A	0.707	0	-0.816	N/A	N/A
+JUN	N/A	-0.881	-1.87	0.002	-1.766	-0.816	-2.299	-2.12
+APEX1	N/A	N/A	-2.433	-1.134	-2.236	-0.816	-2.138	-2.433
+T-5224	0	-0.447	-1	-1.342	-1.342	-0.816	-0.816	-1.134
+RNF187	N/A	N/A	N/A	-1.89	N/A	-0.816	N/A	N/A
+NGEF	N/A	N/A	N/A	-2.236	N/A	-0.816	N/A	N/A
+RNF31	N/A	N/A	-1.664	-2.331	-1.982	-0.816	-1.387	-1.982
+heparin	N/A	N/A	N/A	-1.967	N/A	-0.829	-0.829	-0.829
+GNAS	N/A	N/A	-1.901	-0.659	N/A	-0.832	-1.264	-0.832
+tetradecanoylphorbol acetate	-2.77	-2.307	-1.661	0.978	-0.81	-0.841	-3.754	-3.945
+bortezomib	N/A	N/A	N/A	-0.942	-1.96	-0.842	N/A	N/A
+PTH	N/A	N/A	-2.407	-1.11	-1.988	-0.844	-2.602	-2.41
+dimethyl sulfoxide	N/A	N/A	N/A	N/A	N/A	-0.847	N/A	N/A
+PRNP	N/A	N/A	-0.849	-1.178	N/A	-0.849	-0.849	-0.849
+leuprolide	N/A	N/A	-1.98	-1.98	-1.98	-0.849	-1.98	N/A
+TGFA	N/A	N/A	-2.204	-0.463	-1.98	-0.868	-1.986	-1.986
+resveratrol	N/A	-0.605	-1.611	-2.091	-0.374	-0.886	-0.141	-0.062
+lithium chloride	N/A	N/A	N/A	N/A	N/A	-0.896	0.111	0.111
+laminaran	N/A	N/A	0	1.155	0.563	-0.896	-2.219	-1.982
+TRIM26	N/A	N/A	N/A	-2.137	N/A	-0.896	N/A	N/A
+"9,10-dimethyl-1,2-benzanthracene"	N/A	N/A	N/A	N/A	N/A	-0.9	N/A	N/A
+tretinoin	-2.139	-1.826	1.283	4.024	-0.171	-0.9	-2.161	-2.396
+EPAS1	N/A	N/A	N/A	1.725	1.165	-0.9	N/A	N/A
+Ap1	N/A	-1.911	-1.731	-0.62	-1.582	-0.916	-2.548	-2.347
+di(2-ethylhexyl) phthalate	N/A	N/A	-2.216	-1.964	N/A	-0.927	-2.216	-2.216
+palmitic acid	N/A	-2.16	-1.265	-0.315	-2.372	-0.945	-1.685	-2.176
+TNFSF10	N/A	N/A	-0.217	0.669	-1.084	-0.946	-1.812	-1.812
+NR3C2	N/A	N/A	-1.067	1.195	0	-0.97	-0.686	0
+THZ1	N/A	N/A	-0.739	-1.964	N/A	-0.97	-1.192	-1.039
+STAT3	-1.519	-2.325	-1.958	-0.568	-0.512	-0.987	-1.703	-2.911
+AGER	N/A	N/A	N/A	0.935	0.124	-0.988	N/A	N/A
+LATS1	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+verapamil	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+GLI3	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+ibrutinib	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+CSF	N/A	N/A	1	2.121	1.342	-1	N/A	N/A
+THPO	N/A	N/A	-0.114	1.154	N/A	-1	N/A	N/A
+curdlan	N/A	N/A	N/A	0.218	N/A	-1	-1	N/A
+glycodeoxycholic acid	N/A	N/A	-1	0.128	-1	-1	N/A	N/A
+glycochenodeoxycholate	N/A	N/A	-1	0	-1	-1	N/A	-2
+glycocholic acid	N/A	N/A	-1	0	-1	-1	N/A	N/A
+taurochenodeoxycholate	N/A	N/A	-1	0	-1	-1	N/A	N/A
+CASR	N/A	N/A	N/A	0	N/A	-1	N/A	N/A
+aprepitant	N/A	N/A	N/A	0	N/A	-1	N/A	N/A
+PRKAA1	N/A	N/A	N/A	-0.531	N/A	-1	N/A	N/A
+IL1R	N/A	N/A	-1.954	-0.662	N/A	-1	-2.195	-1.954
+ERBB4	N/A	N/A	N/A	-1	N/A	-1	0	0
+CLEC4G	N/A	N/A	N/A	-1.134	N/A	-1	N/A	N/A
+COP1	N/A	N/A	N/A	-1.195	N/A	-1	N/A	N/A
+NPM1	N/A	-2	-1.463	-1.212	-1.195	-1	-2.646	-2.449
+PKA	N/A	N/A	-2.18	-1.614	-2.219	-1.004	-2.158	-1.4
+CTNNB1	N/A	-0.277	-0.444	1.224	-1.036	-1.014	-1.819	-1.021
+CpG oligonucleotide	N/A	-1.131	-0.418	1.6	-0.461	-1.015	-1.477	-1.477
+ERG	N/A	N/A	-1.387	0.194	N/A	-1.016	-1.067	-1.067
+HRAS	N/A	-1.568	-0.851	1.076	-0.963	-1.02	-1.863	-1.863
+sphingosine-1-phosphate	N/A	N/A	0.037	1.309	-0.605	-1.031	-1.95	-1.95
+nicotine	N/A	N/A	0.287	0.219	0.501	-1.039	-1.497	-1.23
+captopril	N/A	N/A	N/A	0.174	N/A	-1.04	N/A	N/A
+LIF	N/A	-1.982	-1.309	-0.351	-0.923	-1.04	-2.177	-2.177
+NfkB1-RelA	N/A	N/A	N/A	-0.884	N/A	-1.044	-1.986	-1.986
+formaldehyde	N/A	N/A	-2.137	-1.904	N/A	-1.057	-2.349	-2.349
+apomorphine	N/A	N/A	N/A	N/A	N/A	-1.061	N/A	N/A
+HMG20A	N/A	N/A	0.447	2.887	N/A	-1.067	N/A	N/A
+PF4	N/A	N/A	0.693	0.968	N/A	-1.067	N/A	N/A
+Cdkn2a	N/A	N/A	N/A	0.055	N/A	-1.067	-1.067	N/A
+IRF2BP2	N/A	N/A	N/A	-0.64	N/A	-1.067	N/A	N/A
+acetylcholine	N/A	N/A	N/A	-1.3	N/A	-1.067	-1.067	-1.067
+KLF6	N/A	-0.277	1.212	1.015	0.812	-1.075	-1.641	-1.949
+S100A8	N/A	-0.644	-0.067	-0.053	-0.076	-1.075	-1.941	-1.706
+NFKB1	N/A	-0.594	-1.831	0.652	-1.88	-1.076	-2.369	-2.692
+thapsigargin	N/A	N/A	-1.711	0.343	-1.194	-1.078	-2.38	-1.952
+EPO	N/A	N/A	-1.204	-0.529	0	-1.078	-1.772	-1.539
+RAF1	-2.2	-2.408	-2.784	-0.311	-2.062	-1.082	-2.764	-2.939
+estrogen receptor	N/A	N/A	-0.371	-1.519	-0.943	-1.087	-0.758	-0.371
+rolipram	N/A	N/A	-1.091	-1.316	N/A	-1.091	-1.4	-1.4
+insulin	N/A	N/A	-2.622	-1.818	-1.77	-1.099	-1.723	-1.978
+ESR1	0.33	-0.667	-1.654	-1.342	-1.705	-1.1	-0.473	-0.604
+NUPR1	N/A	N/A	-2.333	-2.828	-2.449	-1.1	-2	-2.236
+G-1	N/A	N/A	N/A	0.156	N/A	-1.103	-1.951	-1.951
+haloperidol	N/A	N/A	-2.048	-2.432	-1.565	-1.104	-1.855	-1.568
+levodopa	N/A	N/A	-2.178	-2.857	N/A	-1.108	-2.727	-2.537
+CG	-2.567	-2.603	-1.966	1.097	-2.315	-1.114	-2.915	-3.276
+SRC	N/A	-1.091	-0.854	-0.392	-1.478	-1.117	-1.989	-1.989
+Z-LLL-CHO	N/A	1.011	-0.225	0.466	0.23	-1.122	-0.659	-0.266
+ICAM1	N/A	N/A	N/A	-0.651	N/A	-1.131	N/A	N/A
+SMARCB1	N/A	0	0	1.126	-0.447	-1.134	-2.236	-2
+IL1	N/A	-1.499	-1.5	0.3	-1.478	-1.135	-2.027	-2.759
+ADIPOQ	0.575	-0.445	-0.41	-1.689	-0.82	-1.136	-0.1	-0.1
+platelet activating factor	N/A	N/A	-2.213	-0.821	-1.94	-1.145	-2.568	-2.169
+CXCL12	N/A	N/A	0.542	1.002	0.035	-1.147	-2.387	-1.693
+cocaine	N/A	-1.55	-1.329	-1.426	-1.383	-1.148	-2.788	-2.907
+RPTOR	N/A	N/A	N/A	N/A	N/A	-1.165	N/A	N/A
+3-methyladenine	N/A	N/A	N/A	N/A	N/A	-1.165	N/A	N/A
+TNFRSF1A	N/A	N/A	N/A	-0.688	N/A	-1.165	N/A	N/A
+EZH2	N/A	0.783	0.091	-0.436	-0.197	-1.169	-0.197	-0.591
+kainic acid	N/A	-1.951	-2.93	-1.909	-1.782	-1.169	-3.091	-2.93
+ZC3H12A	N/A	N/A	N/A	-1.766	N/A	-1.172	N/A	-0.762
+PDGFB	N/A	N/A	-1.461	-0.728	-1.964	-1.177	-2.191	-1.961
+silicon dioxide	N/A	N/A	-1.94	-1.28	N/A	-1.181	-1.94	-1.94
+ILF3	N/A	N/A	-1.404	-0.634	0.762	-1.185	-0.33	-0.33
+TNFSF11	N/A	N/A	-0.605	0.969	0.205	-1.187	-2.383	-2.55
+gemcitabine	N/A	N/A	-0.842	-0.036	-1.099	-1.188	-1.973	-1.973
+MAPK8	N/A	-2.213	-2.207	-0.379	-1.94	-1.202	-2.937	-2.772
+RAS	N/A	-0.914	-0.856	-0.079	-0.517	-1.203	-2.111	-2.111
+PRKCD	N/A	-1.71	-0.756	-0.052	-1.352	-1.211	-2.587	-2.575
+diethylstilbestrol	N/A	-1.103	-1.724	-0.954	-1.103	-1.213	-1.478	-1.724
+CHRM1	N/A	N/A	-1.981	N/A	N/A	-1.214	-1.981	-1.981
+PLG	N/A	N/A	N/A	0.832	N/A	-1.214	N/A	N/A
+LH	N/A	-2.157	-2.375	-0.412	-1.712	-1.215	-2.907	-2.907
+calcipotriene	N/A	N/A	N/A	-0.418	N/A	-1.218	-1.491	-1.491
+linsidomine	N/A	N/A	N/A	N/A	-1.307	-1.229	-1.307	N/A
+lysophosphatidylcholine	N/A	-1.195	-0.765	0.285	-1.189	-1.229	-1.552	-1.552
+GAST	N/A	N/A	-1.982	-1.549	-0.983	-1.231	-2.16	-2.16
+ATF6	N/A	N/A	-1.998	-1.271	N/A	-1.236	-1.998	-1.998
+MEK	N/A	-1.225	-2	-0.983	-1.501	-1.237	-2.416	-2.225
+clozapine	N/A	N/A	-2.197	-1.795	N/A	-1.243	-1.983	N/A
+CEBPD	N/A	N/A	N/A	0.931	N/A	-1.246	N/A	N/A
+MAP2K1/2	N/A	N/A	-1.34	-1.029	N/A	-1.246	-2.205	-2.205
+IRS1	N/A	N/A	N/A	N/A	N/A	-1.252	N/A	N/A
+EP300	N/A	N/A	-1.927	0.024	-2.128	-1.257	-2.798	-2.418
+methamphetamine	N/A	N/A	-1.948	-0.816	N/A	-1.258	-1.757	N/A
+PARP1	N/A	N/A	0.186	1.192	-0.054	-1.261	-0.545	-0.545
+prexasertib	N/A	-2	-0.816	0.905	-2	-1.265	-2.646	-2.646
+PI3K (family)	N/A	N/A	0.204	1.126	0.429	-1.278	-1.77	-1.77
+forskolin	N/A	-1.571	-2.818	-1.291	-1.756	-1.283	-2.702	-2.413
+cycloheximide	1.743	1.404	-0.947	-1.074	-0.904	-1.287	-0.498	0.375
+IL5	N/A	-2.219	-1.268	1.824	-0.397	-1.297	-2.425	-2.425
+RBPJ	N/A	N/A	1.4	1.146	N/A	-1.3	-0.655	N/A
+anisomycin	N/A	N/A	-1.953	-1.164	N/A	-1.3	-2.191	-1.953
+deferoxamine	N/A	N/A	-1.029	0	N/A	-1.309	-1.961	-1.961
+calcitriol	-0.98	-1.293	-0.706	-0.268	-0.028	-1.315	-1.245	-1.216
+ADCYAP1	N/A	N/A	-0.114	N/A	N/A	-1.316	0.311	0.53
+MAPK	N/A	-1	-2.186	-1.488	-1.951	-1.32	-1.949	-1.949
+RELA	N/A	-0.948	-1.198	0.733	-0.774	-1.333	-3.117	-3.212
+NUP98-DDX10	N/A	N/A	N/A	N/A	N/A	-1.342	N/A	N/A
+RGFP966	N/A	N/A	N/A	N/A	N/A	-1.342	N/A	N/A
+RHO	N/A	N/A	N/A	N/A	N/A	-1.342	N/A	N/A
+taurodeoxycholic acid	N/A	N/A	-1	-1	-1.342	-1.342	N/A	N/A
+atorvastatin	N/A	N/A	-0.277	-1.431	-0.671	-1.346	-0.906	-1.6
+FGF2	N/A	-2.359	-2.958	-1.564	-2.175	-1.362	-2.908	-2.735
+erlotinib	N/A	0.728	0.218	-0.042	0.218	-1.372	-0.365	0.218
+VEGFA	-1.951	-1.017	-2.521	-1.857	-2.344	-1.382	-3.077	-2.625
+NGF	N/A	-1.952	-2.573	-1.288	-1.24	-1.385	-2.486	-2.455
+PTGER2	N/A	N/A	N/A	0.887	0.391	-1.387	-0.849	N/A
+MIR31HG	N/A	N/A	-1.98	-1.746	N/A	-1.387	-2.213	-1.98
+NLRX1	N/A	-1.715	-1.178	-2.298	-1.98	-1.387	-1.067	-1.715
+GLI1	N/A	1.153	1.405	-0.548	0.659	-1.394	0.926	-0.154
+IL4	-2.571	-2.181	-2.081	-0.025	0.408	-1.397	-2.95	-2.888
+phorbol esters	N/A	N/A	-1.054	-0.314	N/A	-1.402	-1.84	-2.369
+TP63	N/A	-1.571	-1.361	-0.474	-0.122	-1.403	-0.967	-1.058
+sulindac sulfide	N/A	N/A	N/A	-0.252	N/A	-1.406	N/A	N/A
+ITGB1	N/A	N/A	-1.13	-0.555	-0.73	-1.407	-1.937	-1.937
+cantharidin	N/A	-1.633	-2.121	-0.434	-1.414	-1.414	-2.121	-2.828
+MET	N/A	-1.98	-1.964	-0.926	-0.97	-1.414	-2.03	-2.621
+CFI-402257	N/A	N/A	-1.982	-1.4	N/A	-1.432	-2.213	-1.982
+NPC1	N/A	N/A	N/A	-1.444	N/A	-1.432	N/A	N/A
+nitric oxide	N/A	N/A	-1.952	-0.845	-1.938	-1.443	-2.368	-2.168
+FOS	N/A	-1.289	-0.917	-0.672	-1.234	-1.453	-1.106	-0.847
+adenosine triphosphate	N/A	-1.098	-0.432	0.126	-0.93	-1.457	-1.692	-1.433
+TGFB1	0.242	-1.484	-0.614	1.106	-0.253	-1.463	-2.405	-2.186
+manganese	N/A	N/A	N/A	0.218	N/A	-1.463	N/A	N/A
+TCF3	N/A	N/A	N/A	0.156	N/A	-1.463	N/A	N/A
+AREG	-1.964	-2.2	-2.607	-0.95	-1.467	-1.466	-2.568	-2.568
+CSF2	N/A	-2.274	-1.731	1.392	-0.783	-1.475	-2.986	-2.844
+FOXL2	N/A	N/A	N/A	-0.492	N/A	-1.477	-2	-2
+MAPK3	N/A	-2.2	-2.931	-2.355	-1.854	-1.479	-3.217	-2.906
+ZEB2	N/A	N/A	N/A	N/A	N/A	-1.48	N/A	N/A
+MTOR	N/A	N/A	-1	-0.954	N/A	-1.492	-1.89	-1.633
+MYOD1	N/A	N/A	N/A	N/A	N/A	-1.501	-1.246	N/A
+L-glutamic acid	N/A	N/A	-1.503	-1.138	-1.905	-1.503	-1.243	-2.124
+RAC1	N/A	N/A	-1.091	-1.219	N/A	-1.52	-1.446	-1.969
+cyclic AMP	N/A	-1.387	-1.761	-0.765	-1.206	-1.522	-2.366	-1.899
+GNRH1	N/A	N/A	-1.962	N/A	N/A	-1.535	-2.202	-2.202
+uric acid	N/A	N/A	-0.371	0.044	N/A	-1.538	-2.193	N/A
+MAPK1	N/A	-1.981	-3.594	-5.825	-1.551	-1.54	-2.917	-2.42
+LEP	N/A	N/A	-1.291	-0.505	-0.818	-1.545	-2.569	-2.369
+PDGF (complex)	N/A	N/A	-2.208	-2.084	-2.215	-1.552	-2.206	-2.206
+mir-130 (includes others)	N/A	N/A	0	0.742	N/A	-1.555	N/A	N/A
+CREM	N/A	N/A	-1.628	-0.966	-1.98	-1.556	-0.756	-0.311
+PTGS2	-1.987	-1.546	-0.751	1.526	-0.634	-1.574	-2.703	-2.703
+SOCS1	N/A	N/A	-2.892	-4.203	-2.276	-1.584	-0.64	0.243
+SMAD3	0.371	-0.025	-1.076	N/A	-0.937	-1.587	-1.087	-0.839
+TCF7	N/A	-0.169	-0.812	-0.757	-0.555	-1.591	-0.458	-0.739
+CREBBP	N/A	N/A	-1.98	0.795	-1.987	-1.596	-2.425	-2.216
+NCOA2	N/A	N/A	0.943	1.087	N/A	-1.633	-1	N/A
+doxycycline	N/A	N/A	N/A	N/A	N/A	-1.635	N/A	N/A
+peptidoglycan	N/A	-1.952	-1.325	0.694	-1.209	-1.639	-2.742	-2.722
+BCR (complex)	N/A	N/A	-1.614	0.401	N/A	-1.644	-1.898	-2.337
+"1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine"	N/A	N/A	0.359	0.357	-0.218	-1.645	-2.043	-2.209
+STAT6	N/A	N/A	-2.066	-1.947	-0.894	-1.646	-2.385	-1.93
+palbociclib	N/A	-1	0.718	0.946	-1	-1.664	-2.433	-2.236
+5-O-mycolyl-beta-araf-(1->2)-5-O-mycolyl-alpha-araf-(1->1')-glycerol	-2.449	-1.134	-1.265	1.213	-0.707	-1.667	-3.162	-3.317
+ERBB2	-1.966	-1.831	-1.638	-0.743	-1.783	-1.668	-2.801	-2.911
+FGF1	N/A	N/A	-1.941	-0.981	N/A	-1.673	-1.941	-1.941
+JAK2	N/A	N/A	-1.41	-0.279	-1	-1.693	-1.948	-1.948
+CUX1	N/A	N/A	N/A	N/A	N/A	-1.701	N/A	N/A
+ITGB3	N/A	N/A	N/A	-0.914	N/A	-1.702	N/A	N/A
+JNK	N/A	N/A	-1.864	-0.375	-1.867	-1.708	-2.522	-2.635
+CSF1	N/A	N/A	-1.727	0.471	N/A	-1.71	-2.565	-2.364
+AKT1	N/A	N/A	-1.477	-0.966	-1.501	-1.711	-1.4	-1.782
+ITGAV	N/A	N/A	N/A	-0.254	N/A	-1.718	N/A	N/A
+SPRYD7	N/A	N/A	N/A	-1.715	N/A	-1.718	N/A	N/A
+EDN1	-1.96	-2.414	-2.495	-1.652	-2.603	-1.72	-2.687	-2.952
+LATS2	N/A	N/A	N/A	N/A	N/A	-1.732	N/A	N/A
+camptothecin	-2.236	-2.236	-1.633	0.236	-1.134	-1.746	-2.828	-1.667
+BMP6	N/A	-0.605	N/A	0.378	N/A	-1.756	-0.954	-0.954
+okadaic acid	N/A	N/A	-2.59	-1.726	-2.416	-1.761	-2.59	-2.01
+MAP2K1	N/A	-1.795	-1.549	-0.357	-0.417	-1.812	-2.487	-2.648
+VEGF	-1.944	-2.897	-3.881	-2.111	-2.757	-1.821	-2.582	-4.015
+dopamine	N/A	-2.2	-2.744	-2.317	-2.611	-1.826	-2.271	-2.556
+ERK1/2	-1.719	-2.03	-2.894	-2.336	-2.569	-1.895	-3.211	-3.064
+carrageenan	N/A	N/A	-2.38	-1.205	-1.93	-1.923	-2.551	-2.551
+GPER1	N/A	N/A	-2.15	-1.342	-0.689	-1.923	-2.15	-2.15
+MAP3K1	N/A	N/A	N/A	0.503	N/A	-1.93	-2.19	-2.19
+FGF	N/A	N/A	N/A	-0.293	N/A	-1.934	N/A	N/A
+MAP3K14	N/A	N/A	N/A	1.172	N/A	-1.936	N/A	N/A
+IL1R1	N/A	N/A	-1.206	-0.797	N/A	-1.94	-2.18	-1.965
+ceramide	N/A	N/A	N/A	-1.98	N/A	-1.94	-1.96	-1.96
+BSG	N/A	N/A	N/A	-1.032	N/A	-1.948	N/A	N/A
+paclitaxel	N/A	N/A	-0.8	0.396	-0.822	-1.951	-1.955	-1.955
+N-methyl-D-aspartate	N/A	N/A	N/A	N/A	N/A	-1.952	-1.952	N/A
+ADRB	N/A	N/A	-2.402	-2.176	N/A	-1.954	-2.211	N/A
+2-deoxyglucose	N/A	N/A	-2.148	-3.225	-1.715	-1.954	N/A	N/A
+amphetamine	N/A	N/A	-1.984	-1.62	N/A	-1.956	-2.185	-1.984
+LGALS1	N/A	N/A	N/A	-1.727	N/A	-1.96	-1.951	N/A
+p38 MAPK	N/A	-0.807	0.22	1.76	-1.401	-1.961	-2.813	-2.288
+HMGB1	N/A	N/A	-0.802	-0.79	-1.478	-1.961	-2.172	-1.929
+RPS6KA5	N/A	N/A	N/A	N/A	N/A	-1.963	-1.964	-1.964
+taurocholic acid	N/A	-1.982	-1.387	0	-1.706	-1.969	-2.2	-2.2
+IGF1R	N/A	N/A	N/A	-0.978	N/A	-1.98	-2.183	-1.109
+chloroquine	N/A	N/A	-1.98	-2.917	-1.715	-1.98	N/A	N/A
+buthionine sulfoximine	N/A	N/A	-1.154	-1.154	-1.131	-1.981	-1.981	-1.981
+ACTN4	N/A	N/A	N/A	N/A	N/A	-1.982	N/A	N/A
+GNRH	N/A	N/A	N/A	-0.952	N/A	-1.984	-1.996	-1.996
+Pam3-Cys-Ser-Lys4	N/A	N/A	-0.442	0.244	-1.319	-1.988	-2.383	-2.562
+leukotriene C4	N/A	N/A	-2.233	-1.997	-1.997	-1.998	-2.446	-2.446
+seocalcitol	N/A	N/A	N/A	N/A	N/A	-2	N/A	N/A
+CA4	N/A	N/A	N/A	N/A	N/A	-2	N/A	N/A
+LAMA4	N/A	N/A	N/A	N/A	N/A	-2	N/A	N/A
+RBX1	N/A	N/A	N/A	0.378	N/A	-2	N/A	N/A
+CD36	N/A	N/A	-1.4	-0.404	N/A	-2	-2.414	-1.964
+leukotriene D4	-1.974	-2.42	-2.377	-1.524	-2.131	-2	-3.109	-2.945
+NEU3	N/A	N/A	N/A	-2	N/A	-2	N/A	N/A
+BMP10	N/A	N/A	-3	-2.828	-2.236	-2	-2.236	-2
+Salmonella enterica serotype abortus equi lipopolysaccharide	-2.449	-2.828	-0.305	1.903	0.083	-2.028	-3.302	-3.302
+HIF1A	N/A	N/A	-1.298	1.673	-1.058	-2.047	-2.535	-2.149
+histamine	N/A	N/A	-1.985	-2.295	-1.959	-2.064	-1.939	N/A
+norepinephrine	N/A	N/A	-1.381	-0.97	-1.37	-2.081	-2.741	-2.377
+"10E,12Z-octadecadienoic acid"	-1.925	N/A	-1.949	-0.446	-2.228	-2.09	-2.437	-1.482
+CREB	N/A	-1.677	-2.714	-1.824	-2.292	-2.09	-3.152	-2.844
+tamoxifen	N/A	N/A	-1.784	-1.091	-1.41	-2.122	-2.393	-1.728
+YBX1	N/A	N/A	-2	-1.633	N/A	-2.138	-2.449	-2.236
+F3	N/A	-2	-3.901	-5.918	-2.449	-2.138	-1.342	-2
+cytokine	N/A	N/A	-0.534	1.707	-0.779	-2.152	-2.15	-2.551
+NRG1	N/A	-1.412	-2.285	-1.055	-1.041	-2.157	-2.653	-2.49
+dinoprost	N/A	N/A	-1.944	-1.624	N/A	-2.166	-2.168	N/A
+F7	N/A	-1.929	-1.727	-1.987	-1.929	-2.177	-2.357	-2.549
+KRAS	N/A	-1.982	-1.941	-2.23	-0.927	-2.178	-1.98	-2.213
+salmonella minnesota R595 lipopolysaccharides	N/A	-1.387	-0.079	1.887	-0.152	-2.18	-2.959	-2.789
+growth hormone	N/A	N/A	-1.255	-0.468	N/A	-2.186	N/A	-1.239
+GH1	N/A	N/A	-0.378	-0.413	N/A	-2.188	N/A	N/A
+GW9662	N/A	N/A	N/A	N/A	N/A	-2.193	N/A	N/A
+F2R	N/A	-1.927	-2.371	-0.111	-2.371	-2.193	-2.759	-2.59
+F2RL1	N/A	N/A	-1.944	-1.467	-1.916	-2.204	-2.376	-2.157
+arachidonic acid	N/A	N/A	N/A	-0.416	N/A	-2.208	-1.972	-1.513
+YAP1	N/A	-1.868	-1.328	-0.418	-1.727	-2.209	-1.838	-1.975
+5-hydroxytryptamine	N/A	-1.98	-2.376	-2.218	-2	-2.209	-2.6	-2.19
+ERK	-1.951	-1.917	-2.266	-1.418	-2.3	-2.211	-3.236	-3.369
+Wy 40905	N/A	N/A	-2.621	-1.445	-1.969	-2.216	-2.621	-2.429
+ZFPM1	N/A	N/A	N/A	N/A	N/A	-2.219	N/A	N/A
+NRAS	N/A	N/A	-2.236	-1.76	N/A	-2.219	N/A	N/A
+ELF3-AS1	N/A	N/A	N/A	N/A	N/A	-2.224	N/A	N/A
+cigarette smoke	N/A	-2.202	-2.23	-1.332	-1.506	-2.236	-2.97	-2.797
+25-hydroxycholesterol	N/A	N/A	-1.912	-1.463	-1.982	-2.236	-2.433	-2.236
+HGF	-2.185	-2.582	-3.533	-1.558	-2.951	-2.297	-3.511	-3.781
+mir-223	N/A	N/A	-1.633	-0.587	-2.236	-2.333	-1.732	-2
+BDNF	N/A	-2.186	-2.733	-2.136	-2.401	-2.343	-2.733	-2.544
+ELK1	N/A	N/A	-2.538	-2.538	-2.19	-2.363	-2.718	-2.538
+PDGF-BB	-2.623	-2.953	-3.231	-0.84	-3.148	-2.37	-3.822	-3.95
+lysophosphatidic acid	N/A	-1.954	-1.922	-0.416	-2.372	-2.374	-2.774	-2.774
+ERBB3	N/A	N/A	N/A	-1.213	N/A	-2.4	-0.333	N/A
+chenodeoxycholic acid	N/A	N/A	N/A	-2.189	-1.957	-2.41	-1.963	N/A
+CAMP	N/A	-1.166	-1.291	-0.109	-1.203	-2.414	-2.52	-2.314
+IL13	-0.818	-1.52	-0.614	1.73	-1.072	-2.416	-1.817	-1.597
+NDRG1	N/A	N/A	-2.185	-2.663	N/A	-2.416	-2.403	-2.185
+FGF19	N/A	N/A	-2.236	-1.709	N/A	-2.433	-2.433	-2.236
+F2	-2.141	-2.717	-2.363	-0.268	-2.731	-2.441	-3.372	-3.482
+TCF7L2	N/A	N/A	N/A	N/A	N/A	-2.449	-1	-2
+OLFM4-RET	N/A	-2.449	-3	-2.828	-2.236	-2.449	-3	-3
+EGFR	-1.473	-2.427	-2.191	-0.947	-2.121	-2.507	-2.935	-2.785
+PKC	N/A	-1.94	-3.386	-2.169	-2.753	-2.575	-3.08	-2.778
+HMGA1	N/A	N/A	N/A	-1.414	-1.067	-2.63	N/A	N/A
+TREM1	-2.822	-3.156	-3.434	-3.087	-3.737	-2.673	-3.039	-3.039
+EGF	-2.555	-2.954	-3.652	-0.995	-3.293	-2.726	-4.366	-4.027
+prostaglandin E2	N/A	-2.428	-2.04	-0.96	-0.824	-2.793	-3.005	-2.833
+SRF	N/A	-1.119	-1.65	-1.253	-1.304	-3.039	-2.392	-2.212
+MRTFB	N/A	-1	-1.342	-0.707	-1.387	-3.357	-1.912	-1.664
+MRTFA	N/A	N/A	-1.633	-0.739	-1.387	-3.499	-2.138	-1.664

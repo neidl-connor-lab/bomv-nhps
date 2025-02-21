@@ -76,18 +76,34 @@ covs %>%
   left_join(meta, by="ID")
 
 # filter to 7 DPI and plot coverage
-meta %>%
-  filter(DPI==7) %>%
-  left_join(covs, by="ID") %>%
-  ggplot(aes(NT.position, Depth+1)) +
-  geom_line() +
-  geom_hline(yintercept=10, linetype=2, col="lightgrey") +
-  scale_y_log10() +
-  facet_wrap(~NHP, ncol=1) +
-  labs(x="Nucleotide position",
-       y="Aligned read depth")
+supA <- unique(meta$NHP) %>%
+        lapply(function(i) {
+          meta %>%
+            filter(DPI==7, NHP==i) %>%
+            left_join(covs, by="ID") %>%
+            ggplot(aes(NT.position, Depth+1)) +
+            geom_line() +
+            geom_hline(yintercept=10, linetype=2, col="lightgrey") +
+            scale_y_continuous(limits=c(1, max(covs$Depth)),
+                               transform="log10") +
+            labs(x="Nucleotide position",
+                 y="Aligned read depth",
+                 title=paste("BOMV NHP", i)) +
+            theme(axis.title=element_blank())
+        })
+x <- cowplot::get_plot_component(supA[[1]] + theme(axis.title.x=element_text()),
+                                 "xlab-b")
+y <- cowplot::get_plot_component(supA[[1]] + theme(axis.title.y=element_text()),
+                                 "ylab-l")
+supA <- cowplot::plot_grid(plotlist=supA, ncol=1)
+supA <- cowplot::plot_grid(supA, x, ncol=1, rel_heights=c(25, 1))
+supA <- cowplot::plot_grid(y, supA, nrow=1, rel_widths=c(1, 25))
+supA
 ggsave("analysis/coverage.png",
-       units="cm", width=8, height=10)
+       units="in", width=3.75, height=6)
+
+# clean up
+rm(x, y)
 
 ## variation profile -----------------------------------------------------------
 snvs <- meta %>%
@@ -109,25 +125,45 @@ snvs <- meta %>%
         }) %>%
         do.call(rbind, .)
 
-# join with coverage to fill in the gaps, then plot
-meta %>%
-  filter(DPI==7, 
-         NHP != "B") %>%
-  left_join(covs, by="ID") %>%
-  left_join(snvs, by=c("ID", "NT.position")) %>%
-  replace_na(list(Frequency=0)) %>%
-  ggplot(aes(NT.position, Frequency)) +
-  geom_line() +
-  geom_hline(yintercept=0.5, linetype=2, col="lightgrey") +
-  ylim(0, 1) +
-  facet_wrap(~NHP, ncol=1) +
-  labs(x="Nucleotide position",
-       y="SNV frequency")
+# join with coverage to fill in the gaps
+supB <- covs %>%
+        filter(ID %in% snvs$ID) %>%
+        left_join(snvs, by=c("ID", "NT.position")) %>%
+        replace_na(list(Frequency=0)) %>%
+        left_join(meta, by="ID")
+supB <- unique(supB$NHP) %>%
+        lapply(function(i) {
+          supB %>%
+            filter(NHP==i) %>%
+            ggplot(aes(NT.position, Frequency)) +
+            geom_line() +
+            geom_hline(yintercept=0.5, linetype=2, col="lightgrey") +
+            ylim(0, 1) +
+            labs(x="Nucleotide position",
+                 y="SNV frequency",
+                 title=paste("BOMV NHP", i)) +
+            theme(axis.title=element_blank())
+        })
+x <- cowplot::get_plot_component(supB[[1]] + theme(axis.title.x=element_text()),
+                                 "xlab-b")
+y <- cowplot::get_plot_component(supB[[1]] + theme(axis.title.y=element_text()),
+                                 "ylab-l")
+supB <- cowplot::plot_grid(plotlist=supB, ncol=1)
+supB <- cowplot::plot_grid(supB, x, ncol=1, rel_heights=c(25, 1))
+supB <- cowplot::plot_grid(y, supB, nrow=1, rel_widths=c(1, 25))
+supB
 ggsave("analysis/snvs.png",
-       units="cm", width=8, height=10)
+       units="in", width=3.75, height=6)
 
-## nonsynonymous mutations -----------------------------------------------------
-# nonsynonymous mutations > 10%
+# clean up
+rm(x, y)
+
+## assemble supplemental figure ------------------------------------------------
+cowplot::plot_grid(supA, supB, nrow=1, labels="AUTO")
+ggsave("analysis/supplemental8.png",
+       units="in", width=7.5, height=6)
+
+## nonsynonymous mutations > 10% -----------------------------------------------
 meta %>%
   filter(DPI==7,
          NHP != "B") %>%
@@ -145,5 +181,6 @@ meta %>%
          NT.ID=paste(NT.position, NT.ref, ">", NT.alt)) %>%
   left_join(meta, by="ID") %>%
   select(NHP, NT.ID, AA.ID, Frequency) %>%
+  arrange(NT.ID) %>%
   write.csv("analysis/snvs.csv",
             row.names=FALSE)

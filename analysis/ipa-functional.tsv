@@ -1,0 +1,1202 @@
+Diseases and Bio Functions	dpi01	dpi03	dpi05	dpi07	dpi10	dpi15	dpi21	dpi28
+Cell movement of tumor cell lines	-1.882	-2.272	-0.421	3.774	0.791	0.259	-3.814	-4.24
+Migration of tumor cell lines	-1.711	-2.143	-0.032	4.049	1	0.133	-3.464	-3.907
+Cell movement	N/A	N/A	-0.533	4.242	0.07	0.446	-3.703	-3.769
+Invasion of cells	-2.132	-2.57	-0.946	3.059	0.139	-0.049	-2.924	-3.676
+Invasion of tumor cell lines	-2.081	-2.512	-0.939	3.017	-0.234	-0.185	-2.63	-3.556
+Migration of cells	-1.268	-2.187	-0.156	4.263	0.535	0.212	-3.283	-3.456
+Cellular homeostasis	-1.93	-2.372	-1.27	2.639	-1.168	-0.969	-3.268	-3.243
+Synthesis of lipid	-2.186	-2.931	-2.476	-0.002	-2.091	-0.568	-3.892	-3.109
+Organization of cytoplasm	N/A	-1.674	N/A	1.245	N/A	0.021	-3.226	-3.1
+Cell viability	-1.529	-1.332	-0.944	0.906	-1.325	-1.4	-3.201	-2.984
+Microtubule dynamics	N/A	-1.487	N/A	N/A	N/A	-0.032	N/A	-2.955
+Organization of cytoskeleton	N/A	-1.489	N/A	1.245	N/A	0.021	-3.084	-2.954
+Development of neural cells	N/A	N/A	N/A	N/A	N/A	-1.118	-2.952	-2.952
+Cell viability of tumor cell lines	N/A	N/A	-0.953	1.405	N/A	N/A	-2.91	-2.922
+Invasion of carcinoma cell lines	-1.96	-2.572	-0.443	0.394	-0.16	-0.298	-2.42	-2.918
+Size of body	N/A	-0.896	N/A	N/A	N/A	0.222	-2.732	-2.892
+Invasive cancer	-1.053	-2.043	-1.364	-0.034	-0.337	-0.55	-2.112	-2.848
+Development of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-2.784
+Adhesion of immune cells	-1.807	-3.077	-2.464	1.067	-2.592	-1.913	-2.949	-2.776
+Metastasis of tumor cell lines	N/A	N/A	-1.127	N/A	N/A	N/A	-2.397	-2.771
+Neoplasia of tumor cell lines	-1.951	-1.942	-0.976	-0.051	N/A	-1.264	-2.407	-2.761
+Migration of carcinoma cell lines	-1.94	-1.838	0.257	N/A	0.459	-0.391	-2.493	-2.753
+Cell-cell contact	N/A	-2.16	N/A	N/A	N/A	-0.709	N/A	-2.739
+Cell survival	-0.863	-0.978	-0.933	0.465	-0.825	-1.284	-2.956	-2.727
+Cell movement of breast cancer cell lines	N/A	-1.767	-1.478	N/A	N/A	N/A	N/A	-2.727
+Metastasis	-1.053	-1.837	-1.21	0.148	-0.113	-0.404	-1.944	-2.7
+Advanced malignant tumor	-1.053	-1.837	-1.21	0.148	-0.113	-0.404	-1.944	-2.7
+Invasion of breast cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-2.599
+Activation of cells	-2.358	-1.623	-1.175	1.398	-1.632	0.211	-2.769	-2.592
+Proliferation of vascular cells	N/A	-2.758	-2.835	0.328	-2.673	-1.552	-2.889	-2.574
+Fatty acid metabolism	N/A	-2.213	-0.567	1.037	-1.512	-1.023	-3.062	-2.572
+Synthesis of fatty acid	N/A	-2.219	-1.253	0.472	-1.086	-0.551	-2.883	-2.565
+Angiogenesis	-1.781	-2.532	-2.829	-0.195	-3.406	-1.42	-2.997	-2.51
+Proliferation of connective tissue cells	N/A	-1.589	N/A	0.53	-2.419	-0.676	-2.681	-2.505
+Cell proliferation of tumor cell lines	-1.186	-0.896	-0.76	2.305	-0.341	N/A	-2.424	-2.47
+Cell cycle progression	N/A	-2.162	-1.18	0.989	-1.271	N/A	-2.086	-2.439
+Damage of cartilage tissue	N/A	-1.387	-1.432	-1.121	-1.664	-1.976	-2.412	-2.433
+Endocytosis by eukaryotic cells	-1.972	-1.287	-0.264	1.506	0.088	N/A	N/A	-2.426
+Growth of epithelial tissue	-2.195	-2.2	-2.732	-0.157	-2.949	-0.645	-2.685	-2.389
+Activation of phagocytes	N/A	-1.724	-1.625	1.313	-1.475	0.247	-2.214	-2.377
+Synthesis of phospholipid	N/A	-1.944	-1.961	N/A	N/A	N/A	-2.174	-2.372
+Metabolism of membrane lipid derivative	N/A	-1.303	-1.059	N/A	N/A	N/A	N/A	-2.372
+Leukopoiesis	N/A	-1.278	-1.033	0.683	-1.515	-0.946	N/A	-2.324
+Inflammatory response	-1.275	-1.11	-1.421	2.624	-0.605	0.661	-2.002	-2.304
+Growth of tumor	-1.092	-1.302	-1.026	0.436	0.074	0.14	-2.236	-2.287
+Activation of blood cells	-2.14	-1.44	-0.832	1.983	-1.387	0.178	-2.482	-2.275
+T cell development	N/A	-1.719	-1.468	0.709	-1.403	-0.924	-1.882	-2.262
+Leukocyte migration	-1.209	-1.594	-0.514	2.644	-0.689	0.025	-2.038	-2.248
+Concentration of fatty acid	N/A	N/A	-2.067	N/A	N/A	-0.201	-2.563	-2.236
+Cell proliferation of fibroblasts	N/A	-0.762	N/A	-0.052	N/A	N/A	-2.236	-2.236
+Cell movement of fibroblast cell lines	N/A	-1.982	-2.433	N/A	N/A	N/A	-2.236	-2.236
+Accumulation of granulocytes	N/A	-1.782	-1.798	-0.471	-0.4	-0.084	-2.226	-2.226
+Cell movement of leukocytes	-0.802	N/A	-0.394	2.662	-0.32	0.312	-1.973	-2.22
+Migration of squamous cell carcinoma cell lines	N/A	-1.982	0.649	0.87	-0.098	-0.033	-1.529	-2.219
+Cell movement of colorectal cancer cell lines	N/A	N/A	N/A	2.787	1.541	N/A	-2.6	-2.216
+Sprouting	N/A	N/A	N/A	N/A	N/A	N/A	-2.416	-2.213
+Neoplasia of cells	N/A	-0.716	-1.444	-0.523	-0.504	-0.759	-1.699	-2.213
+Cell movement of connective tissue cells	N/A	-1.545	-0.562	1.226	N/A	-0.235	-2.211	-2.211
+Recruitment of leukocytes	N/A	-0.989	-0.961	1.203	-0.711	0.313	-2.403	-2.208
+Growth of blood vessel	N/A	-2.213	-0.958	0.257	-2.047	-1.759	-1.83	-2.207
+Progression of tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-2.207
+Vasculogenesis	-1.524	-2.255	-2.849	-0.282	-3.266	-1.543	-2.975	-2.202
+Recruitment of mononuclear leukocytes	N/A	N/A	N/A	1.95	0.127	0.196	-2.201	-2.201
+Migration of vascular endothelial cells	N/A	N/A	-1.72	N/A	-2.396	N/A	-2.401	-2.2
+Invasion of tumor cells	N/A	N/A	-1.432	0.038	-0.713	-1.095	-2.2	-2.2
+Migration of phagocytes	N/A	-0.459	-0.44	1.341	-0.06	0.38	N/A	-2.198
+Accumulation of myeloid cells	N/A	-1.152	-1.029	-0.095	0.046	-0.481	-1.802	-2.196
+Differentiation of T lymphocytes	N/A	N/A	-0.906	0.577	-0.649	-0.466	-1.572	-2.194
+DNA replication	N/A	-1.96	N/A	N/A	-1.942	N/A	-2.585	-2.19
+Cell movement of epithelial cell lines	N/A	-1.964	N/A	N/A	-1.446	N/A	-2.19	-2.19
+Activation of myeloid cells	N/A	-1.112	-1.937	0.847	-1.155	0.832	-2.027	-2.186
+Cell proliferation of vascular endothelial cells	N/A	-2.177	-2.752	0.086	-1.991	N/A	-2.378	-2.177
+Activation of antigen presenting cells	N/A	-1.664	-0.606	2.507	-1.44	0.056	-1.71	-2.177
+Cell proliferation of hepatoma cell lines	N/A	-1.957	N/A	N/A	N/A	N/A	-1.374	-2.174
+Mitosis	N/A	-1.473	N/A	N/A	N/A	N/A	-2.38	-2.172
+Survival of neural cells	N/A	N/A	-1.383	N/A	N/A	-0.89	-1.757	-2.172
+Proliferation of epithelial cells	-1.96	-1.452	-0.582	0.595	-1.074	0.514	-1.561	-2.171
+Development of body trunk	N/A	-1.458	N/A	-0.767	N/A	-1.203	-2.526	-2.125
+Activation of leukocytes	-1.92	-1.532	-0.773	1.999	-1.145	0.085	-2.333	-2.114
+Differentiation of mononuclear leukocytes	N/A	-1.27	-1.053	1.046	-1.539	N/A	-1.816	-2.109
+Chemotaxis	-1.028	-0.962	-0.009	3.324	0.068	1.012	-1.821	-2.104
+Synthesis of DNA	-2.215	-1.673	-1.258	N/A	-1.046	-0.308	-1.871	-2.102
+Adhesion of blood cells	-1.08	-1.891	N/A	N/A	N/A	-1.877	-2.301	-2.087
+Osteoclastogenesis	N/A	-1.969	-1.026	-0.644	-0.636	-1.216	-2.256	-2.022
+Expansion of cells	N/A	-1.477	-1.393	0.735	-0.478	-0.938	-2.615	-2
+Hyperplasia of tissue	N/A	N/A	N/A	N/A	N/A	-0.792	-2.236	-2
+Litter size	N/A	N/A	N/A	N/A	N/A	-0.579	-1	-2
+Acute disease	N/A	N/A	-0.186	0.557	-0.371	-0.983	N/A	-2
+Development of hematopoietic system	N/A	N/A	N/A	-0.621	N/A	0.02	-1.995	-1.995
+Binding of professional phagocytic cells	N/A	-2.163	-1.761	0.613	-1.486	-0.54	-2.229	-1.994
+Cell movement of fibroblasts	N/A	-1.477	-0.243	N/A	-1.131	0.329	-1.987	-1.987
+Recruitment of antigen presenting cells	N/A	-1.287	-0.883	N/A	N/A	N/A	-1.987	-1.987
+Invasion of epithelial cell lines	N/A	N/A	-0.447	N/A	N/A	-1.937	-1.982	-1.982
+Liver Regeneration	N/A	N/A	N/A	N/A	-1.067	-0.896	-1.982	-1.982
+Entry into interphase	N/A	-1	N/A	N/A	N/A	-0.277	-1.982	-1.982
+Recruitment of phagocytes	-1.261	-0.887	-1.482	0.43	-1.108	0.009	-2.199	-1.981
+Steroid metabolism	N/A	-0.849	-0.726	N/A	-1.091	0.245	-2.407	-1.98
+Fertility	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-1.98
+Sphere formation of tumor cell lines	N/A	-1.969	0.368	N/A	N/A	N/A	-2.2	-1.969
+Accumulation of neutrophils	N/A	N/A	-1.969	-0.291	-0.911	0.104	-1.969	-1.969
+Recruitment of T lymphocytes	N/A	-0.776	0.6	1.846	0.808	0.684	-1.969	-1.969
+Phosphorylation of L-amino acid	N/A	N/A	N/A	N/A	N/A	N/A	-1.964	-1.964
+Progression of malignant tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-1.964
+Internalization by tumor cell lines	N/A	-1.953	N/A	N/A	-1.697	N/A	-1.953	-1.953
+Development of genitourinary system	N/A	N/A	N/A	N/A	N/A	-0.965	-2.185	-1.949
+Inflammation of respiratory system component	N/A	-1.947	-1.772	-2.142	-1.66	-1.312	-2.183	-1.947
+Migration of vascular cells	N/A	-1.067	-1.253	-0.5	-1.951	-1.562	-2.132	-1.942
+Glucose tolerance	N/A	-1.667	N/A	1.049	N/A	N/A	N/A	-1.941
+Flux of Ca2+	N/A	-1.41	-0.709	1.412	-1.114	-0.317	N/A	-1.937
+Cell viability of neurons	N/A	-1.114	N/A	N/A	N/A	-0.841	-1.948	-1.934
+Migration of keratinocytes	N/A	-1.114	-0.806	-0.236	-1.114	0.096	-1.934	-1.934
+Activation of macrophages	N/A	-1.342	-0.883	1.723	-0.861	0.472	-1.41	-1.934
+Proliferation of endothelial cells	N/A	-2.132	-3.006	-0.747	-2.931	-1.457	-2.504	-1.928
+Development of hematopoietic progenitor cells	N/A	N/A	N/A	-0.146	N/A	N/A	N/A	-1.925
+Proliferation of tumor cells	N/A	-0.951	-2.241	-0.251	-0.908	-0.203	-2.13	-1.915
+Proliferation of epithelial cell lines	N/A	-1.905	-0.549	N/A	N/A	N/A	-1.531	-1.915
+Hematopoiesis of mononuclear leukocytes	N/A	-1.032	-0.867	1.186	-1.325	-0.366	-1.619	-1.912
+Extrapancreatic malignant tumor	-0.187	-0.953	-1.797	-1.737	-0.881	-0.728	-1.232	-1.911
+Growth of solid tumor	-1	-1.288	-1.58	-0.26	-0.819	0.9	-2.007	-1.868
+Proliferation of smooth muscle cells	-0.896	-1.758	-0.112	1.339	-1.623	-1.086	-1.214	-1.857
+Immune response of cells	-1.38	-0.552	-0.099	3.526	-0.081	1.376	N/A	-1.857
+Recruitment of myeloid cells	-1.261	-0.646	-1.232	0.181	-1.197	0.376	-2.032	-1.802
+Binding of tumor cell lines	N/A	-1.4	-1.08	0.432	-1.437	-0.012	-1.257	-1.782
+Cell movement of antigen presenting cells	-1.452	-0.72	-0.321	1.499	-1.38	-0.494	-1.899	-1.762
+Accumulation of lipid	N/A	N/A	N/A	N/A	N/A	N/A	-2.216	-1.732
+Differentiation of helper T lymphocytes	N/A	N/A	-1.732	0.44	N/A	N/A	N/A	-1.718
+Hyperplasia of epidermis	N/A	N/A	N/A	N/A	-1.231	-1.231	-1.715	-1.715
+Thermoregulation	N/A	N/A	N/A	N/A	1.718	0.555	N/A	-1.715
+Colony formation of tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	-1.348	-1.714
+Inflammation of lung	N/A	-2.2	-2.377	-2.4	-1.795	-1.695	-1.97	-1.709
+Lymphopoiesis	N/A	-0.775	-1.28	0.943	N/A	-0.352	-1.411	-1.701
+Cell movement of phagocytes	-1.436	-1.181	-0.655	1.719	-1.366	0.469	-1.911	-1.692
+Accumulation of phagocytes	N/A	-0.672	-0.91	0.594	0.171	-0.04	-1.221	-1.688
+Migration of tumor cells	N/A	N/A	N/A	N/A	N/A	-0.481	-1.65	-1.65
+Growth of malignant tumor	-0.6	-1.308	-2.335	-0.753	-1.506	-0.39	-2.054	-1.649
+Colony formation of cells	N/A	N/A	N/A	1.4	-0.429	N/A	-1.294	-1.595
+Cell movement of granulocytes	-0.995	-1.203	-0.498	2.184	-0.233	0	-1.506	-1.59
+Formation of epithelial neoplasm	N/A	N/A	-0.968	-0.616	-1.488	-0.756	-1.005	-1.59
+Tumorigenesis of epithelial neoplasm	N/A	N/A	-0.968	-0.616	-1.488	-0.756	-1.005	-1.59
+Deterioration of connective tissue	N/A	-1.254	-0.895	-0.148	-1.129	-1.784	-1.628	-1.555
+Binding of DNA	N/A	-0.883	-1.136	-0.217	-1.517	-0.281	-1.831	-1.546
+Activation of DNA endogenous promoter	N/A	-0.367	-1.536	0.242	-1.343	N/A	-2.322	-1.542
+Development of connective tissue cells	N/A	-1.253	-0.597	-0.918	-0.075	-0.515	-1.801	-1.517
+Malignant solid tumor	N/A	N/A	-1.522	-0.657	N/A	N/A	N/A	-1.513
+Uptake of monosaccharide	N/A	-1.033	-1.167	1.547	-1.048	0.329	-2.013	-1.506
+Fibrogenesis	N/A	N/A	N/A	N/A	N/A	N/A	-1.782	-1.501
+Abdominal carcinoma	N/A	N/A	-1.287	-1.702	-0.772	-1.133	-1.498	-1.498
+Immune response of leukocytes	N/A	-0.182	-0.669	1.44	N/A	2.065	N/A	-1.478
+Proliferation of cancer cells	N/A	-1.108	-2.419	-0.769	-1.561	0.08	-1.925	-1.477
+Differentiation of hematopoietic progenitor cells	N/A	N/A	N/A	N/A	-2.144	0.021	N/A	-1.477
+Differentiation of osteoclasts	N/A	N/A	-0.991	-1.1	-0.762	-1.886	-1.757	-1.457
+Adhesion of tumor cell lines	N/A	-0.728	-0.731	-0.082	N/A	0.617	-1.455	-1.455
+Proliferation of muscle cells	N/A	-1.483	-0.375	1.252	-1.828	-0.721	-0.915	-1.453
+Synthesis of steroid	N/A	-1.98	-1.969	-1.153	-1.969	-0.396	-2.391	-1.452
+Development of carcinoma	N/A	N/A	-1.066	-1.134	-0.946	-0.581	-1.109	-1.452
+Cell movement of mononuclear leukocytes	N/A	N/A	N/A	2.764	N/A	0.533	-1.227	-1.443
+Binding of myeloid cells	-0.745	-0.93	-1.719	0.771	-1.227	-1.584	-1.689	-1.426
+Proliferation of liver cells	N/A	N/A	N/A	N/A	N/A	0.491	N/A	-1.414
+Abdominal cancer	N/A	-0.781	-0.92	-1.345	-0.091	-1.014	-1.094	-1.412
+Concentration of lipid	N/A	N/A	-0.926	-0.387	-0.274	0.988	-1.784	-1.409
+Lymphocyte migration	N/A	-0.898	0.527	2.798	1.235	1.095	-1.291	-1.398
+Size of animal	N/A	-0.152	N/A	N/A	N/A	N/A	-1.387	-1.387
+Cell cycle progression of tumor cell lines	N/A	-1	N/A	N/A	-0.896	N/A	N/A	-1.387
+Cell movement of neutrophils	-0.986	-0.98	-0.565	1.795	-0.468	0.663	-1.623	-1.345
+Cell movement of tumor cells	N/A	N/A	N/A	N/A	-2	N/A	-1.342	-1.342
+Cell proliferation of colorectal cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-1.342
+Apoptosis of tumor cell lines	0.127	-0.865	-1.889	-1.604	-0.752	0.051	-1.58	-1.331
+Binding of protein binding site	N/A	-0.211	-1.628	-1.349	-1.202	0.418	-1.905	-1.313
+Stimulation of cells	-1.919	-2.164	-2.139	0.48	-1.282	1.075	-1.63	-1.307
+Invasion of prostate cancer cell lines	N/A	-0.943	-1.863	N/A	-0.371	N/A	-0.009	-1.3
+Differentiation of phagocytes	N/A	N/A	0.242	1.042	-1	-1.431	N/A	-1.3
+Transcription of RNA	N/A	-0.624	-1.688	1.012	-1.699	N/A	-2.006	-1.285
+Activation of T lymphocytes	N/A	-1.253	0.08	1.633	-0.592	-1.063	-1.598	-1.28
+Quantity of connective tissue	N/A	-0.391	-0.045	0.503	0.402	-0.353	-0.942	-1.258
+Proliferation of lymphatic system cells	N/A	0.068	-0.071	0.724	-0.155	-0.135	-1.211	-1.24
+Digestive system cancer	N/A	N/A	-1.431	-1.557	-0.673	-0.864	-1.266	-1.238
+Upper abdominal cancer	N/A	N/A	-0.562	-1.07	0.045	-0.535	-1.249	-1.225
+Interphase	N/A	0.046	N/A	N/A	N/A	N/A	N/A	-1.214
+Differentiation of connective tissue cells	N/A	-0.587	-0.733	-1.214	-1.046	-0.612	-1.977	-1.203
+Recruitment of neutrophils	N/A	-0.143	-1.708	0.066	-0.973	0.69	-1.5	-1.203
+Non-melanoma solid tumor	N/A	N/A	-1.16	0.04	N/A	N/A	N/A	-1.18
+Expansion of T lymphocytes	N/A	N/A	-1.038	0.841	-0.605	N/A	N/A	-1.165
+Differentiation of bone cells	N/A	-1.414	N/A	N/A	-1.081	-1.326	-1.818	-1.154
+Differentiation of leukemia cell lines	N/A	N/A	-0.278	1.132	N/A	-0.206	N/A	-1.154
+Growth of digestive organ tumor	N/A	N/A	-0.447	N/A	N/A	N/A	N/A	-1.154
+Arterial lesion	N/A	-0.817	-1.368	-1.684	-1.115	-1.561	-0.615	-1.15
+Accumulation of leukocytes	N/A	-0.419	-0.308	-0.058	0.184	-0.244	-0.894	-1.142
+Muscular hypertrophy	N/A	-1.982	-2.425	N/A	-1.455	-1.289	-1.348	-1.141
+Digestive organ tumor	N/A	N/A	-0.826	-1.009	-0.256	0.309	-0.868	-1.127
+Proliferation of immune cells	N/A	-0.372	-0.101	0.67	N/A	N/A	-1.575	-1.121
+Maturation of cells	N/A	-1.941	-0.457	1.571	N/A	0.025	-1.437	-1.118
+Cell movement of embryonic cell lines	N/A	N/A	-1.913	0.198	-1.109	N/A	-1.408	-1.109
+Proliferation of embryonic cell lines	N/A	N/A	N/A	N/A	-0.686	N/A	N/A	-1.109
+Differentiation of antigen presenting cells	N/A	N/A	0.504	1.269	-0.542	-1.019	N/A	-1.091
+Formation of solid tumor	N/A	0.186	-0.802	-0.227	-1.097	-0.03	-0.698	-1.089
+Proliferation of keratinocytes	N/A	N/A	0.339	N/A	-1.571	-0.262	-1.078	-1.078
+Binding of AP1 consensus site	N/A	N/A	N/A	N/A	N/A	-0.537	-1.936	-1.076
+Growth of carcinoma	N/A	N/A	N/A	N/A	0.447	-0.478	-1.067	-1.067
+Proliferation of bone cells	N/A	N/A	N/A	N/A	N/A	-0.137	-1.067	-1.067
+Growth of bone tissue	N/A	N/A	N/A	N/A	N/A	-0.137	-1.067	-1.067
+Invasion of tissue	N/A	-1.067	N/A	N/A	N/A	1.408	-1.067	-1.067
+Differentiation of adipocytes	N/A	N/A	0.64	-0.779	-0.651	N/A	-1.067	-1.067
+Consumption of oxygen	N/A	N/A	N/A	N/A	N/A	N/A	-0.447	-1.067
+Epithelial neoplasm	N/A	N/A	-1.032	-0.657	N/A	N/A	N/A	-1.062
+Replication of virus	N/A	-1.671	-1.877	-3.133	-0.968	N/A	-1.026	-1.054
+Synthesis of reactive oxygen species	N/A	N/A	-1.053	2.21	-0.184	0.961	-0.49	-1.042
+Quantity of lymphoid tissue	N/A	N/A	-0.053	N/A	N/A	N/A	0.081	-1.04
+Concentration of eicosanoid	N/A	N/A	N/A	N/A	N/A	N/A	-1.439	-1.038
+Carcinoma	N/A	-0.555	-1.103	-0.952	-0.983	-0.165	-0.78	-1.031
+Migration of smooth muscle cells	N/A	-1.067	0	1.144	-1.195	-0.721	-0.329	-1.019
+Proliferation of blood cells	N/A	-0.25	-0.235	0.394	-0.334	1.114	-1.501	-1.001
+Formation of muscle	N/A	N/A	N/A	N/A	N/A	-0.378	-1.342	-1
+Induction of cells	N/A	N/A	N/A	-0.241	-1.121	1.088	-1.342	-1
+Response of mononuclear leukocytes	N/A	-1	N/A	N/A	N/A	N/A	-1	-1
+Synaptic transmission	N/A	N/A	N/A	N/A	N/A	N/A	-1	-1
+Migration of vascular smooth muscle cells	N/A	N/A	N/A	0.784	0	-0.323	0	-1
+Apoptosis of kidney cell lines	N/A	N/A	N/A	1.508	N/A	N/A	N/A	-1
+Cell movement of vascular smooth muscle cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-1
+Transcription	N/A	-0.505	-1.66	0.925	-1.374	N/A	-1.726	-0.962
+Expression of RNA	N/A	-0.345	-1.629	0.995	-1.495	N/A	-1.725	-0.949
+Viral Infection	N/A	-0.534	-1.378	-1.883	0.754	1.024	-0.161	-0.939
+Cell movement of macrophages	N/A	0.179	0.079	1.658	-1.142	-0.037	-1.284	-0.936
+Cellular infiltration by granulocytes	-0.464	-1.234	-0.614	0.01	-1.195	-1.052	-0.88	-0.924
+Intraabdominal organ tumor	N/A	-0.781	-0.78	-0.633	0.015	0.347	-0.708	-0.911
+Neuronal cell death	-0.211	-1.39	0.713	1.533	-0.629	-0.616	-0.407	-0.908
+Repression of RNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.9
+Quantity of reactive oxygen species	N/A	-0.152	-1.536	N/A	-0.938	-0.021	-1.38	-0.899
+Production of reactive oxygen species	-0.996	N/A	N/A	2.224	-0.045	0.576	-0.493	-0.887
+Cardiomyopathy	N/A	-1.78	-0.734	N/A	0.23	-0.041	-0.736	-0.886
+Cellular infiltration by phagocytes	-0.724	-1.133	-1.054	0.327	-2.203	-0.631	-1.216	-0.869
+Adhesion of myeloid cells	N/A	N/A	N/A	0.831	N/A	-0.652	-1.11	-0.864
+Abnormal morphology of muscle	N/A	-1.432	N/A	N/A	-1.026	-1.056	-0.953	-0.862
+Hypertrophy of cardiac muscle	N/A	N/A	N/A	N/A	N/A	-1.29	-0.849	-0.849
+Quantity of granulocytes	N/A	N/A	N/A	-2.462	-1.638	-1.235	-1.411	-0.832
+Contraction of cells	N/A	N/A	N/A	N/A	0.061	N/A	-0.831	-0.831
+Hypertrophy of cells	N/A	-1.964	-1.941	N/A	-1.471	-0.921	N/A	-0.825
+Quantity of thymocytes	N/A	N/A	N/A	N/A	N/A	N/A	-0.124	-0.818
+Quantity of macrophages	N/A	N/A	N/A	N/A	1.477	N/A	-0.896	-0.808
+Abdominal lesion	0.025	0.268	-0.69	0.364	0.633	0.909	-0.733	-0.796
+Cell proliferation of T lymphocytes	N/A	N/A	N/A	0.017	N/A	N/A	-1.073	-0.791
+Development of abdomen	N/A	N/A	N/A	N/A	N/A	-0.753	-1.478	-0.762
+Lung lesion	N/A	-1.842	-1.636	-2.38	-1.448	0.45	-1.451	-0.755
+Mass of organism	N/A	N/A	N/A	N/A	1.223	0.784	-0.658	-0.74
+Metabolism of DNA	-0.771	-1.057	N/A	N/A	-1.26	N/A	-1.242	-0.704
+Quantity of Ca2+	N/A	-0.063	N/A	1.345	0.491	1.389	-0.698	-0.698
+Non-central nervous system malignant neoplasm	N/A	-0.431	-0.936	-1.172	-0.045	0.383	-0.804	-0.697
+Quantity of hematopoietic progenitor cells	N/A	0.655	N/A	N/A	N/A	-2.471	-0.075	-0.692
+Hepatic injury	N/A	-1.715	-0.896	-0.532	-1.982	0.034	-0.391	-0.686
+Non rhabdoid tumor	N/A	N/A	-0.486	-0.094	0.184	0.52	N/A	-0.681
+Generation of tumor	N/A	0.6	-1.237	-0.158	-0.543	0.382	-0.842	-0.677
+Extracranial solid tumor	N/A	-0.681	-1.019	-0.919	-1.105	1.197	-0.689	-0.668
+Apoptosis of prostate cancer cell lines	N/A	-0.192	-1.05	N/A	-0.499	-0.076	-0.726	-0.643
+Cell proliferation of sarcoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	-0.114	-0.64
+Quantity of neurons	N/A	0.147	N/A	N/A	N/A	N/A	-0.576	-0.634
+Enlargement of heart	N/A	-2.183	N/A	N/A	N/A	-1.217	-0.919	-0.624
+Infiltration by neutrophils	N/A	-1.175	-0.972	-0.356	-1.745	-0.535	-0.987	-0.593
+Cell death of tumor cell lines	N/A	N/A	-1.785	-1.347	N/A	-0.245	N/A	-0.593
+Growth of mammary tumor	N/A	N/A	N/A	N/A	N/A	0.847	-0.591	-0.591
+Locomotion	N/A	N/A	N/A	N/A	N/A	N/A	0	-0.577
+Inflammation of joint	N/A	-0.98	-0.909	-0.214	-1.524	0.186	-0.963	-0.57
+Quantity of metal	N/A	N/A	N/A	1.94	0.779	1.398	N/A	-0.569
+Metabolism of macromolecule	-0.989	-0.828	0.453	1.166	-0.352	N/A	-0.55	-0.566
+Transformation of fibroblast cell lines	N/A	0.277	-0.548	N/A	N/A	N/A	-0.256	-0.548
+Cell death of liver cells	N/A	N/A	1.673	2.421	N/A	1.508	-0.053	-0.487
+Quantity of connective tissue cells	N/A	N/A	0.16	N/A	1.329	-0.446	-0.152	-0.479
+Cell death of tumor cells	N/A	N/A	0.525	1.811	-0.949	N/A	N/A	-0.478
+Quantity of steroid	N/A	N/A	N/A	N/A	N/A	N/A	-1.842	-0.463
+Cell death of kidney cell lines	N/A	N/A	N/A	1.507	N/A	N/A	N/A	-0.456
+Apoptosis of fibroblast cell lines	N/A	N/A	N/A	N/A	-1.308	N/A	N/A	-0.44
+Resorption of bone	N/A	-0.092	-1.127	-0.652	0.359	-0.517	-0.864	-0.434
+Quantity of leukocytes	0	-0.145	0.314	-0.418	-0.241	-1.118	0.252	-0.429
+Apoptosis of hepatoma cell lines	N/A	N/A	N/A	N/A	N/A	0.88	-0.363	-0.4
+Infarction	N/A	N/A	N/A	N/A	-2.215	-2.262	-1.432	-0.391
+Size of infarct	N/A	N/A	-2.349	-2.882	-2.219	-2.067	-1.432	-0.391
+Inflammation of organ	-1.195	-0.257	-0.814	-0.988	-1.257	-0.937	-0.38	-0.35
+Proliferation of fibroblast cell lines	N/A	-0.391	-0.368	0.396	-0.836	N/A	-0.342	-0.342
+Concentration of cholesterol	N/A	N/A	0.118	N/A	N/A	N/A	-1.446	-0.314
+Mammary tumor	N/A	N/A	N/A	0.011	N/A	0.751	-0.312	-0.312
+Mobilization of blood cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.305
+Cell death of muscle cells	N/A	0	-0.263	0.746	0.896	0.336	0.261	-0.298
+Hypertrophy of heart	N/A	-1.941	N/A	N/A	-1.571	-1.373	0.075	-0.293
+Neurodegeneration of nervous tissue	N/A	N/A	N/A	N/A	N/A	N/A	0.548	-0.293
+Necrosis	-0.276	-0.84	-0.211	0.184	-0.322	0.056	-0.849	-0.284
+Proliferation of CD4+ T-lymphocytes	N/A	N/A	0.246	N/A	0.849	N/A	0.13	-0.283
+Apoptosis of brain	N/A	N/A	N/A	N/A	N/A	N/A	0.13	-0.283
+Secretion of lipid	N/A	N/A	N/A	N/A	-0.64	0.117	-1.069	-0.277
+Development of bone marrow cells	N/A	N/A	N/A	-0.204	N/A	1.346	N/A	-0.277
+Function of leukocytes	N/A	N/A	N/A	0.404	N/A	N/A	N/A	-0.277
+Size of lesion	N/A	-0.398	-1.02	-0.677	-0.479	-0.979	-0.901	-0.276
+Quantity of antigen presenting cells	N/A	N/A	N/A	0.597	N/A	N/A	-0.478	-0.265
+Concentration of triacylglycerol	N/A	N/A	0.221	N/A	0.084	-0.362	-1.083	-0.246
+Fibrosis	-0.781	-0.92	-1.045	-2.244	-0.053	0.138	-0.86	-0.232
+Quantity of phagocytes	N/A	-0.392	0.887	0.402	-0.592	-1.473	-0.701	-0.218
+Soft tissue lesion	N/A	-0.152	-0.415	0	-1.067	-0.116	-0.218	-0.218
+Cell proliferation of breast cancer cell lines	-0.453	0.045	0.112	N/A	0.785	N/A	N/A	-0.196
+Differentiation of tumor cell lines	N/A	N/A	0.453	2.01	N/A	-0.213	-0.514	-0.193
+Apoptosis of neurons	N/A	-0.365	N/A	N/A	N/A	N/A	0.268	-0.191
+Breast or ovarian neoplasm	N/A	N/A	N/A	0.251	N/A	0.747	N/A	-0.184
+Inflammation of body cavity	N/A	-0.398	-1.102	-1.596	-0.853	-0.826	-0.943	-0.183
+Quantity of mononuclear leukocytes	N/A	-0.156	0.593	0.406	-0.314	-1.604	0.334	-0.17
+Quantity of bone cells	N/A	N/A	-0.168	N/A	1.057	-0.156	-0.479	-0.168
+Liver Damage	N/A	-1.122	-1.463	-0.7	-2.157	-0.208	-0.307	-0.167
+Apoptosis of liver cells	N/A	1	N/A	N/A	1.408	1.338	0.277	-0.152
+Transactivation of RNA	N/A	0.123	-0.34	1.107	-1.032	0.424	-1.098	-0.15
+Obesity	N/A	N/A	1.203	2.403	1.165	0.515	-0.429	-0.132
+Cell death of cancer cells	N/A	N/A	N/A	1.799	N/A	N/A	N/A	-0.128
+Inflammation of absolute anatomical region	N/A	-0.617	-0.82	-0.889	-1.489	-0.395	-0.251	-0.121
+Frequency of tumor	N/A	N/A	-0.413	-0.527	-0.568	0.182	0.141	-0.115
+Cell death of kidney cells	N/A	-0.9	N/A	1.682	-0.406	N/A	-0.722	-0.111
+Abnormality of left ventricle	N/A	-0.106	N/A	0.02	-0.106	0.685	0.421	-0.106
+Left ventricular heart disease	N/A	-0.106	N/A	0.02	-0.106	0.685	0.421	-0.106
+Quantity of myeloid cells	N/A	-0.392	1.255	0.301	0.227	-1.536	-0.328	-0.074
+Incidence of tumor	N/A	0.59	-0.688	-1.163	-0.77	-0.264	0.451	-0.074
+Cell proliferation of leukocyte cell lines	N/A	N/A	0.492	N/A	N/A	1.894	0.314	-0.068
+Immune mediated inflammatory disease	N/A	-1.154	-0.649	-0.873	-1.067	0.494	-0.479	-0.059
+Development of malignant tumor	N/A	1.091	-0.751	-0.864	-0.248	0.251	-0.271	-0.055
+Survival of organism	0.44	0.01	1.262	0.648	0.123	-0.577	-0.694	-0.027
+Apoptosis	0.181	-0.352	-0.806	-1.251	0.144	0.015	-0.791	-0.021
+Volume of lesion	N/A	-0.218	-1.572	-1.788	-0.479	-0.732	-0.6	0
+Damage of bone	N/A	N/A	N/A	N/A	N/A	-1.51	-0.555	0
+Influx of cells	N/A	N/A	0.555	N/A	1	0	0	0
+Cell death of connective tissue cells	N/A	-0.468	-0.514	-0.046	-1.271	N/A	0.042	0
+Non-malignant disorder	N/A	0	0.277	0.634	-1.316	-1.006	0.539	0
+Cell death of fibroblast cell lines	N/A	N/A	N/A	0.199	N/A	N/A	N/A	0.055
+Apoptosis of embryonic cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.056
+Migration of neural cells	N/A	N/A	-0.951	N/A	N/A	N/A	-0.425	0.061
+Fibrosis of heart	N/A	-0.152	N/A	N/A	1.279	0.973	0.074	0.074
+Quantity of cells	0.852	0.654	0.929	1.248	0.93	-1.34	0.273	0.074
+Rheumatic disease	N/A	-0.516	-0.3	-0.026	-1.132	0.416	-0.326	0.103
+Inflammation of liver	N/A	N/A	0.126	0.504	N/A	N/A	-0.152	0.106
+Neoplasia of blood cells	N/A	N/A	-0.035	-0.374	N/A	0.303	N/A	0.114
+Interstitial fibrosis	N/A	N/A	N/A	N/A	N/A	0	0.13	0.13
+Activation of tumor cell lines	N/A	N/A	-0.246	N/A	-0.849	N/A	0.132	0.132
+Quantity of bone	N/A	0.532	-0.406	N/A	0.583	-0.077	-0.218	0.134
+Differentiation of stem cell lines	N/A	N/A	0	N/A	N/A	N/A	0.152	0.152
+Quantity of lymphocytes	N/A	0.267	0.525	-0.098	0.246	-0.946	N/A	0.213
+Quantity of T lymphocytes	N/A	N/A	0.016	-1.097	-0.004	N/A	1.16	0.217
+Apoptosis of muscle cells	N/A	0	-0.113	N/A	1.342	0.363	0.234	0.243
+Infection by RNA virus	N/A	1.982	0.928	-0.16	1.993	2.103	1.172	0.246
+Necrosis of liver	N/A	N/A	N/A	2.11	N/A	N/A	N/A	0.27
+Abnormal morphology of mediastinum	N/A	N/A	N/A	N/A	N/A	-0.737	-0.291	0.32
+Abnormal morphology of heart	N/A	-1.109	N/A	N/A	N/A	-0.737	N/A	0.32
+Cell death of embryonic cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.328
+Cell death of brain cells	N/A	-0.152	0.239	N/A	N/A	0.907	0.981	0.431
+Synthesis of nitric oxide	N/A	N/A	1.108	1.688	-0.024	-1.192	-0.27	0.463
+Liver lesion	N/A	N/A	0.937	1.45	1.808	1.466	0.141	0.488
+Cellular degradation	N/A	N/A	N/A	N/A	N/A	N/A	1.226	0.528
+Quantity of lymphatic system cells	N/A	0.743	N/A	-0.145	N/A	-1.192	1.12	0.574
+Mediastinal lesion	N/A	-0.152	-0.218	N/A	1.279	0.496	0.074	0.575
+Cardiac lesion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.575
+Cell death of epithelial cells	N/A	0	-0.299	2.018	1.229	1.056	-0.327	0.646
+Abnormality of heart ventricle	N/A	N/A	N/A	N/A	N/A	0.468	N/A	0.685
+Aggregation of cells	N/A	0.714	N/A	N/A	1.231	1.225	N/A	0.714
+Apoptosis of epithelial cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.758
+Abnormal morphology of body cavity	N/A	-0.956	-0.761	-1.058	N/A	0.132	0.238	0.77
+Cell death of epithelial cell lines	N/A	N/A	-0.235	2.707	N/A	N/A	N/A	0.933
+Apoptosis of epithelial cells	N/A	0	N/A	1.057	0.816	0.827	0.447	1
+Binding of cell surface	N/A	0	0	-0.853	N/A	N/A	1	1
+Abnormal morphology of heart ventricle	N/A	N/A	N/A	N/A	N/A	-0.543	1.067	1.067
+Skin tumor	N/A	N/A	1.091	-0.673	0.447	0.324	0.6	1.091
+Abnormal bone density	N/A	N/A	0.186	N/A	0	N/A	1.091	1.091
+Fibrosis of liver	N/A	N/A	N/A	N/A	N/A	N/A	-0.152	1.103
+Cell death of cerebral cortex cells	N/A	N/A	N/A	N/A	N/A	N/A	1.673	1.109
+Apoptosis of lung cancer cell lines	N/A	0	N/A	N/A	N/A	N/A	N/A	1.131
+Apoptosis of antigen presenting cells	N/A	N/A	0.64	1.572	N/A	N/A	N/A	1.224
+Apoptosis of lymphocytes	N/A	N/A	0.339	0.842	N/A	N/A	0.426	1.56
+Adipogenesis of cells	N/A	1.701	2.422	N/A	1.995	N/A	1.52	1.702
+Apoptosis of phagocytes	N/A	N/A	0.392	0.614	-0.555	0.786	1.109	1.727
+Weight loss	N/A	N/A	0.493	-0.88	N/A	0	1.567	1.8
+Atrophy of organ	N/A	N/A	N/A	N/A	N/A	N/A	1.851	1.834
+Colitis	N/A	N/A	-0.2	-0.328	0.065	0.845	1.91	1.91
+Inflammation of the large intestine	N/A	N/A	-0.2	-0.328	N/A	0.845	1.91	1.91
+Apoptosis of macrophages	N/A	N/A	1.342	1.588	N/A	N/A	N/A	1.922
+Inflammation of gastrointestinal tract	N/A	N/A	-0.635	-0.67	-0.859	0.101	1.236	1.958
+Apoptosis of T lymphocytes	N/A	N/A	1.752	1.692	0.839	0.575	0.794	1.961
+Apoptosis of thymocytes	N/A	N/A	N/A	N/A	N/A	N/A	1.21	1.965
+Apoptosis of leukocytes	N/A	0.785	0.511	0.606	0.006	0.249	0.795	1.986
+Enteritis	N/A	0.611	-0.753	-0.771	-0.276	0.791	1.436	2.153
+Apoptosis of blood cells	N/A	1.069	N/A	0.376	N/A	0.435	1.024	2.159
+Apoptosis of hematopoietic progenitor cells	N/A	N/A	N/A	1.937	N/A	2.23	1.48	2.18
+Infection of mammalia	N/A	1.131	-0.39	-4.236	-1.026	-2.346	2.425	2.213
+Organismal death	0.794	0.718	0.851	-3.18	-0.733	-0.568	2.577	2.419
+Apoptosis of myeloid cells	N/A	N/A	0.853	0.446	0	1.522	2.236	2.552
+Synthesis of progesterone	N/A	N/A	-1.698	-1.803	-1.98	-1.038	-2.407	N/A
+Branching of neurites	N/A	N/A	N/A	N/A	N/A	N/A	-2.407	N/A
+Migration of colorectal cancer cell lines	N/A	-1.172	0.456	2.651	1.91	N/A	-2.393	N/A
+Cancer of cells	N/A	-2.066	-1.83	-0.701	-1.492	-1.343	-2.288	N/A
+Transport of carbohydrate	N/A	N/A	N/A	N/A	N/A	N/A	-2.219	N/A
+Tubulation of cells	N/A	N/A	-2.111	-1.903	-1.584	N/A	-2.208	N/A
+Mass of fat pad	N/A	N/A	N/A	N/A	-1	N/A	-2	N/A
+Transcription of DNA	N/A	N/A	N/A	N/A	N/A	N/A	-1.994	N/A
+Permeability of vasculature	N/A	N/A	N/A	N/A	-2.196	N/A	-1.991	N/A
+Transport of D-glucose	N/A	N/A	N/A	N/A	N/A	N/A	-1.982	N/A
+Cell viability of embryonic cell lines	N/A	N/A	N/A	N/A	N/A	N/A	-1.98	N/A
+Tubulation of vascular endothelial cells	N/A	N/A	-1.6	N/A	N/A	N/A	-1.973	N/A
+Growth of reproductive tract	N/A	N/A	-2.186	N/A	-1.264	0.423	-1.966	N/A
+Adhesion of phagocytes	N/A	N/A	N/A	0.762	N/A	-0.092	-1.965	N/A
+Quantity of catecholamine	N/A	N/A	-0.936	N/A	-1.455	N/A	-1.964	N/A
+Activation of connective tissue cells	N/A	-0.152	0.277	0.257	-0.294	-1.427	-1.956	N/A
+Adhesion of endothelial cells	N/A	N/A	-1.64	-1.261	N/A	-0.599	-1.945	N/A
+Synthesis of prostaglandin E2	N/A	N/A	0.254	1.149	-0.313	-1.35	-1.92	N/A
+Activation of neutrophils	N/A	N/A	-2.146	N/A	N/A	0.552	-1.919	N/A
+Activation of lymphocytes	N/A	N/A	0.363	1.957	N/A	-0.18	-1.772	N/A
+Transport of molecule	N/A	N/A	0.178	2.057	0.185	0.402	-1.683	N/A
+Growth of genital organ	N/A	N/A	-1.763	N/A	-1.264	N/A	-1.511	N/A
+Intrathoracic organ tumor	N/A	N/A	0	0.498	N/A	0.905	-1.501	N/A
+Synthesis of nucleotide	N/A	N/A	0.137	1.12	0.281	1.704	-1.492	N/A
+Uptake of D-glucose	N/A	-1.131	-0.963	1.407	-0.832	N/A	-1.491	N/A
+Degranulation of cells	N/A	N/A	-0.275	N/A	N/A	1.716	-1.446	N/A
+Oxidation of fatty acid	N/A	N/A	N/A	N/A	N/A	N/A	-1.414	N/A
+Uptake of 2-deoxyglucose	N/A	N/A	N/A	N/A	-0.882	N/A	-1.4	N/A
+Lung cancer	N/A	N/A	N/A	0.895	0	1.329	-1.387	N/A
+Malignant neoplasm of respiratory system	N/A	N/A	N/A	0.895	0	1.329	-1.387	N/A
+Cellular infiltration	N/A	N/A	-0.772	0.866	N/A	-1.294	-1.377	N/A
+Proliferation of lymphocytes	N/A	N/A	-0.11	0.226	N/A	N/A	-1.334	N/A
+Release of fatty acid	N/A	N/A	N/A	N/A	N/A	0.177	-1.279	N/A
+Cellular infiltration by macrophages	N/A	-1.109	-1.467	0.122	-2.571	N/A	-1.27	N/A
+Hepato-pancreato-biliary cancer	N/A	N/A	-0.562	-0.893	0.045	-0.535	-1.249	N/A
+Binding of endothelial cells	N/A	-1.996	-1.879	-0.584	-1.504	-0.197	-1.24	N/A
+Proliferation of vascular smooth muscle cells	N/A	-1.982	-0.973	0.517	-1.516	-1.154	-1.231	N/A
+Aortic dilatation	N/A	N/A	N/A	N/A	N/A	N/A	-1.165	N/A
+Quantity of osteoclasts	N/A	N/A	N/A	N/A	0.52	-0.463	-1.154	N/A
+Degranulation of myeloid cells	N/A	N/A	N/A	N/A	N/A	2.035	-1.154	N/A
+Degranulation of phagocytes	N/A	N/A	N/A	N/A	N/A	2.035	-1.154	N/A
+Neutrophilia	N/A	N/A	N/A	-1.97	N/A	N/A	-1.131	N/A
+Cell movement of dendritic cells	N/A	-0.659	N/A	1.043	N/A	N/A	-1.119	N/A
+Binding of NFkB binding site	N/A	N/A	N/A	N/A	N/A	0.896	-1.091	N/A
+Cell viability of carcinoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	-1.075	N/A
+Proliferation of hematopoietic progenitor cells	N/A	N/A	N/A	-0.482	-1.067	N/A	-1.067	N/A
+Differentiation of muscle cells	N/A	N/A	-1.342	N/A	N/A	N/A	-1	N/A
+Respiratory quotient	N/A	N/A	N/A	N/A	N/A	N/A	-1	N/A
+Concentration of phosphatidic acid	N/A	N/A	N/A	N/A	N/A	N/A	-1	N/A
+Binding of vascular endothelial cells	N/A	N/A	-1.15	N/A	-0.985	N/A	-0.958	N/A
+Synthesis of ATP	N/A	N/A	N/A	1.373	N/A	1.32	-0.956	N/A
+Neoplasia of melanoma cell lines	N/A	N/A	N/A	N/A	-1.131	N/A	-0.905	N/A
+Liver cancer	N/A	N/A	N/A	-0.726	N/A	-0.025	-0.883	N/A
+Cell movement of eosinophils	N/A	-1.24	0.303	N/A	-0.111	-0.543	-0.849	N/A
+Apoptosis of pancreatic cancer cell lines	N/A	N/A	-0.999	-0.006	-1.575	N/A	-0.849	N/A
+Invasion of melanoma cell lines	N/A	N/A	-1.98	N/A	-1.231	N/A	-0.849	N/A
+Secretion of molecule	N/A	0	N/A	1.23	0.312	1.365	-0.801	N/A
+Lipolysis	N/A	N/A	-0.22	N/A	-0.642	N/A	-0.792	N/A
+Production of mucus	N/A	N/A	-0.762	N/A	N/A	-1.673	-0.762	N/A
+Allergy	N/A	N/A	0	-1.304	0.184	0.687	-0.758	N/A
+Cellular infiltration by mononuclear leukocytes	N/A	N/A	N/A	0.293	N/A	-1.606	-0.581	N/A
+Hepatobiliary neoplasm	N/A	N/A	N/A	-0.977	N/A	0.434	-0.564	N/A
+Liver tumor	N/A	N/A	N/A	-0.956	N/A	0.536	-0.564	N/A
+Quantity of carbohydrate	N/A	N/A	N/A	N/A	N/A	N/A	-0.479	N/A
+Function of muscle	N/A	N/A	N/A	N/A	N/A	0.756	-0.418	N/A
+Degeneration of brain	N/A	N/A	N/A	N/A	N/A	N/A	-0.415	N/A
+Proliferation of T lymphocytes in spleen	N/A	N/A	-0.4	N/A	0.023	N/A	-0.346	N/A
+Cell death of hepatocytes	N/A	N/A	N/A	N/A	N/A	0.607	-0.283	N/A
+Apoptosis of brain cells	N/A	N/A	N/A	N/A	N/A	N/A	-0.283	N/A
+Development of bone marrow	N/A	N/A	N/A	-0.293	N/A	1.012	-0.277	N/A
+Proliferation of neuroendocrine cells	N/A	N/A	N/A	N/A	N/A	0.647	-0.192	N/A
+Cell death of antigen presenting cells	N/A	N/A	0.647	2.206	N/A	N/A	-0.152	N/A
+Dermatitis	N/A	N/A	0.189	0.149	0.321	1.051	-0.132	N/A
+Cell movement of T lymphocytes	N/A	N/A	0.356	2.676	0.723	0.927	-0.128	N/A
+Cell death of phagocytes	N/A	N/A	-0.036	1.54	-1.632	N/A	-0.053	N/A
+Cellular infiltration by inflammatory leukocytes	N/A	N/A	0	N/A	-1	0.598	0	N/A
+Atherosclerosis	N/A	N/A	N/A	1.011	-0.054	-0.6	0.078	N/A
+Quantity of tumor cell lines	N/A	0.508	1.023	N/A	1.088	N/A	0.111	N/A
+Concentration of hormone	N/A	N/A	N/A	N/A	N/A	N/A	0.168	N/A
+Area of lesion	N/A	N/A	0.958	N/A	N/A	-0.871	0.169	N/A
+Atherosclerotic lesion	N/A	N/A	N/A	N/A	-0.351	N/A	0.232	N/A
+Loss of lean tissue	N/A	N/A	-0.164	N/A	N/A	N/A	0.271	N/A
+Lung injury	N/A	N/A	1.387	0.67	-0.059	-0.885	0.277	N/A
+Size of atherosclerotic lesion	N/A	N/A	1.029	N/A	N/A	-0.577	0.28	N/A
+Benign lesion	N/A	N/A	0.372	0.219	N/A	N/A	0.529	N/A
+Degeneration of cells	N/A	N/A	N/A	N/A	N/A	-0.26	0.614	N/A
+Development of head	N/A	-0.152	N/A	N/A	N/A	N/A	0.728	N/A
+Hepatic steatosis	N/A	N/A	0.758	N/A	N/A	N/A	0.758	N/A
+Cell death of myeloid cells	N/A	N/A	0.344	1.596	-1.3	N/A	0.926	N/A
+Degeneration of neurons	N/A	N/A	N/A	N/A	N/A	N/A	0.943	N/A
+Hypersensitive reaction	N/A	N/A	-0.105	-0.27	0.842	N/A	1	N/A
+Frequency of lymphocytes	N/A	N/A	1.664	0.633	N/A	N/A	1.067	N/A
+Fibrosis of lung	N/A	N/A	N/A	-2.772	N/A	N/A	1.387	N/A
+Adipogenesis of fibroblast cell lines	N/A	N/A	1.969	N/A	N/A	N/A	1.429	N/A
+Cell death of progenitor cells	N/A	N/A	N/A	1.883	N/A	N/A	1.762	N/A
+Cell death of hippocampal cells	N/A	N/A	N/A	N/A	N/A	N/A	2	N/A
+Volume of infarct	N/A	N/A	-1.981	-2.035	N/A	-2.2	N/A	N/A
+Cytosis of blood cells	N/A	N/A	N/A	N/A	N/A	-2.195	N/A	N/A
+Sepsis	N/A	N/A	N/A	0.434	-1	-2.138	N/A	N/A
+Mean corpuscular hemoglobin concentration	N/A	N/A	N/A	N/A	N/A	-2.138	N/A	N/A
+Growth of vessel	N/A	N/A	N/A	0.343	N/A	-1.986	N/A	N/A
+Quantity of erythroid precursor cells	N/A	N/A	N/A	N/A	N/A	-1.98	N/A	N/A
+Abnormality of cartilage tissue	N/A	N/A	N/A	-0.823	-1.664	-1.976	N/A	N/A
+Hypertension	N/A	N/A	N/A	-1.478	-1.951	-1.954	N/A	N/A
+Differentiation of macrophages	N/A	N/A	-1	0.452	N/A	-1.942	N/A	N/A
+Vascular lesion	N/A	N/A	-1.368	-1.022	N/A	-1.564	N/A	N/A
+Quantity of neutrophils	N/A	N/A	N/A	-1.335	-1.36	-1.501	N/A	N/A
+Hyperplasia of skin	N/A	N/A	N/A	N/A	N/A	-1.501	N/A	N/A
+Inflammation of respiratory system	N/A	N/A	N/A	N/A	N/A	-1.492	N/A	N/A
+Uptake of cells	N/A	N/A	N/A	N/A	N/A	-1.484	N/A	N/A
+Cancer of secretory structure	N/A	N/A	N/A	-0.378	N/A	-1.461	N/A	N/A
+Differentiation of myeloid leukocytes	N/A	N/A	-0.676	0.348	N/A	-1.46	N/A	N/A
+Synthesis of hormone	N/A	N/A	-1.644	-2.103	-1.793	-1.445	N/A	N/A
+Metabolism of hormone	N/A	N/A	N/A	-2.103	N/A	-1.445	N/A	N/A
+Activation of hepatic stellate cells	N/A	N/A	N/A	1.075	0	-1.412	N/A	N/A
+Disorder of blood pressure	N/A	N/A	N/A	-1.327	N/A	-1.397	N/A	N/A
+Quantity of blood cells	N/A	0.206	0.69	0.505	N/A	-1.36	N/A	N/A
+Homeostasis of ion	N/A	N/A	N/A	0	N/A	-1.342	N/A	N/A
+Binding of granulocytes	N/A	N/A	N/A	N/A	-0.998	-1.341	N/A	N/A
+Cellular infiltration by leukocytes	N/A	N/A	-0.914	0.728	-1.747	-1.322	N/A	N/A
+Binding of leukocytes	N/A	N/A	N/A	1.607	-1.929	-1.27	N/A	N/A
+Binding of blood cells	N/A	N/A	N/A	N/A	N/A	-1.261	N/A	N/A
+Size of vascular lesion	N/A	N/A	N/A	N/A	N/A	-1.253	N/A	N/A
+Damage of connective tissue	N/A	N/A	N/A	-1.277	N/A	-1.237	N/A	N/A
+Development of digestive organ tumor	N/A	N/A	-1.039	-1.369	-1.165	-1.231	N/A	N/A
+Development of reproductive system	N/A	N/A	N/A	N/A	N/A	-1.203	N/A	N/A
+Neurogenic lesion	N/A	N/A	N/A	-0.728	N/A	-1.195	N/A	N/A
+Cellular infiltration by myeloid cells	N/A	-1.137	-1.058	0.514	-1.719	-1.193	N/A	N/A
+Steroidogenesis of hormone	N/A	-1.98	-1.969	-2.132	-2.207	-1.179	N/A	N/A
+Gastrointestinal tract cancer	N/A	N/A	-1.715	-1.982	-1.71	-1.154	N/A	N/A
+Colorectal cancer	N/A	N/A	-0.686	-1.067	-0.781	-1.131	N/A	N/A
+Malignant neoplasm of large intestine	N/A	N/A	-0.686	-1.067	-0.781	-1.131	N/A	N/A
+Differentiation of epithelial tissue	N/A	N/A	N/A	N/A	N/A	-1.109	N/A	N/A
+Acute respiratory disorder	N/A	N/A	N/A	0.2	N/A	-1.091	N/A	N/A
+Incorporation of thymidine	N/A	N/A	N/A	N/A	N/A	-1.091	N/A	N/A
+Acute lung injury	N/A	N/A	N/A	N/A	N/A	-1.091	N/A	N/A
+Edema	N/A	N/A	N/A	N/A	-1.143	-1.055	N/A	N/A
+Anemia	N/A	N/A	N/A	N/A	N/A	-1.042	N/A	N/A
+Hypertrophy of cardiomyocytes	N/A	N/A	N/A	N/A	N/A	-1.04	N/A	N/A
+Hypertrophy of heart cells	N/A	N/A	N/A	N/A	N/A	-1.04	N/A	N/A
+Genital tumor	N/A	N/A	-1.067	-0.769	N/A	-1	N/A	N/A
+Wound	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+Inflammation of stomach	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+Acanthosis	N/A	N/A	N/A	N/A	N/A	-1	N/A	N/A
+Proliferation of thymocytes	N/A	N/A	N/A	N/A	N/A	-0.986	N/A	N/A
+Damage of genitourinary system	N/A	N/A	1	N/A	N/A	-0.946	N/A	N/A
+Heart rate	N/A	N/A	N/A	N/A	N/A	-0.943	N/A	N/A
+Growth of hematological system tumor	N/A	N/A	N/A	N/A	N/A	-0.927	N/A	N/A
+Ovulation	N/A	N/A	N/A	N/A	N/A	-0.927	N/A	N/A
+Lymphocyte homeostasis	N/A	N/A	-1.668	0.611	N/A	-0.924	N/A	N/A
+Insulin resistance	N/A	N/A	N/A	N/A	-0.842	-0.915	N/A	N/A
+Degradation of connective tissue	N/A	N/A	N/A	-1.121	N/A	-0.915	N/A	N/A
+Cell movement of ovarian cancer cell lines	N/A	N/A	N/A	N/A	N/A	-0.899	N/A	N/A
+Endothelial cell development	N/A	N/A	N/A	N/A	N/A	-0.89	N/A	N/A
+Hemolysis	N/A	N/A	N/A	N/A	N/A	-0.882	N/A	N/A
+Assembly of cell junction	N/A	N/A	N/A	N/A	N/A	-0.861	N/A	N/A
+Formation of plasma membrane	N/A	N/A	N/A	N/A	N/A	-0.861	N/A	N/A
+Extrapulmonary secondary neoplasm	N/A	N/A	-0.762	N/A	N/A	-0.849	N/A	N/A
+Weight gain	N/A	N/A	N/A	N/A	N/A	-0.849	N/A	N/A
+Differentiation of thymocytes	N/A	N/A	N/A	N/A	N/A	-0.781	N/A	N/A
+Eosinophilia	N/A	N/A	N/A	-0.294	N/A	-0.776	N/A	N/A
+Hypertrophy	N/A	N/A	-1.33	N/A	-1.384	-0.763	N/A	N/A
+Differentiation of epithelial cells	N/A	N/A	N/A	N/A	N/A	-0.751	N/A	N/A
+Visceromegaly	N/A	N/A	-1.662	-0.574	N/A	-0.74	N/A	N/A
+Glucose metabolism disorder	N/A	N/A	-1.579	-0.576	-1.267	-0.738	N/A	N/A
+Abnormal morphology of thoracic cavity	N/A	N/A	N/A	N/A	N/A	-0.737	N/A	N/A
+Abnormal morphology of cardiovascular system	N/A	N/A	N/A	N/A	N/A	-0.737	N/A	N/A
+Disorder of hair	N/A	N/A	N/A	N/A	N/A	-0.714	N/A	N/A
+Growth of bacteria	N/A	N/A	1.949	N/A	N/A	-0.702	N/A	N/A
+Binding of red blood cells	N/A	N/A	N/A	N/A	N/A	-0.695	N/A	N/A
+Activation of dendritic cells	N/A	N/A	N/A	2.101	N/A	-0.686	N/A	N/A
+Hepatobiliary carcinoma	N/A	N/A	N/A	-0.963	N/A	-0.685	N/A	N/A
+Metabolism of eicosanoid	N/A	N/A	N/A	N/A	N/A	-0.657	N/A	N/A
+Synthesis of eicosanoid	N/A	N/A	-0.671	0.671	-0.613	-0.656	N/A	N/A
+Development of endothelial tissue	N/A	N/A	N/A	-0.712	N/A	-0.656	N/A	N/A
+Thrombocytopenia	N/A	N/A	N/A	-1.65	N/A	-0.655	N/A	N/A
+Hypertrophy of tissue	N/A	N/A	N/A	N/A	N/A	-0.631	N/A	N/A
+Invasion of tumor	N/A	N/A	-0.886	0.256	-0.102	-0.627	N/A	N/A
+Development of epithelial tissue	N/A	-2.132	-3.004	-0.18	N/A	-0.623	N/A	N/A
+Growth of organism	N/A	1.133	1.781	N/A	N/A	-0.615	N/A	N/A
+Breast or pancreatic cancer	N/A	N/A	N/A	0.579	N/A	-0.6	N/A	N/A
+Occlusion of artery	N/A	N/A	N/A	0.723	N/A	-0.6	N/A	N/A
+Vaso-occlusion	N/A	N/A	N/A	N/A	N/A	-0.6	N/A	N/A
+Hematopoietic neoplasm	N/A	N/A	N/A	-0.038	0.369	-0.581	N/A	N/A
+Damage of heart	N/A	N/A	N/A	N/A	N/A	-0.577	N/A	N/A
+Sclerotic lesion	N/A	N/A	N/A	N/A	N/A	-0.577	N/A	N/A
+Breast or colorectal cancer	N/A	N/A	-0.152	-0.61	-0.781	-0.57	N/A	N/A
+Concentration of prostaglandin E2	N/A	N/A	N/A	N/A	N/A	-0.556	N/A	N/A
+Invasion of epithelial cells	N/A	N/A	N/A	N/A	N/A	-0.555	N/A	N/A
+Cellular infiltration by eosinophils	N/A	N/A	N/A	N/A	N/A	-0.528	N/A	N/A
+Development of macrophages	N/A	N/A	N/A	-1.341	N/A	-0.479	N/A	N/A
+Brain lesion	N/A	N/A	N/A	-0.456	N/A	-0.478	N/A	N/A
+Dysfunction of heart	N/A	N/A	N/A	N/A	N/A	-0.468	N/A	N/A
+Differentiation of vasculature	N/A	N/A	N/A	N/A	N/A	-0.447	N/A	N/A
+Invasion of mammary tumor cells	N/A	N/A	N/A	N/A	N/A	-0.447	N/A	N/A
+Differentiation of neural cells	N/A	N/A	N/A	N/A	N/A	-0.438	N/A	N/A
+Proliferation of bone marrow cells	N/A	N/A	N/A	N/A	N/A	-0.436	N/A	N/A
+Formation of mammary gland	N/A	N/A	N/A	N/A	N/A	-0.425	N/A	N/A
+Movement disorders	N/A	N/A	-1.378	-0.424	N/A	-0.42	N/A	N/A
+Fibrosis of kidney	N/A	N/A	N/A	N/A	N/A	-0.392	N/A	N/A
+Binding of polysaccharide	N/A	-1.412	N/A	N/A	0.394	-0.391	N/A	N/A
+Accumulation of antigen presenting cells	N/A	N/A	0.447	1.3	N/A	-0.391	N/A	N/A
+Binding of carbohydrate	N/A	-1.71	-1.387	N/A	N/A	-0.391	N/A	N/A
+Proliferation of mesenchymal stem cells	N/A	N/A	N/A	N/A	N/A	-0.391	N/A	N/A
+Assembly of intercellular junctions	N/A	N/A	N/A	N/A	N/A	-0.391	N/A	N/A
+Hematocrit	N/A	N/A	N/A	N/A	N/A	-0.39	N/A	N/A
+Liver carcinoma	N/A	N/A	N/A	-0.946	N/A	-0.374	N/A	N/A
+Hepatocellular carcinoma	N/A	N/A	N/A	N/A	N/A	-0.374	N/A	N/A
+Development of phagocytes	N/A	N/A	-0.317	0.663	-0.817	-0.36	N/A	N/A
+Glomerulosclerosis	N/A	N/A	N/A	N/A	N/A	-0.359	N/A	N/A
+Transport of metal	N/A	N/A	0.277	N/A	1.213	-0.358	N/A	N/A
+Development of antigen presenting cells	N/A	N/A	-0.518	0.146	-0.475	-0.35	N/A	N/A
+Transport of cation	N/A	N/A	-0.152	N/A	N/A	-0.339	N/A	N/A
+Eosinophilic inflammation	N/A	N/A	N/A	N/A	N/A	-0.339	N/A	N/A
+Transport of inorganic cation	N/A	N/A	N/A	N/A	N/A	-0.339	N/A	N/A
+Growth of skin	N/A	N/A	N/A	N/A	-1.884	-0.326	N/A	N/A
+Differentiation of osteoblasts	N/A	N/A	N/A	N/A	N/A	-0.323	N/A	N/A
+Benign oral disorder	N/A	N/A	0	0.788	N/A	-0.322	N/A	N/A
+Invasion of ovarian cancer cell lines	N/A	N/A	N/A	N/A	N/A	-0.277	N/A	N/A
+Binding of epithelial cell lines	N/A	N/A	N/A	N/A	N/A	-0.277	N/A	N/A
+Cell viability of leukemia cells	N/A	N/A	N/A	N/A	N/A	-0.277	N/A	N/A
+Binding of embryonic cell lines	N/A	N/A	N/A	N/A	N/A	-0.277	N/A	N/A
+Loss of hair	N/A	N/A	N/A	0.928	N/A	-0.254	N/A	N/A
+Lung carcinoma	N/A	N/A	N/A	1	N/A	-0.254	N/A	N/A
+Non-small cell lung carcinoma	N/A	N/A	N/A	N/A	N/A	-0.254	N/A	N/A
+Ion homeostasis of cells	N/A	N/A	-0.777	1.652	-1.457	-0.238	N/A	N/A
+Extraadrenal retroperitoneal tumor	N/A	N/A	N/A	0.863	N/A	-0.218	N/A	N/A
+Muscle contraction	N/A	N/A	N/A	N/A	-0.228	-0.168	N/A	N/A
+Cell viability of epithelial cells	N/A	N/A	N/A	N/A	N/A	-0.156	N/A	N/A
+Cell movement of carcinoma cell lines	N/A	N/A	N/A	N/A	N/A	-0.155	N/A	N/A
+Shock response	N/A	N/A	N/A	0.6	N/A	-0.152	N/A	N/A
+Head and neck tumor	N/A	N/A	N/A	N/A	N/A	-0.152	N/A	N/A
+Apoptosis of mononuclear leukocytes	N/A	N/A	N/A	0.623	-0.16	-0.141	N/A	N/A
+Cell movement of myeloid cells	N/A	-1.114	-0.774	2.03	-0.842	-0.134	N/A	N/A
+Asthma	N/A	N/A	N/A	N/A	N/A	-0.132	N/A	N/A
+Activation of fibroblasts	N/A	N/A	N/A	N/A	N/A	-0.128	N/A	N/A
+Hepatobiliary system cancer	N/A	N/A	-0.562	-0.763	N/A	-0.122	N/A	N/A
+Malignant hepatobiliary neoplasm	N/A	N/A	-0.562	-0.763	N/A	-0.122	N/A	N/A
+Renal lesion	N/A	N/A	N/A	1	N/A	-0.118	N/A	N/A
+Hyperplasia of epithelial cells	N/A	N/A	N/A	N/A	N/A	-0.113	N/A	N/A
+Chemoattraction of neutrophils	N/A	N/A	-1.054	0.267	N/A	-0.106	N/A	N/A
+Left ventricular dysfunction	N/A	N/A	N/A	N/A	N/A	-0.106	N/A	N/A
+Ventricular dysfunction	N/A	N/A	N/A	N/A	N/A	-0.106	N/A	N/A
+Bleeding	N/A	N/A	N/A	N/A	N/A	-0.103	N/A	N/A
+Transport of ion	N/A	N/A	N/A	N/A	N/A	-0.102	N/A	N/A
+Invasion of epithelial tissue	N/A	N/A	N/A	N/A	N/A	-0.083	N/A	N/A
+Accumulation of cells	N/A	N/A	N/A	-0.189	N/A	-0.071	N/A	N/A
+Generation of reactive oxygen species	N/A	N/A	N/A	N/A	N/A	-0.058	N/A	N/A
+Osteoclastogenesis of bone marrow-derived macrophages	N/A	N/A	N/A	-0.625	N/A	-0.042	N/A	N/A
+Airway hyperresponsiveness	N/A	N/A	N/A	0.081	-1	0	N/A	N/A
+Migration of connective tissue cells	N/A	-1.154	-0.294	1.53	N/A	0	N/A	N/A
+Engulfment of cells	N/A	N/A	N/A	1.926	-0.281	0.002	N/A	N/A
+Secretion of eicosanoid	N/A	N/A	N/A	N/A	N/A	0.022	N/A	N/A
+Migration of myeloid cells	N/A	N/A	N/A	0.802	N/A	0.026	N/A	N/A
+Stimulation of connective tissue cells	N/A	N/A	N/A	N/A	N/A	0.038	N/A	N/A
+Migration of antigen presenting cells	N/A	0.119	0.536	2.148	0.4	0.051	N/A	N/A
+Migration of granulocytes	N/A	N/A	N/A	N/A	N/A	0.077	N/A	N/A
+Inflammation of airway	N/A	N/A	-0.391	N/A	N/A	0.081	N/A	N/A
+Function of kidney	N/A	N/A	N/A	N/A	N/A	0.085	N/A	N/A
+Damage of lung	N/A	0.068	0.728	-0.239	-0.152	0.12	N/A	N/A
+Formation of intercellular junctions	N/A	N/A	N/A	N/A	N/A	0.12	N/A	N/A
+Damage of digestive system	N/A	N/A	N/A	-0.478	-2.178	0.122	N/A	N/A
+Flux of ion	N/A	N/A	N/A	1.758	N/A	0.124	N/A	N/A
+Quantity of protein in blood	N/A	N/A	N/A	0.172	N/A	0.147	N/A	N/A
+Calcinosis	N/A	N/A	N/A	N/A	N/A	0.152	N/A	N/A
+Apoptosis of muscle cell lines	N/A	N/A	N/A	N/A	N/A	0.152	N/A	N/A
+Gastroenteritis	N/A	N/A	N/A	-0.932	-0.783	0.164	N/A	N/A
+Abnormality of skin morphology	N/A	N/A	N/A	-2.364	N/A	0.168	N/A	N/A
+Transport of anion	N/A	N/A	N/A	N/A	N/A	0.176	N/A	N/A
+Hemorrhagic disease	N/A	N/A	-0.655	-1.266	N/A	0.186	N/A	N/A
+Accumulation of eosinophils	N/A	N/A	N/A	N/A	N/A	0.199	N/A	N/A
+Malignant genitourinary solid tumor	N/A	N/A	N/A	0.16	N/A	0.2	N/A	N/A
+Differentiation of neurons	N/A	N/A	N/A	N/A	N/A	0.208	N/A	N/A
+Papillary neoplasm	N/A	N/A	N/A	0.186	N/A	0.218	N/A	N/A
+Papilloma	N/A	N/A	N/A	N/A	N/A	0.218	N/A	N/A
+Cytolysis	N/A	N/A	N/A	1.487	N/A	0.235	N/A	N/A
+Hyperplasia of exocrine gland	N/A	N/A	N/A	N/A	N/A	0.24	N/A	N/A
+Melanoma	N/A	N/A	-0.242	-0.18	N/A	0.254	N/A	N/A
+Chronic renal impairment	N/A	N/A	N/A	N/A	N/A	0.254	N/A	N/A
+Attraction of granulocytes	N/A	N/A	N/A	N/A	N/A	0.26	N/A	N/A
+Central nervous system solid tumor	N/A	N/A	N/A	1.442	N/A	0.264	N/A	N/A
+Growth of embryo	N/A	0.293	N/A	N/A	N/A	0.264	N/A	N/A
+Cell death of mononuclear leukocytes	N/A	N/A	N/A	1.075	0.151	0.272	N/A	N/A
+Maturation of dendritic cells	N/A	N/A	N/A	2.181	N/A	0.272	N/A	N/A
+Invasion of solid tumor	N/A	N/A	N/A	N/A	-0.218	0.277	N/A	N/A
+Proliferation of progenitor cells	N/A	-0.14	N/A	-0.208	-1.172	0.28	N/A	N/A
+Myeloid or lymphoid neoplasm	N/A	N/A	-0.035	-0.374	N/A	0.303	N/A	N/A
+Survival of bacteria	N/A	N/A	N/A	N/A	N/A	0.31	N/A	N/A
+Activation of endothelial cells	N/A	N/A	N/A	0.931	N/A	0.319	N/A	N/A
+Hematologic cancer	N/A	N/A	-0.221	-0.509	N/A	0.336	N/A	N/A
+Quantity of polyunsaturated fatty acids	N/A	N/A	-1.478	N/A	-1.956	0.362	N/A	N/A
+Binding of mononuclear leukocytes	N/A	N/A	N/A	N/A	N/A	0.367	N/A	N/A
+Neovascularization	N/A	N/A	N/A	N/A	N/A	0.38	N/A	N/A
+Priming of blood cells	N/A	N/A	N/A	0.664	N/A	0.391	N/A	N/A
+Binding of neutrophils	N/A	N/A	N/A	N/A	N/A	0.396	N/A	N/A
+Extrahepatic metastasis	N/A	N/A	N/A	N/A	N/A	0.41	N/A	N/A
+Inflammation of connective tissue	N/A	N/A	N/A	N/A	N/A	0.447	N/A	N/A
+Influx of neutrophils	N/A	N/A	N/A	N/A	N/A	0.447	N/A	N/A
+Formation of vessel	N/A	N/A	N/A	N/A	N/A	0.447	N/A	N/A
+Apoptosis of leukemia cell lines	N/A	N/A	N/A	-0.808	N/A	0.458	N/A	N/A
+Migration of epithelial cells	N/A	N/A	-0.87	-0.2	N/A	0.466	N/A	N/A
+Proliferation of osteoblasts	N/A	N/A	N/A	N/A	N/A	0.468	N/A	N/A
+Recruitment of cells	N/A	N/A	N/A	N/A	N/A	0.476	N/A	N/A
+Maturation of leukocytes	N/A	N/A	N/A	2.686	N/A	0.479	N/A	N/A
+Secretion of steroid	N/A	N/A	0	N/A	0	0.535	N/A	N/A
+Cell death of endothelial cells	N/A	N/A	N/A	1.685	N/A	0.564	N/A	N/A
+Quantity of red blood cells	N/A	N/A	N/A	N/A	N/A	0.59	N/A	N/A
+Apoptosis of cardiomyocytes	N/A	N/A	N/A	N/A	N/A	0.602	N/A	N/A
+Metastatic solid tumor	N/A	N/A	-0.785	-0.645	N/A	0.607	N/A	N/A
+Advanced malignant solid tumor	N/A	N/A	-0.785	-0.645	N/A	0.607	N/A	N/A
+Mobilization of cells	N/A	N/A	-0.292	N/A	N/A	0.663	N/A	N/A
+Proliferation of mammary tumor cells	N/A	N/A	N/A	N/A	N/A	0.664	N/A	N/A
+Skin lesion	N/A	N/A	N/A	-0.688	N/A	0.682	N/A	N/A
+Growth of embryonic tissue	N/A	N/A	N/A	N/A	N/A	0.682	N/A	N/A
+Lymphocytic cancer	N/A	N/A	N/A	-0.858	N/A	0.69	N/A	N/A
+Malignant lymphocytic neoplasm	N/A	N/A	N/A	-0.858	N/A	0.69	N/A	N/A
+Neoplasia of leukocytes	N/A	N/A	N/A	-0.531	N/A	0.69	N/A	N/A
+Cell movement of lymphocytes	N/A	N/A	0.749	2.676	N/A	0.704	N/A	N/A
+Degradation of extracellular matrix	N/A	N/A	N/A	N/A	N/A	0.713	N/A	N/A
+Cell death of hepatoma cell lines	N/A	N/A	N/A	N/A	N/A	0.713	N/A	N/A
+Apoptosis of lymphatic system cells	N/A	N/A	N/A	1.025	N/A	0.726	N/A	N/A
+Proliferation of mesenchymal cells	N/A	N/A	N/A	N/A	N/A	0.728	N/A	N/A
+Migration of fibroblasts	N/A	N/A	N/A	N/A	N/A	0.761	N/A	N/A
+Mitogenesis	N/A	-1.07	-0.943	0.507	-0.943	0.775	N/A	N/A
+Migration of macrophages	N/A	N/A	N/A	1.86	N/A	0.825	N/A	N/A
+Metabolism of polysaccharide	N/A	N/A	N/A	N/A	N/A	0.83	N/A	N/A
+Malignant solid organ tumor	N/A	N/A	N/A	0.808	N/A	0.831	N/A	N/A
+Abnormality of large intestine	N/A	N/A	-0.2	-0.14	N/A	0.845	N/A	N/A
+Dextran sodium sulfate-induced colitis	N/A	N/A	N/A	0.218	N/A	0.849	N/A	N/A
+Migration of mononuclear leukocytes	N/A	N/A	N/A	2.782	N/A	0.892	N/A	N/A
+Maturation of blood cells	N/A	N/A	N/A	2.484	N/A	0.899	N/A	N/A
+NK cell migration	N/A	-0.085	0.471	1.52	N/A	0.9	N/A	N/A
+Aggregation of myeloid cells	N/A	N/A	N/A	N/A	N/A	0.9	N/A	N/A
+Biosynthesis of hydrogen peroxide	N/A	N/A	N/A	N/A	N/A	0.93	N/A	N/A
+Quantity of cytokine	N/A	N/A	N/A	-0.362	0.013	0.97	N/A	N/A
+Synthesis of purine nucleotide	N/A	N/A	N/A	2.076	N/A	0.971	N/A	N/A
+Stimulation of tumor cell lines	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+Dilation of heart chamber	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+Inflammation of adipose tissue	N/A	N/A	N/A	N/A	N/A	1	N/A	N/A
+Apoptosis of hepatocytes	N/A	N/A	N/A	N/A	1	1.014	N/A	N/A
+Differentiation of B lymphocytes	N/A	N/A	N/A	N/A	N/A	1.016	N/A	N/A
+Chemotaxis of monocytes	N/A	N/A	-0.955	N/A	N/A	1.026	N/A	N/A
+Immediate hypersensitivity	N/A	N/A	N/A	-0.342	0.152	1.041	N/A	N/A
+Renal impairment	N/A	N/A	N/A	N/A	N/A	1.041	N/A	N/A
+Reduced kidney function	N/A	N/A	N/A	N/A	N/A	1.041	N/A	N/A
+Failure of kidney	N/A	N/A	N/A	N/A	N/A	1.041	N/A	N/A
+Cell death of lymphatic system cells	N/A	N/A	N/A	1.424	N/A	1.047	N/A	N/A
+Cell death of T lymphocytes	N/A	N/A	1.972	1.752	1.114	1.067	N/A	N/A
+Synthesis of leukotriene	N/A	N/A	N/A	N/A	N/A	1.067	N/A	N/A
+Anaphylaxis	N/A	N/A	N/A	N/A	N/A	1.067	N/A	N/A
+Apoptosis of pericytes	N/A	N/A	N/A	N/A	N/A	1.067	N/A	N/A
+Activation of granulocytes	N/A	N/A	N/A	-0.69	N/A	1.104	N/A	N/A
+Cell death of bone marrow cells	N/A	N/A	N/A	1.054	N/A	1.109	N/A	N/A
+Formation of extracellular trap	N/A	N/A	N/A	N/A	N/A	1.131	N/A	N/A
+Apoptosis of granulocytes	N/A	N/A	N/A	N/A	N/A	1.145	N/A	N/A
+Biosynthesis of reactive oxygen species	N/A	N/A	N/A	N/A	N/A	1.156	N/A	N/A
+Advanced extracranial solid tumor	N/A	N/A	N/A	N/A	N/A	1.178	N/A	N/A
+Detachment of cells	N/A	N/A	N/A	N/A	N/A	1.195	N/A	N/A
+Cell death of immune cells	N/A	0.812	1.729	2.768	0.168	1.225	N/A	N/A
+Apoptosis of neutrophils	N/A	N/A	N/A	N/A	N/A	1.231	N/A	N/A
+Replication of HIV	N/A	N/A	N/A	-0.264	0.152	1.254	N/A	N/A
+Coagulation of blood	N/A	N/A	N/A	N/A	N/A	1.257	N/A	N/A
+Visceral metastasis	N/A	N/A	N/A	N/A	N/A	1.265	N/A	N/A
+Seizures	N/A	N/A	1.109	N/A	N/A	1.27	N/A	N/A
+Fragmentation of DNA	N/A	N/A	N/A	N/A	N/A	1.309	N/A	N/A
+Aggregation of blood cells	N/A	0.321	N/A	N/A	0.808	1.313	N/A	N/A
+Metabolism of nucleoside triphosphate	N/A	N/A	N/A	1.58	0.832	1.32	N/A	N/A
+Biosynthesis of ribonucleoside triphosphate	N/A	N/A	N/A	N/A	N/A	1.32	N/A	N/A
+Hyperplasia of goblet cells	N/A	N/A	N/A	N/A	N/A	1.342	N/A	N/A
+Synthesis of polysaccharide	N/A	N/A	N/A	N/A	N/A	1.352	N/A	N/A
+Cell movement of monocytes	N/A	N/A	N/A	1.527	N/A	1.374	N/A	N/A
+Metabolism of hydrogen peroxide	N/A	N/A	N/A	N/A	-0.689	1.378	N/A	N/A
+Mobilization of Ca2+	N/A	0.661	0.579	N/A	N/A	1.383	N/A	N/A
+Chronic inflammatory disorder	N/A	N/A	N/A	0.548	N/A	1.387	N/A	N/A
+Stimulation of leukocytes	N/A	N/A	-1.945	1.302	N/A	1.414	N/A	N/A
+Necrosis of epithelial tissue	N/A	N/A	-0.121	2.544	1.813	1.465	N/A	N/A
+Engulfment of granulocytes	N/A	N/A	N/A	N/A	N/A	1.498	N/A	N/A
+Cell death of blood cells	N/A	1.062	N/A	2.462	N/A	1.5	N/A	N/A
+Cell movement of neuroglia	N/A	N/A	N/A	N/A	N/A	1.561	N/A	N/A
+Response of granulocytes	N/A	N/A	N/A	N/A	N/A	1.568	N/A	N/A
+Quantity of metal ion	N/A	N/A	N/A	1.63	N/A	1.578	N/A	N/A
+Proteolysis	N/A	N/A	N/A	N/A	N/A	1.635	N/A	N/A
+Infection of cells	N/A	N/A	1.924	1.362	1.26	1.639	N/A	N/A
+Chemotaxis of granulocytes	N/A	N/A	N/A	2.404	N/A	1.645	N/A	N/A
+Chemotaxis of neutrophils	N/A	N/A	-0.397	2.211	N/A	1.648	N/A	N/A
+Stimulation of blood cells	N/A	N/A	N/A	N/A	N/A	1.668	N/A	N/A
+Metabolism of nucleotide	N/A	N/A	0.137	1.291	0.281	1.704	N/A	N/A
+Metabolism of nucleic acid component or derivative	N/A	N/A	0.453	1.682	N/A	1.704	N/A	N/A
+Biosynthesis of amide	N/A	N/A	N/A	N/A	N/A	1.708	N/A	N/A
+Response of myeloid cells	N/A	N/A	-0.301	1.503	N/A	1.824	N/A	N/A
+HIV infection	N/A	N/A	2.63	3.02	N/A	1.839	N/A	N/A
+Synthesis of hyaluronic acid	N/A	N/A	N/A	N/A	N/A	1.909	N/A	N/A
+Maturation of myeloid cells	N/A	N/A	N/A	N/A	N/A	1.929	N/A	N/A
+Lower respiratory tract disorder	N/A	N/A	N/A	-0.218	N/A	1.97	N/A	N/A
+Quantity of glycosaminoglycan	N/A	N/A	N/A	N/A	N/A	1.982	N/A	N/A
+Chemotaxis of myeloid cells	N/A	-0.16	0.026	2.621	N/A	1.99	N/A	N/A
+Systemic autoimmune syndrome	N/A	N/A	-0.293	0.026	N/A	2	N/A	N/A
+Killing of cells	N/A	N/A	-1.78	0.799	-0.238	2.076	N/A	N/A
+Antimicrobial response	N/A	-0.882	1.783	4.588	0.652	2.122	N/A	N/A
+Chemotaxis of phagocytes	N/A	-0.304	-0.078	2.487	N/A	2.126	N/A	N/A
+Synthesis of glycosaminoglycan	N/A	N/A	N/A	N/A	N/A	2.142	N/A	N/A
+Destruction of pulmonary alveolus	N/A	N/A	N/A	N/A	N/A	2.216	N/A	N/A
+Cell viability of myeloid cells	N/A	N/A	0.655	N/A	N/A	2.226	N/A	N/A
+Killing of bacteria	N/A	N/A	N/A	N/A	N/A	2.35	N/A	N/A
+Migration of endothelial cells	N/A	N/A	-1.418	N/A	-2.348	N/A	N/A	N/A
+Cell movement of endothelial cells	N/A	N/A	-1.427	-0.892	-2.333	N/A	N/A	N/A
+Migration of fibroblast cell lines	N/A	N/A	-1.982	N/A	-2.219	N/A	N/A	N/A
+Growth of connective tissue	N/A	N/A	N/A	0.508	-2.204	N/A	N/A	N/A
+Permeability of blood vessel	N/A	N/A	N/A	N/A	-2.195	N/A	N/A	N/A
+Response of lymphocytes	N/A	N/A	-1.673	N/A	-2.177	N/A	N/A	N/A
+Binding of antigen presenting cells	N/A	N/A	N/A	N/A	-1.961	N/A	N/A	N/A
+Immune response of lymphocytes	N/A	N/A	N/A	N/A	-1.951	N/A	N/A	N/A
+Immune response of T lymphocytes	N/A	N/A	N/A	N/A	-1.951	N/A	N/A	N/A
+Permeability of vascular system	N/A	N/A	N/A	N/A	-1.819	N/A	N/A	N/A
+Gastrointestinal tumor	N/A	N/A	N/A	-0.986	-1.687	N/A	N/A	N/A
+Proliferation of prostate cancer cell lines	N/A	N/A	-1.449	N/A	-1.596	N/A	N/A	N/A
+Metabolism of carbohydrate	-1.964	-1.4	-2.02	-0.064	-1.559	N/A	N/A	N/A
+Enlargement of cells	N/A	N/A	-1.941	N/A	-1.471	N/A	N/A	N/A
+Quantity of neurotransmitter	N/A	N/A	N/A	N/A	-1.455	N/A	N/A	N/A
+Proliferation of hematopoietic cells	N/A	N/A	N/A	-0.655	-1.387	N/A	N/A	N/A
+Migration of cancer cells	N/A	-1	N/A	N/A	-1.342	N/A	N/A	N/A
+Differentiation of progenitor cells	N/A	N/A	N/A	-0.134	-1.195	N/A	N/A	N/A
+Tubulation of endothelial cells	N/A	N/A	-1.821	-1.113	-1.188	N/A	N/A	N/A
+Concentration of dopamine	N/A	N/A	-0.936	N/A	-1.172	N/A	N/A	N/A
+Proliferation of myeloma cell lines	N/A	N/A	N/A	N/A	-1.165	N/A	N/A	N/A
+Growth of lymphoid organ	N/A	N/A	N/A	N/A	-1.131	N/A	N/A	N/A
+Flux of inorganic cation	N/A	N/A	-0.709	1.454	-1.114	N/A	N/A	N/A
+Vascular leak syndrome	N/A	N/A	N/A	0.055	-1.067	N/A	N/A	N/A
+Export of molecule	N/A	N/A	N/A	N/A	-0.943	N/A	N/A	N/A
+Inflammation of central nervous system	N/A	N/A	N/A	-0.122	-0.922	N/A	N/A	N/A
+Hashimotos encephalitis	N/A	N/A	-0.457	-0.094	-0.905	N/A	N/A	N/A
+Cell viability of tumor cells	N/A	N/A	-0.44	0.914	-0.882	N/A	N/A	N/A
+Recruitment of macrophages	N/A	-0.927	-1.231	N/A	-0.849	N/A	N/A	N/A
+Large intestine neoplasm	N/A	N/A	N/A	-0.728	-0.818	N/A	N/A	N/A
+Colorectal tumor	N/A	N/A	N/A	-0.728	-0.818	N/A	N/A	N/A
+Lipolysis of cells	N/A	N/A	N/A	N/A	-0.775	N/A	N/A	N/A
+Replication of RNA virus	N/A	-1.387	-1.506	-2.66	-0.69	N/A	N/A	N/A
+Concentration of cyclic AMP	N/A	N/A	N/A	N/A	-0.651	N/A	N/A	N/A
+Damage of epithelial tissue	N/A	N/A	N/A	N/A	-0.602	N/A	N/A	N/A
+Quantity of CD4+ T-lymphocytes	N/A	N/A	N/A	N/A	-0.557	N/A	N/A	N/A
+Permeability of cells	N/A	N/A	N/A	N/A	-0.469	N/A	N/A	N/A
+Damage of vascular system	N/A	N/A	N/A	0.795	-0.448	N/A	N/A	N/A
+Expansion of lymphatic system cells	N/A	N/A	-0.786	0.739	-0.359	N/A	N/A	N/A
+Dendropoiesis	N/A	N/A	1.067	1.561	-0.333	N/A	N/A	N/A
+Autoimmune neurological disorder	N/A	N/A	1.389	1.056	-0.277	N/A	N/A	N/A
+Quantity of vesicles	N/A	N/A	N/A	N/A	-0.277	N/A	N/A	N/A
+Proliferation of lung cancer cell lines	N/A	-0.13	-0.136	N/A	-0.267	N/A	N/A	N/A
+Abdominal neoplasm	N/A	N/A	-1.123	-1.173	-0.252	N/A	N/A	N/A
+Infiltration by T lymphocytes	N/A	N/A	-0.198	0.613	-0.239	N/A	N/A	N/A
+Cell-mediated response	N/A	N/A	-0.958	0.234	-0.192	N/A	N/A	N/A
+Damage of endothelial tissue	N/A	N/A	N/A	N/A	-0.169	N/A	N/A	N/A
+Energy homeostasis	N/A	N/A	N/A	N/A	-0.152	N/A	N/A	N/A
+Colony formation	N/A	N/A	-0.573	1.509	-0.144	N/A	N/A	N/A
+Size of tumor	N/A	N/A	N/A	N/A	-0.115	N/A	N/A	N/A
+Apoptosis of colorectal cancer cell lines	N/A	N/A	N/A	N/A	-0.01	N/A	N/A	N/A
+Glomerulonephritis	N/A	N/A	-1.067	N/A	0	N/A	N/A	N/A
+Feeding	N/A	N/A	0.651	N/A	0	N/A	N/A	N/A
+Cell death of pancreas	N/A	N/A	N/A	N/A	0.038	N/A	N/A	N/A
+Degranulation of leukocytes	N/A	N/A	N/A	N/A	0.08	N/A	N/A	N/A
+Antiviral response	N/A	N/A	2.075	4.273	0.105	N/A	N/A	N/A
+Nephritis	N/A	N/A	-0.97	-1.222	0.115	N/A	N/A	N/A
+Inhibition of cells	N/A	N/A	N/A	N/A	0.203	N/A	N/A	N/A
+Apoptosis of vascular endothelial cells	N/A	N/A	N/A	1.248	0.218	N/A	N/A	N/A
+Apoptosis of endothelial cells	N/A	N/A	N/A	N/A	0.61	N/A	N/A	N/A
+Replication of Retroviridae	N/A	N/A	0.555	-0.63	0.651	N/A	N/A	N/A
+Transport of metal ion	N/A	N/A	-0.152	N/A	0.832	N/A	N/A	N/A
+Quantity of leptin in blood	N/A	N/A	N/A	N/A	1	N/A	N/A	N/A
+Infection of tumor cell lines	N/A	N/A	2.638	1.928	1.428	N/A	N/A	N/A
+Body temperature	N/A	N/A	N/A	N/A	1.732	N/A	N/A	N/A
+Replication of viral replicon	N/A	N/A	-2.207	-3.258	N/A	N/A	N/A	N/A
+Viral life cycle	N/A	N/A	N/A	-3.123	N/A	N/A	N/A	N/A
+Pulmonary fibrosis or aplastic anemia	N/A	N/A	N/A	-2.772	N/A	N/A	N/A	N/A
+Production of virus	N/A	N/A	N/A	-2.613	N/A	N/A	N/A	N/A
+Infection by Picornaviridae	N/A	N/A	N/A	-2.6	N/A	N/A	N/A	N/A
+Replication of Herpesviridae	N/A	N/A	-2.236	-2.514	N/A	N/A	N/A	N/A
+Hyperkeratosis	N/A	N/A	N/A	-2.449	N/A	N/A	N/A	N/A
+Keratosis	N/A	N/A	N/A	-2.449	N/A	N/A	N/A	N/A
+Number of activated T lymphocyte	N/A	N/A	N/A	-2.2	N/A	N/A	N/A	N/A
+Replication of Rhabdoviridae	N/A	N/A	N/A	-2.071	N/A	N/A	N/A	N/A
+Infection by Herpesviridae	N/A	N/A	N/A	-2.008	N/A	N/A	N/A	N/A
+Gastrointestinal carcinoma	N/A	N/A	N/A	-2	N/A	N/A	N/A	N/A
+Leukocytosis	N/A	N/A	N/A	-1.941	N/A	N/A	N/A	N/A
+Replication of vesicular stomatitis virus	N/A	N/A	-0.265	-1.753	N/A	N/A	N/A	N/A
+Insulin-dependent diabetes mellitus	N/A	N/A	N/A	-1.732	N/A	N/A	N/A	N/A
+Psoriasis	N/A	N/A	-1	-1.633	N/A	N/A	N/A	N/A
+Replication of Murine herpesvirus 4	N/A	N/A	N/A	-1.633	N/A	N/A	N/A	N/A
+T-cell malignant neoplasm	N/A	N/A	N/A	-1.521	N/A	N/A	N/A	N/A
+Male genital neoplasm	N/A	N/A	N/A	-1.491	N/A	N/A	N/A	N/A
+Prostatic tumor	N/A	N/A	N/A	-1.491	N/A	N/A	N/A	N/A
+Activation of bone cells	N/A	N/A	N/A	-1.458	N/A	N/A	N/A	N/A
+Replication of murine hepatitis virus	N/A	N/A	N/A	-1.455	N/A	N/A	N/A	N/A
+Inflammation of muscle	N/A	N/A	N/A	-1.432	N/A	N/A	N/A	N/A
+Interstitial lung disease	N/A	N/A	N/A	-1.387	N/A	N/A	N/A	N/A
+Replication of coronavirus	N/A	N/A	N/A	-1.318	N/A	N/A	N/A	N/A
+Pulmonary vascular disease	N/A	N/A	N/A	-1.294	N/A	N/A	N/A	N/A
+Activation of osteoclasts	N/A	N/A	N/A	-1.216	N/A	N/A	N/A	N/A
+Pulmonary hypertension	N/A	N/A	N/A	-1.206	N/A	N/A	N/A	N/A
+Infection by DNA virus	N/A	N/A	-0.152	-1.153	N/A	N/A	N/A	N/A
+Lymphatic system tumor	N/A	N/A	N/A	-1.11	N/A	N/A	N/A	N/A
+Ductal carcinoma	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+Ductal adenocarcinoma	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+Pancreaticobiliary carcinoma	N/A	N/A	N/A	-1.067	N/A	N/A	N/A	N/A
+Hematologic cancer of cells	N/A	N/A	N/A	-1.045	N/A	N/A	N/A	N/A
+Quantity of interleukin	N/A	N/A	N/A	-1.031	N/A	N/A	N/A	N/A
+Adenocarcinoma	N/A	N/A	N/A	-1.019	N/A	N/A	N/A	N/A
+Apoptosis of islet cells	N/A	N/A	N/A	-1.019	N/A	N/A	N/A	N/A
+Colorectal carcinoma	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Colon carcinoma	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Large intestine carcinoma	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Colon cancer	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Infection of lung	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Chemotaxis of HMEC cells	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Development of colorectal tumor	N/A	N/A	N/A	-1	N/A	N/A	N/A	N/A
+Quantity of virus	N/A	N/A	N/A	-0.97	N/A	N/A	N/A	N/A
+Cell death of brain	N/A	N/A	N/A	-0.955	N/A	N/A	N/A	N/A
+Osteoclastogenesis of macrophages	N/A	N/A	N/A	-0.905	N/A	N/A	N/A	N/A
+Osteoclastogenesis of phagocytes	N/A	N/A	N/A	-0.886	N/A	N/A	N/A	N/A
+Lymphoid cancer	N/A	N/A	N/A	-0.858	N/A	N/A	N/A	N/A
+Replication of Influenza A virus	N/A	N/A	-1.14	-0.856	N/A	N/A	N/A	N/A
+Central nervous system cancer	N/A	N/A	N/A	-0.816	N/A	N/A	N/A	N/A
+Diabetes mellitus	N/A	N/A	N/A	-0.798	N/A	N/A	N/A	N/A
+Nonhematologic malignant neoplasm	N/A	N/A	N/A	-0.771	N/A	N/A	N/A	N/A
+Pelvic tumor	N/A	N/A	N/A	-0.769	N/A	N/A	N/A	N/A
+Cell death of central nervous system cells	N/A	N/A	N/A	-0.751	N/A	N/A	N/A	N/A
+Cell death of leukemia cell lines	N/A	N/A	N/A	-0.736	N/A	N/A	N/A	N/A
+Abdominal adenocarcinoma	N/A	N/A	N/A	-0.728	N/A	N/A	N/A	N/A
+Pancreaticobiliary cancer	N/A	N/A	N/A	-0.728	N/A	N/A	N/A	N/A
+Assembly of cells	N/A	N/A	N/A	-0.712	N/A	N/A	N/A	N/A
+Depletion of leukocytes	N/A	N/A	N/A	-0.67	N/A	N/A	N/A	N/A
+Experimentally induced bacterial peritonitis	N/A	N/A	N/A	-0.655	N/A	N/A	N/A	N/A
+Ophthalmia	N/A	N/A	N/A	-0.651	N/A	N/A	N/A	N/A
+Apoptosis of apud cells	N/A	N/A	N/A	-0.647	N/A	N/A	N/A	N/A
+Colon tumor	N/A	N/A	N/A	-0.64	N/A	N/A	N/A	N/A
+Atopic disease	N/A	N/A	N/A	-0.64	N/A	N/A	N/A	N/A
+Replication of Influenza virus	N/A	N/A	N/A	-0.637	N/A	N/A	N/A	N/A
+Disorder of basal ganglia	N/A	N/A	N/A	-0.625	N/A	N/A	N/A	N/A
+Apoptosis of islets of Langerhans	N/A	N/A	-0.728	-0.574	N/A	N/A	N/A	N/A
+Cell transformation	N/A	N/A	N/A	-0.536	N/A	N/A	N/A	N/A
+Infection by Rhabdoviridae	N/A	N/A	N/A	-0.511	N/A	N/A	N/A	N/A
+Lymphohematopoietic cancer	N/A	N/A	N/A	-0.509	N/A	N/A	N/A	N/A
+Malignant neoplasm of retroperitoneum	N/A	N/A	N/A	-0.447	N/A	N/A	N/A	N/A
+Development of adenocarcinoma	N/A	N/A	N/A	-0.44	N/A	N/A	N/A	N/A
+Steroidogenesis of cells	N/A	N/A	N/A	-0.436	N/A	N/A	N/A	N/A
+Hypernociception	N/A	N/A	N/A	-0.4	N/A	N/A	N/A	N/A
+Recruitment of granulocytes	N/A	N/A	N/A	-0.392	N/A	N/A	N/A	N/A
+Cell viability of cancer cells	N/A	N/A	-1.188	-0.389	N/A	N/A	N/A	N/A
+Embryonal tumor	N/A	N/A	N/A	-0.378	N/A	N/A	N/A	N/A
+Genitourinary tumor	N/A	N/A	N/A	-0.316	N/A	N/A	N/A	N/A
+Hematopoiesis of bone marrow	N/A	N/A	N/A	-0.31	N/A	N/A	N/A	N/A
+Cell movement of keratinocytes	N/A	N/A	N/A	-0.309	N/A	N/A	N/A	N/A
+Immune response of brain	N/A	N/A	N/A	-0.295	N/A	N/A	N/A	N/A
+Formation of osteoclast precursor cells	N/A	N/A	N/A	-0.277	N/A	N/A	N/A	N/A
+Cell death of pancreatic cancer cell lines	N/A	N/A	N/A	-0.26	N/A	N/A	N/A	N/A
+Hematological or lymphatic system tumor	N/A	N/A	-0.35	-0.23	N/A	N/A	N/A	N/A
+Depletion of lymphatic system cells	N/A	N/A	N/A	-0.218	N/A	N/A	N/A	N/A
+Accumulation of blood cells	N/A	N/A	N/A	-0.209	N/A	N/A	N/A	N/A
+Cell movement of epithelial cells	N/A	N/A	N/A	-0.201	N/A	N/A	N/A	N/A
+Lymphoreticular neoplasm	N/A	N/A	0.114	-0.186	N/A	N/A	N/A	N/A
+Infection by coronavirus	N/A	N/A	N/A	-0.186	N/A	N/A	N/A	N/A
+Quantity of IgG	N/A	N/A	N/A	-0.165	N/A	N/A	N/A	N/A
+Myelitis	N/A	N/A	-0.481	-0.164	N/A	N/A	N/A	N/A
+Encephalitis	N/A	N/A	N/A	-0.139	N/A	N/A	N/A	N/A
+Experimental colitis	N/A	N/A	-0.115	-0.104	N/A	N/A	N/A	N/A
+Non-hematological solid tumor	N/A	N/A	N/A	-0.104	N/A	N/A	N/A	N/A
+Experimental autoimmune encephalomyelitis	N/A	N/A	-0.457	-0.094	N/A	N/A	N/A	N/A
+Hereditary connective tissue disorder	N/A	N/A	N/A	-0.08	N/A	N/A	N/A	N/A
+Quantity of immunoglobulin	N/A	N/A	N/A	-0.061	N/A	N/A	N/A	N/A
+Genitourinary carcinoma	N/A	N/A	N/A	-0.059	N/A	N/A	N/A	N/A
+Transmigration of cells	N/A	N/A	-1.333	-0.056	N/A	N/A	N/A	N/A
+Cell death of kidney cancer cell lines	N/A	N/A	N/A	-0.045	N/A	N/A	N/A	N/A
+Lymphohematopoietic neoplasia	N/A	N/A	N/A	-0.038	N/A	N/A	N/A	N/A
+Connective or soft tissue tumor	N/A	N/A	N/A	0.034	N/A	N/A	N/A	N/A
+Migration of embryonic cell lines	N/A	N/A	N/A	0.07	N/A	N/A	N/A	N/A
+Expansion of blood cells	N/A	N/A	N/A	0.079	N/A	N/A	N/A	N/A
+Polyarthritis	N/A	N/A	N/A	0.096	N/A	N/A	N/A	N/A
+Production of antibody	N/A	N/A	N/A	0.112	N/A	N/A	N/A	N/A
+Quantity of IL-12 in blood	N/A	N/A	N/A	0.128	N/A	N/A	N/A	N/A
+Development of progenitor cells	N/A	N/A	N/A	0.138	N/A	N/A	N/A	N/A
+Generation of progenitor cells	N/A	N/A	N/A	0.138	N/A	N/A	N/A	N/A
+Pelvic cancer	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Autoimmune connective tissue disorder	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Chronic obstructive pulmonary disease	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Anogenital cancer	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Chronic respiratory disorder	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Genital tract cancer	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Chronic pulmonary disease	N/A	N/A	N/A	0.152	N/A	N/A	N/A	N/A
+Replication of HIV-1	N/A	N/A	N/A	0.17	N/A	N/A	N/A	N/A
+Damage of mice	N/A	N/A	N/A	0.176	N/A	N/A	N/A	N/A
+Tumorigenesis of lymphocytes	N/A	N/A	N/A	0.187	N/A	N/A	N/A	N/A
+Cell death of B lymphocytes	N/A	N/A	-0.152	0.192	N/A	N/A	N/A	N/A
+Conjugation of protein	N/A	N/A	N/A	0.218	N/A	N/A	N/A	N/A
+Chemotaxis of kidney cell lines	N/A	N/A	N/A	0.243	N/A	N/A	N/A	N/A
+Cellular infiltration by lymphocytes	N/A	N/A	-0.237	0.255	N/A	N/A	N/A	N/A
+Apoptosis of kidney cancer cell lines	N/A	N/A	N/A	0.277	N/A	N/A	N/A	N/A
+Generation of helper T lymphocytes	N/A	N/A	N/A	0.311	N/A	N/A	N/A	N/A
+Induction of leukocytes	N/A	N/A	N/A	0.327	N/A	N/A	N/A	N/A
+Inflammatory response of leukocytes	N/A	N/A	N/A	0.388	N/A	N/A	N/A	N/A
+Pancreaticobiliary neoplasm	N/A	N/A	N/A	0.396	N/A	N/A	N/A	N/A
+Induction of lymphocytes	N/A	N/A	N/A	0.397	N/A	N/A	N/A	N/A
+Function of blood cells	N/A	N/A	N/A	0.404	N/A	N/A	N/A	N/A
+Benign solid tumor	N/A	N/A	0.372	0.43	N/A	N/A	N/A	N/A
+Communication of cells	N/A	N/A	-0.359	0.433	N/A	N/A	N/A	N/A
+Abnormal morphology of abdomen	N/A	N/A	N/A	0.437	N/A	N/A	N/A	N/A
+Apoptosis of connective tissue cells	N/A	N/A	N/A	0.439	N/A	N/A	N/A	N/A
+Synthesis of carbohydrate	N/A	N/A	-1.818	0.442	N/A	N/A	N/A	N/A
+Development of Th17 cells	N/A	N/A	N/A	0.474	N/A	N/A	N/A	N/A
+Subcutaneous tumor	N/A	N/A	0.483	0.475	N/A	N/A	N/A	N/A
+Development of helper T lymphocytes	N/A	N/A	N/A	0.476	N/A	N/A	N/A	N/A
+Necrosis of prostate cancer cell lines	N/A	N/A	N/A	0.489	N/A	N/A	N/A	N/A
+Proliferation of mononuclear leukocytes	N/A	N/A	N/A	0.492	N/A	N/A	N/A	N/A
+Proinflammatory response	N/A	N/A	-0.351	0.522	N/A	N/A	N/A	N/A
+Pyroptosis	N/A	N/A	N/A	0.529	N/A	N/A	N/A	N/A
+Chemotaxis of dendritic cells	N/A	N/A	N/A	0.537	N/A	N/A	N/A	N/A
+Synthesis of protein	N/A	N/A	N/A	0.551	N/A	N/A	N/A	N/A
+Tumorigenesis of reproductive tract	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+Gonadal tumor	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+Female genital neoplasm	N/A	N/A	N/A	0.555	N/A	N/A	N/A	N/A
+Growth of subcutaneous tumor	N/A	N/A	0.483	0.565	N/A	N/A	N/A	N/A
+Homeostasis of blood cells	N/A	N/A	N/A	0.611	N/A	N/A	N/A	N/A
+Rheumatoid arthritis	N/A	N/A	N/A	0.625	N/A	N/A	N/A	N/A
+Interaction of tumor cell lines	N/A	N/A	N/A	0.64	N/A	N/A	N/A	N/A
+Proliferation of myeloid progenitor cells	N/A	N/A	N/A	0.651	N/A	N/A	N/A	N/A
+Cell death of neuroglia	N/A	N/A	N/A	0.666	N/A	N/A	N/A	N/A
+Myelopoiesis of bone marrow	N/A	N/A	N/A	0.669	N/A	N/A	N/A	N/A
+Systemic inflammatory response syndrome and/or sepsis	N/A	N/A	N/A	0.671	N/A	N/A	N/A	N/A
+Neurological signs	N/A	N/A	N/A	0.673	N/A	N/A	N/A	N/A
+Induction of CD4+ T-lymphocytes	N/A	N/A	N/A	0.673	N/A	N/A	N/A	N/A
+Inflammatory response of blood cells	N/A	N/A	N/A	0.684	N/A	N/A	N/A	N/A
+Joining of protein	N/A	N/A	N/A	0.692	N/A	N/A	N/A	N/A
+Induction of lymphatic system cells	N/A	N/A	N/A	0.707	N/A	N/A	N/A	N/A
+Cell death of neutrophils	N/A	N/A	N/A	0.715	N/A	N/A	N/A	N/A
+Proliferation of synovial cells	N/A	N/A	N/A	0.736	N/A	N/A	N/A	N/A
+Breast or ovarian cancer	N/A	N/A	N/A	0.747	N/A	N/A	N/A	N/A
+Breast or gastric cancer	N/A	N/A	N/A	0.747	N/A	N/A	N/A	N/A
+Breast or ovarian carcinoma	N/A	N/A	N/A	0.747	N/A	N/A	N/A	N/A
+Breast or gynecological cancer	N/A	N/A	N/A	0.747	N/A	N/A	N/A	N/A
+Multiple cancers	N/A	N/A	N/A	0.747	N/A	N/A	N/A	N/A
+Production of protein	N/A	N/A	0.377	0.751	N/A	N/A	N/A	N/A
+Induction of mononuclear leukocytes	N/A	N/A	N/A	0.76	N/A	N/A	N/A	N/A
+Toxemia	N/A	N/A	N/A	0.777	N/A	N/A	N/A	N/A
+Proliferation of CD8+ T lymphocyte	N/A	N/A	N/A	0.782	N/A	N/A	N/A	N/A
+Biosynthesis of macromolecule	N/A	N/A	N/A	0.783	N/A	N/A	N/A	N/A
+Cellular infiltration by blood cells	N/A	N/A	N/A	0.814	N/A	N/A	N/A	N/A
+Chemotaxis of leukemia cell lines	N/A	N/A	N/A	0.816	N/A	N/A	N/A	N/A
+Accumulation of macrophages	N/A	N/A	0	0.873	N/A	N/A	N/A	N/A
+Binding of interferon-gamma activated sequence	N/A	N/A	N/A	0.896	N/A	N/A	N/A	N/A
+Septic shock	N/A	N/A	N/A	0.913	N/A	N/A	N/A	N/A
+Cell death of PBMCs	N/A	N/A	N/A	0.922	N/A	N/A	N/A	N/A
+Inflammatory response of antigen presenting cells	N/A	N/A	N/A	0.928	N/A	N/A	N/A	N/A
+Inflammatory response of phagocytes	N/A	N/A	N/A	0.928	N/A	N/A	N/A	N/A
+Chemoattraction of myeloid cells	N/A	N/A	N/A	0.929	N/A	N/A	N/A	N/A
+Necrosis of muscle	N/A	N/A	N/A	0.929	N/A	N/A	N/A	N/A
+Chemoattraction of phagocytes	N/A	N/A	N/A	0.937	N/A	N/A	N/A	N/A
+Cell proliferation of carcinoma cell lines	N/A	N/A	-0.486	0.97	N/A	N/A	N/A	N/A
+Priming of leukocytes	N/A	N/A	N/A	0.99	N/A	N/A	N/A	N/A
+Non-traumatic arthropathy	N/A	N/A	N/A	0.994	N/A	N/A	N/A	N/A
+Attraction of memory T lymphocytes	N/A	N/A	N/A	1.067	N/A	N/A	N/A	N/A
+Endotoxin shock response	N/A	N/A	N/A	1.117	N/A	N/A	N/A	N/A
+Attraction of phagocytes	N/A	N/A	N/A	1.121	N/A	N/A	N/A	N/A
+Infection of leukemia cell lines	N/A	N/A	N/A	1.172	N/A	N/A	N/A	N/A
+Pancreatic tumor	N/A	N/A	N/A	1.195	N/A	N/A	N/A	N/A
+Recruitment of lymphocytes	N/A	N/A	N/A	1.196	N/A	N/A	N/A	N/A
+Necrosis of vascular endothelial cells	N/A	N/A	N/A	1.196	N/A	N/A	N/A	N/A
+Apoptosis of vascular cells	N/A	N/A	0.365	1.234	N/A	N/A	N/A	N/A
+Attraction of Th1 cells	N/A	N/A	N/A	1.235	N/A	N/A	N/A	N/A
+Cell viability of leukocytes	N/A	1	1.912	1.241	N/A	N/A	N/A	N/A
+Development of bone marrow cell lines	N/A	N/A	N/A	1.253	N/A	N/A	N/A	N/A
+Proliferation of splenocytes	N/A	N/A	N/A	1.265	N/A	N/A	N/A	N/A
+Cell death of lymphocytes	N/A	1.103	1.06	1.291	N/A	N/A	N/A	N/A
+Stimulation of T lymphocytes	N/A	N/A	N/A	1.297	N/A	N/A	N/A	N/A
+Activation of liver cells	N/A	N/A	N/A	1.318	N/A	N/A	N/A	N/A
+Recruitment of blood cells	N/A	N/A	N/A	1.337	N/A	N/A	N/A	N/A
+Function of phagocytes	N/A	N/A	N/A	1.342	N/A	N/A	N/A	N/A
+Monocytopoiesis	N/A	N/A	N/A	1.35	N/A	N/A	N/A	N/A
+Transactivation	N/A	N/A	N/A	1.372	N/A	N/A	N/A	N/A
+Cytotoxicity of lymphocytes	N/A	N/A	0	1.377	N/A	N/A	N/A	N/A
+High-fat diet-induced obesity	N/A	N/A	N/A	1.387	N/A	N/A	N/A	N/A
+Toxicity of cells	N/A	N/A	0.116	1.394	N/A	N/A	N/A	N/A
+Cell movement of smooth muscle cells	N/A	N/A	N/A	1.452	N/A	N/A	N/A	N/A
+Necrosis of kidney	N/A	N/A	N/A	1.452	N/A	N/A	N/A	N/A
+Apoptosis of lymphoma cell lines	N/A	N/A	N/A	1.461	N/A	N/A	N/A	N/A
+Attraction of leukocytes	N/A	N/A	-0.574	1.463	N/A	N/A	N/A	N/A
+Interaction of protein	N/A	N/A	-0.314	1.526	N/A	N/A	N/A	N/A
+Uptake of carbohydrate	N/A	N/A	N/A	1.547	N/A	N/A	N/A	N/A
+Metabolism of protein	N/A	N/A	N/A	1.548	N/A	N/A	N/A	N/A
+Stimulation of lymphocytes	N/A	N/A	N/A	1.566	N/A	N/A	N/A	N/A
+Neuromuscular disease	N/A	N/A	1.614	1.578	N/A	N/A	N/A	N/A
+Cell death of fibroblasts	N/A	N/A	N/A	1.586	N/A	N/A	N/A	N/A
+Glioma	N/A	N/A	N/A	1.593	N/A	N/A	N/A	N/A
+Phagocytosis by macrophages	N/A	N/A	N/A	1.614	N/A	N/A	N/A	N/A
+Nervous system neoplasm	N/A	N/A	N/A	1.624	N/A	N/A	N/A	N/A
+Phagocytosis of blood cells	N/A	N/A	N/A	1.643	N/A	N/A	N/A	N/A
+Phagocytosis of myeloid cells	N/A	N/A	N/A	1.643	N/A	N/A	N/A	N/A
+Hematopoiesis of phagocytes	N/A	N/A	1	1.658	N/A	N/A	N/A	N/A
+Cell death of bone marrow-derived macrophages	N/A	N/A	N/A	1.663	N/A	N/A	N/A	N/A
+Biosynthesis of purine ribonucleotide	N/A	N/A	N/A	1.676	N/A	N/A	N/A	N/A
+Cell death of lymphoma cell lines	N/A	N/A	N/A	1.678	N/A	N/A	N/A	N/A
+Immune response of myeloid cells	N/A	0.339	0.186	1.694	N/A	N/A	N/A	N/A
+Inflammatory response of cells	N/A	N/A	-1.067	1.698	N/A	N/A	N/A	N/A
+Activation of lymphatic system cells	N/A	N/A	N/A	1.701	N/A	N/A	N/A	N/A
+Cell death of hematopoietic progenitor cells	N/A	N/A	N/A	1.705	N/A	N/A	N/A	N/A
+Apoptosis of fibrosarcoma cell lines	N/A	N/A	N/A	1.727	N/A	N/A	N/A	N/A
+Phagocytosis of phagocytes	N/A	N/A	N/A	1.751	N/A	N/A	N/A	N/A
+Progressive neuromuscular disease	N/A	N/A	2.155	1.765	N/A	N/A	N/A	N/A
+Neuromuscular disease with neuropathy	N/A	N/A	2.155	1.765	N/A	N/A	N/A	N/A
+Stimulation of lymphatic system cells	N/A	N/A	N/A	1.776	N/A	N/A	N/A	N/A
+Differentiation of lymphoma cell lines	N/A	N/A	N/A	1.823	N/A	N/A	N/A	N/A
+Stimulation of mononuclear leukocytes	N/A	N/A	N/A	1.827	N/A	N/A	N/A	N/A
+Attraction of cells	N/A	N/A	N/A	1.837	N/A	N/A	N/A	N/A
+Differentiation of CD4+ T-lymphocytes	N/A	N/A	0.728	1.856	N/A	N/A	N/A	N/A
+Engulfment by macrophages	N/A	N/A	N/A	1.865	N/A	N/A	N/A	N/A
+Antiviral response of cells	N/A	N/A	N/A	1.876	N/A	N/A	N/A	N/A
+Cell death of skin	N/A	N/A	N/A	1.889	N/A	N/A	N/A	N/A
+Polarization of antigen presenting cells	N/A	N/A	0	1.898	N/A	N/A	N/A	N/A
+Orientation of macrophages	N/A	N/A	0	1.898	N/A	N/A	N/A	N/A
+Cytotoxicity of natural killer cells	N/A	N/A	N/A	1.913	N/A	N/A	N/A	N/A
+M2 polarization	N/A	N/A	N/A	1.929	N/A	N/A	N/A	N/A
+Response of macrophages	N/A	N/A	0	1.935	N/A	N/A	N/A	N/A
+Necrosis of tumor	N/A	N/A	N/A	1.951	N/A	N/A	N/A	N/A
+Interferon response	N/A	N/A	N/A	1.972	N/A	N/A	N/A	N/A
+Progressive motor neuropathy	N/A	N/A	2.155	1.976	N/A	N/A	N/A	N/A
+Progressive neurological disorder	N/A	N/A	2.155	1.976	N/A	N/A	N/A	N/A
+Type I interferon response	N/A	N/A	N/A	1.977	N/A	N/A	N/A	N/A
+Migration of CD4+ T-lymphocytes	N/A	N/A	0.686	1.979	N/A	N/A	N/A	N/A
+Response of phagocytes	N/A	N/A	-0.106	1.993	N/A	N/A	N/A	N/A
+Engulfment of myeloid cells	N/A	-0.297	0.483	2.014	N/A	N/A	N/A	N/A
+Immune response of phagocytes	N/A	0.185	0.319	2.086	N/A	N/A	N/A	N/A
+Polarization of phagocytes	N/A	N/A	0	2.114	N/A	N/A	N/A	N/A
+Polarization of myeloid cells	N/A	N/A	0	2.114	N/A	N/A	N/A	N/A
+Immune response of macrophages	N/A	N/A	0.492	2.12	N/A	N/A	N/A	N/A
+Activation of mononuclear leukocytes	N/A	N/A	N/A	2.147	N/A	N/A	N/A	N/A
+Protein kinase cascade	N/A	N/A	N/A	2.148	N/A	N/A	N/A	N/A
+Polarization of leukocytes	N/A	N/A	N/A	2.151	N/A	N/A	N/A	N/A
+Cell movement of natural killer cells	N/A	N/A	0.796	2.173	N/A	N/A	N/A	N/A
+Polarization of macrophages	N/A	N/A	0.365	2.206	N/A	N/A	N/A	N/A
+Chemotaxis of microglia	N/A	N/A	N/A	2.213	N/A	N/A	N/A	N/A
+Chemotaxis of antigen presenting cells	N/A	N/A	N/A	2.214	N/A	N/A	N/A	N/A
+Activation of neuroglia	N/A	N/A	0.302	2.215	N/A	N/A	N/A	N/A
+Innate immune response	N/A	N/A	1.011	2.22	N/A	N/A	N/A	N/A
+Infection by Retroviridae	N/A	N/A	2.138	2.249	N/A	N/A	N/A	N/A
+Movement of CD4+ T-lymphocytes	N/A	N/A	0.339	2.293	N/A	N/A	N/A	N/A
+Phagocytosis of cells	N/A	N/A	N/A	2.298	N/A	N/A	N/A	N/A
+Homing of lymphatic system cells	N/A	N/A	N/A	2.314	N/A	N/A	N/A	N/A
+Immune response of antigen presenting cells	N/A	N/A	0.436	2.343	N/A	N/A	N/A	N/A
+Multiple sclerosis	N/A	N/A	2.813	2.345	N/A	N/A	N/A	N/A
+Inflammatory demyelinating disease	N/A	N/A	N/A	2.345	N/A	N/A	N/A	N/A
+Endocytosis	N/A	N/A	-0.264	2.357	N/A	N/A	N/A	N/A
+Response of antigen presenting cells	N/A	N/A	N/A	2.375	N/A	N/A	N/A	N/A
+Cell death of macrophages	N/A	N/A	1.195	2.406	N/A	N/A	N/A	N/A
+Chemotaxis of neuroglia	N/A	N/A	N/A	2.425	N/A	N/A	N/A	N/A
+Activation of microglia	N/A	N/A	0.756	2.443	N/A	N/A	N/A	N/A
+Polarization of blood cells	N/A	N/A	0.324	2.452	N/A	N/A	N/A	N/A
+T cell migration	N/A	N/A	N/A	2.454	N/A	N/A	N/A	N/A
+Engulfment of antigen presenting cells	N/A	-0.849	0	2.467	N/A	N/A	N/A	N/A
+Engulfment of leukocytes	N/A	N/A	N/A	2.486	N/A	N/A	N/A	N/A
+Homing of T lymphocytes	N/A	N/A	N/A	2.5	N/A	N/A	N/A	N/A
+Maturation of antigen presenting cells	N/A	N/A	N/A	2.532	N/A	N/A	N/A	N/A
+Cell movement of lymphatic system cells	N/A	N/A	N/A	2.542	N/A	N/A	N/A	N/A
+Demyelination	N/A	N/A	2.345	2.56	N/A	N/A	N/A	N/A
+Dysmyelination	N/A	N/A	N/A	2.56	N/A	N/A	N/A	N/A
+Phagocytosis	N/A	N/A	N/A	2.584	N/A	N/A	N/A	N/A
+Inhibition of virus	N/A	N/A	N/A	2.592	N/A	N/A	N/A	N/A
+I-kappaB kinase/NF-kappaB cascade	N/A	N/A	N/A	2.618	N/A	N/A	N/A	N/A
+Cell movement of blood cells	N/A	N/A	N/A	2.706	N/A	N/A	N/A	N/A
+Internalization of cells	N/A	0.179	N/A	2.727	N/A	N/A	N/A	N/A
+Engulfment of phagocytes	N/A	-0.425	0.404	2.736	N/A	N/A	N/A	N/A
+Maturation of phagocytes	N/A	N/A	N/A	2.738	N/A	N/A	N/A	N/A
+Polarization of cells	N/A	N/A	N/A	2.776	N/A	N/A	N/A	N/A
+Infection by lentivirus	N/A	N/A	N/A	2.799	N/A	N/A	N/A	N/A
+Relapsing-remitting multiple sclerosis	N/A	N/A	2.813	2.813	N/A	N/A	N/A	N/A
+Relapsed multiple sclerosis	N/A	N/A	2.813	2.813	N/A	N/A	N/A	N/A
+Response of epithelial cell lines	N/A	N/A	N/A	2.939	N/A	N/A	N/A	N/A
+Response of kidney cell lines	N/A	N/A	N/A	2.939	N/A	N/A	N/A	N/A
+Chemotaxis of leukocytes	N/A	N/A	0.091	3.014	N/A	N/A	N/A	N/A
+Response of embryonic cell lines	N/A	N/A	N/A	3.091	N/A	N/A	N/A	N/A
+Homing of leukocytes	N/A	N/A	N/A	3.286	N/A	N/A	N/A	N/A
+Homing of cells	N/A	N/A	N/A	3.572	N/A	N/A	N/A	N/A
+Killing of leukocytes	N/A	N/A	-1.981	N/A	N/A	N/A	N/A	N/A
+Cell death of endocrine cells	N/A	N/A	-1.964	N/A	N/A	N/A	N/A	N/A
+Metabolism of phospholipid	N/A	N/A	-1.961	N/A	N/A	N/A	N/A	N/A
+Formation of thymocytes	N/A	N/A	-1.954	N/A	N/A	N/A	N/A	N/A
+Formation of thymus gland	N/A	N/A	-1.954	N/A	N/A	N/A	N/A	N/A
+Replication of Hepatitis C virus	N/A	N/A	-1.859	N/A	N/A	N/A	N/A	N/A
+Transmigration of leukocytes	N/A	N/A	-1.454	N/A	N/A	N/A	N/A	N/A
+Expansion of mononuclear leukocytes	N/A	N/A	-1.443	N/A	N/A	N/A	N/A	N/A
+Metastasis of cells	N/A	N/A	-1.332	N/A	N/A	N/A	N/A	N/A
+Sensitivity of breast cancer cell lines	N/A	N/A	-1.262	N/A	N/A	N/A	N/A	N/A
+Allergic inflammation	N/A	N/A	-1.109	N/A	N/A	N/A	N/A	N/A
+Adhesion of vascular endothelial cells	N/A	N/A	-1.109	N/A	N/A	N/A	N/A	N/A
+Colony formation of tumor cells	N/A	N/A	-1	N/A	N/A	N/A	N/A	N/A
+Differentiation of bone	N/A	N/A	-0.825	N/A	N/A	N/A	N/A	N/A
+Chemoattraction	N/A	N/A	-0.817	N/A	N/A	N/A	N/A	N/A
+Differentiation of Th17 cells	N/A	N/A	-0.391	N/A	N/A	N/A	N/A	N/A
+Cognitive impairment	N/A	N/A	-0.277	N/A	N/A	N/A	N/A	N/A
+Hyperalgesia	N/A	N/A	-0.108	N/A	N/A	N/A	N/A	N/A
+Chemotaxis of leukocyte cell lines	N/A	N/A	-0.088	N/A	N/A	N/A	N/A	N/A
+Hyperesthesia	N/A	N/A	-0.053	N/A	N/A	N/A	N/A	N/A
+Cell death of breast cell lines	N/A	N/A	0.2	N/A	N/A	N/A	N/A	N/A
+Chemotaxis of lymphocytes	N/A	N/A	0.208	N/A	N/A	N/A	N/A	N/A
+Myelopoiesis of leukocytes	N/A	N/A	0.218	N/A	N/A	N/A	N/A	N/A
+Apoptosis of smooth muscle cells	N/A	N/A	0.277	N/A	N/A	N/A	N/A	N/A
+Cell movement of leukocyte cell lines	N/A	N/A	0.29	N/A	N/A	N/A	N/A	N/A
+Cytotoxicity of cells	N/A	N/A	0.494	N/A	N/A	N/A	N/A	N/A
+Seizure disorder	N/A	N/A	0.762	N/A	N/A	N/A	N/A	N/A
+Cellular infiltration by CD8+ T lymphocyte	N/A	N/A	0.762	N/A	N/A	N/A	N/A	N/A
+Phagocytosis of leukocytes	N/A	0.025	0.883	N/A	N/A	N/A	N/A	N/A
+Migration of neuroglia	N/A	N/A	0.927	N/A	N/A	N/A	N/A	N/A
+Proliferation of kidney cancer cell lines	N/A	N/A	1.264	N/A	N/A	N/A	N/A	N/A
+Differentiation of regulatory T lymphocytes	N/A	N/A	1.982	N/A	N/A	N/A	N/A	N/A
+Cell viability of phagocytes	N/A	N/A	2	N/A	N/A	N/A	N/A	N/A
+Progressive neuropathy	N/A	N/A	2.155	N/A	N/A	N/A	N/A	N/A
+Formation of cellular protrusions	N/A	-1.539	N/A	N/A	N/A	N/A	N/A	N/A
+Migration of breast cancer cell lines	N/A	-1.532	N/A	N/A	N/A	N/A	N/A	N/A
+Phosphorylation of protein	N/A	-1.013	N/A	N/A	N/A	N/A	N/A	N/A
+Cell proliferation of ovarian cancer cell lines	N/A	-0.849	N/A	N/A	N/A	N/A	N/A	N/A
+Migration of dendritic cells	N/A	0.025	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of carcinoma cell lines	N/A	0.391	N/A	N/A	N/A	N/A	N/A	N/A
+Proliferation of embryonic cells	N/A	0.577	N/A	N/A	N/A	N/A	N/A	N/A
