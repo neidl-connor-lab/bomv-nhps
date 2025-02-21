@@ -1,0 +1,42 @@
+﻿Type,Pathway,DPI01,DPI03,DPI05,DPI07,DPI10,DPI15,DPI21,DPI28
+Canonical,IFN α & β signaling,,,3.207,4.379,,,,
+Canonical,IFN γ signaling,,,3.162,4.472,,,,
+Canonical,IL-10 signaling,,,0,0.378,,-1.342,-2,
+Canonical,IL-33 signaling,,,-1.342,-0.632,-2,-1.134,-2.236,-2
+Canonical,IL-6 signaling,,,-1.342,0.632,-0.447,-2,-2,
+Canonical,IL-8 signaling,,,-2,-1.342,-1,-1.633,-2.236,-2.236
+Canonical,Macrophage alt. activation,,,,1.897,,1.342,0,
+Canonical,Macrophage activation,,,,1.5,-1,-0.447,,
+Canonical,MHC class I antigen pres.,,,,4.243,,2,,
+Canonical,Neutrophil degranulation,,,,3.441,2.449,3.771,,
+Canonical,Cytokine storm,,,0,3.157,,-1.667,-2.646,-2.449
+Canonical,S100 family signaling,,-0.447,-1.414,0.816,0,0.302,-2,-2
+Functional,Antiviral response,,,2.075,4.273,0.105,,,
+Functional,APC activation,,-1.664,-0.606,2.507,-1.44,0.056,-1.71,-2.177
+Functional,Leukocyte activation,-1.92,-1.532,-0.773,1.999,-1.145,0.085,-2.333,-2.114
+Functional,Leukocyte response,,-0.182,-0.669,1.44,,2.065,,-1.478
+Functional,Leukocyte migration,-1.209,-1.594,-0.514,2.644,-0.689,0.025,-2.038,-2.248
+Functional,Lymphocyte death,,1.103,1.06,1.291,,,,
+Functional,Lymphocyte migration,,-0.898,0.527,2.798,1.235,1.095,-1.291,-1.398
+Functional,Macrophage death,,,1.195,2.406,,,,
+Functional,Myeloid activation,-1.275,-1.11,-1.421,2.624,-0.605,0.661,-2.002,-2.304
+Functional,Neutrophil activation,,,-2.146,,,0.552,-1.919,
+Functional,NK cell migration,,-0.085,0.471,1.52,,0.9,,
+Functional,Phagocyte activation,,-1.724,-1.625,1.313,-1.475,0.247,-2.214,-2.377
+Functional,RNA virus infection,,1.982,0.928,-0.16,1.993,2.103,1.172,0.246
+Functional,T-cell death,,,1.972,1.752,1.114,1.067,,
+Upstream,CEBPA,,-1.067,1.073,1.626,1.242,2.007,-2.401,-2.6
+Upstream,IFN α,-1.221,0.956,4.026,7.868,2.15,0.445,-1.041,-0.583
+Upstream,IFN β,-0.376,1.07,4.146,6.264,1.927,1.516,0.435,-0.661
+Upstream,IFN γ,-2.233,-0.436,3.863,8.361,2.209,-0.213,-3.587,-3.268
+Upstream,IL-13,-0.818,-1.52,-0.614,1.73,-1.072,-2.416,-1.817,-1.597
+Upstream,IL-1B,-2.603,-2.059,1.467,4.398,0.175,0.271,-3.366,-3.982
+Upstream,IL-33,-1.125,0.052,0.223,2.114,0.286,-0.003,-1.117,-1.395
+Upstream,IRF3,,1.197,3.787,5.881,1.679,2.173,,
+Upstream,IRF4,,1.953,4.469,6.946,2.588,1.709,,
+Upstream,MAVS,,0.778,3.225,4.965,1.667,0.305,,
+Upstream,NFkB,-2.161,-1.247,0.106,3.745,0.03,-0.81,-3.347,-3.356
+Upstream,RIG-I,,1.122,2.811,5.081,1.195,0.103,-1.698,
+Upstream,STAT1,,1.442,4.048,6.884,2.953,2.174,0.311,-0.474
+Upstream,TLR3,-1.932,-0.946,1.982,3.55,0.227,0.153,-2.569,-2.167
+Upstream,TNF,-2.635,-1.704,2.224,6.141,0.961,-0.666,-3.403,-3.653

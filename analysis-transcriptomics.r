@@ -16,6 +16,7 @@ cols.sympt <- c(Baseline="white", Asymptomatic="#ffffcc",
                 Symptomatic="#e31a1c", Recovered="lightgrey")
 cols.reg <- c(Down="#377eb8", None="lightgrey", Up="#e41a1c")
 vgenes <- c("NP", "VP35", "VP40", "GP", "VP30", "VP24", "L")
+scalefact <- 1.5
 
 # helper functions
 read.counts <- function(counts.matrix, 
@@ -104,37 +105,63 @@ meta <- read.csv("samplesheet.csv") %>%
 rownames(meta) <- meta$ID
 
 ## quantification QC -----------------------------------------------------------
-read.delim("data/transcriptomics/counts.tsv.summary") %>%
-  reshape2::melt(id.vars="Status",
-                 variable.name="ID",
-                 value.name="Reads") %>%
-  filter(Reads!=0) %>%
-  left_join(meta, by="ID") %>%
-  mutate(Status=factor(Status, 
-                       levels=c("Unassigned_Unmapped",
-                                "Unassigned_NoFeatures", 
-                                "Unassigned_Duplicate",
-                                "Assigned"),
-                       labels=c("Unmapped (unassigned)",
-                                "No features (unassigned)",
-                                "Duplicated (unassigned)",
-                                "Assigned"))) %>%
-  ggplot(aes(Reads, NHP)) +
-  geom_col(aes(fill=Status), col="black") +
-  geom_vline(xintercept=1e7, linetype=2, col="lightgrey") +
-  scale_fill_manual(values=c("Unmapped (unassigned)"="white",
-                             "No features (unassigned)"="lightgrey",
-                             "Duplicated (unassigned)"="darkgrey",
-                             "Assigned"="black")) +
-  facet_wrap(~DPI) +
-  scale_x_continuous(limits=c(0, 1e8),
-                     breaks=c(0, 1e7, 5e7, 1e8),
-                     labels=c("0", "1e7", "5e7", "1e8")) +
-  labs(x="# reads",
-       y="Sample",
-       fill=element_blank())
-ggsave("analysis/quantification.png",
-       units="cm", width=20, height=10)
+quanti <- read.delim("data/transcriptomics/counts.tsv.summary") %>%
+          reshape2::melt(id.vars="Status",
+                         variable.name="ID",
+                         value.name="Reads") %>%
+          filter(Reads!=0) %>%
+          left_join(meta, by="ID") %>%
+          mutate(Status=factor(Status, 
+                               levels=c("Unassigned_Unmapped",
+                                        "Unassigned_NoFeatures", 
+                                        "Unassigned_Duplicate",
+                                        "Assigned"),
+                               labels=c("Unmapped (unassigned)",
+                                        "No features (unassigned)",
+                                        "PCR duplicates (unassigned)",
+                                        "Assigned")),
+                 DPI=factor(DPI, levels=names(cols.dpi),
+                            labels=paste(names(cols.dpi), "DPI")))
+quanti <- quanti$DPI %>%
+          unique() %>%
+          lapply(function(i) {
+            quanti %>%
+              filter(DPI==i) %>%
+              ggplot(aes(Reads, NHP)) +
+              geom_col(aes(fill=Status), col="black") +
+              geom_vline(xintercept=1e7, linetype=2, col="lightgrey") +
+              scale_fill_manual(values=c("Unmapped (unassigned)"="white",
+                                         "No features (unassigned)"="lightgrey",
+                                         "PCR duplicates (unassigned)"="darkgrey",
+                                         "Assigned"="black")) +
+              scale_y_discrete(limits=rev(unique(meta$NHP))) +
+              scale_x_continuous(expand=c(0, 0),
+                                 limits=c(0, 9.1e7),
+                                 breaks=c(0, 1e7, 3e7, 5e7, 7e7, 9e7),
+                                 labels=c("0", "1e7", "3e7", "5e7", "7e7", "9e7")) +
+              labs(x="Reads",
+                   y="BOMV NHPs",
+                   fill=element_blank(),
+                   title=i) +
+              theme(legend.position="none",
+                    axis.title.y=element_blank(),
+                    axis.title.x=element_blank())
+          })
+# pull out legend
+leg <- cowplot::get_plot_component(quanti[[1]] + theme(legend.position="bottom"),
+                                   "guide-box-bottom")
+y <- cowplot::get_plot_component(quanti[[1]] + theme(axis.title.y=element_text()),
+                                 "ylab-l")
+x <- cowplot::get_plot_component(quanti[[1]] + theme(axis.title.x=element_text()),
+                                 "xlab-b")
+quanti <- cowplot::plot_grid(plotlist=quanti, ncol=3)
+quanti <- cowplot::plot_grid(y, quanti, nrow=1, rel_widths=c(1, 50))
+supA <- cowplot::plot_grid(quanti, x, leg, 
+                           ncol=1, rel_heights=c(15, 1, 1))
+supA
+ggsave("analysis/quantification.png", scale=scalefact,
+       units="in", width=7.5, height=3)
+rm(quanti, x, y, leg)
 
 ## counts ----------------------------------------------------------------------
 cmat <- read.counts("data/transcriptomics/counts.tsv") 
@@ -152,19 +179,19 @@ pca <- cmat %>%
        DESeqDataSetFromMatrix(meta, ~Batch) %>%
        run.pca()
 # plot by DPI
-pca$PCA %>%
-  ggplot(aes(PC1, PC2, fill=Batch)) +
-  geom_hline(yintercept=0, linetype=3) +
-  geom_vline(xintercept=0, linetype=3) +
-  geom_point(pch=21, size=5) +
-  scale_fill_manual(values=cols.batch) +
-  labs(x=pca$PCs[1],
-       y=pca$PCs[2],
-       title="PCA before batch regression") +
-  theme(legend.box.background=element_rect(color="black"),
-        legend.position=c(0.9, 0.8))
-ggsave("analysis/pca-raw.png",
-       units="cm", height=10, width=10)
+supB <- pca$PCA %>%
+        ggplot(aes(PC1, PC2, fill=Batch)) +
+        geom_hline(yintercept=0, linetype=3) +
+        geom_vline(xintercept=0, linetype=3) +
+        geom_point(pch=21, size=5) +
+        scale_fill_manual(values=cols.batch) +
+        labs(x=pca$PCs[1],
+             y=pca$PCs[2],
+             title="PCA before batch regression") +
+        theme(legend.position=c(0.9, 0.8))
+supB
+ggsave("analysis/pca-raw.png", scale=scalefact,
+       units="in", height=2, width=2.33)
 rm(pca)
 
 # removing genes only expressed in 1 batch
@@ -200,43 +227,34 @@ pca <- cmat %>%
        DESeqDataSetFromMatrix(meta, ~Condition) %>%
        run.pca()
 # color by batch
-pca$PCA %>%
-  ggplot(aes(PC1, PC2, fill=Batch)) +
-  geom_hline(yintercept=0, linetype=3) +
-  geom_vline(xintercept=0, linetype=3) +
-  geom_point(pch=21, size=5) +
-  scale_fill_manual(values=cols.batch) +
-  labs(x=pca$PCs[1],
-       y=pca$PCs[2],
-       title="PCA after batch regression") +
-  theme(legend.box.background=element_rect(color="black"),
-        legend.position=c(0.9, 0.8))
-ggsave("analysis/pca-regressed.png",
-       units="cm", width=10, height=10)
+supC <- pca$PCA %>%
+        ggplot(aes(PC1, PC2, fill=Batch)) +
+        geom_hline(yintercept=0, linetype=3) +
+        geom_vline(xintercept=0, linetype=3) +
+        geom_point(pch=21, size=5) +
+        scale_fill_manual(values=cols.batch) +
+        labs(x=pca$PCs[1],
+             y=pca$PCs[2],
+             title="PCA after batch regression") +
+        theme(legend.position=c(0.9, 0.85))
+supC
+ggsave("analysis/pca-regressed.png", scale=scalefact,
+       units="in", width=2.33, height=2)
+
 # color by DPI
-pca$PCA %>%
-  ggplot(aes(PC1, PC2, fill=Condition)) +
-  geom_hline(yintercept=0, linetype=3) +
-  geom_vline(xintercept=0, linetype=3) +
-  geom_point(pch=21, size=5) +
-  scale_fill_manual(values=cols.dpi) +
-  labs(x=pca$PCs[1],
-       y=pca$PCs[2],
-       fill="DPI")
-ggsave("analysis/pca-dpi.png",
-       units="cm", width=15, height=10)
-# color by symptoms
-pca$PCA %>%
-  ggplot(aes(PC1, PC2, fill=Group)) +
-  geom_hline(yintercept=0, linetype=3) +
-  geom_vline(xintercept=0, linetype=3) +
-  geom_point(pch=21, size=5) +
-  scale_fill_manual(values=cols.sympt) +
-  labs(x=pca$PCs[1],
-       y=pca$PCs[2],
-       fill="DPI")
-ggsave("analysis/pca-symptoms.png",
-       units="cm", width=15, height=10)
+supD <- pca$PCA %>%
+        ggplot(aes(PC1, PC2, fill=Condition)) +
+        geom_hline(yintercept=0, linetype=3) +
+        geom_vline(xintercept=0, linetype=3) +
+        geom_point(pch=21, size=5) +
+        scale_fill_manual(values=cols.dpi) +
+        labs(x=pca$PCs[1],
+             y=pca$PCs[2],
+             fill="DPI",
+             title="PCA after batch regression")
+supD
+ggsave("analysis/pca-dpi.png", scale=scalefact,
+       units="in", width=2.84, height=2)
 rm(pca)
 
 ## DE analysis: DPI ------------------------------------------------------------
@@ -276,47 +294,69 @@ topgenes <- r %>%
             group_by(Condition) %>%
             top_n(n=10, wt=abs(log2FC)) %>%
             ungroup()
-r %>%
-  ggplot(aes(log2FC, -log10(padj), size=Regulation, col=Regulation)) +
-  geom_point(alpha=0.8) +
-  ggrepel::geom_text_repel(data=topgenes, aes(label=Gene), 
-                           col="black", size=2, max.overlaps=100) +
-  scale_size_manual(values=c(Down=1, None=0.5, Up=1)) +
-  scale_color_manual(values=cols.reg) +
-  scale_y_continuous(limits=c(NA, 11),
-                     breaks=c(1, 5, 10),
-                     labels=c("1", "1e-5", "<1e-10")) +
-  scale_x_continuous(limits=c(-10, 20),
-                     breaks=c(-10, 0, 10, 20)) +
-  facet_wrap(~Condition, nrow=2) +
-  labs(x="Fold change (log2)",
-       y="FDR-adjusted p-value (-log10)")
-ggsave("analysis/volcano-dpi.png",
-       units="cm", width=20, height=10)
-rm(r, topgenes)
+vplt <- r$Condition %>%
+        unique() %>%
+        lapply(function(i) {
+          t <- filter(topgenes, Condition==i)
+          r %>%
+            filter(Condition==i) %>%
+            ggplot(aes(log2FC, -log10(padj), size=Regulation, col=Regulation)) +
+            geom_point(alpha=0.8) +
+            ggrepel::geom_text_repel(data=t, aes(label=Gene), 
+                                     col="black", size=3, max.overlaps=100) +
+            scale_size_manual(values=c(Down=1, None=0.5, Up=1)) +
+            scale_color_manual(values=cols.reg) +
+            scale_y_continuous(limits=c(NA, 11),
+                               breaks=c(1, 5, 10),
+                               labels=c("1", "1e-5", "<1e-10")) +
+            scale_x_continuous(limits=c(-10, 20),
+                               breaks=c(-10, 0, 10, 20)) +
+            labs(x="Fold change (log2)",
+                 y="FDR-adjusted p-value (-log10)",
+                 title=i) +
+            theme(legend.position="none",
+                  axis.title.y=element_blank(),
+                  axis.title.x=element_blank())
+        })
+# get legend and axis labels
+x <- cowplot::get_plot_component(vplt[[1]] + theme(axis.title.x=element_text()),
+                                 "xlab-b")
+y <- cowplot::get_plot_component(vplt[[1]] + theme(axis.title.y=element_text()),
+                                 "ylab-l")
+leg <- cowplot::get_plot_component(vplt[[1]] + theme(legend.position="right"),
+                                   "guide-box-right")
+# assemble figures
+vplt <- cowplot::plot_grid(plotlist=vplt, ncol=4)
+vplt <- cowplot::plot_grid(y, vplt, leg, nrow=1, rel_widths=c(1, 50, 4))
+supE <- cowplot::plot_grid(vplt, x, ncol=1, rel_heights=c(15, 1))
+supE
+ggsave("analysis/volcano-dpi.png", scale=scalefact, 
+       units="in", width=7.5, height=3)
+rm(r, topgenes, vplt, x, y, leg)
 
 # total degenes
-rmat %>%
-  filter(Significant) %>%
-  group_by(Regulation, Condition) %>%
-  summarise(Genes=n(),
-            .groups="drop") %>%
-  # add in any missing values
-  right_join(expand.grid(Condition=as.numeric(names(cols.dpi)),
-                         Regulation=c("Down", "Up")),
-             by=c("Regulation", "Condition")) %>%
-  replace_na(list(Genes=0)) %>%
-  # plot it
-  ggplot(aes(Condition, Genes, group=Regulation, fill=Regulation)) +
-  geom_line(aes(linetype=Regulation)) +
-  geom_point(pch=21, size=3) +
-  scale_fill_manual(values=cols.reg) +
-  labs(x="Days postinfection",
-       y="Significantly DE genes") +
-  theme(legend.box.background=element_rect(color="black"),
-        legend.position=c(0.8, 0.8))
-ggsave("analysis/degenes-dpi.png",
-       units="cm", width=10, height=8)
+figA <- rmat %>%
+        filter(Significant) %>%
+        group_by(Regulation, Condition) %>%
+        summarise(Genes=n(),
+                  .groups="drop") %>%
+        # add in any missing values
+        right_join(expand.grid(Condition=as.numeric(names(cols.dpi)),
+                               Regulation=c("Down", "Up")),
+                   by=c("Regulation", "Condition")) %>%
+        replace_na(list(Genes=0)) %>%
+        # plot it
+        ggplot(aes(Condition, Genes, group=Regulation, fill=Regulation)) +
+        geom_line(aes(linetype=Regulation)) +
+        geom_point(pch=21, size=3) +
+        scale_fill_manual(values=cols.reg) +
+        scale_x_continuous(breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
+        labs(x="Days postinfection",
+             y="Significantly DE genes") +
+        theme(legend.position=c(0.8, 0.8))
+figA
+ggsave("analysis/degenes-dpi.png", scale=scalefact,
+       units="in", width=3.75, height=2)
 
 # define up-regulated gene modules
 # get list of all up-regulated genes
@@ -334,7 +374,7 @@ gene.mod <- rmat %>%
 lapply(1:10, function(i) {
   data.frame(k=i,
              tot.withinss=kmeans(gene.mod, i, iter.max=1e9)$tot.withinss)
-}) %>%
+  }) %>%
   do.call(rbind, .) %>%
   ggplot(aes(k, tot.withinss)) +
   geom_line() +
@@ -381,32 +421,122 @@ gene.mod <- gene.mod %>%
             right_join(gene.mod, by="Cluster")
   
 # get some examples per cluster
-gene.examp <- c("OAS1", "CXCL10", "SOCS1",
-                "IFI44", "CCL23", "CCL8",
-                "LCN2", "MMP8")
+glist <- c(OAS1="#6a51a3", CXCL10="#9e9ac8", SOCS1="#810f7c",
+           IFI44="#990000", CCL23="#fc8d59", CCL8="#ef6548",
+           LCN2="#1f78b4", MMP8="#034e7b")
 gene.examp <- gene.mod %>%
-              filter(Gene %in% gene.examp)
+              filter(Gene %in% names(glist))
     
 # group by cluster and plot
-gene.mod %>%
-  group_by(Condition, Label) %>%
-  summarise(StDev=sd(log2FC),
-            log2FC=median(log2FC),
-            .groups="drop") %>%
-  ggplot(aes(Condition)) +
-  geom_ribbon(aes(ymin=log2FC-StDev,
-                  ymax=log2FC+StDev),
-              fill="lightgrey",
-              alpha=0.5) +
-  geom_line(data=gene.examp, aes(y=log2FC, col=Gene)) +
-  scale_color_brewer(palette="Paired") +
-  facet_wrap(~Label, ncol=1) +
-  scale_x_continuous(limits=c(-8, 30),
-                     breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
-  labs(x="Days postinfection",
-       y="Fold change (log2)")
-ggsave("analysis/modules-dpi.png", 
-       units="cm", width=10, height=10)
+modplt <- gene.mod$Label %>%
+          unique() %>%
+          sort() %>%
+          lapply(function(i) {
+            gene.mod %>%
+              filter(Label==i) %>%
+              group_by(Condition) %>%
+              summarise(StDev=sd(log2FC),
+                        log2FC=median(log2FC),
+                        .groups="drop") %>%
+              ggplot(aes(Condition)) +
+              geom_ribbon(aes(ymin=log2FC-StDev,
+                              ymax=log2FC+StDev),
+                          fill="lightgrey",
+                          alpha=0.5) +
+              geom_line(data=filter(gene.examp, Label==i), 
+                        aes(y=log2FC, col=Gene)) +
+              scale_color_manual(values=glist) +
+              scale_x_continuous(limits=c(-8, 30),
+                                 breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
+              labs(x="Days postinfection",
+                   y="Fold change (log2)",
+                   col=element_blank(),
+                   title=i) +
+              theme(axis.title=element_blank(),
+                    legend.position=c(0.9, 0.9))
+          })
+# extract axis labels
+x <- cowplot::get_plot_component(modplt[[1]] + theme(axis.title.x=element_text()),
+                                 "xlab-b")
+y <- cowplot::get_plot_component(modplt[[1]] + theme(axis.title.y=element_text()),
+                                 "ylab-l")
+# assemble figure
+modplt <- cowplot::plot_grid(plotlist=modplt, ncol=1)
+modplt <- cowplot::plot_grid(modplt, x, ncol=1, rel_heights=c(25, 1))
+figB <- cowplot::plot_grid(y, modplt, nrow=1, rel_widths=c(1, 20))
+figB
+ggsave("analysis/modules-dpi.png", scale=scalefact,
+       units="in", width=3.75, height=4)
 
 # clean up
-rm(x, gene.mod, gene.examp, anchor.genes, rmat, desq)
+rm(x, y, modplt, glist, gene.mod, gene.examp, anchor.genes, rmat, desq)
+
+## IPA heatmap -----------------------------------------------------------------
+# canonical and functional
+zcol <- circlize::colorRamp2(breaks=c(-3, 0, 5), 
+                             colors=c("#377eb8", "white", "#e41a1c"))
+figC <- read.csv("analysis/ipa-output.csv") %>%
+        filter(Type != "Upstream") %>%
+        select(-Type) %>%
+        column_to_rownames("Pathway") %>% 
+        as.matrix() %>% 
+        ComplexHeatmap::Heatmap(name="z-score", 
+                                heatmap_legend_param=list(direction="horizontal",
+                                                          title_position="lefttop"),
+                                col=zcol, na_col="white",
+                                border=TRUE,
+                                cluster_columns=FALSE, 
+                                cluster_rows=TRUE,
+                                row_names_gp=grid::gpar(fontsize=8),
+                                column_title="Days postinfection",
+                                column_title_side="bottom",
+                                column_labels=c(1, 3, 5, 7, 10, 15, 21, 28),
+                                column_names_centered=TRUE,
+                                column_names_rot=0) %>%
+        ComplexHeatmap::draw(heatmap_legend_side="bottom") %>%
+        grid::grid.grabExpr()
+
+# upstream regulators
+zcol <- circlize::colorRamp2(breaks=c(-4, 0, 9), 
+                             colors=c("#377eb8", "white", "#e41a1c"))
+figD <- read.csv("analysis/ipa-output.csv") %>%
+        filter(Type == "Upstream") %>%
+        select(-Type) %>%
+        column_to_rownames("Pathway") %>% 
+        as.matrix() %>% 
+        ComplexHeatmap::Heatmap(name="z-score", 
+                                col=zcol, na_col="white",
+                                border=TRUE,
+                                cluster_columns=FALSE, 
+                                cluster_rows=TRUE,
+                                row_names_gp=grid::gpar(fontsize=8),
+                                column_title="Days postinfection",
+                                column_title_side="bottom",
+                                column_labels=c(1, 3, 5, 7, 10, 15, 21, 28),
+                                column_names_centered=TRUE,
+                                column_names_rot=0) %>%
+        ComplexHeatmap::draw() %>%
+        grid::grid.grabExpr()
+
+rm(zcol)
+
+## knit together the figure and supplemental figure ----------------------------
+# main figure
+x <- cowplot::plot_grid(figA, figC, ncol=1, labels=c("A", "C"), rel_heights=c(1, 1.6))
+y <- cowplot::plot_grid(figB, figD, ncol=1, labels=c("B", "D"), rel_heights=c(2, 1))
+cowplot::plot_grid(x, y, nrow=1)
+ggsave("analysis/figure5.png",
+       units="in", width=7.5, height=8)
+rm(x, y)
+
+# supplemental figure
+x <- cowplot::plot_grid(supB, supC, supD, 
+                        nrow=1, labels=c("B", "C", "D"))
+cowplot::plot_grid(supA, x, supE, 
+                   ncol=1, labels=c("A", NA, "E"),
+                   rel_heights=c(2, 1, 2))
+ggsave("analysis/supplemental7.png", scale=1.5, 
+       units="in", width=7.5, height=10)
+
+## fin -------------------------------------------------------------------------
+sessionInfo()
