@@ -221,6 +221,15 @@ cmat %>%
   write.csv("analysis/counts-batchcorrected.csv",
             row.names=FALSE)
 
+# save as CPM for CIBERSORT
+cmat %>%
+  edgeR::DGEList() %>%
+  edgeR::calcNormFactors() %>% 
+  edgeR::cpm() %>%
+  as.data.frame() %>%
+  rownames_to_column("Gene") %>%
+  write.table("analysis/cibersort-input.tsv", sep="\t", row.names=FALSE)
+
 # repeat PCA
 pca <- cmat %>%
        filter.lowcounts() %>%
@@ -352,7 +361,7 @@ figA <- rmat %>%
         scale_fill_manual(values=cols.reg) +
         scale_x_continuous(breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
         labs(x="Days postinfection",
-             y="Significantly DE genes") +
+             y="Total DE genes") +
         theme(legend.position=c(0.8, 0.8))
 figA
 ggsave("analysis/degenes-dpi.png", scale=scalefact,
@@ -517,26 +526,104 @@ figD <- read.csv("analysis/ipa-output.csv") %>%
                                 column_names_rot=0) %>%
         ComplexHeatmap::draw() %>%
         grid::grid.grabExpr()
-
 rm(zcol)
+
+## CIBERSORT cell types --------------------------------------------------------
+cibersortx <- read.csv("analysis/cibertsort-output.csv", row.names=1) %>%
+              rownames_to_column("ID") %>%
+              # remove macrophages (shouldn't be in circulating blood) 
+              # and other cell types with consistently low and 
+              # randomly-distributed scores (noise)
+              select(-P.value, -Correlation, -RMSE, -Absolute.score..sig.score.,
+                     -starts_with("Macrophages"), -B.cells.naive,
+                     -T.cells.CD4.memory.resting, -T.cells.follicular.helper,
+                     -T.cells.gamma.delta, -NK.cells.activated, 
+                     -Dendritic.cells.resting, -starts_with("Mast"), 
+                     -Eosinophils, -T.cells.regulatory..Tregs.) %>%
+              reshape2::melt(id.vars="ID",
+                             variable.name="Cell.type",
+                             value.name="Score") %>%
+              # rename cell types to human-readable formats
+              mutate(Cell.type=factor(Cell.type,
+                                      levels=c("B.cells.memory",
+                                               "Plasma.cells",
+                                               "T.cells.CD8",
+                                               "T.cells.CD4.naive",
+                                               "T.cells.CD4.memory.activated",
+                                               "NK.cells.resting",
+                                               "Monocytes",
+                                               "Dendritic.cells.activated",
+                                               "Neutrophils"),
+                                      labels=c("Memory B-cells",
+                                               "Plasma B-cells",
+                                               "CD8+ T-cells",
+                                               "Naive CD4+ T-cells",
+                                               "Memory CD4+ T-cells",
+                                               "NK cells",
+                                               "Monocytes",
+                                               "Activated DCs",
+                                               "Neutrophils"))) %>%
+              left_join(meta, by="ID")
+
+# plot all 
+supF <- cibersortx %>%
+        ggplot(aes(DPI, Score)) +
+        geom_line(aes(linetype=NHP)) +
+        geom_point(aes(shape=NHP, fill=factor(DPI, levels=names(cols.dpi)))) +
+        scale_linetype_manual(values=c(A=1, B=2, C=3, D=4)) +
+        scale_shape_manual(values=c(A=21, B=22, C=23, D=24)) +
+        scale_fill_manual(values=cols.dpi) +
+        facet_wrap(~Cell.type, scales="free_y") +
+        scale_y_continuous(expand=expansion(mult=c(0.1, 0.2))) +
+        scale_x_continuous(breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
+        labs(x="Days postinfection",
+             y="Cell type score",
+             fill="DPI") +
+        guides(shape=guide_legend(override.aes=list(fill="black")),
+              fill=guide_legend(override.aes=list(pch=21)))
+supF
+ggsave("analysis/cibersort.png", scale=scalefact,
+       units="in", width=7.5, height=3)
+
+# plot selected
+selected <-  c("Monocytes", "Neutrophils", "Memory CD4+ T-cells")
+figE <- cibersortx %>%
+        filter(Cell.type %in% selected) %>%
+        mutate(Cell.type=factor(Cell.type, levels=selected)) %>%
+        ggplot(aes(DPI, Score)) +
+        geom_line(aes(linetype=NHP)) +
+        geom_point(aes(shape=NHP, fill=factor(DPI, levels=names(cols.dpi)))) +
+        scale_linetype_manual(values=c(A=1, B=2, C=3, D=4)) +
+        scale_shape_manual(values=c(A=21, B=22, C=23, D=24)) +
+        scale_fill_manual(values=cols.dpi) +
+        facet_wrap(~Cell.type, scales="free_y", nrow=1) +
+        scale_y_continuous(expand=expansion(mult=c(0.1, 0.2))) +
+        scale_x_continuous(breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
+        labs(x="Days postinfection",
+             y="Cell type score",
+             fill="DPI") +
+        guides(shape=guide_legend(override.aes=list(fill="black")),
+               fill="none") 
+figE
 
 ## knit together the figure and supplemental figure ----------------------------
 # main figure
-x <- cowplot::plot_grid(figA, figC, ncol=1, labels=c("A", "C"), rel_heights=c(1, 1.6))
+x <- cowplot::plot_grid(figA, figC, ncol=1, labels=c("A", "C"), rel_heights=c(1, 1.8))
 y <- cowplot::plot_grid(figB, figD, ncol=1, labels=c("B", "D"), rel_heights=c(2, 1))
-cowplot::plot_grid(x, y, nrow=1)
+z <- cowplot::plot_grid(x, y, nrow=1)
+cowplot::plot_grid(z, figE, ncol=1, labels=c(NA, "E"), rel_heights=c(7, 2))
 ggsave("analysis/figure5.png",
-       units="in", width=7.5, height=8)
-rm(x, y)
+       units="in", width=7.5, height=9)
+rm(x, y, z)
 
 # supplemental figure
 x <- cowplot::plot_grid(supB, supC, supD, 
                         nrow=1, labels=c("B", "C", "D"))
-cowplot::plot_grid(supA, x, supE, 
-                   ncol=1, labels=c("A", NA, "E"),
-                   rel_heights=c(2, 1, 2))
+cowplot::plot_grid(supA, x, supE, supF,
+                   ncol=1, labels=c("A", NA, "E", "F"),
+                   rel_heights=c(2, 1, 2, 2))
 ggsave("analysis/supplemental7.png", scale=1.5, 
-       units="in", width=7.5, height=10)
+       units="in", width=7.5, height=11)
 
 ## fin -------------------------------------------------------------------------
 sessionInfo()

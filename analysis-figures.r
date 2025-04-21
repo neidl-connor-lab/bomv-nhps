@@ -16,10 +16,10 @@ sample.days <- c(0, 1, 3, 5, 7, 10, 15, 21, 28)
 scalefact <- 1.5
 
 # read in data file
-sheets <- readxl::excel_sheets("data.xlsx")
+sheets <- readxl::excel_sheets("data/data.xlsx")
 data <- sheets %>%
         lapply(function(i) {
-          readxl::read_excel("data.xlsx", sheet=i)
+          readxl::read_excel("data/data.xlsx", sheet=i)
         })
 names(data) <- sheets
 rm(sheets)
@@ -40,7 +40,7 @@ surv <- data$survival %>%
                            breaks=sample.days) + 
         theme(legend.title=element_text())
 surv
-ggsave("figures/survival.png", scale=scalefact,
+ggsave("analysis/survival.png", scale=scalefact,
        units="in", width=3.75, height=2)
 
 ## clinical illness ------------------------------------------------------------
@@ -63,7 +63,7 @@ clin <- data$clinical %>%
                                       hjust=0,
                                       margin=margin(l=0)))
 clin
-ggsave("figures/clinical.png", scale=scalefact,
+ggsave("analysis/clinical.png", scale=scalefact,
        units="in", width=3.75, height=6)
 
 ## viremia: viral genomes and replicating virus --------------------------------
@@ -146,7 +146,7 @@ pcr <- viremia$ebov %>%
                                 override.aes=list(fill=cols.virus["BOMV"]))) +
       theme(legend.position=c(0.8, 0.55))
 pcr
-ggsave("figures/pcr.png", scale=scalefact,
+ggsave("analysis/pcr.png", scale=scalefact,
        units="in", width=3.75, height=2)
 
 # plot replicating virus
@@ -182,7 +182,7 @@ pfu <- viremia$ebov %>%
                                 override.aes=list(fill=cols.virus["BOMV"]))) +
       theme(legend.position=c(0.8, 0.55))
 pfu
-ggsave("figures/viremia.png", scale=scalefact,
+ggsave("analysis/viremia.png", scale=scalefact,
        units="in", width=3.75, height=2)
 
 # assemble figure 1
@@ -191,7 +191,7 @@ f1 <- cowplot::plot_grid(surv,
                          pfu + theme(legend.position="none"),
                          ncol=1, labels=c("A", "C", "D"))
 cowplot::plot_grid(f1, clin, labels=c(NA, "B"), nrow=1)
-ggsave("figures/figure1.png", units="in", width=7.5, height=6)
+ggsave("analysis/figure1.png", units="in", width=7.5, height=6)
 
 # clean up
 rm(f1, surv, clin, pcr, pfu, sig, viremia)
@@ -266,7 +266,7 @@ leg <- cowplot::get_plot_component(hema[[1]] + theme(legend.position="bottom"),
 # plot panels
 x <- cowplot::plot_grid(plotlist=hema, ncol=3, labels="AUTO")
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(20, 1))
-ggsave("figures/supplemental2.png",
+ggsave("analysis/supplemental2.png",
        units="in", width=7.5, height=10)
 
 # plot selected analytes with legend
@@ -354,7 +354,7 @@ leg <- cowplot::get_plot_component(chem[[1]] + theme(legend.position="bottom"),
 # plot panels
 x <- cowplot::plot_grid(plotlist=chem, ncol=3, labels="AUTO")
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(20, 1))
-ggsave("figures/supplemental3.png",
+ggsave("analysis/supplemental3.png",
        units="in", width=7.5, height=8.5)
 
 # plot selected analytes with selected hematology
@@ -364,7 +364,7 @@ f2CDE <- c("Aspartate transferase (AST)",
 f2CDE <- cowplot::plot_grid(plotlist=chem[f2CDE], 
                             nrow=1, labels=c("C", "D", "E"))
 cowplot::plot_grid(f2AB, f2CDE, ncol=1)
-ggsave("figures/figure2.png",
+ggsave("analysis/figure2.png",
        units="in", width=7.5, height=4.5)
 
 # clean up
@@ -420,7 +420,7 @@ leg <- cowplot::get_plot_component(coag[[1]] + theme(legend.position="bottom"),
                                    "guide-box-bottom")
 x <- cowplot::plot_grid(plotlist=coag, labels="AUTO", ncol=3)
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(10, 1))
-ggsave("figures/supplemental4.png", 
+ggsave("analysis/supplemental4.png", 
        units="in", width=7.5, height=8.5)
 
 # plot selected markers
@@ -483,7 +483,7 @@ leg <- cowplot::get_plot_component(inflam[[1]] + theme(legend.position="bottom")
 x <- cowplot::plot_grid(plotlist=inflam, 
                         labels="AUTO", ncol=4)
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(25, 1))
-ggsave("figures/supplemental5.png", 
+ggsave("analysis/supplemental5.png", 
        units="in", width=7.5, height=10)
 
 # plot selected markers with coag selected markers for figure 3
@@ -491,7 +491,7 @@ analytes <- c("IFNg", "IL-1ra", "IL-6")
 f3DEF <- cowplot::plot_grid(plotlist=inflam[analytes], 
                             labels=c("D", "E", "F"), nrow=1)
 cowplot::plot_grid(f3ABC, f3DEF, leg, ncol=1, rel_heights=c(10, 10, 1))
-ggsave("figures/figure3.png", 
+ggsave("analysis/figure3.png", 
        units="in", width=7.5, height=5)
 
 # clean up
@@ -598,7 +598,7 @@ f4CDEF <- cowplot::plot_grid(plotlist=curves, ncol=2,
                              labels=c("C", "D", "E", "F"))
 f4CDEF <- cowplot::plot_grid(f4CDEF, leg, nrow=1, rel_widths=c(10, 1))
 cowplot::plot_grid(f4AB, f4CDEF, ncol=1, rel_heights=c(1, 2))
-ggsave("figures/figure4.png",
+ggsave("analysis/figure4.png",
        units="in", width=7.5, height=6)
 
 # plot heterologous neutralization curves
@@ -637,7 +637,7 @@ curves <- cowplot::plot_grid(plotlist=curves, ncol=2,
                              labels="AUTO")
 cowplot::plot_grid(curves, leg, 
                    ncol=1, rel_heights=c(15, 1))
-ggsave("figures/supplemental6.png",
+ggsave("analysis/supplemental6.png",
        units="in", width=7.5, height=8)
 
 # clean up

@@ -158,11 +158,6 @@ ggsave("analysis/snvs.png",
 # clean up
 rm(x, y)
 
-## assemble supplemental figure ------------------------------------------------
-cowplot::plot_grid(supA, supB, nrow=1, labels="AUTO")
-ggsave("analysis/supplemental8.png",
-       units="in", width=7.5, height=6)
-
 ## nonsynonymous mutations > 10% -----------------------------------------------
 meta %>%
   filter(DPI==7,
