@@ -18,9 +18,9 @@ scalefact <- 1.5
 # read in data file
 sheets <- readxl::excel_sheets("data/data.xlsx")
 data <- sheets %>%
-        lapply(function(i) {
-          readxl::read_excel("data/data.xlsx", sheet=i)
-        })
+  lapply(function(i) {
+    readxl::read_excel("data/data.xlsx", sheet=i)
+  })
 names(data) <- sheets
 rm(sheets)
 
@@ -55,7 +55,7 @@ clin <- data$clinical %>%
         scale_x_continuous(expand=c(0, 0),
                            breaks=sample.days) +
         labs(x="Days postinfection",
-            y="BOMV NHPs") +
+             y="BOMV NHPs") +
         theme(legend.position="none",
               axis.line.y.left=element_blank(),
               strip.background=element_blank(),
@@ -115,72 +115,72 @@ rm(x)
 
 # plot viral genomes
 pcr <- viremia$ebov %>%
-      ggplot(aes(DPI, `Genomes/mL`)) +
-      # plot EBOV with error bars
-      geom_line(aes(col=Virus)) +
-      geom_errorbar(aes(ymax=UpperGenomes, ymin=LowerGenomes, col=Virus),
-                    width=0.5, linewidth=0.25) +
-      geom_point(aes(fill=Virus), pch=21, size=2) +
-      # plot individual BOMV 
-      geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
-      geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
-      scale_fill_manual(values=cols.virus) +
-      scale_color_manual(values=cols.virus) +
-      scale_shape_manual(values=shapes.nhps) +
-      scale_linetype_manual(values=lines.nhps) +
-      # add p-values
-      geom_text(data=sig$pcr, aes(label=p.signif, y=y.position), size=5) +
-      # format the axes
-      labs(x="Days post infection",
-           y="GEq/mL",
-           fill="Virus",
-           col="Virus",
-           shape="BOMV NHPs",
-           linetype="BOMV NHPs") + 
-      scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
-                         labels=c("LOD", "1e4", "1e8", "1e12")) +
-      scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
-      guides(fill=guide_legend(ncol=2,
-                               override.aes=list(pch=21)),
-             shape=guide_legend(ncol=2,
-                                override.aes=list(fill=cols.virus["BOMV"]))) +
-      theme(legend.position=c(0.8, 0.55))
+       ggplot(aes(DPI, `Genomes/mL`)) +
+       # plot EBOV with error bars
+       geom_line(aes(col=Virus)) +
+       geom_errorbar(aes(ymax=UpperGenomes, ymin=LowerGenomes, col=Virus),
+                     width=0.5, linewidth=0.25) +
+       geom_point(aes(fill=Virus), pch=21, size=2) +
+       # plot individual BOMV 
+       geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
+       geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
+       scale_fill_manual(values=cols.virus) +
+       scale_color_manual(values=cols.virus) +
+       scale_shape_manual(values=shapes.nhps) +
+       scale_linetype_manual(values=lines.nhps) +
+       # add p-values
+       geom_text(data=sig$pcr, aes(label=p.signif, y=y.position), size=5) +
+       # format the axes
+       labs(x="Days post infection",
+            y="GEq/mL",
+            fill="Virus",
+            col="Virus",
+            shape="BOMV NHPs",
+            linetype="BOMV NHPs") + 
+       scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
+                          labels=c("LOD", "1e4", "1e8", "1e12")) +
+       scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
+       guides(fill=guide_legend(ncol=2,
+                                override.aes=list(pch=21)),
+              shape=guide_legend(ncol=2,
+                                 override.aes=list(fill=cols.virus["BOMV"]))) +
+       theme(legend.position=c(0.8, 0.55))
 pcr
 ggsave("analysis/pcr.png", scale=scalefact,
        units="in", width=3.75, height=2)
 
 # plot replicating virus
 pfu <- viremia$ebov %>% 
-      ggplot(aes(DPI, `PFU/mL`)) +
-      # plot EBOV with error bars
-      geom_line(aes(col=Virus)) +
-      geom_errorbar(aes(ymax=UpperPFU, ymin=LowerPFU, col=Virus),
-                    width=0.5, linewidth=0.25) +
-      geom_point(pch=21, aes(fill=Virus), size=2) +
-      # plot individual BOMV 
-      geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
-      geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
-      scale_fill_manual(values=cols.virus) +
-      scale_color_manual(values=cols.virus) +
-      scale_shape_manual(values=shapes.nhps) +
-      scale_linetype_manual(values=lines.nhps) +
-      # add p-values
-      geom_text(data=sig$pfu, aes(label=p.signif, y=y.position), size=5) +
-      # format the axes
-      labs(x="Days post infection",
-           y="PFU/mL",
-           fill="Virus",
-           col="Virus",
-           shape="BOMV NHPs",
-           linetype="BOMV NHPs") +
-      scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
-                         labels=c("LOD", "1e4", "1e8", "1e12")) +
-      scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
-      guides(fill=guide_legend(ncol=2,
-                               override.aes=list(pch=21)),
-             shape=guide_legend(ncol=2,
-                                override.aes=list(fill=cols.virus["BOMV"]))) +
-      theme(legend.position=c(0.8, 0.55))
+       ggplot(aes(DPI, `PFU/mL`)) +
+       # plot EBOV with error bars
+       geom_line(aes(col=Virus)) +
+       geom_errorbar(aes(ymax=UpperPFU, ymin=LowerPFU, col=Virus),
+                     width=0.5, linewidth=0.25) +
+       geom_point(pch=21, aes(fill=Virus), size=2) +
+       # plot individual BOMV 
+       geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
+       geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
+       scale_fill_manual(values=cols.virus) +
+       scale_color_manual(values=cols.virus) +
+       scale_shape_manual(values=shapes.nhps) +
+       scale_linetype_manual(values=lines.nhps) +
+       # add p-values
+       geom_text(data=sig$pfu, aes(label=p.signif, y=y.position), size=5) +
+       # format the axes
+       labs(x="Days post infection",
+            y="PFU/mL",
+            fill="Virus",
+            col="Virus",
+            shape="BOMV NHPs",
+            linetype="BOMV NHPs") +
+       scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
+                          labels=c("LOD", "1e4", "1e8", "1e12")) +
+       scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
+       guides(fill=guide_legend(ncol=2,
+                                override.aes=list(pch=21)),
+              shape=guide_legend(ncol=2,
+                                 override.aes=list(fill=cols.virus["BOMV"]))) +
+       theme(legend.position=c(0.8, 0.55))
 pfu
 ggsave("analysis/viremia.png", scale=scalefact,
        units="in", width=3.75, height=2)
@@ -205,6 +205,22 @@ hema$full <- data$hematology %>%
                             variable.name="Analyte") %>%
              mutate(Virus=factor(Virus, levels=c("BOMV", "EBOV"),
                                  labels=c("BOMV", "EBOV (historical)")))
+
+# compare lymphopenia and thrombocytopenia; report mean and st. dev.
+# (minimum values lymphocytes & platelets)
+hema$full %>%
+  filter(Analyte %in% c("Lymphocytes", "Platelets")) %>%
+  group_by(NHP, Virus, Analyte) %>%
+  summarise(Concentration=min(value, na.rm=TRUE),
+            .groups="drop") %>%
+  ggpubr::compare_means(Concentration ~ Virus, data=., 
+                        group.by="Analyte", p.adjust.method="fdr")
+hema$full %>%
+  filter(Analyte %in% c("Lymphocytes", "Platelets")) %>%
+  group_by(Virus, Analyte) %>%
+  summarise(Mean=min(value, na.rm=TRUE),
+            StDev=sd(value, na.rm=TRUE),
+            .groups="drop")
 
 # split into BOMV and EBOV distribution
 hema$bomv <- filter(hema$full, Virus=="BOMV")
@@ -293,7 +309,7 @@ chem$full <- data$chemistry %>%
              mutate(value=log10(value),
                     Virus=factor(Virus, levels=c("BOMV", "EBOV"),
                                  labels=c("BOMV", "EBOV (historical)")))
-
+            
 # split into BOMV and EBOV distribution
 chem$bomv <- filter(chem$full, Virus=="BOMV")
 chem$ebov <- chem$full %>%
@@ -502,6 +518,16 @@ elisas <- data$elisa %>%
           reshape2::melt(id.vars=c("NHP", "DPI"),
                          variable.name="Analyte",
                          value.name="Titer")
+
+# get range for 28 DPI titers
+elisas %>%
+  filter(DPI==28) %>%
+  group_by(Analyte) %>%
+  summarise(Minimum=min(Titer),
+            Maximum=max(Titer),
+            .groups="drop")
+
+# plot ELISAs
 elisas <- elisas$Analyte %>%
           unique() %>%
           lapply(function(i) {
@@ -563,6 +589,14 @@ prnt <- prnt %>%
 # cap the reduction at 0%
 prnt[prnt$PercentReduction < 0, "PercentReduction"] <- 0
 rm(vc)
+
+# what are PRNT50 at 28 DPI?
+prnt %>% 
+  filter(DPI==28,
+         PercentReduction >= 50) %>%
+  group_by(NHP) %>%
+  top_n(n=1, wt=Dilution) %>%
+  select(NHP, Dilution, PercentReduction)
 
 # plot homologous neutralization curves
 curves <- prnt$NHP %>%
