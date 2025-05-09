@@ -608,21 +608,25 @@ figE
 
 ## knit together the figure and supplemental figure ----------------------------
 # main figure
-x <- cowplot::plot_grid(figA, figC, ncol=1, labels=c("A", "C"), rel_heights=c(1, 1.8))
-y <- cowplot::plot_grid(figB, figD, ncol=1, labels=c("B", "D"), rel_heights=c(2, 1))
+x <- cowplot::plot_grid(figA, figC, ncol=1, 
+                        labels=c("a", "c"), 
+                        rel_heights=c(1, 1.8))
+y <- cowplot::plot_grid(figB, figD, ncol=1, 
+                        labels=c("b", "d"), 
+                        rel_heights=c(2, 1))
 z <- cowplot::plot_grid(x, y, nrow=1)
-cowplot::plot_grid(z, figE, ncol=1, labels=c(NA, "E"), rel_heights=c(7, 2))
-ggsave("analysis/figure5.png",
+cowplot::plot_grid(z, figE, ncol=1, labels=c(NA, "e"), rel_heights=c(7, 2))
+ggsave("analysis/figure4.png",
        units="in", width=7.5, height=9)
 rm(x, y, z)
 
 # supplemental figure
 x <- cowplot::plot_grid(supB, supC, supD, 
-                        nrow=1, labels=c("B", "C", "D"))
+                        nrow=1, labels=c("b", "c", "d"))
 cowplot::plot_grid(supA, x, supE, supF,
-                   ncol=1, labels=c("A", NA, "E", "F"),
+                   ncol=1, labels=c("a", NA, "e", "f"),
                    rel_heights=c(2, 1, 2, 2))
-ggsave("analysis/supplemental7.png", scale=1.5, 
+ggsave("analysis/supplemental1.png", scale=1.5, 
        units="in", width=7.5, height=11)
 
 ## fin -------------------------------------------------------------------------

@@ -6,8 +6,6 @@ suppressPackageStartupMessages(library(tidyverse))
 options(stringsAsFactors=FALSE)
 theme_set(theme_classic())
 
-# helper variables
-
 # helper functions
 read.coverage <- function(id) {
   # init output data frame with zeros

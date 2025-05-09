@@ -189,8 +189,8 @@ ggsave("analysis/viremia.png", scale=scalefact,
 f1 <- cowplot::plot_grid(surv,
                          pcr + guides(color="none", fill="none"),
                          pfu + theme(legend.position="none"),
-                         ncol=1, labels=c("A", "C", "D"))
-cowplot::plot_grid(f1, clin, labels=c(NA, "B"), nrow=1)
+                         ncol=1, labels=c("a", "c", "d"))
+cowplot::plot_grid(f1, clin, labels=c(NA, "b"), nrow=1)
 ggsave("analysis/figure1.png", units="in", width=7.5, height=6)
 
 # clean up
@@ -280,7 +280,7 @@ names(hema) <- analytes
 leg <- cowplot::get_plot_component(hema[[1]] + theme(legend.position="bottom"), 
                                    "guide-box-bottom")
 # plot panels
-x <- cowplot::plot_grid(plotlist=hema, ncol=3, labels="AUTO")
+x <- cowplot::plot_grid(plotlist=hema, ncol=3, labels="auto")
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(20, 1))
 ggsave("analysis/supplemental2.png",
        units="in", width=7.5, height=10)
@@ -293,7 +293,7 @@ leg <- cowplot::get_plot_component(hema[[1]] +
                                      theme(legend.position="right"), 
                                    "guide-box-right")
 f2AB <- cowplot::plot_grid(hema$Platelets, hema$Lymphocytes, leg, 
-                           nrow=1, labels=c("A", "B"))
+                           nrow=1, labels=c("a", "b"))
 
 # clean up
 rm(x, leg, hema, analytes)
@@ -368,7 +368,7 @@ names(chem) <- analytes
 leg <- cowplot::get_plot_component(chem[[1]] + theme(legend.position="bottom"), 
                                    "guide-box-bottom")
 # plot panels
-x <- cowplot::plot_grid(plotlist=chem, ncol=3, labels="AUTO")
+x <- cowplot::plot_grid(plotlist=chem, ncol=3, labels="auto")
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(20, 1))
 ggsave("analysis/supplemental3.png",
        units="in", width=7.5, height=8.5)
@@ -378,7 +378,7 @@ f2CDE <- c("Aspartate transferase (AST)",
            "Blood urea nitrogen (BUN)",
            "C-reactive protein (CRP)")
 f2CDE <- cowplot::plot_grid(plotlist=chem[f2CDE], 
-                            nrow=1, labels=c("C", "D", "E"))
+                            nrow=1, labels=c("c", "d", "e"))
 cowplot::plot_grid(f2AB, f2CDE, ncol=1)
 ggsave("analysis/figure2.png",
        units="in", width=7.5, height=4.5)
@@ -434,14 +434,14 @@ names(coag) <- analytes
 # pull out legend
 leg <- cowplot::get_plot_component(coag[[1]] + theme(legend.position="bottom"),
                                    "guide-box-bottom")
-x <- cowplot::plot_grid(plotlist=coag, labels="AUTO", ncol=3)
+x <- cowplot::plot_grid(plotlist=coag, labels="auto", ncol=3)
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(10, 1))
 ggsave("analysis/supplemental4.png", 
        units="in", width=7.5, height=8.5)
 
 # plot selected markers
 analytes <- c("D-Dimer", "tPA", "PAI-1")
-f3ABC <- cowplot::plot_grid(plotlist=coag[analytes], labels="AUTO", nrow=1)
+f3ABC <- cowplot::plot_grid(plotlist=coag[analytes], labels="auto", nrow=1)
 
 # clean up
 rm(coag, analytes, x, leg)
@@ -497,7 +497,7 @@ names(inflam) <- analytes
 leg <- cowplot::get_plot_component(inflam[[1]] + theme(legend.position="bottom"),
                                    "guide-box-bottom")
 x <- cowplot::plot_grid(plotlist=inflam, 
-                        labels="AUTO", ncol=4)
+                        labels="auto", ncol=4)
 cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(25, 1))
 ggsave("analysis/supplemental5.png", 
        units="in", width=7.5, height=10)
@@ -505,7 +505,7 @@ ggsave("analysis/supplemental5.png",
 # plot selected markers with coag selected markers for figure 3
 analytes <- c("IFNg", "IL-1ra", "IL-6")
 f3DEF <- cowplot::plot_grid(plotlist=inflam[analytes], 
-                            labels=c("D", "E", "F"), nrow=1)
+                            labels=c("d", "e", "f"), nrow=1)
 cowplot::plot_grid(f3ABC, f3DEF, leg, ncol=1, rel_heights=c(10, 10, 1))
 ggsave("analysis/figure3.png", 
        units="in", width=7.5, height=5)
@@ -560,7 +560,7 @@ elisas <- elisas$Analyte %>%
 # pull out legend
 leg <- cowplot::get_plot_component(elisas[[1]] + theme(legend.position="right"),
                                    "guide-box-right")
-f4AB <- cowplot::plot_grid(plotlist=elisas, nrow=1, labels="AUTO")
+f4AB <- cowplot::plot_grid(plotlist=elisas, nrow=1, labels="auto")
 f4AB <- cowplot::plot_grid(f4AB, leg, nrow=1, rel_widths=c(7, 1))
 f4AB
 
@@ -629,10 +629,10 @@ curves <- prnt$NHP %>%
 leg <- cowplot::get_plot_component(curves[[1]] + theme(legend.position="right"),
                                    "guide-box-right")
 f4CDEF <- cowplot::plot_grid(plotlist=curves, ncol=2, 
-                             labels=c("C", "D", "E", "F"))
+                             labels=c("c", "d", "e", "f"))
 f4CDEF <- cowplot::plot_grid(f4CDEF, leg, nrow=1, rel_widths=c(10, 1))
 cowplot::plot_grid(f4AB, f4CDEF, ncol=1, rel_heights=c(1, 2))
-ggsave("analysis/figure4.png",
+ggsave("analysis/figure5.png",
        units="in", width=7.5, height=6)
 
 # plot heterologous neutralization curves
@@ -668,7 +668,7 @@ curves <- prnt %>%
 leg <- cowplot::get_plot_component(curves[[1]] + theme(legend.position="bottom"),
                                    "guide-box-bottom")
 curves <- cowplot::plot_grid(plotlist=curves, ncol=2, 
-                             labels="AUTO")
+                             labels="auto")
 cowplot::plot_grid(curves, leg, 
                    ncol=1, rel_heights=c(15, 1))
 ggsave("analysis/supplemental6.png",
@@ -676,7 +676,6 @@ ggsave("analysis/supplemental6.png",
 
 # clean up
 rm(prnt, leg, curves)
-
 
 ## done! -----------------------------------------------------------------------
 sessionInfo()
