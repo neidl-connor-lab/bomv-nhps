@@ -158,9 +158,6 @@ quanti <- cowplot::plot_grid(plotlist=quanti, ncol=3)
 quanti <- cowplot::plot_grid(y, quanti, nrow=1, rel_widths=c(1, 50))
 supA <- cowplot::plot_grid(quanti, x, leg, 
                            ncol=1, rel_heights=c(15, 1, 1))
-supA
-ggsave("analysis/quantification.png", scale=scalefact,
-       units="in", width=7.5, height=3)
 rm(quanti, x, y, leg)
 
 ## counts ----------------------------------------------------------------------
@@ -189,9 +186,6 @@ supB <- pca$PCA %>%
              y=pca$PCs[2],
              title="PCA before batch regression") +
         theme(legend.position=c(0.9, 0.8))
-supB
-ggsave("analysis/pca-raw.png", scale=scalefact,
-       units="in", height=2, width=2.33)
 rm(pca)
 
 # removing genes only expressed in 1 batch
@@ -246,9 +240,6 @@ supC <- pca$PCA %>%
              y=pca$PCs[2],
              title="PCA after batch regression") +
         theme(legend.position=c(0.9, 0.85))
-supC
-ggsave("analysis/pca-regressed.png", scale=scalefact,
-       units="in", width=2.33, height=2)
 
 # color by DPI
 supD <- pca$PCA %>%
@@ -261,9 +252,6 @@ supD <- pca$PCA %>%
              y=pca$PCs[2],
              fill="DPI",
              title="PCA after batch regression")
-supD
-ggsave("analysis/pca-dpi.png", scale=scalefact,
-       units="in", width=2.84, height=2)
 rm(pca)
 
 ## DE analysis: DPI ------------------------------------------------------------
@@ -338,9 +326,6 @@ leg <- cowplot::get_plot_component(vplt[[1]] + theme(legend.position="right"),
 vplt <- cowplot::plot_grid(plotlist=vplt, ncol=4)
 vplt <- cowplot::plot_grid(y, vplt, leg, nrow=1, rel_widths=c(1, 50, 4))
 supE <- cowplot::plot_grid(vplt, x, ncol=1, rel_heights=c(15, 1))
-supE
-ggsave("analysis/volcano-dpi.png", scale=scalefact, 
-       units="in", width=7.5, height=3)
 rm(r, topgenes, vplt, x, y, leg)
 
 # total degenes

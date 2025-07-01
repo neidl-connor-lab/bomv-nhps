@@ -97,8 +97,6 @@ supA <- cowplot::plot_grid(plotlist=supA, ncol=1)
 supA <- cowplot::plot_grid(supA, x, ncol=1, rel_heights=c(25, 1))
 supA <- cowplot::plot_grid(y, supA, nrow=1, rel_widths=c(1, 25))
 supA
-ggsave("analysis/coverage.png",
-       units="in", width=3.75, height=6)
 
 # clean up
 rm(x, y)
@@ -150,8 +148,6 @@ supB <- cowplot::plot_grid(plotlist=supB, ncol=1)
 supB <- cowplot::plot_grid(supB, x, ncol=1, rel_heights=c(25, 1))
 supB <- cowplot::plot_grid(y, supB, nrow=1, rel_widths=c(1, 25))
 supB
-ggsave("analysis/snvs.png",
-       units="in", width=3.75, height=6)
 
 # clean up
 rm(x, y)

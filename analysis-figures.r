@@ -13,7 +13,6 @@ cols.dpi <- c("0"="lightblue", "15"="#3182bd", "28"="darkblue")
 lines.nhps <- c(A=1, B=2, C=3, D=4, E=5, "F"=6, G=7, H=8)
 shapes.nhps <- c(A=21, B=22, C=23, D=24, E=25, "F"=3, G=4, H=8)
 sample.days <- c(0, 1, 3, 5, 7, 10, 15, 21, 28)
-scalefact <- 1.5
 
 # read in data file
 sheets <- readxl::excel_sheets("data/data.xlsx")
@@ -24,47 +23,49 @@ data <- sheets %>%
 names(data) <- sheets
 rm(sheets)
 
+# init figure variables
+plotvals <- list()
+fig1 <- list()
+fig2 <- list() 
+fig3 <- list()
+
 ## survival KM curve -----------------------------------------------------------
-surv <- data$survival %>%
-        mutate(Virus=factor(Virus, levels=c("BOMV", "EBOV"),
-                            labels=c("BOMV", "EBOV (historical)"))) %>%
-        survfit2(Surv(DPI, Censoring) ~ Virus, data=.) %>%
-        ggsurvfit(theme=theme_classic(), 
-                  size=0.5) +
-        scale_color_manual(values=cols.virus) +
-        labs(x="Days postinfection",
-             y="Survival",
-             col="Virus") +
-        theme(legend.position=c(0.8, 0.4)) +
-        scale_x_continuous(limits=c(0, 28),
-                           breaks=sample.days) + 
-        theme(legend.title=element_text())
-surv
-ggsave("analysis/survival.png", scale=scalefact,
-       units="in", width=3.75, height=2)
+plotvals$`Figure 1a` <- data$survival %>%
+                        mutate(Virus=factor(Virus, levels=c("BOMV", "EBOV"),
+                                            labels=c("BOMV", "EBOV (historical)")))
+fig1$a <- plotvals$`Figure 1a` %>%
+          survfit2(Surv(DPI, Censoring) ~ Virus, data=.) %>%
+          ggsurvfit(theme=theme_classic(), 
+                    size=0.5) +
+          scale_color_manual(values=cols.virus) +
+          labs(x="Days postinfection",
+               y="Survival",
+               col="Virus") +
+          theme(legend.position=c(0.8, 0.4)) +
+          scale_x_continuous(limits=c(0, 28),
+                             breaks=sample.days) + 
+          theme(legend.title=element_text())
 
 ## clinical illness ------------------------------------------------------------
-clin <- data$clinical %>%
-        reshape2::melt(id.vars=c("NHP", "DPI"),
-                       variable.name="Parameter") %>%
-        ggplot(aes(DPI, NHP, fill=value)) +
-        geom_tile(col="black") +
-        scale_fill_manual(values=c("TRUE"="black", "FALSE"="white")) +
-        facet_wrap(~Parameter, ncol=1) +
-        scale_y_discrete(limits=c("D", "C", "B", "A")) +
-        scale_x_continuous(expand=c(0, 0),
-                           breaks=sample.days) +
-        labs(x="Days postinfection",
-             y="BOMV NHPs") +
-        theme(legend.position="none",
-              axis.line.y.left=element_blank(),
-              strip.background=element_blank(),
-              strip.text=element_text(size=10,
-                                      hjust=0,
-                                      margin=margin(l=0)))
-clin
-ggsave("analysis/clinical.png", scale=scalefact,
-       units="in", width=3.75, height=6)
+plotvals$`Figure 1b` <- data$clinical %>%
+                        reshape2::melt(id.vars=c("NHP", "DPI"),
+                                       variable.name="Parameter")
+fig1$b <- plotvals$`Figure 1b` %>%
+          ggplot(aes(DPI, NHP, fill=value)) +
+          geom_tile(col="black") +
+          scale_fill_manual(values=c("TRUE"="black", "FALSE"="white")) +
+          facet_wrap(~Parameter, ncol=1) +
+          scale_y_discrete(limits=c("D", "C", "B", "A")) +
+          scale_x_continuous(expand=c(0, 0),
+                             breaks=sample.days) +
+          labs(x="Days postinfection",
+               y="BOMV NHPs") +
+          theme(legend.position="none",
+                axis.line.y.left=element_blank(),
+                strip.background=element_blank(),
+                strip.text=element_text(size=10,
+                                        hjust=0,
+                                        margin=margin(l=0)))
 
 ## viremia: viral genomes and replicating virus --------------------------------
 viremia <- list()
@@ -75,7 +76,15 @@ viremia$full <- data$viremia %>%
                        Virus=factor(Virus, levels=c("BOMV", "EBOV"),
                                     labels=c("BOMV", "EBOV (historical)")))
 
-# format data: distributions for EBOV and spaghetti for BOMV
+# save values
+plotvals$`Figure 1c` <- viremia$full %>%
+                        select(NHP, DPI, Virus, `Genomes/mL`) %>%
+                        rename(`log10 GEq/mL`=`Genomes/mL`)
+plotvals$`Figure 1d` <- viremia$full %>%
+                        select(NHP, DPI, Virus, `PFU/mL`) %>%
+                        rename(`log10 PFU/mL`=`PFU/mL`)
+
+# format data for plotting: distributions for EBOV and spaghetti for BOMV
 viremia$bomv <- viremia$full %>%
                 filter(Virus=="BOMV")
 viremia$ebov <- viremia$full %>%
@@ -114,87 +123,73 @@ sig$pcr <- ggpubr::compare_means(`Genomes/mL` ~ Virus,
 rm(x)
 
 # plot viral genomes
-pcr <- viremia$ebov %>%
-       ggplot(aes(DPI, `Genomes/mL`)) +
-       # plot EBOV with error bars
-       geom_line(aes(col=Virus)) +
-       geom_errorbar(aes(ymax=UpperGenomes, ymin=LowerGenomes, col=Virus),
-                     width=0.5, linewidth=0.25) +
-       geom_point(aes(fill=Virus), pch=21, size=2) +
-       # plot individual BOMV 
-       geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
-       geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
-       scale_fill_manual(values=cols.virus) +
-       scale_color_manual(values=cols.virus) +
-       scale_shape_manual(values=shapes.nhps) +
-       scale_linetype_manual(values=lines.nhps) +
-       # add p-values
-       geom_text(data=sig$pcr, aes(label=p.signif, y=y.position), size=5) +
-       # format the axes
-       labs(x="Days post infection",
-            y="GEq/mL",
-            fill="Virus",
-            col="Virus",
-            shape="BOMV NHPs",
-            linetype="BOMV NHPs") + 
-       scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
-                          labels=c("LOD", "1e4", "1e8", "1e12")) +
-       scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
-       guides(fill=guide_legend(ncol=2,
-                                override.aes=list(pch=21)),
-              shape=guide_legend(ncol=2,
-                                 override.aes=list(fill=cols.virus["BOMV"]))) +
-       theme(legend.position=c(0.8, 0.55))
-pcr
-ggsave("analysis/pcr.png", scale=scalefact,
-       units="in", width=3.75, height=2)
+fig1$c <- viremia$ebov %>%
+          ggplot(aes(DPI, `Genomes/mL`)) +
+          # plot EBOV with error bars
+          geom_line(aes(col=Virus)) +
+          geom_errorbar(aes(ymax=UpperGenomes, ymin=LowerGenomes, col=Virus),
+                        width=0.5, linewidth=0.25) +
+          geom_point(aes(fill=Virus), pch=21, size=2) +
+          # plot individual BOMV 
+          geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
+          geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
+          scale_fill_manual(values=cols.virus) +
+          scale_color_manual(values=cols.virus) +
+          scale_shape_manual(values=shapes.nhps) +
+          scale_linetype_manual(values=lines.nhps) +
+          # add p-values
+          geom_text(data=sig$pcr, aes(label=p.signif, y=y.position), size=5) +
+          # format the axes
+          labs(x="Days post infection",
+               y="GEq/mL",
+               fill="Virus",
+               col="Virus",
+               shape="BOMV NHPs",
+               linetype="BOMV NHPs") + 
+          scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
+                             labels=c("LOD", "1e4", "1e8", "1e12")) +
+          scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
+          guides(fill=guide_legend(ncol=2,
+                                   override.aes=list(pch=21)),
+                 shape=guide_legend(ncol=2,
+                                    override.aes=list(fill=cols.virus["BOMV"]))) +
+          theme(legend.position=c(0.8, 0.55))
 
 # plot replicating virus
-pfu <- viremia$ebov %>% 
-       ggplot(aes(DPI, `PFU/mL`)) +
-       # plot EBOV with error bars
-       geom_line(aes(col=Virus)) +
-       geom_errorbar(aes(ymax=UpperPFU, ymin=LowerPFU, col=Virus),
-                     width=0.5, linewidth=0.25) +
-       geom_point(pch=21, aes(fill=Virus), size=2) +
-       # plot individual BOMV 
-       geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
-       geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
-       scale_fill_manual(values=cols.virus) +
-       scale_color_manual(values=cols.virus) +
-       scale_shape_manual(values=shapes.nhps) +
-       scale_linetype_manual(values=lines.nhps) +
-       # add p-values
-       geom_text(data=sig$pfu, aes(label=p.signif, y=y.position), size=5) +
-       # format the axes
-       labs(x="Days post infection",
-            y="PFU/mL",
-            fill="Virus",
-            col="Virus",
-            shape="BOMV NHPs",
-            linetype="BOMV NHPs") +
-       scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
-                          labels=c("LOD", "1e4", "1e8", "1e12")) +
-       scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
-       guides(fill=guide_legend(ncol=2,
-                                override.aes=list(pch=21)),
-              shape=guide_legend(ncol=2,
-                                 override.aes=list(fill=cols.virus["BOMV"]))) +
-       theme(legend.position=c(0.8, 0.55))
-pfu
-ggsave("analysis/viremia.png", scale=scalefact,
-       units="in", width=3.75, height=2)
-
-# assemble figure 1
-f1 <- cowplot::plot_grid(surv,
-                         pcr + guides(color="none", fill="none"),
-                         pfu + theme(legend.position="none"),
-                         ncol=1, labels=c("a", "c", "d"))
-cowplot::plot_grid(f1, clin, labels=c(NA, "b"), nrow=1)
-ggsave("analysis/figure1.png", units="in", width=7.5, height=6)
+fig1$d <- viremia$ebov %>% 
+          ggplot(aes(DPI, `PFU/mL`)) +
+          # plot EBOV with error bars
+          geom_line(aes(col=Virus)) +
+          geom_errorbar(aes(ymax=UpperPFU, ymin=LowerPFU, col=Virus),
+                        width=0.5, linewidth=0.25) +
+          geom_point(pch=21, aes(fill=Virus), size=2) +
+          # plot individual BOMV 
+          geom_line(data=viremia$bomv, aes(col=Virus, linetype=NHP)) +
+          geom_point(data=viremia$bomv, aes(fill=Virus, shape=NHP), size=2) +
+          scale_fill_manual(values=cols.virus) +
+          scale_color_manual(values=cols.virus) +
+          scale_shape_manual(values=shapes.nhps) +
+          scale_linetype_manual(values=lines.nhps) +
+          # add p-values
+          geom_text(data=sig$pfu, aes(label=p.signif, y=y.position), size=5) +
+          # format the axes
+          labs(x="Days post infection",
+               y="PFU/mL",
+               fill="Virus",
+               col="Virus",
+               shape="BOMV NHPs",
+               linetype="BOMV NHPs") +
+          scale_y_continuous(limits=c(0, 13), breaks=c(0, 4, 8, 12),
+                             labels=c("LOD", "1e4", "1e8", "1e12")) +
+          scale_x_continuous(limits=c(NA, 28), breaks=sample.days) +
+          guides(fill=guide_legend(ncol=2,
+                                   override.aes=list(pch=21)),
+                 shape=guide_legend(ncol=2,
+                                    override.aes=list(fill=cols.virus["BOMV"]))) +
+          theme(legend.position=c(0.8, 0.55))
 
 # clean up
-rm(f1, surv, clin, pcr, pfu, sig, viremia)
+rm(sig, viremia)
 
 ## hematology ------------------------------------------------------------------
 hema <- list()
@@ -221,6 +216,15 @@ hema$full %>%
   summarise(Mean=min(value, na.rm=TRUE),
             StDev=sd(value, na.rm=TRUE),
             .groups="drop")
+
+# save values
+plotvals$`Supplemental 2` <- hema$full %>%
+                             reshape2::dcast(NHP + DPI + Virus ~ Analyte,
+                                             value.var="value")
+plotvals$`Figure 2a` <- plotvals$`Supplemental 2` %>%
+                        select(NHP, DPI, Virus, Platelets)
+plotvals$`Figure 2b` <- plotvals$`Supplemental 2` %>%
+                        select(NHP, DPI, Virus, Lymphocytes)
 
 # split into BOMV and EBOV distribution
 hema$bomv <- filter(hema$full, Virus=="BOMV")
@@ -276,27 +280,16 @@ hema <- analytes %>%
         })
 names(hema) <- analytes
 
-# extract legend
-leg <- cowplot::get_plot_component(hema[[1]] + theme(legend.position="bottom"), 
-                                   "guide-box-bottom")
-# plot panels
-x <- cowplot::plot_grid(plotlist=hema, ncol=3, labels="auto")
-cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(20, 1))
-ggsave("analysis/supplemental2.png",
-       units="in", width=7.5, height=10)
+# supplemental figure 2 has all hematology analytes
+sup2 <- hema
+names(sup2) <- letters[1:length(sup2)]
 
-# plot selected analytes with legend
-leg <- cowplot::get_plot_component(hema[[1]] + 
-                                     guides(fill=guide_legend(ncol=2),
-                                            shape=guide_legend(ncol=2, ,
-                                                               override.aes=list(fill=cols.virus["BOMV"]))) +
-                                     theme(legend.position="right"), 
-                                   "guide-box-right")
-f2AB <- cowplot::plot_grid(hema$Platelets, hema$Lymphocytes, leg, 
-                           nrow=1, labels=c("a", "b"))
+# figure 2 a-b are platelets and lymphocytes, respectively
+fig2$a <- hema$Platelets
+fig2$b <- hema$Lymphocytes
 
 # clean up
-rm(x, leg, hema, analytes)
+rm(hema, analytes)
 
 ## clinical chemistry ----------------------------------------------------------
 chem <- list()
@@ -309,7 +302,18 @@ chem$full <- data$chemistry %>%
              mutate(value=log10(value),
                     Virus=factor(Virus, levels=c("BOMV", "EBOV"),
                                  labels=c("BOMV", "EBOV (historical)")))
-            
+
+# save values
+plotvals$`Supplemental 3` <- chem$full %>%
+                             reshape2::dcast(NHP + DPI + Virus ~ Analyte,
+                                             value.var="value")
+plotvals$`Figure 2c` <- plotvals$`Supplemental 3` %>%
+                        select(NHP, DPI, Virus, `Aspartate transferase (AST)`)
+plotvals$`Figure 2d` <- plotvals$`Supplemental 3` %>%
+                        select(NHP, DPI, Virus, `Blood urea nitrogen (BUN)`)
+plotvals$`Figure 2e` <- plotvals$`Supplemental 3` %>%
+                        select(NHP, DPI, Virus, `C-reactive protein (CRP)`)
+
 # split into BOMV and EBOV distribution
 chem$bomv <- filter(chem$full, Virus=="BOMV")
 chem$ebov <- chem$full %>%
@@ -364,27 +368,17 @@ chem <- analytes %>%
         })
 names(chem) <- analytes
 
-# extract legend
-leg <- cowplot::get_plot_component(chem[[1]] + theme(legend.position="bottom"), 
-                                   "guide-box-bottom")
-# plot panels
-x <- cowplot::plot_grid(plotlist=chem, ncol=3, labels="auto")
-cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(20, 1))
-ggsave("analysis/supplemental3.png",
-       units="in", width=7.5, height=8.5)
+# supplemental figure 3 has all chemistry analytes
+sup3 <- chem
+names(sup3) <- letters[1:length(sup3)]
 
-# plot selected analytes with selected hematology
-f2CDE <- c("Aspartate transferase (AST)",
-           "Blood urea nitrogen (BUN)",
-           "C-reactive protein (CRP)")
-f2CDE <- cowplot::plot_grid(plotlist=chem[f2CDE], 
-                            nrow=1, labels=c("c", "d", "e"))
-cowplot::plot_grid(f2AB, f2CDE, ncol=1)
-ggsave("analysis/figure2.png",
-       units="in", width=7.5, height=4.5)
+# figure 2 c-e are selected analytes
+fig2$c <- chem$`Aspartate transferase (AST)`
+fig2$d <- chem$`Blood urea nitrogen (BUN)`
+fig2$e <- chem$`C-reactive protein (CRP)`
 
 # clean up
-rm(x, leg, chem, f2AB, f2CDE, analytes)
+rm(chem, analytes)
 
 ## coag legendplex panels ------------------------------------------------------
 coag <- data$coag %>%
@@ -405,6 +399,17 @@ coag <- coag %>%
         left_join(dpi0, by=c("NHP", "Analyte")) %>%
         mutate(log2fc=log2(Concentration/DPI0))
 rm(dpi0)
+
+# save values
+plotvals$`Supplemental 4` <- coag %>%
+                             reshape2::dcast(NHP + DPI ~ Analyte,
+                                             value.var="log2fc")
+plotvals$`Figure 3a` <- plotvals$`Supplemental 4` %>%
+                        select(NHP, DPI, `D-Dimer`)
+plotvals$`Figure 3b` <- plotvals$`Supplemental 4` %>%
+                        select(NHP, DPI, tPA)
+plotvals$`Figure 3c` <- plotvals$`Supplemental 4` %>%
+                        select(NHP, DPI, `PAI-1`)
 
 # plot log2FC over time for each analyte
 analytes <- unique(coag$Analyte)
@@ -431,20 +436,17 @@ coag <- analytes %>%
         })
 names(coag) <- analytes
 
-# pull out legend
-leg <- cowplot::get_plot_component(coag[[1]] + theme(legend.position="bottom"),
-                                   "guide-box-bottom")
-x <- cowplot::plot_grid(plotlist=coag, labels="auto", ncol=3)
-cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(10, 1))
-ggsave("analysis/supplemental4.png", 
-       units="in", width=7.5, height=8.5)
+# supplemental figure 4 has all coagulation analytes
+sup4 <- coag
+names(sup4) <- letters[1:length(sup4)]
 
-# plot selected markers
-analytes <- c("D-Dimer", "tPA", "PAI-1")
-f3ABC <- cowplot::plot_grid(plotlist=coag[analytes], labels="auto", nrow=1)
+# figure 3 a-c are selected analytes
+fig3$a <- coag$`D-Dimer`
+fig3$b <- coag$tPA
+fig3$c <- coag$`PAI-1`
 
 # clean up
-rm(coag, analytes, x, leg)
+rm(coag, analytes)
 
 ## inflammation ----------------------------------------------------------------
 inflam <- data$inflammation %>%
@@ -467,6 +469,17 @@ inflam <- inflam %>%
           left_join(dpi0, by=c("NHP", "Analyte")) %>%
           mutate(log2fc=log2(value/DPI0))
 rm(dpi0)
+
+# save values
+plotvals$`Supplemental 5` <- inflam %>%
+                             reshape2::dcast(NHP + DPI ~ Analyte,
+                                             value.var="log2fc")
+plotvals$`Figure 3d` <- plotvals$`Supplemental 5` %>%
+                        select(NHP, DPI, IFNg)
+plotvals$`Figure 3e` <- plotvals$`Supplemental 5` %>%
+                        select(NHP, DPI, `IL-1ra`)
+plotvals$`Figure 3f` <- plotvals$`Supplemental 5` %>%
+                        select(NHP, DPI, `IL-6`)
 
 # plot log2FC over time for each analyte
 analytes <- unique(inflam$Analyte)
@@ -493,31 +506,27 @@ inflam <- analytes %>%
           })
 names(inflam) <- analytes
 
-# pull out legend
-leg <- cowplot::get_plot_component(inflam[[1]] + theme(legend.position="bottom"),
-                                   "guide-box-bottom")
-x <- cowplot::plot_grid(plotlist=inflam, 
-                        labels="auto", ncol=4)
-cowplot::plot_grid(x, leg, ncol=1, rel_heights=c(25, 1))
-ggsave("analysis/supplemental5.png", 
-       units="in", width=7.5, height=10)
+# supplemental figure 5 has all inflammation analytes
+sup5 <- inflam
+names(sup5) <- letters[1:length(sup5)]
 
-# plot selected markers with coag selected markers for figure 3
-analytes <- c("IFNg", "IL-1ra", "IL-6")
-f3DEF <- cowplot::plot_grid(plotlist=inflam[analytes], 
-                            labels=c("d", "e", "f"), nrow=1)
-cowplot::plot_grid(f3ABC, f3DEF, leg, ncol=1, rel_heights=c(10, 10, 1))
-ggsave("analysis/figure3.png", 
-       units="in", width=7.5, height=5)
+# figure 3 e-g are selected analytes
+fig3$e <- inflam$IFNg
+fig3$f <- inflam$`IL-1ra`
+fig3$g <- inflam$`IL-6`
 
 # clean up
-rm(inflam, analytes, x, leg, f3ABC, f3DEF)
+rm(inflam, analytes)
 
 ## ELISAs ----------------------------------------------------------------------
 elisas <- data$elisa %>%
           reshape2::melt(id.vars=c("NHP", "DPI"),
                          variable.name="Analyte",
                          value.name="Titer")
+
+# save values
+plotvals$`Figure 5a` <- select(data$elisa, NHP, DPI, IgM)
+plotvals$`Figure 5b` <- select(data$elisa, NHP, DPI, IgG)
 
 # get range for 28 DPI titers
 elisas %>%
@@ -528,44 +537,38 @@ elisas %>%
             .groups="drop")
 
 # plot ELISAs
-elisas <- elisas$Analyte %>%
-          unique() %>%
-          lapply(function(i) {
-            # plot on a log scale using a pseudo-count
-            elisas %>%
-              filter(Analyte==i) %>%
-              ggplot(aes(DPI, Titer+1)) +
-              geom_line(aes(linetype=NHP),
-                        col=cols.virus["BOMV"]) +
-              geom_point(aes(shape=NHP), 
-                         fill=cols.virus["BOMV"], 
-                         size=2) +
-              scale_shape_manual(values=shapes.nhps) +
-              scale_linetype_manual(values=lines.nhps) +
-              scale_y_continuous(limits=c(NA, 1e5),
-                                 breaks=c(1e0, 1e1, 1e2, 1e3, 1e4, 1e5),
-                                 labels=c("<LOD", "10", "100", "1000", 
-                                          "10,000", "100,000"),
-                                 transform="log10") +
-              scale_x_continuous(limits=c(NA, 28), 
-                                 breaks=c(0, 5, 7, 10, 15, 28)) +
-              labs(x="Days postinfection",
-                   y="Endpoint titer",
-                   shape="BOMV NHPs",
-                   linetype="BOMV NHPs",
-                   title=paste("Anti-BOMV", i)) +
-              theme(legend.position="none")
-          })
-
-# pull out legend
-leg <- cowplot::get_plot_component(elisas[[1]] + theme(legend.position="right"),
-                                   "guide-box-right")
-f4AB <- cowplot::plot_grid(plotlist=elisas, nrow=1, labels="auto")
-f4AB <- cowplot::plot_grid(f4AB, leg, nrow=1, rel_widths=c(7, 1))
-f4AB
+fig5 <- elisas$Analyte %>%
+        unique() %>%
+        lapply(function(i) {
+          # plot on a log scale using a pseudo-count
+          elisas %>%
+            filter(Analyte==i) %>%
+            ggplot(aes(DPI, Titer+1)) +
+            geom_line(aes(linetype=NHP),
+                      col=cols.virus["BOMV"]) +
+            geom_point(aes(shape=NHP), 
+                       fill=cols.virus["BOMV"], 
+                       size=2) +
+            scale_shape_manual(values=shapes.nhps) +
+            scale_linetype_manual(values=lines.nhps) +
+            scale_y_continuous(limits=c(NA, 1e5),
+                               breaks=c(1e0, 1e1, 1e2, 1e3, 1e4, 1e5),
+                               labels=c("<LOD", "10", "100", "1000", 
+                                        "10,000", "100,000"),
+                               transform="log10") +
+            scale_x_continuous(limits=c(NA, 28), 
+                               breaks=c(0, 5, 7, 10, 15, 28)) +
+            labs(x="Days postinfection",
+                 y="Endpoint titer",
+                 shape="BOMV NHPs",
+                 linetype="BOMV NHPs",
+                 title=paste("Anti-BOMV", i)) +
+            theme(legend.position="none")
+        })
+names(fig5) <- letters[1:length(fig5)]
 
 # clean up
-rm(elisas, leg)
+rm(elisas)
 
 ## PRNTs -----------------------------------------------------------------------
 prnt <- data$prnt %>%
@@ -598,6 +601,20 @@ prnt %>%
   top_n(n=1, wt=Dilution) %>%
   select(NHP, Dilution, PercentReduction)
 
+# save homologous neutralization curves
+plotvals$`Figure 5c` <- prnt %>%
+                        filter(NHP=="A", Virus=="BOMV") %>%
+                        select(DPI, Dilution, PercentReduction)
+plotvals$`Figure 5d` <- prnt %>%
+                        filter(NHP=="B", Virus=="BOMV") %>%
+                        select(DPI, Dilution, PercentReduction)
+plotvals$`Figure 5e` <- prnt %>%
+                        filter(NHP=="C", Virus=="BOMV") %>%
+                        select(DPI, Dilution, PercentReduction)
+plotvals$`Figure 5f` <- prnt %>%
+                        filter(NHP=="D", Virus=="BOMV") %>%
+                        select(DPI, Dilution, PercentReduction)
+
 # plot homologous neutralization curves
 curves <- prnt$NHP %>%
           unique() %>%
@@ -624,58 +641,130 @@ curves <- prnt$NHP %>%
               guides(fill=guide_legend(override.aes=list(pch=21, size=3))) +
               theme(legend.position="none")
           })
+fig5 <- c(fig5, curves)
+names(fig5) <- letters[1:length(fig5)]
 
-# pull out legend and plot figure 4
-leg <- cowplot::get_plot_component(curves[[1]] + theme(legend.position="right"),
-                                   "guide-box-right")
-f4CDEF <- cowplot::plot_grid(plotlist=curves, ncol=2, 
-                             labels=c("c", "d", "e", "f"))
-f4CDEF <- cowplot::plot_grid(f4CDEF, leg, nrow=1, rel_widths=c(10, 1))
-cowplot::plot_grid(f4AB, f4CDEF, ncol=1, rel_heights=c(1, 2))
-ggsave("analysis/figure5.png",
-       units="in", width=7.5, height=6)
+# save heterologous neutralization curves
+plotvals$`Supplemental 6` <- prnt %>%
+                             filter(Virus!="BOMV") %>%
+                             select(NHP, DPI, Virus, Dilution, PercentReduction)
 
 # plot heterologous neutralization curves
-curves <- prnt %>%
-          filter(Virus!="BOMV") %>%
-          select(NHP, Virus) %>%
-          arrange(Virus) %>%
-          distinct() %>%
-          apply(1, function(i) {
-            prnt %>%
-              filter(Virus==i["Virus"],
-                     NHP==i["NHP"]) %>%
-              ggplot(aes(Dilution, PercentReduction)) +
-              geom_hline(yintercept=50, linetype=2, col="lightgrey") +
-              geom_line(aes(group=DPI, col=DPI, linetype=NHP)) +
-              geom_point(aes(fill=DPI, shape=NHP), size=3) +
-              scale_color_manual(values=cols.dpi, guide="none") +
-              scale_fill_manual(values=cols.dpi) +
-              scale_linetype_manual(values=lines.nhps, guide="none") +
-              scale_shape_manual(values=shapes.nhps, guide="none") +
-              scale_x_continuous(limits=c(10, 640),
-                                 breaks=c(10, 20, 40, 80, 160, 320, 640),
-                                 transform="log2") +
-              ylim(0, 100) +
-              labs(x="Dilution factor",
-                   y="Reduction (%)",
-                   fill="DPI",
-                   title=paste("BOMV NHP", i["NHP"], "vs.", i["Virus"])) +
-              guides(fill=guide_legend(override.aes=list(pch=21, size=3))) +
-              theme(legend.position="none")
-          })
-# pull out legend
-leg <- cowplot::get_plot_component(curves[[1]] + theme(legend.position="bottom"),
-                                   "guide-box-bottom")
-curves <- cowplot::plot_grid(plotlist=curves, ncol=2, 
-                             labels="auto")
-cowplot::plot_grid(curves, leg, 
-                   ncol=1, rel_heights=c(15, 1))
-ggsave("analysis/supplemental6.png",
-       units="in", width=7.5, height=8)
+sup6 <- prnt %>%
+        filter(Virus!="BOMV") %>%
+        select(NHP, Virus) %>%
+        arrange(Virus) %>%
+        distinct() %>%
+        apply(1, function(i) {
+          prnt %>%
+            filter(Virus==i["Virus"],
+                   NHP==i["NHP"]) %>%
+            ggplot(aes(Dilution, PercentReduction)) +
+            geom_hline(yintercept=50, linetype=2, col="lightgrey") +
+            geom_line(aes(group=DPI, col=DPI, linetype=NHP)) +
+            geom_point(aes(fill=DPI, shape=NHP), size=3) +
+            scale_color_manual(values=cols.dpi, guide="none") +
+            scale_fill_manual(values=cols.dpi) +
+            scale_linetype_manual(values=lines.nhps, guide="none") +
+            scale_shape_manual(values=shapes.nhps, guide="none") +
+            scale_x_continuous(limits=c(10, 640),
+                               breaks=c(10, 20, 40, 80, 160, 320, 640),
+                               transform="log2") +
+            ylim(0, 100) +
+            labs(x="Dilution factor",
+                 y="Reduction (%)",
+                 fill="DPI",
+                 title=paste("BOMV NHP", i["NHP"], "vs.", i["Virus"])) +
+            guides(fill=guide_legend(override.aes=list(pch=21, size=3))) +
+            theme(legend.position="none")
+        })
+names(sup6) <- letters[1:length(sup6)]
 
 # clean up
-rm(prnt, leg, curves)
+rm(prnt, curves)
+
+## save plotting data file -----------------------------------------------------
+openxlsx::write.xlsx(plotvals, "analysis/plotting.xlsx")
+
+## assemble figures ------------------------------------------------------------
+# figure 1
+x <- cowplot::plot_grid(fig1$a,
+                        fig1$c + guides(color="none", fill="none"),
+                        fig1$d + theme(legend.position="none"),
+                        ncol=1, labels=c("a", "c", "d"))
+fig1 <- cowplot::plot_grid(x, fig1$b, labels=c(NA, "b"), nrow=1)
+ggsave("analysis/figure1.png", fig1, units="in", width=7.5, height=6)
+
+# figure 2
+# plot selected analytes with legend
+x <- cowplot::get_plot_component(fig2$a + 
+                                 guides(fill=guide_legend(ncol=2),
+                                        shape=guide_legend(ncol=2, ,
+                                                           override.aes=list(fill=cols.virus["BOMV"]))) +
+                                     theme(legend.position="right"), 
+                                   "guide-box-right")
+fig2 <- cowplot::plot_grid(fig2$a, fig2$b, x,
+                           fig2$c, fig2$d, fig2$e,
+                           nrow=2, labels=c("a", "b", "", "c", "d", "e"))
+ggsave("analysis/figure2.png", fig2, units="in", width=7.5, height=4.5)
+
+# figure 3
+x <- cowplot::get_panel_component(fig3$a + theme(legend.position="bottom"),
+                                  "guide-box-bottom")
+fig3 <- cowplot::plot_grid(plotlist=fig3, labels=names(fig3), nrow=2)
+fig3 <- cowplot::plot_grid(fig3, x, ncol=1, rel_heights=c(20, 1))
+ggsave("analysis/figure3.png", fig3, units="in", width=7.5, height=5)
+
+# figure 5
+# ELISAs in the first row
+x <- cowplot::get_plot_component(fig5$a + theme(legend.position="right"),
+                                 "guide-box-right")
+x <- cowplot::plot_grid(fig5$a, fig5$b, x, nrow=1, labels=c("a", "b", ""), 
+                        rel_widths=c(3.5, 3.5, 1))
+# PRNTs in the second row
+y <- cowplot::get_plot_component(fig5$c + theme(legend.position="right"),
+                                 "guide-box-right")
+z <- cowplot::plot_grid(fig5$c, fig5$d, fig5$e, fig5$f, 
+                        ncol=2, labels=c("c", "d", "e", "f"))
+y <- cowplot::plot_grid(z, y, nrow=1, rel_widths=c(10, 1))
+fig5 <- cowplot::plot_grid(x, y, ncol=1, rel_heights=c(1, 2))
+ggsave("analysis/figure5.png", fig5, units="in", width=7.5, height=6)
+
+# supplemental 2
+x <- cowplot::get_plot_component(sup2$a + theme(legend.position="bottom"), 
+                                 "guide-box-bottom")
+sup2 <- cowplot::plot_grid(plotlist=sup2, ncol=3, labels=names(sup2))
+sup2 <- cowplot::plot_grid(sup2, x, ncol=1, rel_heights=c(20, 1))
+ggsave("analysis/supplemental2.png", sup2, units="in", width=7.5, height=10)
+
+# supplemental 3
+x <- cowplot::get_plot_component(sup3$a + theme(legend.position="bottom"), 
+                                 "guide-box-bottom")
+sup3 <- cowplot::plot_grid(plotlist=sup3, ncol=3, labels=names(sup3))
+sup3 <- cowplot::plot_grid(sup3, x, ncol=1, rel_heights=c(20, 1))
+ggsave("analysis/supplemental3.png", sup3, units="in", width=7.5, height=8.5)
+
+# supplemental 4
+x <- cowplot::get_plot_component(sup4$a + theme(legend.position="bottom"),
+                                 "guide-box-bottom")
+sup4 <- cowplot::plot_grid(plotlist=sup4, labels=names(sup4), ncol=3)
+sup4 <- cowplot::plot_grid(sup4, x, ncol=1, rel_heights=c(20, 1))
+ggsave("analysis/supplemental4.png", sup4, units="in", width=7.5, height=8.5)
+
+# supplemental 5
+x <- cowplot::get_plot_component(sup5$a + theme(legend.position="bottom"),
+                                 "guide-box-bottom")
+sup5 <- cowplot::plot_grid(plotlist=sup5, labels=names(sup5), ncol=4)
+sup5 <- cowplot::plot_grid(sup5, x, ncol=1, rel_heights=c(25, 1))
+ggsave("analysis/supplemental5.png", sup5, units="in", width=7.5, height=10)
+
+# supplemental 6
+x <- cowplot::get_plot_component(sup6$a + theme(legend.position="bottom"),
+                                 "guide-box-bottom")
+sup6 <- cowplot::plot_grid(plotlist=sup6, ncol=2, labels=names(sup6))
+sup6 <- cowplot::plot_grid(sup6, x, ncol=1, rel_heights=c(15, 1))
+ggsave("analysis/supplemental6.png",
+       units="in", width=7.5, height=8)
 
 ## done! -----------------------------------------------------------------------
 sessionInfo()
