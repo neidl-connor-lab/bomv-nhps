@@ -36,7 +36,7 @@ plotvals$`Figure 1a` <- data$survival %>%
 fig1$a <- plotvals$`Figure 1a` %>%
           survfit2(Surv(DPI, Censoring) ~ Virus, data=.) %>%
           ggsurvfit(theme=theme_classic(), 
-                    size=0.5) +
+                    linewidth=0.5) +
           scale_color_manual(values=cols.virus) +
           labs(x="Days postinfection",
                y="Survival",
@@ -519,31 +519,32 @@ fig3$g <- inflam$`IL-6`
 rm(inflam, analytes)
 
 ## ELISAs ----------------------------------------------------------------------
-elisas <- data$elisa %>%
-          reshape2::melt(id.vars=c("NHP", "DPI"),
-                         variable.name="Analyte",
-                         value.name="Titer")
-
 # save values
-plotvals$`Figure 5a` <- select(data$elisa, NHP, DPI, IgM)
-plotvals$`Figure 5b` <- select(data$elisa, NHP, DPI, IgG)
+plotvals$`Figure 5a` <- data$elisa %>%
+                        filter(Antigen=="BOMV",
+                               Immunoglobulin=="IgM")
+plotvals$`Figure 5b` <- data$elisa %>%
+                        filter(Antigen=="BOMV",
+                               Immunoglobulin=="IgG")
 
-# get range for 28 DPI titers
-elisas %>%
-  filter(DPI==28) %>%
-  group_by(Analyte) %>%
-  summarise(Minimum=min(Titer),
-            Maximum=max(Titer),
+# get range for BOMV 28 DPI titers
+data$elisa %>%
+  filter(DPI==28,
+         Antigen=="BOMV") %>%
+  group_by(Immunoglobulin) %>%
+  summarise(Minimum=min(`Endpoint titer`),
+            Maximum=max(`Endpoint titer`),
             .groups="drop")
 
 # plot ELISAs
-fig5 <- elisas$Analyte %>%
+fig5 <- data$elisa$Immunoglobulin %>%
         unique() %>%
         lapply(function(i) {
           # plot on a log scale using a pseudo-count
-          elisas %>%
-            filter(Analyte==i) %>%
-            ggplot(aes(DPI, Titer+1)) +
+          data$elisa %>%
+            filter(Immunoglobulin==i,
+                   Antigen=="BOMV") %>%
+            ggplot(aes(DPI, `Endpoint titer`+1)) +
             geom_line(aes(linetype=NHP),
                       col=cols.virus["BOMV"]) +
             geom_point(aes(shape=NHP), 
@@ -567,8 +568,38 @@ fig5 <- elisas$Analyte %>%
         })
 names(fig5) <- letters[1:length(fig5)]
 
+# plot other antigens
+elisa <- filter(data$elisa, Antigen != "BOMV")
+plotvals$`Figure 5d` <- elisa
+fig5$d <- elisa %>%
+          mutate(DPI=as.factor(DPI)) %>%
+          group_by(Antigen, DPI) %>%
+          summarize(StDev=sd(`Endpoint titer`),
+                    `Endpoint titer`=mean(`Endpoint titer`),
+                    .groups="drop") %>%
+          ggplot(aes(Antigen, `Endpoint titer`+1, group=DPI)) +
+          geom_col(aes(fill=DPI), col="black", position="dodge") +
+          geom_errorbar(aes(ymin=`Endpoint titer`-StDev, 
+                            ymax=`Endpoint titer`+StDev),
+                        position=position_dodge(0.9), width=0.5) +
+          geom_point(data=elisa,
+                     aes(shape=NHP),
+                     fill="black",
+                     position=position_jitterdodge(jitter.width=0.5, 
+                                                   jitter.height=0)) +
+          scale_shape_manual(values=shapes.nhps) +
+          scale_fill_manual(values=c("0"="white", "28"="grey80")) +
+          scale_y_continuous(limits=c(0.9, 1e4),
+                             breaks=c(1e0, 1e1, 1e2, 1e3, 1e4),
+                             labels=c("<LOD", "10", "100", "1000", "10,000"),
+                             transform="log10") +
+          labs(x="ELISA antigen",
+               y="Endpoint titer",
+               title="Anti-ebolavirus IgG") +
+          guides(shape="none")
+
 # clean up
-rm(elisas)
+rm(elisa)
 
 ## PRNTs -----------------------------------------------------------------------
 prnt <- data$prnt %>%
@@ -601,57 +632,39 @@ prnt %>%
   top_n(n=1, wt=Dilution) %>%
   select(NHP, Dilution, PercentReduction)
 
-# save homologous neutralization curves
+# save percent BOMV neutralization
 plotvals$`Figure 5c` <- prnt %>%
-                        filter(NHP=="A", Virus=="BOMV") %>%
-                        select(DPI, Dilution, PercentReduction)
-plotvals$`Figure 5d` <- prnt %>%
-                        filter(NHP=="B", Virus=="BOMV") %>%
-                        select(DPI, Dilution, PercentReduction)
-plotvals$`Figure 5e` <- prnt %>%
-                        filter(NHP=="C", Virus=="BOMV") %>%
-                        select(DPI, Dilution, PercentReduction)
-plotvals$`Figure 5f` <- prnt %>%
-                        filter(NHP=="D", Virus=="BOMV") %>%
-                        select(DPI, Dilution, PercentReduction)
+                        filter(Virus=="BOMV", Dilution==10) %>%
+                        select(NHP, DPI, PercentReduction)
 
-# plot homologous neutralization curves
-curves <- prnt$NHP %>%
-          unique() %>%
-          lapply(function(i) {
-            prnt %>%
-              filter(Virus=="BOMV",
-                     NHP==i) %>%
-              ggplot(aes(Dilution, PercentReduction)) +
-              geom_hline(yintercept=50, linetype=2, col="lightgrey") +
-              geom_line(aes(group=DPI, col=DPI, linetype=NHP)) +
-              geom_point(aes(fill=DPI, shape=NHP), size=3) +
-              scale_color_manual(values=cols.dpi, guide="none") +
-              scale_fill_manual(values=cols.dpi) +
-              scale_linetype_manual(values=lines.nhps, guide="none") +
-              scale_shape_manual(values=shapes.nhps, guide="none") +
-              scale_x_continuous(limits=c(10, 640),
-                                 breaks=c(10, 20, 40, 80, 160, 320, 640),
-                                 transform="log2") +
-              ylim(0, 100) +
-              labs(x="Dilution factor",
-                   y="Reduction (%)",
-                   fill="DPI",
-                   title=paste("BOMV NHP", i)) +
-              guides(fill=guide_legend(override.aes=list(pch=21, size=3))) +
-              theme(legend.position="none")
-          })
-fig5 <- c(fig5, curves)
-names(fig5) <- letters[1:length(fig5)]
+# plot 1:10 percent BOMV neutralization
+fig5$c <- prnt %>%
+          filter(Virus=="BOMV",
+                 Dilution==10) %>%
+          ggplot(aes(DPI, PercentReduction)) +
+          geom_boxplot(fill="grey80", outliers=FALSE) +
+          geom_jitter(aes(shape=NHP), fill="black", width=0.2, height=0) +
+          ggpubr::stat_compare_means(comparisons=list(c("0", "15"),
+                                                      c("0", "28"),
+                                                      c("15", "28")),
+                                     label="p.signif", 
+                                     step.increase=0.25) +
+          scale_shape_manual(values=shapes.nhps) +
+          scale_y_continuous(limits=c(0, NA),
+                             breaks=c(0, 25, 50, 75, 100),
+                             expand=expansion(mult = c(0, 0.1))) +
+          labs(x="Days postinfection",
+               y="Reduction (%)",
+               shape="BOMV NHPs",
+               title="BOMV neutralization")
 
-# save heterologous neutralization curves
-plotvals$`Supplemental 6` <- prnt %>%
-                             filter(Virus!="BOMV") %>%
-                             select(NHP, DPI, Virus, Dilution, PercentReduction)
+# save neutralization curves
+plotvals$`Supplemental 6` <- select(prnt,
+                                    NHP, DPI, Virus, 
+                                    Dilution, PercentReduction)
 
-# plot heterologous neutralization curves
+# plot neutralization curves
 sup6 <- prnt %>%
-        filter(Virus!="BOMV") %>%
         select(NHP, Virus) %>%
         arrange(Virus) %>%
         distinct() %>%
@@ -674,14 +687,14 @@ sup6 <- prnt %>%
             labs(x="Dilution factor",
                  y="Reduction (%)",
                  fill="DPI",
-                 title=paste("BOMV NHP", i["NHP"], "vs.", i["Virus"])) +
+                 title=paste("NHP", i["NHP"], "vs.", i["Virus"])) +
             guides(fill=guide_legend(override.aes=list(pch=21, size=3))) +
             theme(legend.position="none")
         })
 names(sup6) <- letters[1:length(sup6)]
 
 # clean up
-rm(prnt, curves)
+rm(prnt)
 
 ## save plotting data file -----------------------------------------------------
 openxlsx::write.xlsx(plotvals, "analysis/plotting.xlsx")
@@ -715,20 +728,10 @@ fig3 <- cowplot::plot_grid(plotlist=fig3, labels=names(fig3), nrow=2)
 fig3 <- cowplot::plot_grid(fig3, x, ncol=1, rel_heights=c(20, 1))
 ggsave("analysis/figure3.png", fig3, units="in", width=7.5, height=5)
 
-# figure 5
-# ELISAs in the first row
-x <- cowplot::get_plot_component(fig5$a + theme(legend.position="right"),
-                                 "guide-box-right")
-x <- cowplot::plot_grid(fig5$a, fig5$b, x, nrow=1, labels=c("a", "b", ""), 
-                        rel_widths=c(3.5, 3.5, 1))
-# PRNTs in the second row
-y <- cowplot::get_plot_component(fig5$c + theme(legend.position="right"),
-                                 "guide-box-right")
-z <- cowplot::plot_grid(fig5$c, fig5$d, fig5$e, fig5$f, 
-                        ncol=2, labels=c("c", "d", "e", "f"))
-y <- cowplot::plot_grid(z, y, nrow=1, rel_widths=c(10, 1))
-fig5 <- cowplot::plot_grid(x, y, ncol=1, rel_heights=c(1, 2))
-ggsave("analysis/figure5.png", fig5, units="in", width=7.5, height=6)
+# figure 5: need to re-order by name
+fig5 <- fig5[order(names(fig5))]
+fig5 <- cowplot::plot_grid(plotlist=fig5, labels=names(fig5))
+ggsave("analysis/figure5.png", fig5, units="in", width=7.5, height=5)
 
 # supplemental 2
 x <- cowplot::get_plot_component(sup2$a + theme(legend.position="bottom"), 
@@ -761,7 +764,7 @@ ggsave("analysis/supplemental5.png", sup5, units="in", width=7.5, height=10)
 # supplemental 6
 x <- cowplot::get_plot_component(sup6$a + theme(legend.position="bottom"),
                                  "guide-box-bottom")
-sup6 <- cowplot::plot_grid(plotlist=sup6, ncol=2, labels=names(sup6))
+sup6 <- cowplot::plot_grid(plotlist=sup6, ncol=3, labels=names(sup6))
 sup6 <- cowplot::plot_grid(sup6, x, ncol=1, rel_heights=c(15, 1))
 ggsave("analysis/supplemental6.png",
        units="in", width=7.5, height=8)
