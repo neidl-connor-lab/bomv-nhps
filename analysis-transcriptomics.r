@@ -141,7 +141,7 @@ quanti <- quanti$DPI %>%
                                  labels=c("0", "1e7", "3e7", "5e7", "7e7", "9e7")) +
               labs(x="Reads",
                    y="BOMV NHPs",
-                   fill=element_blank(),
+                   fill=NULL,
                    title=i) +
               theme(legend.position="none",
                     axis.title.y=element_blank(),
@@ -444,7 +444,7 @@ modplt <- gene.mod$Label %>%
                                  breaks=c(-8, 1, 3, 5, 7, 10, 15, 21, 28)) +
               labs(x="Days postinfection",
                    y="Fold change (log2)",
-                   col=element_blank(),
+                   col=NULL,
                    title=i) +
               theme(axis.title=element_blank(),
                     legend.position=c(0.9, 0.9))
@@ -601,7 +601,7 @@ y <- cowplot::plot_grid(figB, figD, ncol=1,
                         rel_heights=c(2, 1))
 z <- cowplot::plot_grid(x, y, nrow=1)
 cowplot::plot_grid(z, figE, ncol=1, labels=c(NA, "e"), rel_heights=c(7, 2))
-ggsave("analysis/figure4.png",
+ggsave("analysis/figure4.pdf",
        units="in", width=7.5, height=9)
 rm(x, y, z)
 

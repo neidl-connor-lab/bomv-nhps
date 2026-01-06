@@ -706,7 +706,7 @@ x <- cowplot::plot_grid(fig1$a,
                         fig1$d + theme(legend.position="none"),
                         ncol=1, labels=c("a", "c", "d"))
 fig1 <- cowplot::plot_grid(x, fig1$b, labels=c(NA, "b"), nrow=1)
-ggsave("analysis/figure1.png", fig1, units="in", width=7.5, height=6)
+ggsave("analysis/figure1.pdf", fig1, units="in", width=7.5, height=6)
 
 # figure 2
 # plot selected analytes with legend
@@ -714,24 +714,24 @@ x <- cowplot::get_plot_component(fig2$a +
                                  guides(fill=guide_legend(ncol=2),
                                         shape=guide_legend(ncol=2, ,
                                                            override.aes=list(fill=cols.virus["BOMV"]))) +
-                                     theme(legend.position="right"), 
-                                   "guide-box-right")
+                                 theme(legend.position="right"), 
+                                 "guide-box-right")
 fig2 <- cowplot::plot_grid(fig2$a, fig2$b, x,
                            fig2$c, fig2$d, fig2$e,
                            nrow=2, labels=c("a", "b", "", "c", "d", "e"))
-ggsave("analysis/figure2.png", fig2, units="in", width=7.5, height=4.5)
+ggsave("analysis/figure2.pdf", fig2, units="in", width=7.5, height=4.5)
 
 # figure 3
-x <- cowplot::get_panel_component(fig3$a + theme(legend.position="bottom"),
+x <- cowplot::get_plot_component(fig3$a + theme(legend.position="bottom"),
                                   "guide-box-bottom")
 fig3 <- cowplot::plot_grid(plotlist=fig3, labels=names(fig3), nrow=2)
 fig3 <- cowplot::plot_grid(fig3, x, ncol=1, rel_heights=c(20, 1))
-ggsave("analysis/figure3.png", fig3, units="in", width=7.5, height=5)
+ggsave("analysis/figure3.pdf", fig3, units="in", width=7.5, height=5)
 
 # figure 5: need to re-order by name
 fig5 <- fig5[order(names(fig5))]
 fig5 <- cowplot::plot_grid(plotlist=fig5, labels=names(fig5))
-ggsave("analysis/figure5.png", fig5, units="in", width=7.5, height=5)
+ggsave("analysis/figure5.pdf", fig5, units="in", width=7.5, height=5)
 
 # supplemental 2
 x <- cowplot::get_plot_component(sup2$a + theme(legend.position="bottom"), 
