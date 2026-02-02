@@ -511,9 +511,9 @@ sup5 <- inflam
 names(sup5) <- letters[1:length(sup5)]
 
 # figure 3 e-g are selected analytes
-fig3$e <- inflam$IFNg
-fig3$f <- inflam$`IL-1ra`
-fig3$g <- inflam$`IL-6`
+fig3$d <- inflam$IFNg
+fig3$e <- inflam$`IL-1ra`
+fig3$f <- inflam$`IL-6`
 
 # clean up
 rm(inflam, analytes)
